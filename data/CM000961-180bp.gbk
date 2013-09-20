@@ -1,0 +1,72 @@
+LOCUS       CM000961             180 bp    DNA     circular CON 07-SEP-2010
+DEFINITION  Corynebacterium genitalium ATCC 33030 chromosome, first 180bp only.
+ACCESSION   CM000961 ACLJ02000000
+VERSION     CM000961.1  GI:306415566
+DBLINK      Project: 34587
+KEYWORDS    WGS; NONCONTIGUOUS_FINISHED.
+SOURCE      Corynebacterium genitalium ATCC 33030
+  ORGANISM  Corynebacterium genitalium ATCC 33030
+            Bacteria; Actinobacteria; Actinobacteridae; Actinomycetales;
+            Corynebacterineae; Corynebacteriaceae; Corynebacterium.
+REFERENCE   1  (bases 1 to 180)
+  AUTHORS   Qin,X., Bachman,B., Battles,P., Bell,A., Bess,C., Bickham,C.,
+            Chaboub,L., Chen,D., Coyle,M., Deiros,D.R., Dinh,H., Forbes,L.,
+            Fowler,G., Francisco,L., Fu,Q., Gubbala,S., Hale,W., Han,Y.,
+            Hemphill,L., Highlander,S.K., Hirani,K., Hogues,M., Jackson,L.,
+            Jakkamsetti,A., Javaid,M., Jiang,H., Korchina,V., Kovar,C.,
+            Lara,F., Lee,S., Mata,R., Mathew,T., Moen,C., Morales,K.,
+            Munidasa,M., Nazareth,L., Ngo,R., Nguyen,L., Okwuonu,G., Ongeri,F.,
+            Patil,S., Petrosino,J., Pham,C., Pham,P., Pu,L.-L., Puazo,M.,
+            Raj,R., Reid,J., Rouhana,J., Saada,N., Shang,Y., Simmons,D.,
+            Thornton,R., Warren,J., Weissenberger,G., Zhang,J., Zhang,L.,
+            Zhou,C., Zhu,D., Muzny,D., Worley,K. and Gibbs,R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (22-JUN-2010) Human Genome Sequencing Center, Baylor
+            College of Medicine, One Baylor Plaza, Houston, TX 77030, USA
+COMMENT     Corynebacterium_genitalium ATCC 33030
+            
+             Strain source, body site: Urogenital Tract
+            
+             This is a reference genome for the Human Microbiome Project. This
+            project is co-owned with the Human Microbiome Project DACC. Source
+            DNA provided by American Type Culture Collection (ATCC33030).
+            Funded by 'Genomes and Genetics at BCM-HGSC' (U54 HG003273).
+            
+            ##Genome-Assembly-Data-START##
+            Finishing Goal           :: Noncontiguous Finished
+            Current Finishing Status :: Noncontiguous Finished
+            Assembly Method          :: Newbler Assembler v. 2.3-10192009
+            Genome Coverage          :: 25x
+            Sequencing Technology    :: 454
+            ##Genome-Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..180
+                     /organism="Corynebacterium genitalium ATCC 33030"
+                     /mol_type="genomic DNA"
+                     /strain="ATCC 33030"
+                     /culture_collection="ATCC:33030"
+                     /db_xref="Greengenes:13451"
+                     /db_xref="HMP:0291"
+                     /db_xref="taxon:585529"
+     gene            1..645
+                     /gene="tnp3521a2"
+                     /locus_tag="HMPREF0291_10001"
+     CDS             1..645
+                     /gene="tnp3521a2"
+                     /locus_tag="HMPREF0291_10001"
+                     /note="COG: COG2801; Pfam: PF00665; InterPro: IPR001584"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="IS3521 transposase"
+                     /protein_id="EFK54743.1"
+                     /db_xref="GI:300533684"
+                     /translation="MMKLAGIQGRRRGRTPITTLRADVPDCRPDLVNRDFTASAPHRL
+                     WVADITYVRTLSGFAYTAFITDAYSRKIVGVATRASMRTDELPLEAFEHAVYHAGDLR
+                     AEGLVHHSDRGSQYVSIRYSEALAQAGIDPSVGTVGDSYDNALAETVNGLYKTELIYP
+                     HRPWASVGEVEIATLRWVYWWNNHRLHESLGYITPQEMEDAYYQQSHAHPLGVQ"
+ORIGIN      
+        1 ttgatgaaac tcgccggcat ccaaggccgc agaaggggcc gcactccgat cacaacgctt
+       61 cgggctgatg tcccggattg tcgtcctgat ctggtcaatc gtgacttcac cgcgtcagcg
+      121 ccgcaccggc tgtgggtcgc tgacatcacc tacgtgcgta ccctgtcggg gtttgcgtac
+//
+

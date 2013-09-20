@@ -1,0 +1,86 @@
+#!/usr/bin/perl
+
+# Convert SVG to PDF, PNG, or JPEG using the Apache Batik Toolkit
+
+use strict;
+use File::Spec;
+
+## globals
+my $USAGE = "Usage: $0 svg_file pdf|png|jpeg [output_width output_height]";
+my $BATIK_JAR = '/usr/local/packages/apache-batik-1.7/batik-rasterizer.jar';
+my $DEFAULT_IMG_WIDTH = 4000;
+my $MAX_PDF_WIDTH = 2000;
+my $MTYPES = 
+  {
+   'pdf' => 'application/pdf',
+   'jpg' => 'image/jpeg',
+   'png' => 'image/png',
+};
+
+## input
+my $svg_file = shift || die $USAGE;
+my $type = shift;
+my $img_width = shift;
+my $img_height = shift;
+
+my $suffix = lc($type);
+$suffix =~ s/jpeg/jpg/;
+my $mtype = $MTYPES->{$suffix};
+die "unsupported output image type '$type'" if (!defined($mtype));
+
+# defaults
+$img_width = $DEFAULT_IMG_WIDTH if (!defined($img_width));
+
+# rasterizer has trouble with generating large PDF images
+if ($mtype eq 'application/pdf') {
+  my $aspect_ratio = (defined($img_width) && defined($img_height)) ? $img_width/$img_height : undef;
+  my $size_modified = 0;
+
+  if ($img_width > $MAX_PDF_WIDTH) {
+    $img_width = $MAX_PDF_WIDTH;
+    if (defined($img_height)) {
+      $img_height = int($img_width * (1.0/$aspect_ratio));
+    }
+    $size_modified = 1;
+  }
+  if ($img_height > $MAX_PDF_WIDTH) {
+    $img_height = $MAX_PDF_WIDTH;
+    if (defined($img_width)) {
+      $img_width = int($img_height * $aspect_ratio);
+    }
+    $size_modified = 1;
+  }
+#  print STDERR "WARN - output PDF size reduced to $img_width x $img_height\n" if ($size_modified);
+}
+
+## main program
+my $img_path = $svg_file;
+$img_path =~ s/(\.gz)?$/.${suffix}/;
+my $ih = defined($img_height) ? "-h $img_height" : "";
+my $ms = defined($mtype) ? "-m $mtype" : "";
+my $cmd = "java -mx4000m -jar $BATIK_JAR -bg '255.255.255.255' -w $img_width $ih $ms $svg_file";
+&run_sys_command($cmd);
+
+exit(0);
+
+## subroutines
+
+sub run_sys_command {
+  my($cmd) = @_;
+  system($cmd);
+
+  # check for errors, halt if any are found
+  my $err = undef;
+  if ($? == -1) {
+    $err = "failed to execute: $!";
+  }
+  elsif ($? & 127) {
+    $err = sprintf("child died with signal %d, %s coredump\n", ($? & 127), ($? & 128) ? 'with' : 'without');
+  }
+  else {
+    my $exit_val = $? >> 8;
+    $err = sprintf("child exited with value %d\n", $exit_val) if ($exit_val != 0);
+  }
+  die $err if (defined($err));
+}
+

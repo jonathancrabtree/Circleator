@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg height="3200" printerror="1" raiseerror="0" width="3200" xml_xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs >
+		<marker id="triangle-right" markerHeight="6" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="10" refY="5" viewBox="0 0 10 10">
+			<rect fill="white" height="10" stroke="none" width="10" x1="0" y1="0" />
+			<path d="M 0 0 L 10 5 L 0 10 z" />
+		</marker>
+		<marker id="triangle-left" markerHeight="6" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="0" refY="5" viewBox="0 0 10 10">
+			<rect fill="white" height="10" stroke="none" width="10" x1="0" y1="0" />
+			<path d="M 10 10 L 0 5 L 10 0 z" />
+		</marker>
+	</defs>
+	<g id="t1" opacity="0.7">
+		<path d="M386.56,1600 A1213.44,1213.44 -90,1,1 1600,2813.44 A1213.44,1213.44 -90,1,1 2813.44,1600 " fill="none" id="cp1" stroke="none" />
+		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1906.067094786" y="0">			<textPath xlink:href="#cp1">
+			</textPath>
+		</text>
+	</g>
+	<g id="t2">
+		<circle cx="1600" cy="1600" fill="none" r="1176" stroke="black" stroke-width="4.8" />
+		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="424" y2="400" />
+		<path d="M352,1600 A1248,1248 -90,1,1 1600,2848 A1248,1248 -90,1,1 1600,352 " fill="none" id="cp2" stroke="none" />
+		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="424" y2="376" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1960.35381584003" y="0">			<textPath xlink:href="#cp2">0.0Mb
+			</textPath>
+		</text>
+	</g>
+	<g id="t3" opacity="0.7">
+		<path d="M410.56,1600 A1189.44,1189.44 -90,1,1 1600,2789.44 A1189.44,1189.44 -90,1,1 2789.44,1600 " fill="none" id="cp3" stroke="none" />
+		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1868.36798294292" y="0">			<textPath xlink:href="#cp3">coords
+			</textPath>
+		</text>
+	</g>
+	<g id="t4" />
+	<g id="t5">
+		<mask height="3200" id="4" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
+			<rect fill="white" height="3200" r="1068" width="3200" x="0" y="0" />
+			<circle cx="1600" cy="1600" fill="black" r="1068" stroke="black" stroke-width="0.042" />
+		</mask>
+		<circle cx="1600" cy="1600" fill="#0000ff" mask="url(#4)" r="1152" stroke="black" stroke-width="0.042" />
+		<circle cx="1600" cy="1600" fill="none" r="1068" stroke="black" stroke-width="0.042" />
+	</g>
+	<g id="t6" opacity="0.7">
+		<path d="M518.56,1600 A1081.44,1081.44 -90,1,1 1600,2681.44 A1081.44,1081.44 -90,1,1 2681.44,1600 " fill="none" id="cp5" stroke="none" />
+		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1698.72197964907" y="0">			<textPath xlink:href="#cp5">contigs
+			</textPath>
+		</text>
+	</g>
+	<g id="t7" />
+	<g id="t8" />
+	<g id="t9" opacity="0.7">
+		<path d="M626.56,1600 A973.44,973.44 -90,1,1 1600,2573.44 A973.44,973.44 -90,1,1 2573.44,1600 " fill="none" id="cp6" stroke="none" />
+		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1529.07597635522" y="0">			<textPath xlink:href="#cp6">gaps
+			</textPath>
+		</text>
+	</g>
+	<g id="t10" />
+	<g id="t11">
+		<mask height="3200" id="7" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
+			<rect fill="white" height="3200" r="852" width="3200" x="0" y="0" />
+			<circle cx="1600" cy="1600" fill="black" r="852" stroke="#000000" stroke-width="0.042" />
+		</mask>
+		<circle cx="1600" cy="1600" fill="#ff0000" mask="url(#7)" r="903.8" stroke="#000000" stroke-width="0.042" />
+		<circle cx="1600" cy="1600" fill="none" r="852" stroke="#000000" stroke-width="0.042" />
+		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="852" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
+		<g id="t11.1" opacity="0.6">
+			<path d="M746.32,1600 A853.68,853.68 -90,1,1 1600,2453.68 A853.68,853.68 -90,1,1 2453.68,1600 " fill="none" id="cp8" stroke="none" />
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1340.95740825827" y="0">				<textPath xlink:href="#cp8">min=0.0000
+				</textPath>
+			</text>
+		</g>
+		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="936" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
+		<g id="t11.2" opacity="0.6">
+			<path d="M672.82,1600 A927.18,927.18 -90,1,1 1600,2527.18 A927.18,927.18 -90,1,1 2527.18,1600 " fill="none" id="cp9" stroke="none" />
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1456.41093827769" y="0">				<textPath xlink:href="#cp9">max=100.0000
+				</textPath>
+			</text>
+		</g>
+		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="903.8" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
+		<g id="t11.3" opacity="0.6">
+			<path d="M705.02,1600 A894.98,894.98 -90,1,1 1600,2494.98 A894.98,894.98 -90,1,1 2494.98,1600 " fill="none" id="cp10" stroke="none" />
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1405.8312965549" y="0">				<textPath xlink:href="#cp10">avg=61.6667
+				</textPath>
+			</text>
+		</g>
+	</g>
+	<g id="t12" opacity="0.7">
+		<path d="M734.56,1600 A865.44,865.44 -90,1,1 1600,2465.44 A865.44,865.44 -90,1,1 2465.44,1600 " fill="none" id="cp11" stroke="none" />
+		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1359.42997306137" y="0">			<textPath xlink:href="#cp11">%GC0-100
+			</textPath>
+		</text>
+	</g>
+	<g id="t13" />
+	<g id="t14" />
+	<g id="t15" opacity="0.7">
+		<path d="M842.56,1600 A757.44,757.44 -90,1,1 1600,2357.44 A757.44,757.44 -90,1,1 2357.44,1600 " fill="none" id="cp12" stroke="none" />
+		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1189.78396976753" y="0">			<textPath xlink:href="#cp12">%GCmin-max
+			</textPath>
+		</text>
+	</g>
+	<g id="t16" />
+	<g id="t17" />
+	<g id="t18" opacity="0.7">
+		<path d="M950.560000000001,1600 A649.439999999999,649.439999999999 -90,1,1 1600,2249.44 A649.439999999999,649.439999999999 -90,1,1 2249.44,1600 " fill="none" id="cp13" stroke="none" />
+		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1020.13796647368" y="0">			<textPath xlink:href="#cp13">%GCmin-max-dfa
+			</textPath>
+		</text>
+	</g>
+	<g id="t19" />
+	<g id="t20">
+		<mask height="3200" id="14" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
+			<rect fill="white" height="3200" r="472.108108108108" width="3200" x="0" y="0" />
+			<circle cx="1600" cy="1600" fill="black" r="472.108108108108" stroke="#000000" stroke-width="0.042" />
+		</mask>
+		<circle cx="1600" cy="1600" fill="#00ff00" mask="url(#14)" r="473.999999999999" stroke="#000000" stroke-width="0.042" />
+		<circle cx="1600" cy="1600" fill="none" r="472.108108108108" stroke="#000000" stroke-width="0.042" />
+		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="432" stroke="black" stroke-dasharray="3, 3" stroke-width="0.084" />
+		<g id="t20.1" opacity="0.6">
+			<path d="M1166.32,1600 A433.68,433.68 -90,1,1 1600,2033.68 A433.68,433.68 -90,1,1 2033.68,1600 " fill="none" id="cp15" stroke="none" />
+			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="681.22295100441" y="0">				<textPath xlink:href="#cp15">min=-1.0000
+				</textPath>
+			</text>
+		</g>
+		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="516" stroke="black" stroke-dasharray="3, 3" stroke-width="0.084" />
+		<g id="t20.2" opacity="0.6">
+			<path d="M1092.82,1600 A507.18,507.18 -90,1,1 1600,2107.18 A507.18,507.18 -90,1,1 2107.18,1600 " fill="none" id="cp16" stroke="none" />
+			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="796.676481023835" y="0">				<textPath xlink:href="#cp16">max=1.0000
+				</textPath>
+			</text>
+		</g>
+		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="472.108108108108" stroke="black" stroke-dasharray="3, 3" stroke-width="0.084" />
+		<g id="t20.3" opacity="0.6">
+			<path d="M1136.71189189189,1600 A463.288108108108,463.288108108108 -90,1,1 1600,2063.28810810811 A463.288108108108,463.288108108108 -90,1,1 2063.28810810811,1600 " fill="none" id="cp17" stroke="none" />
+			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="727.731258463972" y="0">				<textPath xlink:href="#cp17">avg=-0.0450
+				</textPath>
+			</text>
+		</g>
+	</g>
+	<g id="t21" opacity="0.7">
+		<path d="M1154.56,1600 A445.439999999999,445.439999999999 -90,1,1 1600,2045.44 A445.439999999999,445.439999999999 -90,1,1 2045.44,1600 " fill="none" id="cp18" stroke="none" />
+		<text fill="#000000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="699.695515807518" y="0">			<textPath xlink:href="#cp18">%GCskew-1-df0
+			</textPath>
+		</text>
+	</g>
+	<g id="t22" />
+	<g id="t23" />
+	<g id="t24" opacity="0.7">
+		<path d="M1262.56,1600 A337.439999999999,337.439999999999 -90,1,1 1600,1937.44 A337.439999999999,337.439999999999 -90,1,1 1937.44,1600 " fill="none" id="cp19" stroke="none" />
+		<text fill="#000000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="530.049512513669" y="0">			<textPath xlink:href="#cp19">%GCskew-min-max-df0
+			</textPath>
+		</text>
+	</g>
+	<g id="t25" /><!-- 
+	Generated using the Perl SVG Module V2.49
+	by Ronan Oger
+	Info: http://www.roitsystems.com/
+ -->
+</svg>

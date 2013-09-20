@@ -1,0 +1,12 @@
+
+-z-index seems to be getting ignored, at least by Batik?
+
+-The following text is truncated because the path on which the circular text is rendered starts at 9 o'clock
+ and the default text-anchor is middle (at 12 o'clock):
+
+new tl label innerf=0.1,heightf=0.07,label-text=gaps&nbsp;(tiny/small/medium/large),label-type=horizontal
+
+-BioPerl converts all the sequence in GenBank flat files to uppercase, regardless of its original case.
+ (TODO: check whether this is actually a feature/misfeature.)
+
+-contig-gaps images don't show anything on predefined track page because the sample data has no contig gaps :)

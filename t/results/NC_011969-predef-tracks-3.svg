@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg height="3200" printerror="1" raiseerror="0" width="3200" xml_xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs >
+		<marker id="triangle-right" markerHeight="6" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="10" refY="5" viewBox="0 0 10 10">
+			<rect fill="white" height="10" stroke="none" width="10" x1="0" y1="0" />
+			<path d="M 0 0 L 10 5 L 0 10 z" />
+		</marker>
+		<marker id="triangle-left" markerHeight="6" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="0" refY="5" viewBox="0 0 10 10">
+			<rect fill="white" height="10" stroke="none" width="10" x1="0" y1="0" />
+			<path d="M 10 10 L 0 5 L 10 0 z" />
+		</marker>
+	</defs>
+	<g id="t1" opacity="0.7">
+		<path d="M386.56,1600 A1213.44,1213.44 -90,1,1 1600,2813.44 A1213.44,1213.44 -90,1,1 2813.44,1600 " fill="none" id="cp1" stroke="none" />
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1906.067094786" y="0">			<textPath xlink:href="#cp1">
+			</textPath>
+		</text>
+	</g>
+	<g id="t2">
+		<circle cx="1600" cy="1600" fill="none" r="1176" stroke="black" stroke-width="4.8" />
+		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="424" y2="400" />
+		<line stroke="black" stroke-width="2.4" x1="1741.36710828678" x2="1744.25215131304" y1="432.527798748667" y2="408.701835457823" />
+		<line stroke="black" stroke-width="2.4" x1="1880.68396104779" x2="1886.41220515081" y1="457.987515825453" y2="434.681138597401" />
+		<line stroke="black" stroke-width="2.4" x1="2015.93003773433" x2="2024.41840585135" y1="500.009907449016" y2="477.561130050017" />
+		<line stroke="black" stroke-width="2.4" x1="2145.14385650364" x2="2156.26924133025" y1="557.98552039027" y2="536.719918765582" />
+		<line stroke="black" stroke-width="2.4" x1="2266.45142170606" x2="2280.05247112864" y1="631.07353090858" y2="611.299521335285" />
+		<line stroke="black" stroke-width="2.4" x1="2378.09340255462" x2="2393.97285974961" y1="718.21393926816" y2="700.218305375674" />
+		<line stroke="black" stroke-width="2.4" x1="2478.45064880343" x2="2496.37821306472" y1="818.142942976892" y2="802.186676507033" />
+		<line stroke="black" stroke-width="2.4" x1="2566.0676733794" x2="2585.78334018306" y1="929.411265788546" y2="915.725781416883" />
+		<line stroke="black" stroke-width="2.4" x1="2639.67376139725" x2="2660.8915932625" y1="1050.40517664183" y2="1039.18895575697" />
+		<line stroke="black" stroke-width="2.4" x1="2698.20139941261" x2="2720.61367287001" y1="1179.36989369733" y2="1170.78560581361" />
+		<line stroke="black" stroke-width="2.4" x1="2740.80175763257" x2="2764.08342615568" y1="1314.43503404226" y2="1308.60717759415" />
+		<line stroke="black" stroke-width="2.4" x1="2766.85700054434" x2="2790.67040871871" y1="1453.64173996433" y2="1450.65483669829" />
+		<line stroke="black" stroke-width="2.4" x1="2775.9892474202" x2="2799.9890279798" y1="1594.97108838093" y2="1594.86845753156" />
+		<line stroke="black" stroke-width="2.4" x1="2768.06605274403" x2="2791.90413545309" y1="1736.37337139994" y2="1739.15650142851" />
+		<line stroke="black" stroke-width="2.4" x1="2743.20232707644" x2="2766.5329868127" y1="1875.79782335436" y2="1881.42635036159" />
+		<line stroke="black" stroke-width="2.4" x1="2701.75867050016" x2="2724.24354132669" y1="2011.22236317803" y2="2019.61465630411" />
+		<line stroke="black" stroke-width="2.4" x1="2644.33614281567" x2="2665.64912532211" y1="2140.68292076677" y2="2151.71726608854" />
+		<line stroke="black" stroke-width="2.4" x1="2571.76754633545" x2="2591.59953707699" y1="2262.30192200323" y2="2275.8182877584" />
+		<line stroke="black" stroke-width="2.4" x1="2485.10534770279" x2="2503.16872214571" y1="2374.31551932524" y2="2390.11787686249" />
+		<line stroke="black" stroke-width="2.4" x1="2385.60641390589" x2="2401.63919786315" y1="2475.09917291124" y2="2492.95833970535" />
+		<line stroke="black" stroke-width="2.4" x1="2274.71378386161" x2="2288.48345292001" y1="2563.19121147732" y2="2582.84817497686" />
+		<line stroke="black" stroke-width="2.4" x1="2154.03573993686" x2="2165.3425917723" y1="2637.31403098224" y2="2658.48370508392" />
+		<line stroke="black" stroke-width="2.4" x1="2025.3224829343" x2="2034.00253360642" y1="2696.39262379433" y2="2718.7679834636" />
+		<line stroke="black" stroke-width="2.4" x1="1890.44074882672" x2="1896.36811104768" y1="2739.5701695907" y2="2762.82670366398" />
+		<line stroke="black" stroke-width="2.4" x1="1751.34673537492" x2="1754.43544426012" y1="2766.22046187303" y2="2790.02087946228" />
+		<line stroke="black" stroke-width="2.4" x1="1610.05773127593" x2="1610.26299109789" y1="2775.95698987743" y2="2799.95611211982" />
+		<line stroke="black" stroke-width="2.4" x1="1468.62285930588" x2="1465.94169316926" y1="2768.63854416284" y2="2792.48831037024" />
+		<line stroke="black" stroke-width="2.4" x1="1329.09335777122" x2="1323.56465078696" y1="2744.37126457996" y2="2767.72578018363" />
+		<line stroke="black" stroke-width="2.4" x1="1193.4928312784" x2="1185.19676661062" y1="2703.50710091868" y2="2726.02765399865" />
+		<line stroke="black" stroke-width="2.4" x1="1063.78790227666" x2="1052.84479824149" y1="2646.63870855952" y2="2667.99868220359" />
+		<line stroke="black" stroke-width="2.4" x1="941.859689016383" x2="928.428254098349" y1="2574.59085315756" y2="2594.48046240568" />
+		<line stroke="black" stroke-width="2.4" x1="829.476523580008" x2="813.751554673477" y1="2488.40844901748" y2="2506.53923369131" />
+		<line stroke="black" stroke-width="2.4" x1="728.268305657293" x2="710.477862915605" y1="2389.34140463959" y2="2405.45041289754" />
+		<line stroke="black" stroke-width="2.4" x1="639.702864013812" x2="620.1049632794" y1="2278.82649522299" y2="2292.68009716631" />
+		<line stroke="black" stroke-width="2.4" x1="565.064668483614" x2="543.943539268994" y1="2158.46652502999" y2="2169.86380105101" />
+		<line stroke="black" stroke-width="2.4" x1="505.436201227322" x2="483.098164517676" y1="2030.00708182113" y2="2038.78273655217" />
+		<line stroke="black" stroke-width="2.4" x1="461.68225742938" x2="438.451283091204" y1="1895.31122049277" y2="1901.33798009466" />
+		<line stroke="black" stroke-width="2.4" x1="434.437403122387" x2="410.650411349375" y1="1756.33244308177" y2="1759.52290110385" />
+		<line stroke="black" stroke-width="2.4" x1="424.096772038431" x2="400.098746977991" y1="1615.08636701008" y2="1615.3942520511" />
+		<line stroke="black" stroke-width="2.4" x1="430.810334961216" x2="406.949321388996" y1="1473.6214924661" y2="1471.04233925112" />
+		<line stroke="black" stroke-width="2.4" x1="454.480724690926" x2="431.102780296863" y1="1333.98949288539" y2="1328.5607070259" />
+		<line stroke="black" stroke-width="2.4" x1="494.764648166476" x2="472.20882465967" y1="1198.21545940961" y2="1190.01577490777" />
+		<line stroke="black" stroke-width="2.4" x1="551.077865265067" x2="529.671291086803" y1="1068.26853087003" y2="1057.41686823473" />
+		<line stroke="black" stroke-width="2.4" x1="622.603662071211" x2="602.656798031848" y1="946.033335250647" y2="932.687076786374" />
+		<line stroke="black" stroke-width="2.4" x1="708.304695726915" x2="690.106832374403" y1="833.282656817175" y2="817.635364099158" />
+		<line stroke="black" stroke-width="2.4" x1="806.938039076447" x2="790.753101098415" y1="731.651725322098" y2="713.930331961325" />
+		<line stroke="black" stroke-width="2.4" x1="917.073206912338" x2="903.135925420754" y1="642.614500170907" y2="623.076020582558" />
+		<line stroke="black" stroke-width="2.4" x1="1037.11290238688" x2="1025.62541059885" y1="567.462293501747" y2="546.390095409946" />
+		<line stroke="black" stroke-width="2.4" x1="1165.31618270268" x2="1156.44508439049" y1="507.285042209162" y2="484.984736948125" />
+		<line stroke="black" stroke-width="2.4" x1="1299.82370810899" x2="1293.6976613357" y1="462.955500524909" y2="439.750510739703" />
+		<line stroke="black" stroke-width="2.4" x1="1438.68470801592" x2="1435.39255919992" y1="435.116582411746" y2="411.343451440557" />
+		<line stroke="black" stroke-width="2.4" x1="1579.88527313564" x2="1579.47476850576" y1="424.17203734425" y2="400.175548310459" />
+		<path d="M352,1600 A1248,1248 -90,1,1 1600,2848 A1248,1248 -90,1,1 1600,352 " fill="none" id="cp2" stroke="none" />
+		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="424" y2="376" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1960.35381584003" y="0">			<textPath xlink:href="#cp2">0.0Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2266.45142170606" x2="2293.65352055121" y1="631.07353090858" y2="591.525511761991" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="2712.28342945825" y="0">			<textPath xlink:href="#cp2">0.5Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2698.20139941261" x2="2743.02594632741" y1="1179.36989369733" y2="1162.20131792988" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="3464.21304307647" y="0">			<textPath xlink:href="#cp2">1.0Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2743.20232707644" x2="2789.86364654895" y1="1875.79782335436" y2="1887.05487736883" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="4216.14265669469" y="0">			<textPath xlink:href="#cp2">1.5Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2385.60641390589" x2="2417.67198182041" y1="2475.09917291124" y2="2510.81750649945" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="4968.07227031292" y="0">			<textPath xlink:href="#cp2">2.0Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1751.34673537492" x2="1757.52415314533" y1="2766.22046187303" y2="2813.82129705153" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="5720.00188393114" y="0">			<textPath xlink:href="#cp2">2.5Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1063.78790227666" x2="1041.90169420632" y1="2646.63870855952" y2="2689.35865584766" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="6471.93149754936" y="0">			<textPath xlink:href="#cp2">3.0Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="565.064668483614" x2="522.822410054374" y1="2158.46652502999" y2="2181.26107707203" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="7223.86111116758" y="0">			<textPath xlink:href="#cp2">3.5Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="430.810334961216" x2="383.088307816776" y1="1473.6214924661" y2="1468.46318603614" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="7975.7907247858" y="0">			<textPath xlink:href="#cp2">4.0Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="708.304695726915" x2="671.908969021891" y1="833.282656817175" y2="801.988071381141" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="8727.72033840402" y="0">			<textPath xlink:href="#cp2">4.5Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1299.82370810899" x2="1287.57161456241" y1="462.955500524909" y2="416.545520954497" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="9479.64995202224" y="0">			<textPath xlink:href="#cp2">5.0Mb
+			</textPath>
+		</text>
+	</g>
+	<g id="t3" opacity="0.7">
+		<path d="M410.56,1600 A1189.44,1189.44 -90,1,1 1600,2789.44 A1189.44,1189.44 -90,1,1 2789.44,1600 " fill="none" id="cp3" stroke="none" />
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1868.36798294292" y="0">			<textPath xlink:href="#cp3">coords
+			</textPath>
+		</text>
+	</g>
+	<g id="t4" />
+	<g id="t5">
+		<mask height="3200" id="4" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
+			<rect fill="white" height="3200" r="1068" width="3200" x="0" y="0" />
+			<circle cx="1600" cy="1600" fill="black" r="1068" stroke="black" stroke-width="0.042" />
+		</mask>
+		<circle cx="1600" cy="1600" fill="#0000ff" mask="url(#4)" r="1152" stroke="black" stroke-width="0.042" />
+		<circle cx="1600" cy="1600" fill="none" r="1068" stroke="black" stroke-width="0.042" />
+	</g>
+	<g id="t6" opacity="0.7">
+		<path d="M518.56,1600 A1081.44,1081.44 -90,1,1 1600,2681.44 A1081.44,1081.44 -90,1,1 2681.44,1600 " fill="none" id="cp5" stroke="none" />
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1698.72197964907" y="0">			<textPath xlink:href="#cp5">contigs
+			</textPath>
+		</text>
+	</g>
+	<g id="t7" />
+	<g id="t8">
+		<path d="M581.2,1600 A1018.8,1018.8 -90,1,1 1600,2618.8 A1018.8,1018.8 -90,1,1 2618.8,1600 " fill="none" id="cp6" stroke="none" />
+		<text fill="black" font-size="21" text-anchor="middle" x="1600.32729773864" y="0">			<textPath xlink:href="#cp6">small label
+			</textPath>
+		</text>
+	</g>
+	<g id="t9">
+		<path d="M636.4,1600 A963.6,963.6 -90,1,1 1600,2563.6 A963.6,963.6 -90,1,1 2563.6,1600 " fill="none" id="cp7" stroke="none" />
+		<text fill="black" font-size="42" text-anchor="middle" x="1513.61934049956" y="0">			<textPath xlink:href="#cp7">medium label
+			</textPath>
+		</text>
+	</g>
+	<g id="t10">
+		<path d="M746.8,1600 A853.2,853.2 -90,1,1 1600,2453.2 A853.2,853.2 -90,1,1 2453.2,1600 " fill="none" id="cp8" stroke="none" />
+		<text fill="black" font-size="84" text-anchor="middle" x="1340.20342602141" y="0">			<textPath xlink:href="#cp8">large label
+			</textPath>
+		</text>
+	</g>
+	<g id="t11" />
+	<g id="t12">
+		<mask height="3200" id="9" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
+			<rect fill="white" height="3200" r="726" width="3200" x="0" y="0" />
+			<circle cx="1600" cy="1600" fill="black" r="726" stroke="black" stroke-width="0.042" />
+		</mask>
+		<circle cx="1600" cy="1600" fill="#0000ff" mask="url(#9)" r="810" stroke="black" stroke-width="0.042" />
+		<circle cx="1600" cy="1600" fill="none" r="726" stroke="black" stroke-width="0.042" />
+	</g>
+	<g id="t13" />
+	<g id="t14">
+		<mask height="3200" id="10" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
+			<rect fill="white" height="3200" r="630" width="3200" x="0" y="0" />
+			<circle cx="1600" cy="1600" fill="black" r="630" stroke="black" stroke-width="0.042" />
+		</mask>
+		<circle cx="1600" cy="1600" fill="#0000ff" mask="url(#10)" r="714" stroke="black" stroke-width="0.042" />
+		<circle cx="1600" cy="1600" fill="none" r="630" stroke="black" stroke-width="0.042" />
+	</g>
+	<g id="t15" />
+	<g id="t16">
+		<mask height="3200" id="11" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
+			<rect fill="white" height="3200" r="522" width="3200" x="0" y="0" />
+			<circle cx="1600" cy="1600" fill="black" r="522" stroke="black" stroke-width="0.042" />
+		</mask>
+		<circle cx="1600" cy="1600" fill="#0000ff" mask="url(#11)" r="606" stroke="black" stroke-width="0.042" />
+		<circle cx="1600" cy="1600" fill="none" r="522" stroke="black" stroke-width="0.042" />
+	</g>
+	<g id="t17" />
+	<g id="t18">
+		<mask height="3200" id="12" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
+			<rect fill="white" height="3200" r="378" width="3200" x="0" y="0" />
+			<circle cx="1600" cy="1600" fill="black" r="378" stroke="black" stroke-width="0.042" />
+		</mask>
+		<circle cx="1600" cy="1600" fill="#0000ff" mask="url(#12)" r="462" stroke="black" stroke-width="0.042" />
+		<circle cx="1600" cy="1600" fill="none" r="378" stroke="black" stroke-width="0.042" />
+	</g>
+	<g id="t19" />
+	<g id="t20">
+		<mask height="3200" id="13" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
+			<rect fill="white" height="3200" r="174" width="3200" x="0" y="0" />
+			<circle cx="1600" cy="1600" fill="black" r="174" stroke="black" stroke-width="0.042" />
+		</mask>
+		<circle cx="1600" cy="1600" fill="#0000ff" mask="url(#13)" r="258" stroke="black" stroke-width="0.042" />
+		<circle cx="1600" cy="1600" fill="none" r="174" stroke="black" stroke-width="0.042" />
+	</g>
+	<g id="t21" opacity="0.7">
+		<path d="M1412.56,1600 A187.44,187.44 -90,1,1 1600,1787.44 A187.44,187.44 -90,1,1 1787.44,1600 " fill="none" id="cp14" stroke="none" />		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="1600" y="1426">gaps (tiny/small/medium/large)
+		</text>
+	</g><!-- 
+	Generated using the Perl SVG Module V2.49
+	by Ronan Oger
+	Info: http://www.roitsystems.com/
+ -->
+</svg>

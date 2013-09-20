@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg height="3200" printerror="1" raiseerror="0" width="3200" xml_xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs >
+		<marker id="triangle-right" markerHeight="6" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="10" refY="5" viewBox="0 0 10 10">
+			<rect fill="white" height="10" stroke="none" width="10" x1="0" y1="0" />
+			<path d="M 0 0 L 10 5 L 0 10 z" />
+		</marker>
+		<marker id="triangle-left" markerHeight="6" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="0" refY="5" viewBox="0 0 10 10">
+			<rect fill="white" height="10" stroke="none" width="10" x1="0" y1="0" />
+			<path d="M 10 10 L 0 5 L 10 0 z" />
+		</marker>
+	</defs>
+	<g id="t1">
+		<circle cx="1600" cy="1600" fill="none" r="1176" stroke="black" stroke-width="4.8" />
+		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="424" y2="400" />
+		<line stroke="black" stroke-width="2.4" x1="1741.36710828678" x2="1744.25215131304" y1="432.527798748667" y2="408.701835457823" />
+		<line stroke="black" stroke-width="2.4" x1="1880.68396104779" x2="1886.41220515081" y1="457.987515825453" y2="434.681138597401" />
+		<line stroke="black" stroke-width="2.4" x1="2015.93003773433" x2="2024.41840585135" y1="500.009907449016" y2="477.561130050017" />
+		<line stroke="black" stroke-width="2.4" x1="2145.14385650364" x2="2156.26924133025" y1="557.98552039027" y2="536.719918765582" />
+		<line stroke="black" stroke-width="2.4" x1="2266.45142170606" x2="2280.05247112864" y1="631.07353090858" y2="611.299521335285" />
+		<line stroke="black" stroke-width="2.4" x1="2378.09340255462" x2="2393.97285974961" y1="718.21393926816" y2="700.218305375674" />
+		<line stroke="black" stroke-width="2.4" x1="2478.45064880343" x2="2496.37821306472" y1="818.142942976892" y2="802.186676507033" />
+		<line stroke="black" stroke-width="2.4" x1="2566.0676733794" x2="2585.78334018306" y1="929.411265788546" y2="915.725781416883" />
+		<line stroke="black" stroke-width="2.4" x1="2639.67376139725" x2="2660.8915932625" y1="1050.40517664183" y2="1039.18895575697" />
+		<line stroke="black" stroke-width="2.4" x1="2698.20139941261" x2="2720.61367287001" y1="1179.36989369733" y2="1170.78560581361" />
+		<line stroke="black" stroke-width="2.4" x1="2740.80175763257" x2="2764.08342615568" y1="1314.43503404226" y2="1308.60717759415" />
+		<line stroke="black" stroke-width="2.4" x1="2766.85700054434" x2="2790.67040871871" y1="1453.64173996433" y2="1450.65483669829" />
+		<line stroke="black" stroke-width="2.4" x1="2775.9892474202" x2="2799.9890279798" y1="1594.97108838093" y2="1594.86845753156" />
+		<line stroke="black" stroke-width="2.4" x1="2768.06605274403" x2="2791.90413545309" y1="1736.37337139994" y2="1739.15650142851" />
+		<line stroke="black" stroke-width="2.4" x1="2743.20232707644" x2="2766.5329868127" y1="1875.79782335436" y2="1881.42635036159" />
+		<line stroke="black" stroke-width="2.4" x1="2701.75867050016" x2="2724.24354132669" y1="2011.22236317803" y2="2019.61465630411" />
+		<line stroke="black" stroke-width="2.4" x1="2644.33614281567" x2="2665.64912532211" y1="2140.68292076677" y2="2151.71726608854" />
+		<line stroke="black" stroke-width="2.4" x1="2571.76754633545" x2="2591.59953707699" y1="2262.30192200323" y2="2275.8182877584" />
+		<line stroke="black" stroke-width="2.4" x1="2485.10534770279" x2="2503.16872214571" y1="2374.31551932524" y2="2390.11787686249" />
+		<line stroke="black" stroke-width="2.4" x1="2385.60641390589" x2="2401.63919786315" y1="2475.09917291124" y2="2492.95833970535" />
+		<line stroke="black" stroke-width="2.4" x1="2274.71378386161" x2="2288.48345292001" y1="2563.19121147732" y2="2582.84817497686" />
+		<line stroke="black" stroke-width="2.4" x1="2154.03573993686" x2="2165.3425917723" y1="2637.31403098224" y2="2658.48370508392" />
+		<line stroke="black" stroke-width="2.4" x1="2025.3224829343" x2="2034.00253360642" y1="2696.39262379433" y2="2718.7679834636" />
+		<line stroke="black" stroke-width="2.4" x1="1890.44074882672" x2="1896.36811104768" y1="2739.5701695907" y2="2762.82670366398" />
+		<line stroke="black" stroke-width="2.4" x1="1751.34673537492" x2="1754.43544426012" y1="2766.22046187303" y2="2790.02087946228" />
+		<line stroke="black" stroke-width="2.4" x1="1610.05773127593" x2="1610.26299109789" y1="2775.95698987743" y2="2799.95611211982" />
+		<line stroke="black" stroke-width="2.4" x1="1468.62285930588" x2="1465.94169316926" y1="2768.63854416284" y2="2792.48831037024" />
+		<line stroke="black" stroke-width="2.4" x1="1329.09335777122" x2="1323.56465078696" y1="2744.37126457996" y2="2767.72578018363" />
+		<line stroke="black" stroke-width="2.4" x1="1193.4928312784" x2="1185.19676661062" y1="2703.50710091868" y2="2726.02765399865" />
+		<line stroke="black" stroke-width="2.4" x1="1063.78790227666" x2="1052.84479824149" y1="2646.63870855952" y2="2667.99868220359" />
+		<line stroke="black" stroke-width="2.4" x1="941.859689016383" x2="928.428254098349" y1="2574.59085315756" y2="2594.48046240568" />
+		<line stroke="black" stroke-width="2.4" x1="829.476523580008" x2="813.751554673477" y1="2488.40844901748" y2="2506.53923369131" />
+		<line stroke="black" stroke-width="2.4" x1="728.268305657293" x2="710.477862915605" y1="2389.34140463959" y2="2405.45041289754" />
+		<line stroke="black" stroke-width="2.4" x1="639.702864013812" x2="620.1049632794" y1="2278.82649522299" y2="2292.68009716631" />
+		<line stroke="black" stroke-width="2.4" x1="565.064668483614" x2="543.943539268994" y1="2158.46652502999" y2="2169.86380105101" />
+		<line stroke="black" stroke-width="2.4" x1="505.436201227322" x2="483.098164517676" y1="2030.00708182113" y2="2038.78273655217" />
+		<line stroke="black" stroke-width="2.4" x1="461.68225742938" x2="438.451283091204" y1="1895.31122049277" y2="1901.33798009466" />
+		<line stroke="black" stroke-width="2.4" x1="434.437403122387" x2="410.650411349375" y1="1756.33244308177" y2="1759.52290110385" />
+		<line stroke="black" stroke-width="2.4" x1="424.096772038431" x2="400.098746977991" y1="1615.08636701008" y2="1615.3942520511" />
+		<line stroke="black" stroke-width="2.4" x1="430.810334961216" x2="406.949321388996" y1="1473.6214924661" y2="1471.04233925112" />
+		<line stroke="black" stroke-width="2.4" x1="454.480724690926" x2="431.102780296863" y1="1333.98949288539" y2="1328.5607070259" />
+		<line stroke="black" stroke-width="2.4" x1="494.764648166476" x2="472.20882465967" y1="1198.21545940961" y2="1190.01577490777" />
+		<line stroke="black" stroke-width="2.4" x1="551.077865265067" x2="529.671291086803" y1="1068.26853087003" y2="1057.41686823473" />
+		<line stroke="black" stroke-width="2.4" x1="622.603662071211" x2="602.656798031848" y1="946.033335250647" y2="932.687076786374" />
+		<line stroke="black" stroke-width="2.4" x1="708.304695726915" x2="690.106832374403" y1="833.282656817175" y2="817.635364099158" />
+		<line stroke="black" stroke-width="2.4" x1="806.938039076447" x2="790.753101098415" y1="731.651725322098" y2="713.930331961325" />
+		<line stroke="black" stroke-width="2.4" x1="917.073206912338" x2="903.135925420754" y1="642.614500170907" y2="623.076020582558" />
+		<line stroke="black" stroke-width="2.4" x1="1037.11290238688" x2="1025.62541059885" y1="567.462293501747" y2="546.390095409946" />
+		<line stroke="black" stroke-width="2.4" x1="1165.31618270268" x2="1156.44508439049" y1="507.285042209162" y2="484.984736948125" />
+		<line stroke="black" stroke-width="2.4" x1="1299.82370810899" x2="1293.6976613357" y1="462.955500524909" y2="439.750510739703" />
+		<line stroke="black" stroke-width="2.4" x1="1438.68470801592" x2="1435.39255919992" y1="435.116582411746" y2="411.343451440557" />
+		<line stroke="black" stroke-width="2.4" x1="1579.88527313564" x2="1579.47476850576" y1="424.17203734425" y2="400.175548310459" />
+		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="424" y2="376" />
+		<g transform="translate(1600, 352)">			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(-90)" x="0" y="0">0.0Mb
+			</text>
+		</g>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2266.45142170606" x2="2293.65352055121" y1="631.07353090858" y2="591.525511761991" />
+		<g transform="translate(2307.25456997378, 571.751502188697)">			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(-55.4788514813888)" x="0" y="0">0.5Mb
+			</text>
+		</g>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2698.20139941261" x2="2743.02594632741" y1="1179.36989369733" y2="1162.20131792988" />
+		<g transform="translate(2765.43821978481, 1153.61703004615)">			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(-20.9577029627776)" x="0" y="0">1.0Mb
+			</text>
+		</g>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2743.20232707644" x2="2789.86364654895" y1="1875.79782335436" y2="1887.05487736883" />
+		<g transform="translate(2813.19430628521, 1932.68340437606)">			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(13.5634455558336)" x="0" y="0">1.5Mb
+			</text>
+		</g>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2385.60641390589" x2="2417.67198182041" y1="2475.09917291124" y2="2510.81750649945" />
+		<g transform="translate(2433.70476577767, 2568.67667329356)">			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(48.0845940744449)" x="0" y="0">2.0Mb
+			</text>
+		</g>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1751.34673537492" x2="1757.52415314533" y1="2766.22046187303" y2="2813.82129705153" />
+		<g transform="translate(1760.61286203053, 2877.62171464077)">			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(82.605742593056)" x="0" y="0">2.5Mb
+			</text>
+		</g>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1063.78790227666" x2="1041.90169420632" y1="2646.63870855952" y2="2689.35865584766" />
+		<g transform="translate(1030.95859017115, 2750.71862949173)">			<text font-size="50" font-weight="bold" text-anchor="end" transform="rotate(297.126891111667)" x="0" y="0">3.0Mb
+			</text>
+		</g>
+		<line stroke="black" stroke-width="9.60000000000001" x1="565.064668483614" x2="522.822410054374" y1="2158.46652502999" y2="2181.26107707203" />
+		<g transform="translate(501.701280839754, 2232.65835309305)">			<text font-size="50" font-weight="bold" text-anchor="end" transform="rotate(331.648039630279)" x="0" y="0">3.5Mb
+			</text>
+		</g>
+		<line stroke="black" stroke-width="9.60000000000001" x1="430.810334961216" x2="383.088307816776" y1="1473.6214924661" y2="1468.46318603614" />
+		<g transform="translate(359.227294244556, 1465.88403282116)">			<text font-size="50" font-weight="bold" text-anchor="end" transform="rotate(366.16918814889)" x="0" y="0">4.0Mb
+			</text>
+		</g>
+		<line stroke="black" stroke-width="9.60000000000001" x1="708.304695726915" x2="671.908969021891" y1="833.282656817175" y2="801.988071381141" />
+		<g transform="translate(653.711105669379, 786.340778663124)">			<text font-size="50" font-weight="bold" text-anchor="end" transform="rotate(400.690336667501)" x="0" y="0">4.5Mb
+			</text>
+		</g>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1299.82370810899" x2="1287.57161456241" y1="462.955500524909" y2="416.545520954497" />
+		<g transform="translate(1281.44556778913, 393.340531169291)">			<text font-size="50" font-weight="bold" text-anchor="end" transform="rotate(435.211485186112)" x="0" y="0">5.0Mb
+			</text>
+		</g>
+	</g>
+	<g id="t2" />
+	<g id="t3" />
+	<g id="t4">
+		<circle cx="1600" cy="1600" fill="none" r="912" stroke="black" stroke-width="4.8" />
+		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="688" y2="664" />
+		<line stroke="black" stroke-width="2.4" x1="1709.63163499791" x2="1712.51667802417" y1="694.613394947945" y2="670.787431657102" />
+		<line stroke="black" stroke-width="2.4" x1="1817.67327591462" x2="1823.40152001763" y1="714.357665334025" y2="691.051288105973" />
+		<line stroke="black" stroke-width="2.4" x1="1922.55798844703" x2="1931.04635656406" y1="746.946458838013" y2="724.497681439013" />
+		<line stroke="black" stroke-width="2.4" x1="2022.76462341099" x2="2033.89000823759" y1="791.907138261842" y2="770.641536637154" />
+		<line stroke="black" stroke-width="2.4" x1="2116.83987805776" x2="2130.44092748034" y1="848.587636214817" y2="828.813626641523" />
+		<line stroke="black" stroke-width="2.4" x1="2203.4193734097" x2="2219.2988306047" y1="916.165912085512" y2="898.170278193026" />
+		<line stroke="black" stroke-width="2.4" x1="2281.24744192919" x2="2299.17500619048" y1="993.661874145345" y2="977.705607675485" />
+		<line stroke="black" stroke-width="2.4" x1="2349.19533853912" x2="2368.91100534278" y1="1079.95159387683" y2="1066.26610950517" />
+		<line stroke="black" stroke-width="2.4" x1="2406.2776108795" x2="2427.49544274475" y1="1173.7836063753" y2="1162.56738549044" />
+		<line stroke="black" stroke-width="2.4" x1="2451.66639138121" x2="2474.07866483861" y1="1273.79706041834" y2="1265.21277253461" />
+		<line stroke="black" stroke-width="2.4" x1="2484.70340387832" x2="2507.98507240143" y1="1378.54145497155" y2="1372.71359852343" />
+		<line stroke="black" stroke-width="2.4" x1="2504.90951062622" x2="2528.7229188006" y1="1486.4976758907" y2="1483.51077262467" />
+		<line stroke="black" stroke-width="2.4" x1="2511.99166126464" x2="2535.99144182424" y1="1596.10002772399" y2="1595.99739687462" />
+		<line stroke="black" stroke-width="2.4" x1="2505.84714294435" x2="2529.68522565341" y1="1705.75894108567" y2="1708.54207111424" />
+		<line stroke="black" stroke-width="2.4" x1="2486.56506997765" x2="2509.8957297139" y1="1813.88402627481" y2="1819.51255328204" />
+		<line stroke="black" stroke-width="2.4" x1="2454.42509140829" x2="2476.90996223482" y1="1918.90713879112" y2="1927.2994319172" />
+		<line stroke="black" stroke-width="2.4" x1="2409.89333524481" x2="2431.20631775125" y1="2019.30512222729" y2="2030.33946754906" />
+		<line stroke="black" stroke-width="2.4" x1="2353.61564817851" x2="2373.44763892005" y1="2113.62189869638" y2="2127.13826445155" />
+		<line stroke="black" stroke-width="2.4" x1="2286.40822883074" x2="2304.47160327365" y1="2200.48958641549" y2="2216.29194395274" />
+		<line stroke="black" stroke-width="2.4" x1="2209.24579037599" x2="2225.27857433326" y1="2278.64833817606" y2="2296.50750497017" />
+		<line stroke="black" stroke-width="2.4" x1="2123.24742421921" x2="2137.01709327761" y1="2346.96461298241" y2="2366.62157648195" />
+		<line stroke="black" stroke-width="2.4" x1="2029.66036974695" x2="2040.9672215824" y1="2404.44761586378" y2="2425.61728996545" />
+		<line stroke="black" stroke-width="2.4" x1="1929.84192554088" x2="1938.52197621301" y1="2450.26366743233" y2="2472.63902710161" />
+		<line stroke="black" stroke-width="2.4" x1="1825.23976439623" x2="1831.16712661719" y1="2483.74829478462" y2="2507.0048288579" />
+		<line stroke="black" stroke-width="2.4" x1="1717.37093763769" x2="1720.4596465229" y1="2504.41586839133" y2="2528.21628598058" />
+		<line stroke="black" stroke-width="2.4" x1="1607.7998732344" x2="1608.00513305636" y1="2511.96664521107" y2="2535.96576745346" />
+		<line stroke="black" stroke-width="2.4" x1="1498.11568680864" x2="1495.43452067202" y1="2506.29111588138" y2="2530.14088208879" />
+		<line stroke="black" stroke-width="2.4" x1="1389.90913459809" x2="1384.38042761383" y1="2487.47159293956" y2="2510.82610854323" />
+		<line stroke="black" stroke-width="2.4" x1="1284.74954262407" x2="1276.45347795628" y1="2455.78101703898" y2="2478.30157011895" />
+		<line stroke="black" stroke-width="2.4" x1="1184.16204666353" x2="1173.21894262836" y1="2411.67899847473" y2="2433.0389721188" />
+		<line stroke="black" stroke-width="2.4" x1="1089.60547311475" x2="1076.17403819671" y1="2355.80515142831" y2="2375.69476067643" />
+		<line stroke="black" stroke-width="2.4" x1="1002.45118155184" x2="986.726212645312" y1="2288.9698176054" y2="2307.10060227922" />
+		<line stroke="black" stroke-width="2.4" x1="923.96317581586" x2="906.172733074172" y1="2212.14231380213" y2="2228.25132206008" />
+		<line stroke="black" stroke-width="2.4" x1="855.279772092344" x2="835.681871357932" y1="2126.4368738464" y2="2140.29047578972" />
+		<line stroke="black" stroke-width="2.4" x1="797.397089844436" x2="776.275960629816" y1="2033.09648879877" y2="2044.49376481979" />
+		<line stroke="black" stroke-width="2.4" x1="751.154605033434" x2="728.816568323787" y1="1933.47487977965" y2="1942.2505345107" />
+		<line stroke="black" stroke-width="2.4" x1="717.222975149315" x2="693.992000811139" y1="1829.01686487194" y2="1835.04362447383" />
+		<line stroke="black" stroke-width="2.4" x1="696.094312625525" x2="672.307320852512" y1="1721.23740483893" y2="1724.427862861" />
+		<line stroke="black" stroke-width="2.4" x1="688.075047703273" x2="664.077022642833" y1="1611.69963155884" y2="1612.00751659986" />
+		<line stroke="black" stroke-width="2.4" x1="693.281484255637" x2="669.420470683417" y1="1501.99217783085" y2="1499.41302461587" />
+		<line stroke="black" stroke-width="2.4" x1="711.638113025616" x2="688.260168631553" y1="1393.70613733969" y2="1388.27735148021" />
+		<line stroke="black" stroke-width="2.4" x1="742.878706741349" x2="720.322883234542" y1="1288.4119889299" y2="1280.21230442806" />
+		<line stroke="black" stroke-width="2.4" x1="786.550181225971" x2="765.143607047707" y1="1187.63681985839" y2="1176.78515722309" />
+		<line stroke="black" stroke-width="2.4" x1="842.019166504205" x2="822.072302464842" y1="1092.84217835764" y2="1079.49591989337" />
+		<line stroke="black" stroke-width="2.4" x1="908.481192604546" x2="890.283329252034" y1="1005.40287671536" y2="989.755583997343" />
+		<line stroke="black" stroke-width="2.4" x1="984.972356834795" x2="968.787418856764" y1="926.587052290607" y2="908.865658929833" />
+		<line stroke="black" stroke-width="2.4" x1="1070.38330331977" x2="1056.44602182819" y1="857.537775642744" y2="837.999296054395" />
+		<line stroke="black" stroke-width="2.4" x1="1163.47531205513" x2="1151.98782026711" y1="799.256472511559" y2="778.184274419758" />
+		<line stroke="black" stroke-width="2.4" x1="1262.89826413677" x2="1254.02716582458" y1="752.588400080575" y2="730.288094819537" />
+		<line stroke="black" stroke-width="2.4" x1="1367.21022261513" x2="1361.08417584185" y1="718.210388162174" y2="695.005398376968" />
+		<line stroke="black" stroke-width="2.4" x1="1474.89834499194" x2="1471.60619617593" y1="696.621023094823" y2="672.847892123635" />
+		<line stroke="black" stroke-width="2.4" x1="1584.40082406437" x2="1583.99031943449" y1="688.133416715949" y2="664.136927682158" />
+		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="688" y2="640" />		<text font-size="50" font-weight="bold" text-anchor="start" x="1600" y="616">0.0Mb
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2116.83987805776" x2="2144.04197690291" y1="848.587636214817" y2="809.039617068228" />		<text font-size="50" font-weight="bold" text-anchor="start" x="2157.64302632548" y="789.265607494934">0.5Mb
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2451.66639138121" x2="2496.49093829601" y1="1273.79706041834" y2="1256.62848465088" />		<text font-size="50" font-weight="bold" text-anchor="start" x="2518.90321175341" y="1248.04419676716">1.0Mb
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2486.56506997765" x2="2533.22638945016" y1="1813.88402627481" y2="1825.14108028928" />		<text font-size="50" font-weight="bold" text-anchor="start" x="2556.55704918641" y="1870.76960729651">1.5Mb
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2209.24579037599" x2="2241.31135829052" y1="2278.64833817606" y2="2314.36667176428" />		<text font-size="50" font-weight="bold" text-anchor="start" x="2257.34414224778" y="2372.22583855838">2.0Mb
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1717.37093763769" x2="1723.5483554081" y1="2504.41586839133" y2="2552.01670356982" />		<text font-size="50" font-weight="bold" text-anchor="start" x="1726.6370642933" y="2615.81712115907">2.5Mb
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1184.16204666353" x2="1162.27583859319" y1="2411.67899847473" y2="2454.39894576287" />		<text font-size="50" font-weight="bold" text-anchor="end" x="1151.33273455802" y="2515.75891940694">3.0Mb
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="797.397089844436" x2="755.154831415195" y1="2033.09648879877" y2="2055.89104084081" />		<text font-size="50" font-weight="bold" text-anchor="end" x="734.033702200575" y="2107.28831686183">3.5Mb
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="693.281484255637" x2="645.559457111197" y1="1501.99217783085" y2="1496.8338714009" />		<text font-size="50" font-weight="bold" text-anchor="end" x="621.698443538977" y="1494.25471818592">4.0Mb
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="908.481192604546" x2="872.085465899522" y1="1005.40287671536" y2="974.108291279326" />		<text font-size="50" font-weight="bold" text-anchor="end" x="853.88760254701" y="958.460998561309">4.5Mb
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1367.21022261513" x2="1354.95812906856" y1="718.210388162174" y2="671.800408591762" />		<text font-size="50" font-weight="bold" text-anchor="end" x="1348.83208229527" y="648.595418806556">5.0Mb
+		</text>
+	</g>
+	<g id="t5" />
+	<g id="t6" />
+	<g id="t7">
+		<circle cx="1600" cy="1600" fill="none" r="648" stroke="black" stroke-width="4.8" />
+		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="952" y2="928" />
+		<line stroke="black" stroke-width="2.4" x1="1677.89616170904" x2="1680.7812047353" y1="956.698991147224" y2="932.873027856381" />
+		<line stroke="black" stroke-width="2.4" x1="1754.66259078144" x2="1760.39083488445" y1="970.727814842596" y2="947.421437614544" />
+		<line stroke="black" stroke-width="2.4" x1="1829.18593915973" x2="1837.67430727676" y1="993.883010227009" y2="971.434232828009" />
+		<line stroke="black" stroke-width="2.4" x1="1900.38539031833" x2="1911.51077514494" y1="1025.82875613341" y2="1004.56315450873" />
+		<line stroke="black" stroke-width="2.4" x1="1967.22833440946" x2="1980.82938383204" y1="1066.10174152105" y2="1046.32773194776" />
+		<line stroke="black" stroke-width="2.4" x1="2028.74534426479" x2="2044.62480145978" y1="1114.11788490286" y2="1096.12225101038" />
+		<line stroke="black" stroke-width="2.4" x1="2084.04423505495" x2="2101.97179931624" y1="1169.1808053138" y2="1153.22453884394" />
+		<line stroke="black" stroke-width="2.4" x1="2132.32300369885" x2="2152.03867050251" y1="1230.49192196512" y2="1216.80643759345" />
+		<line stroke="black" stroke-width="2.4" x1="2172.88146036175" x2="2194.099292227" y1="1297.16203610876" y2="1285.9458152239" />
+		<line stroke="black" stroke-width="2.4" x1="2205.1313833498" x2="2227.5436568072" y1="1368.22422713935" y2="1359.63993925562" />
+		<line stroke="black" stroke-width="2.4" x1="2228.60505012407" x2="2251.88671864718" y1="1442.64787590084" y2="1436.82001945272" />
+		<line stroke="black" stroke-width="2.4" x1="2242.9620207081" x2="2266.77542888248" y1="1519.35361181708" y2="1516.36670855104" />
+		<line stroke="black" stroke-width="2.4" x1="2247.99407510909" x2="2271.99385566869" y1="1597.22896706704" y2="1597.12633621768" />
+		<line stroke="black" stroke-width="2.4" x1="2243.62823314467" x2="2267.46631585373" y1="1675.1445107714" y2="1677.92764079997" />
+		<line stroke="black" stroke-width="2.4" x1="2229.92781287886" x2="2253.25847261511" y1="1751.97022919526" y2="1757.59875620249" />
+		<line stroke="black" stroke-width="2.4" x1="2207.09151231641" x2="2229.57638314295" y1="1826.59191440422" y2="1834.9842075303" />
+		<line stroke="black" stroke-width="2.4" x1="2175.45052767394" x2="2196.76351018038" y1="1897.92732368781" y2="1908.96166900958" />
+		<line stroke="black" stroke-width="2.4" x1="2135.46375002158" x2="2155.29574076312" y1="1964.94187538954" y2="1978.4582411447" />
+		<line stroke="black" stroke-width="2.4" x1="2087.71110995868" x2="2105.7744844016" y1="2026.66365350575" y2="2042.46601104299" />
+		<line stroke="black" stroke-width="2.4" x1="2032.8851668461" x2="2048.91795080336" y1="2082.19750344089" y2="2100.05667023499" />
+		<line stroke="black" stroke-width="2.4" x1="1971.78106457681" x2="1985.55073363521" y1="2130.7380144875" y2="2150.39497798704" />
+		<line stroke="black" stroke-width="2.4" x1="1905.28499955704" x2="1916.59185139249" y1="2171.58120074532" y2="2192.75087484699" />
+		<line stroke="black" stroke-width="2.4" x1="1834.36136814747" x2="1843.0414188196" y1="2204.13471107034" y2="2226.51007073962" />
+		<line stroke="black" stroke-width="2.4" x1="1760.03877996574" x2="1765.9661421867" y1="2227.92641997855" y2="2251.18295405183" />
+		<line stroke="black" stroke-width="2.4" x1="1683.39513990047" x2="1686.48384878567" y1="2242.61127490963" y2="2266.41169249888" />
+		<line stroke="black" stroke-width="2.4" x1="1605.54201519286" x2="1605.74727501482" y1="2247.97630054471" y2="2271.9754227871" />
+		<line stroke="black" stroke-width="2.4" x1="1527.6085143114" x2="1524.92734817479" y1="2243.94368759993" y2="2267.79345380734" />
+		<line stroke="black" stroke-width="2.4" x1="1450.72491142496" x2="1445.1962044407" y1="2230.57192129916" y2="2253.92643690283" />
+		<line stroke="black" stroke-width="2.4" x1="1376.00625396973" x2="1367.71018930195" y1="2208.05493315927" y2="2230.57548623925" />
+		<line stroke="black" stroke-width="2.4" x1="1304.5361910504" x2="1293.59308701523" y1="2176.71928838994" y2="2198.07926203401" />
+		<line stroke="black" stroke-width="2.4" x1="1237.35125721311" x2="1223.91982229508" y1="2137.01944969907" y2="2156.90905894718" />
+		<line stroke="black" stroke-width="2.4" x1="1175.42583952368" x2="1159.70087061715" y1="2089.53118619331" y2="2107.66197086713" />
+		<line stroke="black" stroke-width="2.4" x1="1119.65804597443" x2="1101.86760323274" y1="2034.94322296467" y2="2051.05223122262" />
+		<line stroke="black" stroke-width="2.4" x1="1070.85668017088" x2="1051.25877943646" y1="1974.04725246981" y2="1987.90085441314" />
+		<line stroke="black" stroke-width="2.4" x1="1029.72951120526" x2="1008.60838199064" y1="1907.72645256754" y2="1919.12372858856" />
+		<line stroke="black" stroke-width="2.4" x1="996.873008839545" x2="974.534972129898" y1="1836.94267773817" y2="1845.71833246922" />
+		<line stroke="black" stroke-width="2.4" x1="972.76369286925" x2="949.532718531074" y1="1762.72250925112" y2="1768.74926885301" />
+		<line stroke="black" stroke-width="2.4" x1="957.751222128662" x2="933.96423035565" y1="1686.14236659608" y2="1689.33282461816" />
+		<line stroke="black" stroke-width="2.4" x1="952.053323368115" x2="928.055298307675" y1="1608.3128961076" y2="1608.62078114862" />
+		<line stroke="black" stroke-width="2.4" x1="955.752633550058" x2="931.891619977838" y1="1530.3628631956" y2="1527.78370998063" />
+		<line stroke="black" stroke-width="2.4" x1="968.795501360306" x2="945.417556966243" y1="1453.42278179399" y2="1447.99399593451" />
+		<line stroke="black" stroke-width="2.4" x1="990.992765316222" x2="968.436941809415" y1="1378.6085184502" y2="1370.40883394835" />
+		<line stroke="black" stroke-width="2.4" x1="1022.02249718687" x2="1000.61592300861" y1="1307.00510884675" y2="1296.15344621145" />
+		<line stroke="black" stroke-width="2.4" x1="1061.4346709372" x2="1041.48780689784" y1="1239.65102146464" y2="1226.30476300037" />
+		<line stroke="black" stroke-width="2.4" x1="1108.65768948218" x2="1090.45982612967" y1="1177.52309661355" y2="1161.87580389553" />
+		<line stroke="black" stroke-width="2.4" x1="1163.00667459314" x2="1146.82173661511" y1="1121.52237925912" y2="1103.80098589834" />
+		<line stroke="black" stroke-width="2.4" x1="1223.69339972721" x2="1209.75611823562" y1="1072.46105111458" y2="1052.92257152623" />
+		<line stroke="black" stroke-width="2.4" x1="1289.83772172338" x2="1278.35022993536" y1="1031.05065152137" y2="1009.97845342957" />
+		<line stroke="black" stroke-width="2.4" x1="1360.48034557087" x2="1351.60924725868" y1="997.891757951987" y2="975.59145269095" />
+		<line stroke="black" stroke-width="2.4" x1="1434.59673712128" x2="1428.47069034799" y1="973.465275799439" y2="950.260286014233" />
+		<line stroke="black" stroke-width="2.4" x1="1511.11198196795" x2="1507.81983315195" y1="958.125463777901" y2="934.352332806712" />
+		<line stroke="black" stroke-width="2.4" x1="1588.91637499311" x2="1588.50587036322" y1="952.094796087648" y2="928.098307053857" />
+		<path d="M880,1600 A720,720 -90,1,1 1600,2320 A720,720 -90,1,1 1600,880 " fill="none" id="cp1" stroke="none" />
+		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="952" y2="904" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1130.97335529233" y="0">			<textPath xlink:href="#cp1">0.0Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1967.22833440946" x2="1994.43043325461" y1="1066.10174152105" y2="1026.55372237447" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1564.77890161053" y="0">			<textPath xlink:href="#cp1">0.5Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2205.1313833498" x2="2249.9559302646" y1="1368.22422713935" y2="1351.05565137189" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1998.58444792874" y="0">			<textPath xlink:href="#cp1">1.0Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2229.92781287886" x2="2276.58913235136" y1="1751.97022919526" y2="1763.22728320972" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="2432.38999424694" y="0">			<textPath xlink:href="#cp1">1.5Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2032.8851668461" x2="2064.95073476063" y1="2082.19750344089" y2="2117.9158370291" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="2866.19554056514" y="0">			<textPath xlink:href="#cp1">2.0Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1683.39513990047" x2="1689.57255767087" y1="2242.61127490963" y2="2290.21211008812" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="3300.00108688335" y="0">			<textPath xlink:href="#cp1">2.5Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1304.5361910504" x2="1282.64998298006" y1="2176.71928838994" y2="2219.43923567808" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="3733.80663320155" y="0">			<textPath xlink:href="#cp1">3.0Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1029.72951120526" x2="987.487252776017" y1="1907.72645256754" y2="1930.52100460958" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="4167.61217951976" y="0">			<textPath xlink:href="#cp1">3.5Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="955.752633550058" x2="908.030606405618" y1="1530.3628631956" y2="1525.20455676565" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="4601.41772583796" y="0">			<textPath xlink:href="#cp1">4.0Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1108.65768948218" x2="1072.26196277715" y1="1177.52309661355" y2="1146.22851117751" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="5035.22327215617" y="0">			<textPath xlink:href="#cp1">4.5Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1434.59673712128" x2="1422.34464357471" y1="973.465275799439" y2="927.055296229027" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="5469.02881847437" y="0">			<textPath xlink:href="#cp1">5.0Mb
+			</textPath>
+		</text>
+	</g>
+	<g id="t8" />
+	<g id="t9" />
+	<g id="t10">
+		<circle cx="1600" cy="1600" fill="none" r="384" stroke="black" stroke-width="4.8" />
+		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="1216" y2="1192" />
+		<line stroke="black" stroke-width="2.4" x1="1817.61679076116" x2="1831.21784018374" y1="1283.61584682729" y2="1263.841837254" />
+		<line stroke="black" stroke-width="2.4" x1="1958.5963753184" x2="1981.0086487758" y1="1462.65139386035" y2="1454.06710597663" />
+		<line stroke="black" stroke-width="2.4" x1="1973.29055578006" x2="1996.62121551632" y1="1690.05643211571" y2="1695.68495912294" />
+		<line stroke="black" stroke-width="2.4" x1="1856.52454331621" x2="1872.55732727347" y1="1885.74666870571" y2="1903.60583549982" />
+		<line stroke="black" stroke-width="2.4" x1="1649.41934216324" x2="1652.50805104844" y1="1980.80668142793" y2="2004.60709901718" />
+		<line stroke="black" stroke-width="2.4" x1="1424.91033543728" x2="1413.96723140211" y1="1941.75957830515" y2="1963.11955194922" />
+		<line stroke="black" stroke-width="2.4" x1="1262.06193256608" x2="1240.94080335146" y1="1782.35641633632" y2="1793.75369235734" />
+		<line stroke="black" stroke-width="2.4" x1="1218.22378284448" x2="1194.36276927226" y1="1558.73354856036" y2="1556.15439534538" />
+		<line stroke="black" stroke-width="2.4" x1="1308.83418635981" x2="1290.6363230073" y1="1349.64331651173" y2="1333.99602379371" />
+		<line stroke="black" stroke-width="2.4" x1="1501.98325162742" x2="1495.85720485414" y1="1228.7201634367" y2="1205.5151736515" />
+		<path d="M1144,1600 A456,456 -90,1,1 1600,2056 A456,456 -90,1,1 1600,1144 " fill="none" id="cp2" stroke="none" />
+		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="1216" y2="1168" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="716.283125018473" y="0">			<textPath xlink:href="#cp2">0.0Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1817.61679076116" x2="1844.81888960631" y1="1283.61584682729" y2="1244.0678276807" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="991.026637686669" y="0">			<textPath xlink:href="#cp2">0.5Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1958.5963753184" x2="2003.4209222332" y1="1462.65139386035" y2="1445.4828180929" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1265.77015035487" y="0">			<textPath xlink:href="#cp2">1.0Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1973.29055578006" x2="2019.95187525257" y1="1690.05643211571" y2="1701.31348613017" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1540.51366302306" y="0">			<textPath xlink:href="#cp2">1.5Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1856.52454331621" x2="1888.59011123073" y1="1885.74666870571" y2="1921.46500229392" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1815.25717569126" y="0">			<textPath xlink:href="#cp2">2.0Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1649.41934216324" x2="1655.59675993364" y1="1980.80668142793" y2="2028.40751660642" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="2090.00068835945" y="0">			<textPath xlink:href="#cp2">2.5Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1424.91033543728" x2="1403.02412736694" y1="1941.75957830515" y2="1984.47952559329" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="2364.74420102765" y="0">			<textPath xlink:href="#cp2">3.0Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1262.06193256608" x2="1219.81967413684" y1="1782.35641633632" y2="1805.15096837836" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="2639.48771369585" y="0">			<textPath xlink:href="#cp2">3.5Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1218.22378284448" x2="1170.50175570004" y1="1558.73354856036" y2="1553.5752421304" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="2914.23122636404" y="0">			<textPath xlink:href="#cp2">4.0Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1308.83418635981" x2="1272.43845965478" y1="1349.64331651173" y2="1318.3487310757" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="3188.97473903224" y="0">			<textPath xlink:href="#cp2">4.5Mb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1501.98325162742" x2="1489.73115808085" y1="1228.7201634367" y2="1182.31018386629" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="3463.71825170044" y="0">			<textPath xlink:href="#cp2">5.0Mb
+			</textPath>
+		</text>
+	</g><!-- 
+	Generated using the Perl SVG Module V2.49
+	by Ronan Oger
+	Info: http://www.roitsystems.com/
+ -->
+</svg>

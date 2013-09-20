@@ -1,0 +1,5 @@
+			../data/AE003852.gbk		
+gap		20000			
+			../data/AE003853.gbk		
+gap		20000			
+genome	Vibrio cholerae O1 biovar eltor str. N16961				

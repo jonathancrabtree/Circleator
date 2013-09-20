@@ -1,0 +1,76 @@
+
+circleator-1.0beta1 (Sep ?? 2013)
+ -Finished configuration file documentation page (html/docs/configuration.html)
+ -Reinstated unknown sequence id warning when parsing flat file graph/heat map data.
+ -Fixed bug in get_track_features causing feat-track references to be incorrectly processed.
+ -Added font-width-frac option to allow overriding FONT_WIDTH_FRAC global on a per-track basis.
+
+circleator-1.0alpha11 (Jun 04 2013)
+ -Bug fix: label-units=Gb was using the label "Bb" instead of "Gb"
+ -label-units is now case-insensitive i.e., label-units=mb and label-units=Mb will both work
+ -Added new tests for label-units
+	
+circleator-1.0alpha10 (Jun 03 2013)
+ -Added tests for: graph-type=line, graph-type=heat_map
+ -Bug fix for case where graph-type=heat_map and no colors or color palette are supplied
+ -Fixed typos in references to GCskew tracks in the predefined track documentation.
+ -Corrected track options (heat_map_*, target_bp) to use '-' instead of '_' (but code now allows either)
+ -Bug fix: ignore graph_baseline when graph-type=heat_map
+ -Bug fix: fixed discrete color assignment for graph-type=heat_map
+ -Added "Gb" as new option for label-units.
+ -Bug fix: user-feat-type option was being ignored.
+ -Added 'tag' label function for displaying arbitrary feature attributes/tags e.g., GFF attributes such as 'ID'.
+
+circleator-1.0alpha9 (May 15 2013)
+ -Added 'heat_map' graph type plus support for Brewer color palettes from http://www.colorbrewer.org
+
+circleator-1.0alpha8 (Apr 26 2013)
+ -Modified SNP_Table to allow IUPAC ambiguity codes.
+
+circleator-1.0alpha7 (Apr 26 2013)
+ -Added compute-graph-regions glyph: identifies regions where graph value is above/below specified bounds.
+ -Added overlapping-feat-type filter: only features that overlap with a feature of the specified type will be selected.
+ -Modified admin/makePredefTrackDocs.pl to regenerate SVG and PNG images only for updated config files
+ -Updated predefined track documentation: added label-units, graph-type
+ -Improved scaled_segment_list warning when scale is set too high.
+ -Circleator now automatically reduces scaled-up regions to 75% of genome whenever they would otherwise take >= 100%
+ -Added parser for new gene cluster file format (Gene_Cluster_Table.pm), new load-gene-cluster-table glyph
+ -Added new options to support filtering genes by gene cluster signature:
+  gene-cluster-genomes, gene-cluster-signature, gene-cluster-analysis, gene-cluster-min-genomes, gene-cluster-max-genomes
+ -Added parser (SNP_Table.pm) for new SNP file format, "snp-table", compatible with CloVR-Comparative SNP output.
+
+circleator-1.0alpha6 (Mar 20 2013)
+ -Bug fix for issue with parameters not getting passed to Circleator::SeqFunction classes.
+ -Added missing feature filters (clip-fmin, clip-fmax) to Circleator/Config/Standard.pm
+ -Bug fix for loading features onto reverse-complemented contigs: they are now reverse complemented too.
+ -Changed log message to not treat 'gap' and 'genome' features in --contig_list as contigs.
+ -Added line graph support to graph glyph.
+ -Added 'snp-no-hit-label' and 'snp-same-as-ref-label' options to snp_base.pm
+ -Updated snp_base and snp_base_no_indel SNP color functions to handle multiple alleles.
+ -Updated MergedTable SNP parser to explicitly record "No Hit" values.
+ -Updated MergedTable SNP parser to handle multiple alleles separated by "," or "/".
+ -Added computed 'num_no_hits' attribute to parsed SNPs.
+
+circleator-1.0alpha5 (Feb 20 2013)
+ -primary_id is now set correctly in Circleator-created features (e.g., 'contig', 'genome'.)
+ -Added missing feature filters (feat-min-length, feat-max-length) to Circleator/Config/Standard.pm
+ -Fixed bug in Circleator/Util/Deserts.pm: compute-deserts glyph was throwing an error on linear sequences.
+ -Bug fix and changes to accomodate a new variant of the Skirret format.
+ -Added conf/clovr-microbe and 3 configuration files for the CloVR Microbe pipeline's output.
+
+circleator-1.0alpha4 (Feb 15 2013)
+ -Minor documentation improvements.
+ -Added snp-intronic-color, snp-readthrough-color options to the snp_type color function.
+ -Added snp_type_no_indel color function, which is the same as snp_type but without the insertion and deletion colors.
+ -Changed the feature type of contig gaps (in multi-contig figures) from 'contig' to 'contig_gap'.
+ -Fixed off-by-one bug in the positioning of 'contig' and 'contig_gap' features in multi-contig figures.
+ -Added 'gff' feat-file-type, which uses the BioPerl GFF parser in Bio::FeatureIO::gff.
+ -Added contig-gaps predefined track.
+ -Added data/AE003852-AE003853.gbk, chrI and chrII of V. cholerae O1 biovar eltor str. N16961
+ -Fixed bug whereby additional feature filters on tracks using 'feat-track' were ignored.
+ -Added the following categories to the --debug command-line option: coordinates,input,loops,misc,packing
+ -Added optional 'revcomp' flag to --contig_list file format: including it on a line reverse complements the corresponding input contig.
+ -New tests for: multi-contig inputs, feat-file-type=gff, loops, nested loops, multi-contig inputs using --contig_list, reverse complementing input sequences
+ -Converted some warnings into debug messages to decrease default log verbosity.
+ -Fixed bug/clarified behavior in case where --contig_list file contains explicit gap features.
+ -A sequence id can be specified in --contig_list to override that found in the corresponding data file.

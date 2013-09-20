@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg height="3200" printerror="1" raiseerror="0" width="3200" xml_xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs >
+		<marker id="triangle-right" markerHeight="6" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="10" refY="5" viewBox="0 0 10 10">
+			<rect fill="white" height="10" stroke="none" width="10" x1="0" y1="0" />
+			<path d="M 0 0 L 10 5 L 0 10 z" />
+		</marker>
+		<marker id="triangle-left" markerHeight="6" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="0" refY="5" viewBox="0 0 10 10">
+			<rect fill="white" height="10" stroke="none" width="10" x1="0" y1="0" />
+			<path d="M 10 10 L 0 5 L 10 0 z" />
+		</marker>
+	</defs>
+	<g id="t1" opacity="0.7">
+		<path d="M386.56,1600 A1213.44,1213.44 -90,1,1 1600,2813.44 A1213.44,1213.44 -90,1,1 2813.44,1600 " fill="none" id="cp1" stroke="none" />
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1906.067094786" y="0">			<textPath xlink:href="#cp1">
+			</textPath>
+		</text>
+	</g>
+	<g id="t2" />
+	<g id="t3">
+		<mask height="3200" id="2" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
+			<rect fill="white" height="3200" r="1080" width="3200" x="0" y="0" />
+			<circle cx="1600" cy="1600" fill="black" r="1080" stroke="black" stroke-width="0.06" />
+		</mask>
+		<circle cx="1600" cy="1600" fill="#0000ff" mask="url(#2)" r="1200" stroke="black" stroke-width="0.06" />
+		<circle cx="1600" cy="1600" fill="none" r="1080" stroke="black" stroke-width="0.06" />
+	</g>
+	<g id="t4" opacity="0.7">
+		<path d="M506.56,1600 A1093.44,1093.44 -90,1,1 1600,2693.44 A1093.44,1093.44 -90,1,1 2693.44,1600 " fill="none" id="cp3" stroke="none" />
+		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="1717.57153557061" y="0">			<textPath xlink:href="#cp3">contigs 0.9-1.0
+			</textPath>
+		</text>
+	</g>
+	<g id="t5">
+		<mask height="3200" id="4" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
+			<rect fill="white" height="3200" r="840" width="3200" x="0" y="0" />
+			<circle cx="1600" cy="1600" fill="black" r="840" stroke="black" stroke-width="0.06" />
+		</mask>
+		<circle cx="1600" cy="1600" fill="#0000ff" mask="url(#4)" r="960" stroke="black" stroke-width="0.06" />
+		<circle cx="1600" cy="1600" fill="none" r="840" stroke="black" stroke-width="0.06" />
+	</g>
+	<g id="t6" opacity="0.7">
+		<path d="M746.56,1600 A853.44,853.44 -90,1,1 1600,2453.44 A853.44,853.44 -90,1,1 2453.44,1600 " fill="none" id="cp5" stroke="none" />
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1340.58041713984" y="0">			<textPath xlink:href="#cp5">contigs 0.7-0.8
+			</textPath>
+		</text>
+	</g>
+	<g id="t7" />
+	<g id="t8">
+		<mask height="3200" id="6" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
+			<rect fill="white" height="3200" r="660" width="3200" x="0" y="0" />
+			<circle cx="1600" cy="1600" fill="black" r="660" stroke="black" stroke-width="0.03" />
+		</mask>
+		<circle cx="1600" cy="1600" fill="#0000ff" mask="url(#6)" r="720" stroke="black" stroke-width="0.03" />
+		<circle cx="1600" cy="1600" fill="none" r="660" stroke="black" stroke-width="0.03" />
+	</g>
+	<g id="t9">
+		<mask height="3200" id="7" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
+			<rect fill="white" height="3200" r="600" width="3200" x="0" y="0" />
+			<circle cx="1600" cy="1600" fill="black" r="600" stroke="black" stroke-width="0.03" />
+		</mask>
+		<circle cx="1600" cy="1600" fill="#d0d0d0" mask="url(#7)" r="660" stroke="black" stroke-width="0.03" />
+		<circle cx="1600" cy="1600" fill="none" r="600" stroke="black" stroke-width="0.03" />
+	</g>
+	<g id="t10" opacity="0.7">
+		<path d="M986.56,1600 A613.44,613.44 -90,1,1 1600,2213.44 A613.44,613.44 -90,1,1 2213.44,1600 " fill="none" id="cp8" stroke="none" />
+		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="963.589298709061" y="0">			<textPath xlink:href="#cp8">contigs 0.50-0.55 and 0.55-0.60
+			</textPath>
+		</text>
+	</g>
+	<g id="t11" opacity="0.3" />
+	<g id="t12" opacity="0.7">
+		<path d="M266.56,1600 A1333.44,1333.44 -90,1,1 1600,2933.44 A1333.44,1333.44 -90,1,1 2933.44,1600 " fill="none" id="cp9" stroke="none" />
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="start" x="2094.56265400139" y="0">			<textPath xlink:href="#cp9">gaps stroke-width 4
+			</textPath>
+		</text>
+	</g>
+	<g id="t13" opacity="0.4">
+		<path d="M1600,1000 A600,600 0,0,1 1600,2200 L1600,2800 A1200,1200 0,0,0 1600,400 L1600,1000 " fill="#00ff00" stroke="#000000" stroke-dasharray="3" stroke-width="4" />
+	</g>
+	<g id="t14" opacity="0.7">
+		<path d="M386.56,1600 A1213.44,1213.44 -90,1,1 1600,2813.44 A1213.44,1213.44 -90,1,1 2813.44,1600 " fill="none" id="cp10" stroke="none" />
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="start" x="5718.201284358" y="0">			<textPath xlink:href="#cp10">highlight 0-100kb SCALED 26.070975X
+			</textPath>
+		</text>
+	</g>
+	<g id="t15">
+		<circle cx="1600" cy="1600" fill="none" r="480" stroke="black" stroke-width="4.8" />
+		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="1120" y2="1096" />
+		<line stroke="black" stroke-width="2.4" x1="1748.32815729997" x2="1755.74456516497" y1="1143.49287217833" y2="1120.66751578724" />
+		<line stroke="black" stroke-width="2.4" x1="1882.13692110039" x2="1896.24376715541" y1="1211.67184270003" y2="1192.25543483503" />
+		<line stroke="black" stroke-width="2.4" x1="1988.32815729997" x2="2007.74456516497" y1="1317.86307889961" y2="1303.75623284459" />
+		<line stroke="black" stroke-width="2.4" x1="2056.50712782167" x2="2079.33248421276" y1="1451.67184270003" y2="1444.25543483503" />
+		<line stroke="black" stroke-width="2.4" x1="2080" x2="2104" y1="1600" y2="1600" />
+		<line stroke="black" stroke-width="2.4" x1="2056.50712782167" x2="2079.33248421276" y1="1748.32815729997" y2="1755.74456516497" />
+		<line stroke="black" stroke-width="2.4" x1="1988.32815729997" x2="2007.74456516497" y1="1882.13692110039" y2="1896.24376715541" />
+		<line stroke="black" stroke-width="2.4" x1="1882.13692110039" x2="1896.24376715541" y1="1988.32815729997" y2="2007.74456516497" />
+		<line stroke="black" stroke-width="2.4" x1="1748.32815729997" x2="1755.74456516497" y1="2056.50712782167" y2="2079.33248421276" />
+		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="2080" y2="2104" />
+		<path d="M1048,1600 A552,552 -90,1,1 1600,2152 A552,552 -90,1,1 1600,1048 " fill="none" id="cp11" stroke="none" />
+		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="1120" y2="1072" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="867.079572390783" y="0">			<textPath xlink:href="#cp11">0kb
+			</textPath>
+		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="2080" y2="2128" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="2601.23871717235" y="0">			<textPath xlink:href="#cp11">100kb
+			</textPath>
+		</text>
+	</g>
+	<g id="t16" opacity="0.3">
+		<mask height="3200" id="12" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
+			<rect fill="white" height="3200" r="0" width="3200" x="0" y="0" />
+			<circle cx="1600" cy="1600" fill="black" r="0" stroke="black" stroke-width="4" />
+		</mask>
+		<circle cx="1600" cy="1600" fill="#0000ff" mask="url(#12)" r="480" stroke="black" stroke-width="4" />
+		<circle cx="1600" cy="1600" fill="none" r="0" stroke="black" stroke-width="4" />
+	</g>
+	<g id="t17" opacity="0.7">
+		<path d="M1346.56,1600 A253.44,253.44 -90,1,1 1600,1853.44 A253.44,253.44 -90,1,1 1853.44,1600 " fill="none" id="cp13" stroke="none" />
+		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="398.102621062899" y="0">			<textPath xlink:href="#cp13">contigs 0-0.4
+			</textPath>
+		</text>
+	</g><!-- 
+	Generated using the Perl SVG Module V2.49
+	by Ronan Oger
+	Info: http://www.roitsystems.com/
+ -->
+</svg>

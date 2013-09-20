@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg height="2400" printerror="1" raiseerror="0" width="2400" xml_xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs >
+		<marker id="triangle-right" markerHeight="6" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="10" refY="5" viewBox="0 0 10 10">
+			<rect fill="white" height="10" stroke="none" width="10" x1="0" y1="0" />
+			<path d="M 0 0 L 10 5 L 0 10 z" />
+		</marker>
+		<marker id="triangle-left" markerHeight="6" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="0" refY="5" viewBox="0 0 10 10">
+			<rect fill="white" height="10" stroke="none" width="10" x1="0" y1="0" />
+			<path d="M 10 10 L 0 5 L 10 0 z" />
+		</marker>
+	</defs>
+	<g id="t1">
+		<path d="M302.4,1200 A897.6,897.6 -90,1,1 1200,2097.6 A897.6,897.6 -90,1,1 2097.6,1200 " fill="none" id="cp1" stroke="none" />
+		<text fill="#182d6c" font-family="Arial" font-size="252" font-weight="bold" text-anchor="middle" x="1409.9467829311" y="0">			<textPath xlink:href="#cp1">HOME
+			</textPath>
+		</text>
+	</g>
+	<g id="t2">
+		<path d="M302.4,1200 A897.6,897.6 -90,1,1 1200,2097.6 A897.6,897.6 -90,1,1 2097.6,1200 " fill="none" id="cp2" stroke="none" />
+		<text fill="#182d6c" font-family="Arial" font-size="252" font-weight="bold" text-anchor="middle" x="2506.57205854418" y="0">			<textPath xlink:href="#cp2">DOCS
+			</textPath>
+		</text>
+	</g>
+	<g id="t3">
+		<path d="M302.4,1200 A897.6,897.6 -90,1,1 1200,2097.6 A897.6,897.6 -90,1,1 2097.6,1200 " fill="none" id="cp3" stroke="none" />
+		<text fill="#182d6c" font-family="Arial" font-size="252" font-weight="bold" text-anchor="middle" x="3916.51884147528" y="0">			<textPath xlink:href="#cp3">GALLERY
+			</textPath>
+		</text>
+	</g>
+	<g id="t4">
+		<path d="M302.4,1200 A897.6,897.6 -90,1,1 1200,2097.6 A897.6,897.6 -90,1,1 2097.6,1200 " fill="none" id="cp4" stroke="none" />
+		<text fill="#182d6c" font-family="Arial" font-size="252" font-weight="bold" text-anchor="middle" x="5639.7871317244" y="0">			<textPath xlink:href="#cp4">SOFTWARE
+			</textPath>
+		</text>
+	</g>
+	<g id="t5" opacity="0.1">
+		<path d="M1200,1200 A0,0 0,0,1 1200,1200 L1800,160.769515458674 A1200,1200 0,0,0 599.999999999999,160.769515458674 L1200,1200 " fill="#0000ff" stroke="black" stroke-width="2" />
+	</g><!-- 
+	Generated using the Perl SVG Module V2.49
+	by Ronan Oger
+	Info: http://www.roitsystems.com/
+ -->
+</svg>

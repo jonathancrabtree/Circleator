@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg height="3200" printerror="1" raiseerror="0" width="3200" xml_xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs >
+		<marker id="triangle-right" markerHeight="6" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="10" refY="5" viewBox="0 0 10 10">
+			<rect fill="white" height="10" stroke="none" width="10" x1="0" y1="0" />
+			<path d="M 0 0 L 10 5 L 0 10 z" />
+		</marker>
+		<marker id="triangle-left" markerHeight="6" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="0" refY="5" viewBox="0 0 10 10">
+			<rect fill="white" height="10" stroke="none" width="10" x1="0" y1="0" />
+			<path d="M 10 10 L 0 5 L 10 0 z" />
+		</marker>
+	</defs>
+	<g id="t1">
+		<circle cx="1600" cy="1600" fill="none" r="1176" stroke="black" stroke-width="4.8" />
+		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="424" y2="400" />
+		<path d="M352,1600 A1248,1248 -90,1,1 1600,2848 A1248,1248 -90,1,1 1600,352 " fill="none" id="cp1" stroke="none" />
+		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="424" y2="376" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1960.35381584003" y="0">			<textPath xlink:href="#cp1">0.0Mb
+			</textPath>
+		</text>
+	</g>
+	<g id="t2" />
+	<g id="t3">
+		<circle cx="1600" cy="1600" fill="none" r="1032" stroke="black" stroke-width="4.8" />
+		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="568" y2="544" />
+		<path d="M496,1600 A1104,1104 -90,1,1 1600,2704 A1104,1104 -90,1,1 1600,496 " fill="none" id="cp2" stroke="none" />
+		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="568" y2="520" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1734.15914478157" y="0">			<textPath xlink:href="#cp2">0.0Mb
+			</textPath>
+		</text>
+	</g>
+	<g id="t4" />
+	<g id="t5">
+		<circle cx="1600" cy="1600" fill="none" r="888" stroke="black" stroke-width="4.8" />
+		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="712" y2="688" />
+		<path d="M640,1600 A960,960 -90,1,1 1600,2560 A960,960 -90,1,1 1600,640 " fill="none" id="cp3" stroke="none" />
+		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="712" y2="664" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1507.9644737231" y="0">			<textPath xlink:href="#cp3">0.0Mb
+			</textPath>
+		</text>
+	</g>
+	<g id="t6" />
+	<g id="t7" />
+	<g id="t8">
+		<circle cx="1600" cy="1600" fill="none" r="684" stroke="black" stroke-width="4.8" />
+		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="916" y2="892" />
+		<path d="M844,1600 A756,756 -90,1,1 1600,2356 A756,756 -90,1,1 1600,844 " fill="none" id="cp4" stroke="none" />
+		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="916" y2="868" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1187.52202305694" y="0">			<textPath xlink:href="#cp4">0.000Mb
+			</textPath>
+		</text>
+	</g>
+	<g id="t9" />
+	<g id="t10" />
+	<g id="t11">
+		<circle cx="1600" cy="1600" fill="none" r="480" stroke="black" stroke-width="4.8" />
+		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="1120" y2="1096" />
+		<path d="M1048,1600 A552,552 -90,1,1 1600,2152 A552,552 -90,1,1 1600,1048 " fill="none" id="cp5" stroke="none" />
+		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="1120" y2="1072" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="867.079572390783" y="0">			<textPath xlink:href="#cp5">0kb
+			</textPath>
+		</text>
+	</g>
+	<g id="t12" />
+	<g id="t13">
+		<circle cx="1600" cy="1600" fill="none" r="336" stroke="black" stroke-width="4.8" />
+		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="1264" y2="1240" />
+		<path d="M1192,1600 A408,408 -90,1,1 1600,2008 A408,408 -90,1,1 1600,1192 " fill="none" id="cp6" stroke="none" />
+		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="1264" y2="1216" />
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="640.884901332318" y="0">			<textPath xlink:href="#cp6">0bp
+			</textPath>
+		</text>
+	</g>
+	<g id="t14" />
+	<g id="t15" />
+	<g id="t16">
+		<circle cx="1600" cy="1600" fill="none" r="132" stroke="black" stroke-width="4.8" />
+		<path d="M1396,1600 A204,204 -90,1,1 1600,1804 A204,204 -90,1,1 1600,1396 " fill="none" id="cp7" stroke="none" />
+	</g><!-- 
+	Generated using the Perl SVG Module V2.49
+	by Ronan Oger
+	Info: http://www.roitsystems.com/
+ -->
+</svg>
