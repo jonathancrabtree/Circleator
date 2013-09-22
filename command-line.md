@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Circleator : documentation : running the Circleator on the command line
+pagetype: documentation
+title: Running the Circleator on the command line
 ---
 
 <h2>Overview</h2>

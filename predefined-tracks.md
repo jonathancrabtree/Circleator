@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Circleator : documentation : predefined tracks
+pagetype: documentation
+title: Predefined tracks
 ---
 
 <p>
@@ -69,13 +70,13 @@ The predefined tracks have been grouped into the following categories to make se
 <li><a href='#large-label'><span class='track'>large-label</span></a></li></ul>
 
 </li></ol>
-<a name='sequence_coordinates_and_contigs'><h2>1. sequence coordinates and contigs</h2>
+<a name='sequence_coordinates_and_contigs'><h2>1. sequence coordinates and contigs</h2></a>
 <ul>
 <li><a href='#coords'><span class='track'>coords</span></a></li>
 <li><a href='#contigs'><span class='track'>contigs</span></a></li>
 <li><a href='#contig-gaps'><span class='track'>contig-gaps</span></a></li></ul>
 <br>
-<h3><a name='coords'><span class='track_heading'>coords</span></h3>
+<h3><a name='coords'><span class='track_heading'>coords</span></a></h3>
  The <span class='track'>coords</span> track draws an outer circle with small and large tick marks at intervals that can be specified 
  with the options <span class='option'>tick-interval</span> and <span class='option'>label-interval</span>.  Each large tick mark is labeled with the sequence
  coordinate at that position (e.g., 0.5Mb, 1.0Mb, 1.5Mb) using a label style specified by the <span class='option'>label-type</span> option.  Additional
@@ -291,7 +292,7 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<h3><a name='contigs'><span class='track_heading'>contigs</span></h3>
+<h3><a name='contigs'><span class='track_heading'>contigs</span></a></h3>
  The <span class='track'>contigs</span> track draws a circle with a curved blue rectangle in the position of each contig/sequence
  in the input file.  It is most useful when the input contains multiple sequences:
 <br><br>
@@ -312,7 +313,7 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<h3><a name='contig-gaps'><span class='track_heading'>contig-gaps</span></h3>
+<h3><a name='contig-gaps'><span class='track_heading'>contig-gaps</span></a></h3>
  The <span class='track'>contig-gaps</span> track draws a circle with a curved grey rectangle in the position of each contig gap (in multi-contig figures only)
  in the input file.
 <br><br>
@@ -356,7 +357,7 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<a name='sequence_features'><h2>2. sequence features</h2>
+<a name='sequence_features'><h2>2. sequence features</h2></a>
 <ul>
 <li><a href='#genes'><span class='track'>genes</span></a></li>
 <li><a href='#genes-fwd'><span class='track'>genes-fwd</span></a></li>
@@ -380,7 +381,7 @@ The predefined tracks have been grouped into the following categories to make se
  first is shown for the other feature types:
 
 <br>
-<h3><a name='genes'><span class='track_heading'>genes</span></h3>
+<h3><a name='genes'><span class='track_heading'>genes</span></a></h3>
 <table class='figure'>
 <tbody>
 <tr>
@@ -398,7 +399,7 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<h3><a name='genes-fwd'><span class='track_heading'>genes-fwd</span></h3>
+<h3><a name='genes-fwd'><span class='track_heading'>genes-fwd</span></a></h3>
 <table class='figure'>
 <tbody>
 <tr>
@@ -416,7 +417,7 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<h3><a name='genes-rev'><span class='track_heading'>genes-rev</span></h3>
+<h3><a name='genes-rev'><span class='track_heading'>genes-rev</span></a></h3>
 <table class='figure'>
 <tbody>
 <tr>
@@ -451,7 +452,7 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<h3><a name='tRNAs'><span class='track_heading'>tRNAs</span></h3>
+<h3><a name='tRNAs'><span class='track_heading'>tRNAs</span></a></h3>
  Displays all tRNAs, regardless of strand.
 <br><br>
 <table class='figure'>
@@ -471,10 +472,10 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<h3><a name='tRNAs-fwd'><span class='track_heading'>tRNAs-fwd</span></h3>
+<h3><a name='tRNAs-fwd'><span class='track_heading'>tRNAs-fwd</span></a></h3>
  Displays only forward-strand tRNAs.
 <br><br>
-<h3><a name='tRNAs-rev'><span class='track_heading'>tRNAs-rev</span></h3>
+<h3><a name='tRNAs-rev'><span class='track_heading'>tRNAs-rev</span></a></h3>
  Displays only reverse-strand tRNAs.
 <br><br>
 <table class='figure'>
@@ -494,7 +495,7 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<h3><a name='rRNAs'><span class='track_heading'>rRNAs</span></h3>
+<h3><a name='rRNAs'><span class='track_heading'>rRNAs</span></a></h3>
  Displays all rRNAs, regardless of strand.
 <br><br>
 <table class='figure'>
@@ -514,10 +515,10 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<h3><a name='rRNAs-fwd'><span class='track_heading'>rRNAs-fwd</span></h3>
+<h3><a name='rRNAs-fwd'><span class='track_heading'>rRNAs-fwd</span></a></h3>
  Displays only forward-strand tRNAs.
 <br><br>
-<h3><a name='rRNAs-rev'><span class='track_heading'>rRNAs-rev</span></h3>
+<h3><a name='rRNAs-rev'><span class='track_heading'>rRNAs-rev</span></a></h3>
  Displays only reverse-strand tRNAs.
 <br><br>
 <table class='figure'>
@@ -537,7 +538,7 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<h3><a name='gaps'><span class='track_heading'>gaps</span></h3>
+<h3><a name='gaps'><span class='track_heading'>gaps</span></a></h3>
  Displays all gaps, regardless of strand.  Note that these are gaps in the genomic sequence that have been 
  explicitly annotated in the input, and are distinct from the gaps that can be placed between adjacent 
  annotation tracks in Circleator figures (these are supported by the "cgap" tracks and are described in the 
@@ -560,19 +561,18 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<a name='track_layout'><h2>3. track layout</h2>
+<a name='track_layout'><h2>3. track layout</h2></a>
 <ul>
 <li><a href='#tiny-cgap'><span class='track'>tiny-cgap</span></a></li>
 <li><a href='#small-cgap'><span class='track'>small-cgap</span></a></li>
 <li><a href='#medium-cgap'><span class='track'>medium-cgap</span></a></li>
 <li><a href='#large-cgap'><span class='track'>large-cgap</span></a></li></ul>
 <br>
-<h3><a name='tiny-cgap'><span class='track_heading'>tiny-cgap</span></h3>
+<h3><a name='tiny-cgap'><span class='track_heading'>tiny-cgap</span></a></h3>
  By default the Circleator will not leave any space between adjacent tracks, making it difficult in some cases to clearly see
  the features being plotted.  To create a space between two adjacent tracks in the Circleator configuration file, simply add 
  one of the following 'gap' track types on a new line between the two adjacent tracks.  The only difference between the following
  gap types is the amount of space that each one inserts:
-
 <br><br>
 <table class='figure'>
 <tbody>
@@ -591,7 +591,7 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<h3><a name='small-cgap'><span class='track_heading'>small-cgap</span></h3>
+<h3><a name='small-cgap'><span class='track_heading'>small-cgap</span></a></h3>
 <table class='figure'>
 <tbody>
 <tr>
@@ -609,7 +609,7 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<h3><a name='medium-cgap'><span class='track_heading'>medium-cgap</span></h3>
+<h3><a name='medium-cgap'><span class='track_heading'>medium-cgap</span></a></h3>
 <table class='figure'>
 <tbody>
 <tr>
@@ -627,7 +627,7 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<h3><a name='large-cgap'><span class='track_heading'>large-cgap</span></h3>
+<h3><a name='large-cgap'><span class='track_heading'>large-cgap</span></a></h3>
 <table class='figure'>
 <tbody>
 <tr>
@@ -661,7 +661,7 @@ The predefined tracks have been grouped into the following categories to make se
   <li><span class='graph'>BAM coverage</span>: plots read coverage histograms based on the contents of a SAM or BAM alignment file (TODO - not yet supported)</li>
  </ul>
 <br>
-<h3><a name='%GC0-100'><span class='track_heading'>%GC0-100</span></h3>
+<h3><a name='%GC0-100'><span class='track_heading'>%GC0-100</span></a></h3>
  A graph of percent GC sequence composition, ranging from a minimum value of 0% to a maximum value of 100%.  The
  GC percentage is computed using nonoverlapping windows of length 5kb and is plotted using a circular bar graph:
 <br><br>
@@ -682,7 +682,7 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<h3><a name='%GCmin-max'><span class='track_heading'>%GCmin-max</span></h3>
+<h3><a name='%GCmin-max'><span class='track_heading'>%GCmin-max</span></a></h3>
  The same as %GC0-100, but using the observed minimum and maximum percent GC values for the lower and upper bounds of
  the graph.  Note that the minimum, maximum, and average values are indicated directly in the figure (at the top) by default.
 <br><br>
@@ -703,7 +703,7 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<h3><a name='%GCmin-max-dfa'><span class='track_heading'>%GCmin-max-dfa</span></h3>
+<h3><a name='%GCmin-max-dfa'><span class='track_heading'>%GCmin-max-dfa</span></a></h3>
  A variant of %GCmin-max in which the baseline for the graph is the observed average value (dfa = Deviation From Average)
  instead of the observed minimum value, as was the case for %GCmin-max:
 <br><br>
@@ -724,7 +724,7 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<h3><a name='GCskew-1-df0'><span class='track_heading'>GCskew-1-df0</span></h3>
+<h3><a name='GCskew-1-df0'><span class='track_heading'>GCskew-1-df0</span></a></h3>
  A GC-skew graph with a minimum value of -1 and a maximum value of 1.  Values are plotted against a baseline value of 0
 <br><br>
 <table class='figure'>
@@ -744,7 +744,7 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<h3><a name='GCskew-min-max-df0'><span class='track_heading'>GCskew-min-max-df0</span></h3>
+<h3><a name='GCskew-min-max-df0'><span class='track_heading'>GCskew-min-max-df0</span></a></h3>
  A GC-skew graph with minimum and maximum values based on the observed minimum and maximum and plotted using a baseline value of 0.
 <br><br>
 <table class='figure'>
@@ -978,7 +978,7 @@ in the current sequence data, or 'data_avg' to use the average value:
 </tbody>
 </table>
 
-<a name='labels'><h2>5. labels</h2>
+<a name='labels'><h2>5. labels</h2></a>
 <ul>
 <li><a href='#small-label'><span class='track'>small-label</span></a></li>
 <li><a href='#medium-label'><span class='track'>medium-label</span></a></li>
@@ -989,7 +989,7 @@ in the current sequence data, or 'data_avg' to use the average value:
  around the circle, use the <span class='option'>position</span> option.  The type of label to use is specified by the
  <span class='option'>label-type</span> option.
 <br>
-<h3><a name='small-label'><span class='track_heading'>small-label</span></h3>
+<h3><a name='small-label'><span class='track_heading'>small-label</span></a></h3>
 <table class='figure'>
 <tbody>
 <tr>
@@ -1007,7 +1007,7 @@ in the current sequence data, or 'data_avg' to use the average value:
 </tbody>
 </table>
 
-<h3><a name='medium-label'><span class='track_heading'>medium-label</span></h3>
+<h3><a name='medium-label'><span class='track_heading'>medium-label</span></a></h3>
 <table class='figure'>
 <tbody>
 <tr>
@@ -1025,7 +1025,7 @@ in the current sequence data, or 'data_avg' to use the average value:
 </tbody>
 </table>
 
-<h3><a name='large-label'><span class='track_heading'>large-label</span></h3>
+<h3><a name='large-label'><span class='track_heading'>large-label</span></a></h3>
 <table class='figure'>
 <tbody>
 <tr>

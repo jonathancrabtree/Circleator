@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Circleator : documentation
+pagetype: documentation
 ---
 
 <h2>Downloading and installing the Circleator</h2>

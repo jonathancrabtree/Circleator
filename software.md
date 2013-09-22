@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Circleator : software
+pagetype: software
 ---
 
 <h2>Availability</h2> 

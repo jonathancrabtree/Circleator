@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Circleator : gallery
+pagetype: gallery
 ---
 
 <h2>Circleator Figures</h2>

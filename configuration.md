@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Circleator : documentation : configuration file reference
+pagetype: documentation
+title: Configuration file reference
 ---
 
 <h2>Introduction</h2>
