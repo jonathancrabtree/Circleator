@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg height="3200" printerror="1" raiseerror="0" width="3200" xml_xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs >
+		<marker id="triangle-right" markerHeight="6" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="10" refY="5" viewBox="0 0 10 10">
+			<rect fill="white" height="10" stroke="none" width="10" x1="0" y1="0" />
+			<path d="M 0 0 L 10 5 L 0 10 z" />
+		</marker>
+		<marker id="triangle-left" markerHeight="6" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="0" refY="5" viewBox="0 0 10 10">
+			<rect fill="white" height="10" stroke="none" width="10" x1="0" y1="0" />
+			<path d="M 10 10 L 0 5 L 10 0 z" />
+		</marker>
+	</defs>
+	<g id="t1">
+		<path d="M2044.74614948675,2623.55110400835 A1116,1116 0,0,1 2044.47246168277,2623.66998139325 L2077.92737815351,2700.72041010027 A1200,1200 0,0,0 2078.22166611479,2700.59258495521 L2044.74614948675,2623.55110400835 " fill="#000000" stroke="black" stroke-width="0.042" />
+		<path d="M1527.33220977091,2713.6316232324 A1116,1116 0,0,1 1527.03445518903,2713.61215388053 L1521.54242493444,2797.43242352745 A1200,1200 0,0,0 1521.86259115152,2797.4533583144 L1527.33220977091,2713.6316232324 " fill="#000000" stroke="black" stroke-width="0.042" />
+		<path d="M1599.70160957605,484.00003989106 A1116,1116 0,0,1 1600,484 L1600,400 A1200,1200 0,0,0 1599.67915008178,400.000042893613 L1599.70160957605,484.00003989106 " fill="#000000" stroke="black" stroke-width="0.042" />
+	</g><!-- 
+	Generated using the Perl SVG Module V2.49
+	by Ronan Oger
+	Info: http://www.roitsystems.com/
+ -->
+</svg>

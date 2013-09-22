@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg height="3200" printerror="1" raiseerror="0" width="3200" xml_xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs >
+		<marker id="triangle-right" markerHeight="6" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="10" refY="5" viewBox="0 0 10 10">
+			<rect fill="white" height="10" stroke="none" width="10" x1="0" y1="0" />
+			<path d="M 0 0 L 10 5 L 0 10 z" />
+		</marker>
+		<marker id="triangle-left" markerHeight="6" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="0" refY="5" viewBox="0 0 10 10">
+			<rect fill="white" height="10" stroke="none" width="10" x1="0" y1="0" />
+			<path d="M 10 10 L 0 5 L 10 0 z" />
+		</marker>
+	</defs>
+	<g id="t1">
+		<path d="M450.4,1600 A1149.6,1149.6 -90,1,1 1600,2749.6 A1149.6,1149.6 -90,1,1 2749.6,1600 " fill="none" id="cp1" stroke="none" />
+		<g transform="translate(1616.3686682733, 460.117520663223)">			<text fill="black" font-size="42" text-anchor="middle" transform="rotate(-89.1772913710942)" x="0" y="0">Label1
+			</text>
+		</g>
+	</g><!-- 
+	Generated using the Perl SVG Module V2.49
+	by Ronan Oger
+	Info: http://www.roitsystems.com/
+ -->
+</svg>

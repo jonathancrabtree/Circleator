@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg height="3200" printerror="1" raiseerror="0" width="3200" xml_xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs >
+		<marker id="triangle-right" markerHeight="6" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="10" refY="5" viewBox="0 0 10 10">
+			<rect fill="white" height="10" stroke="none" width="10" x1="0" y1="0" />
+			<path d="M 0 0 L 10 5 L 0 10 z" />
+		</marker>
+		<marker id="triangle-left" markerHeight="6" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="0" refY="5" viewBox="0 0 10 10">
+			<rect fill="white" height="10" stroke="none" width="10" x1="0" y1="0" />
+			<path d="M 10 10 L 0 5 L 10 0 z" />
+		</marker>
+	</defs>
+	<g id="t1">
+		<mask height="3200" id="1" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
+			<rect fill="white" height="3200" r="1116" width="3200" x="0" y="0" />
+			<circle cx="1600" cy="1600" fill="black" r="1116" stroke="black" stroke-width="0.042" />
+		</mask>
+		<circle cx="1600" cy="1600" fill="#0000ff" mask="url(#1)" r="1200" stroke="black" stroke-width="0.042" />
+		<circle cx="1600" cy="1600" fill="none" r="1116" stroke="black" stroke-width="0.042" />
+	</g><!-- 
+	Generated using the Perl SVG Module V2.49
+	by Ronan Oger
+	Info: http://www.roitsystems.com/
+ -->
+</svg>
