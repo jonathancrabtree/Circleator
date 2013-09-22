@@ -1,0 +1,186 @@
+[
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/coords.2-z3.png",
+      "caption" : "<span class='track'>coords</span> track with default options",
+      "name" : "coords",
+      "height" : 140,
+      "descr" : "10.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/contigs.1-z3.png",
+      "caption" : "<span class='track'>contigs</span> track with default options",
+      "name" : "contigs",
+      "height" : 140,
+      "descr" : "10.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/contig-gaps.1-z3.png",
+      "caption" : "<span class='track'>contig-gaps</span> track with default options",
+      "name" : "contig-gaps",
+      "height" : 140,
+      "descr" : "10.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/genes.1-z3.png",
+      "caption" : "<span class='track'>genes</span> track with default options",
+      "name" : "genes",
+      "height" : 140,
+      "descr" : "10.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/genes-fwd.1-z3.png",
+      "caption" : "<span class='track'>genes-fwd</span> track with default options",
+      "name" : "genes-fwd",
+      "height" : 140,
+      "descr" : "10.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/genes-rev.1-z3.png",
+      "caption" : "<span class='track'>genes-rev</span> track with default options",
+      "name" : "genes-rev",
+      "height" : 140,
+      "descr" : "10.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/tRNAs.1-z3.png",
+      "caption" : "<span class='track'>tRNAs</span> track with default options",
+      "name" : "tRNAs",
+      "height" : 140,
+      "descr" : "10.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/tRNAs-rev.2-z3.png",
+      "caption" : "<span class='track'>tRNAs-fwd</span> and <span class='track'>tRNAs-rev</span> tracks together",
+      "name" : "tRNAs-rev",
+      "height" : 140,
+      "descr" : "10.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/rRNAs.1-z3.png",
+      "caption" : "<span class='track'>rRNAs</span> track with default options",
+      "name" : "rRNAs",
+      "height" : 140,
+      "descr" : "10.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/rRNAs-rev.2-z3.png",
+      "caption" : "<span class='track'>rRNAs-fwd</span> and <span class='track'>rRNAs-rev</span> tracks together",
+      "name" : "rRNAs-rev",
+      "height" : 140,
+      "descr" : "10.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/gaps.1-z3.png",
+      "caption" : "<span class='track'>gap</span> track with default options",
+      "name" : "gaps",
+      "height" : 140,
+      "descr" : "10.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/genes.2-z3.png",
+      "caption" : "<span class='track'>tiny-cgap</span> track",
+      "name" : "tiny-cgap",
+      "height" : 140,
+      "descr" : "10.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/genes.3-z3.png",
+      "caption" : "<span class='track' ZOOM=1440,390,320,213>small-cgap</span> track",
+      "name" : "small-cgap",
+      "height" : 140,
+      "descr" : "10.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/genes.4-z3.png",
+      "caption" : "<span class='track' ZOOM=1440,420,320,213>medium-cgap</span> track",
+      "name" : "medium-cgap",
+      "height" : 140,
+      "descr" : "10.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/genes.5-z3.png",
+      "caption" : "<span class='track' ZOOM=1440,440,320,213>large-cgap</span> track",
+      "name" : "large-cgap",
+      "height" : 140,
+      "descr" : "10.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/PercentGC0-100.1-z3.png",
+      "caption" : "<span class='track'>%GC0-100</span> track with default options",
+      "name" : "%GC0-100",
+      "height" : 140,
+      "descr" : "20.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/PercentGCmin-max.1-z3.png",
+      "caption" : "<span class='track'>%GCmin-max</span> track with default options",
+      "name" : "%GCmin-max",
+      "height" : 140,
+      "descr" : "20.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/PercentGCmin-max-dfa.1-z3.png",
+      "caption" : "<span class='track'>%GCmin-max-dfa</span> track with default options",
+      "name" : "%GCmin-max-dfa",
+      "height" : 140,
+      "descr" : "20.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/GCskew-1-df0.1-z3.png",
+      "caption" : "<span class='track'>%GCskew-1-df0</span> track with default options",
+      "name" : "GCskew-1-df0",
+      "height" : 140,
+      "descr" : "20.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/GCskew-min-max-df0.1-z3.png",
+      "caption" : "<span class='track'>%GCskew-min-max-df0</span> track with default options",
+      "name" : "GCskew-min-max-df0",
+      "height" : 140,
+      "descr" : "20.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/small-label.2-z3.png",
+      "caption" : "<span class='track'>small-label</span> track with <span class='option'>label-text</span>=Label1",
+      "name" : "small-label",
+      "height" : 140,
+      "descr" : "10.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/medium-label.2-z3.png",
+      "caption" : "<span class='track'>medium-label</span> track with <span class='option'>label-text</span>=Label1",
+      "name" : "medium-label",
+      "height" : 140,
+      "descr" : "10.0x"
+   },
+   {
+      "width" : 210,
+      "icon_url" : "predefined-tracks/large-label.2-z3.png",
+      "caption" : "<span class='track'>large-label</span> track with <span class='option'>label-text</span>=Label1",
+      "name" : "large-label",
+      "height" : 140,
+      "descr" : "10.0x"
+   }
+]
