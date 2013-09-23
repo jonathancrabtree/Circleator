@@ -4,7 +4,7 @@ The Charm City Circleator--or Circleator for short--is a Perl-based
 visualization tool for producing circular plots of genome-associated
 data, like this one:
 
-https://github.com/jonathancrabtree/Circleator/blob/gh-pages-dev/images/CP002104-1-600.png?raw=true
+![Sample Circleator Image](https://github.com/jonathancrabtree/Circleator/blob/gh-pages-dev/images/CP002104-1-600.png?raw=true)
 
 ### Key Features
 
