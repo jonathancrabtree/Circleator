@@ -70,6 +70,4 @@ Here is a simple 9-line Circleator configuration file:
 
 ### Acknowledgments
 
-This product includes color specifications and designs developed by Cynthia Brewer <colorbrewer>.
-
-[colorbrewer]: http://colorbrewer.org
+This product includes color specifications and designs developed by Cynthia Brewer <http://colorbrewer.org>
