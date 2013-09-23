@@ -83,7 +83,7 @@ Second (if needed), invoke the Apache Batik wrapper script to convert the SVG to
 
 See the [Documentation page][docs] for the complete download and install instructions.
 
-[docs]: https://github.com/jonathancrabtree/Circleator/blob/gh-pages-dev/documentation.md]
+[docs]: https://github.com/jonathancrabtree/Circleator/blob/gh-pages-dev/documentation.md
 
 ### Requirements
 
