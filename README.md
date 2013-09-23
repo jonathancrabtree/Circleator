@@ -81,7 +81,9 @@ Second (if needed), invoke the Apache Batik wrapper script to convert the SVG to
        rasterize-svg fig1.svg png
        rasterize-svg fig1.svg jpeg
 
-See the [Documentation page][https://github.com/jonathancrabtree/Circleator/blob/gh-pages-dev/documentation.md] for the complete download and install instructions.
+See the [Documentation page][docs] for the complete download and install instructions.
+
+[docs]: https://github.com/jonathancrabtree/Circleator/blob/gh-pages-dev/documentation.md]
 
 ### Requirements
 
