@@ -1,3 +1,5 @@
+Circleator is Copyright (C) 2010-2013, Jonathan Crabtree.
+
 ### Overview
 
 The Charm City Circleator--or Circleator for short--is a Perl-based
@@ -97,3 +99,26 @@ See the [Documentation page][docs] for the complete download and install instruc
 ### Acknowledgments
 
 This product includes color specifications and designs developed by Cynthia Brewer (<http://colorbrewer.org>).
+
+### Copyright
+
+Circleator is Copyright (C) 2010-2013, Jonathan Crabtree <jonathancrabtree@gmail.com>
+
+### Licensing
+
+Circleator is free software and is distributed under the terms of the 
+Artistic License 2.0. For details, see the full text of the license
+in the file LICENSE in the top-level of this distribution.
+
+Files with different licenses or copyright holders:
+
+#### conf/brewer.txt
+Copyright (c) 2002 Cynthia Brewer, Mark Harrower, and The Pennsylvania State University.
+The color specifications in this file are covered by an Apache-Style
+license. Please see the license statement in the file for details.
+The file itself was prepared by Martin Krzywinski and downloaded from
+<http://mkweb.bcgsc.ca/brewer/swatches/brewer.txt>
+
+### Authors
+
+See the AUTHORS file.
