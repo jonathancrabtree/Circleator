@@ -1,4 +1,4 @@
-Circleator is Copyright (C) 2010-2013, Jonathan Crabtree.
+Circleator is Copyright (C) 2010-2013, Jonathan Crabtree (<jonathancrabtree@gmail.com>).
 
 ### Overview
 
@@ -102,7 +102,7 @@ This product includes color specifications and designs developed by Cynthia Brew
 
 ### Copyright
 
-Circleator is Copyright (C) 2010-2013, Jonathan Crabtree <jonathancrabtree@gmail.com>
+Circleator is Copyright (C) 2010-2013, Jonathan Crabtree (<jonathancrabtree@gmail.com>)
 
 ### Licensing
 
@@ -119,6 +119,3 @@ license. Please see the license statement in the file for details.
 The file itself was prepared by Martin Krzywinski and downloaded from
 <http://mkweb.bcgsc.ca/brewer/swatches/brewer.txt>
 
-### Authors
-
-See the AUTHORS file.
