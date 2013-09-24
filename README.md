@@ -21,6 +21,8 @@ Common uses of the tool include:
 
 ### Key Features
 
+Circleator...
+
 * Builds on [BioPerl][] and the input file formats that it supports:
   * [GenBank][] flat files, GFF, FASTA, etc.
 * Accepts a number of other commonly-used datatypes/file formats:
@@ -47,23 +49,23 @@ provided it is in a commonly-used format. Conversely, experienced
 users should be able to create intricately-customized figures by using
 the same configuration file syntax.
 
-For new users:
+#### For new users:
   * **Walkthroughs and sample configuration files** provide HOW-TO guides for commonly-encountered datasets.
   * **Predefined track types** render standard data types using reasonable default options.
-    * e.g., the keyword `genes` by itself on a line in the configuration file will display a circular track in which each gene is a curved black rectangle.
+    * *e.g.*, the keyword `genes` by itself on a line in the configuration file will display a circular track in which each gene is a curved black rectangle.
   * **Configurable track options** allow the predefined track types to be customized as little or as much as needed.
-    * e.g., the line `genes color1=red` will do the same, but replacing the default gene color (black) with red.
+    * *e.g.*, the line `genes color1=red` will do the same as `genes`, but using red instead of black.
 
-For experienced users:
+#### For experienced users:
   * **User-defined track types** can be created inline and then reused later in the configuration file.
   * **Feature-based scaling** allows the figure scale to be selectively expanded around features of interest.
-    * e.g., Use 100X scale for any nonsynonymous SNP position and display the affected bases.
-  * **Configuration file loops** mean that figures for 60-genome SNP panels can be configured and displayed without cutting and pasting the same SNP track 59 times.
+    * *e.g.*, Use 100X scale for any nonsynonymous SNP position and display the affected bases.
+  * **Configuration file loops** mean that figures for 60-genome SNP panels can be configured and displayed without cutting and pasting the same SNP track configuration 59 times.
   * **Symbolic track references** allow tracks to reference others by name or relative position.
-    * e.g., Label each tRNA displayed in the preceding track with its anticodon sequence and connect the label to the corresponding feature with a blue line.
+    * *e.g.*, Label each tRNA displayed in the preceding track with its anticodon sequence and connect the label to the corresponding feature with a blue line.
   * **Computed features** can be added to supplement those features that appear directly in the input files.
-    * e.g., Create and display a "SNP desert" feature in any location where there is at least 5kb of sequence that contains no SNPs.
-    * e.g., Create and display a "low coverage" feature in any location where the valued plotted in the read coverage graph in track 2 falls below 5.
+    * *e.g.*, Create and display a "SNP desert" feature in any location where there is at least 5kb of sequence that contains no SNPs.
+    * *e.g.*, Create and display a "low coverage" feature in any location where the valued plotted in the read coverage graph in track 2 falls below 5.
 
 ### Getting Started
 
@@ -96,10 +98,6 @@ See the [Documentation page][docs] for the complete download and install instruc
 
 [batik]: http://xmlgraphics.apache.org/batik/
 
-### Acknowledgments
-
-This product includes color specifications and designs developed by Cynthia Brewer (<http://colorbrewer.org>).
-
 ### Copyright
 
 Circleator is Copyright (C) 2010-2013, Jonathan Crabtree \<<jonathancrabtree@gmail.com>\>
@@ -119,3 +117,6 @@ license. Please see the license statement in the file for details.
 The file itself was prepared by Martin Krzywinski and downloaded from
 <http://mkweb.bcgsc.ca/brewer/swatches/brewer.txt>
 
+### Acknowledgments
+
+This product includes color specifications and designs developed by Cynthia Brewer (<http://colorbrewer.org>).
