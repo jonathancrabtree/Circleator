@@ -13,8 +13,8 @@
 	</defs>
 	<g id="t1" opacity="0.7">
 		<path d="M386.56,1600 A1213.44,1213.44 -90,1,1 1600,2813.44 A1213.44,1213.44 -90,1,1 2813.44,1600 " fill="none" id="cp1" stroke="none" />
-		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1906.067094786" y="0">			<textPath xlink:href="#cp1">
-			</textPath>
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1906.067094786" y="0">
+			<textPath xlink:href="#cp1"></textPath>
 		</text>
 	</g>
 	<g id="t2">
@@ -45,24 +45,24 @@
 		<line stroke="black" stroke-width="2.4" x1="1443.39789026601" x2="1440.20192884286" y1="434.47360423418" y2="410.687351259368" />
 		<path d="M352,1600 A1248,1248 -90,1,1 1600,2848 A1248,1248 -90,1,1 1600,352 " fill="none" id="cp2" stroke="none" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="424" y2="376" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="1960.35381584003" y="0">			<textPath xlink:href="#cp2">0.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1960.35381584003" y="0">
+			<textPath xlink:href="#cp2">0.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2743.97147736754" x2="2790.66419072948" y1="1327.41009011789" y2="1316.28397134719" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="3628.77341047876" y="0">			<textPath xlink:href="#cp2">0.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="3628.77341047876" y="0">
+			<textPath xlink:href="#cp2">0.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2130.33177197843" x2="2151.97796675306" y1="2649.63051195657" y2="2692.47257366908" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="5297.19300511749" y="0">			<textPath xlink:href="#cp2">1.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="5297.19300511749" y="0">
+			<textPath xlink:href="#cp2">1.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="701.884117753586" x2="665.226326641488" y1="2359.18631577285" y2="2390.173512335" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="6965.61259975621" y="0">			<textPath xlink:href="#cp2">1.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="6965.61259975621" y="0">
+			<textPath xlink:href="#cp2">1.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="653.312229033062" x2="614.671911850738" y1="902.319367975827" y2="873.842607485044" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="8634.03219439494" y="0">			<textPath xlink:href="#cp2">2.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="8634.03219439494" y="0">
+			<textPath xlink:href="#cp2">2.0Mb</textPath>
 		</text>
 	</g>
 	<g id="t3">
@@ -845,7 +845,7 @@
 		<path d="M853.838867265597,2241.48231775826 A984,984 0,0,1 852.312775922143,2239.7029114759 L788.485817769155,2294.3116966019 A1068,1068 0,0,0 790.142185202904,2296.24300342055 L853.838867265597,2241.48231775826 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M852.309355122345,2239.6989132103 A984,984 0,0,1 848.688553671674,2235.44245263913 L784.552210692427,2289.68754005955 A1068,1068 0,0,0 788.482104949862,2294.30735702093 L852.309355122345,2239.6989132103 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M848.496599401758,2235.21542714994 A984,984 0,0,1 847.427669763606,2233.94864757531 L783.183690353182,2288.06621505125 A1068,1068 0,0,0 784.343870082395,2289.44113434566 L848.496599401758,2235.21542714994 " fill="#000000" stroke="black" stroke-width="0.042" />
-		<path d="M847.310726206437,2233.80979569278 A984,984 0,0,1 842.024507605898,2227.47840833762 L777.319282645426,2281.04363831766 A1068,1068 0,0,0 783.056763809425,2287.91550995923 L847.310726206437,2233.80979569278 " fill="#000000" stroke="black" stroke-width="0.042" />
+		<path d="M847.310726206437,2233.80979569278 A984,984 0,0,1 842.024507605898,2227.47840833762 L777.319282645426,2281.04363831767 A1068,1068 0,0,0 783.056763809425,2287.91550995923 L847.310726206437,2233.80979569278 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M841.662246516771,2227.04055023739 A984,984 0,0,1 839.694376597478,2224.65299088574 L774.790238014336,2277.97702669306 A1068,1068 0,0,0 776.926096829179,2280.56840208692 L841.662246516771,2227.04055023739 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M839.158533561888,2224.00021069572 A984,984 0,0,1 838.218410044199,2222.85215677913 L773.188274316265,2276.02246284564 A1068,1068 0,0,0 774.208652280586,2277.26852136487 L839.158533561888,2224.00021069572 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M838.225071489965,2222.86030399563 A984,984 0,0,1 837.186939883395,2221.58847746362 L772.068751824661,2274.65090846661 A1068,1068 0,0,0 773.195504422035,2276.03130555623 L838.225071489965,2222.86030399563 " fill="#000000" stroke="black" stroke-width="0.042" />
@@ -2911,22 +2911,22 @@
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="780" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
 		<g id="t13.1" opacity="0.6">
 			<path d="M818.32,1600 A781.68,781.68 -90,1,1 1600,2381.68 A781.68,781.68 -90,1,1 2381.68,1600 " fill="none" id="cp4" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1227.86007272903" y="0">				<textPath xlink:href="#cp4">min=47.9600
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1227.86007272903" y="0">
+				<textPath xlink:href="#cp4">min=47.9600</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="864" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
 		<g id="t13.2" opacity="0.6">
 			<path d="M744.82,1600 A855.18,855.18 -90,1,1 1600,2455.18 A855.18,855.18 -90,1,1 2455.18,1600 " fill="none" id="cp5" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1343.31360274846" y="0">				<textPath xlink:href="#cp5">max=68.6600
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1343.31360274846" y="0">
+				<textPath xlink:href="#cp5">max=68.6600</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="839.921380251577" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
 		<g id="t13.3" opacity="0.6">
 			<path d="M768.898619748423,1600 A831.101380251577,831.101380251577 -90,1,1 1600,2431.10138025158 A831.101380251577,831.101380251577 -90,1,1 2431.10138025158,1600 " fill="none" id="cp6" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1305.49099529335" y="0">				<textPath xlink:href="#cp6">avg=62.7263
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1305.49099529335" y="0">
+				<textPath xlink:href="#cp6">avg=62.7263</textPath>
 			</text>
 		</g>
 	</g>
@@ -6243,22 +6243,22 @@
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="395.999999999999" stroke="black" stroke-dasharray="3, 3" stroke-width="0.084" />
 		<g id="t27.1" opacity="0.6">
 			<path d="M1202.32,1600 A397.679999999999,397.679999999999 -90,1,1 1600,1997.68 A397.679999999999,397.679999999999 -90,1,1 1997.68,1600 " fill="none" id="cp7" stroke="none" />
-			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="624.674283239793" y="0">				<textPath xlink:href="#cp7">min=-0.1546
-				</textPath>
+			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="624.674283239793" y="0">
+				<textPath xlink:href="#cp7">min=-0.1546</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="479.999999999999" stroke="black" stroke-dasharray="3, 3" stroke-width="0.084" />
 		<g id="t27.2" opacity="0.6">
 			<path d="M1128.82,1600 A471.179999999999,471.179999999999 -90,1,1 1600,2071.18 A471.179999999999,471.179999999999 -90,1,1 2071.18,1600 " fill="none" id="cp8" stroke="none" />
-			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="740.127813259218" y="0">				<textPath xlink:href="#cp8">max=0.1470
-				</textPath>
+			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="740.127813259218" y="0">
+				<textPath xlink:href="#cp8">max=0.1470</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="438.739149029665" stroke="black" stroke-dasharray="3, 3" stroke-width="0.084" />
 		<g id="t27.3" opacity="0.6">
 			<path d="M1170.08085097034,1600 A429.919149029665,429.919149029665 -90,1,1 1600,2029.91914902966 A429.919149029665,429.919149029665 -90,1,1 2029.91914902966,1600 " fill="none" id="cp9" stroke="none" />
-			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="675.315420114585" y="0">				<textPath xlink:href="#cp9">avg=-0.0011
-				</textPath>
+			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="675.315420114585" y="0">
+				<textPath xlink:href="#cp9">avg=-0.0011</textPath>
 			</text>
 		</g>
 	</g>
@@ -7681,8 +7681,9 @@
 		<path d="M1593.29461103725,1348.08922659232 A251.999999999999,251.999999999999 0,0,1 1596.66284125251,1348.02209745398 L1596.18610428859,1312.02525423311 A287.999999999999,287.999999999999 0,0,0 1592.33669832828,1312.10197324836 L1593.29461103725,1348.08922659232 " fill="rgb(244,245,246)" stroke="rgb(244,245,246)" stroke-width="0.018" />
 		<path d="M1596.66284125251,1348.02209745398 A251.999999999999,251.999999999999 0,0,1 1600,1348 L1600,1312 A287.999999999999,287.999999999999 0,0,0 1596.18610428859,1312.02525423311 L1596.66284125251,1348.02209745398 " fill="rgb(191,216,231)" stroke="rgb(191,216,231)" stroke-width="0.018" />
 	</g>
-	<g id="t34" /><!-- 
-	Generated using the Perl SVG Module V2.49
+	<g id="t34" />
+	<!-- 
+	Generated using the Perl SVG Module V2.59
 	by Ronan Oger
 	Info: http://www.roitsystems.com/
  -->

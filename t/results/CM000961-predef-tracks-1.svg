@@ -13,8 +13,8 @@
 	</defs>
 	<g id="t1" opacity="0.7">
 		<path d="M386.56,1600 A1213.44,1213.44 -90,1,1 1600,2813.44 A1213.44,1213.44 -90,1,1 2813.44,1600 " fill="none" id="cp1" stroke="none" />
-		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1906.067094786" y="0">			<textPath xlink:href="#cp1">
-			</textPath>
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1906.067094786" y="0">
+			<textPath xlink:href="#cp1"></textPath>
 		</text>
 	</g>
 	<g id="t2">
@@ -45,30 +45,30 @@
 		<line stroke="black" stroke-width="2.4" x1="1443.39789026601" x2="1440.20192884286" y1="434.47360423418" y2="410.687351259368" />
 		<path d="M352,1600 A1248,1248 -90,1,1 1600,2848 A1248,1248 -90,1,1 1600,352 " fill="none" id="cp2" stroke="none" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="424" y2="376" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="1960.35381584003" y="0">			<textPath xlink:href="#cp2">0.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1960.35381584003" y="0">
+			<textPath xlink:href="#cp2">0.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2743.97147736754" x2="2790.66419072948" y1="1327.41009011789" y2="1316.28397134719" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="3628.77341047876" y="0">			<textPath xlink:href="#cp2">0.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="3628.77341047876" y="0">
+			<textPath xlink:href="#cp2">0.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2130.33177197843" x2="2151.97796675306" y1="2649.63051195657" y2="2692.47257366908" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="5297.19300511749" y="0">			<textPath xlink:href="#cp2">1.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="5297.19300511749" y="0">
+			<textPath xlink:href="#cp2">1.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="701.884117753586" x2="665.226326641488" y1="2359.18631577285" y2="2390.173512335" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="6965.61259975621" y="0">			<textPath xlink:href="#cp2">1.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="6965.61259975621" y="0">
+			<textPath xlink:href="#cp2">1.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="653.312229033062" x2="614.671911850738" y1="902.319367975827" y2="873.842607485044" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="8634.03219439494" y="0">			<textPath xlink:href="#cp2">2.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="8634.03219439494" y="0">
+			<textPath xlink:href="#cp2">2.0Mb</textPath>
 		</text>
 	</g>
 	<g id="t3" opacity="0.7">
 		<path d="M410.56,1600 A1189.44,1189.44 -90,1,1 1600,2789.44 A1189.44,1189.44 -90,1,1 2789.44,1600 " fill="none" id="cp3" stroke="none" />
-		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1868.36798294292" y="0">			<textPath xlink:href="#cp3">coords
-			</textPath>
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1868.36798294292" y="0">
+			<textPath xlink:href="#cp3">coords</textPath>
 		</text>
 	</g>
 	<g id="t4" />
@@ -82,8 +82,8 @@
 	</g>
 	<g id="t6" opacity="0.7">
 		<path d="M518.56,1600 A1081.44,1081.44 -90,1,1 1600,2681.44 A1081.44,1081.44 -90,1,1 2681.44,1600 " fill="none" id="cp5" stroke="none" />
-		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1698.72197964907" y="0">			<textPath xlink:href="#cp5">contigs
-			</textPath>
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1698.72197964907" y="0">
+			<textPath xlink:href="#cp5">contigs</textPath>
 		</text>
 	</g>
 	<g id="t7" />
@@ -1803,7 +1803,7 @@
 		<path d="M640.009356374083,1595.76158629934 A960,960 0,0,1 640.019441344827,1593.89041702727 L556.021142462499,1593.35582851716 A1044,1044 0,0,0 556.010175056816,1595.39072510053 L640.009356374083,1595.76158629934 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M640.019588642213,1593.86731630249 A960,960 0,0,1 640.052467179094,1589.96335558784 L556.057058057265,1589.08514920178 A1044,1044 0,0,0 556.021302648407,1593.33070647896 L640.019588642213,1593.86731630249 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M640.052359892109,1589.97362222478 A960,960 0,0,1 640.072775224987,1588.17954587417 L556.079143057173,1587.14525613816 A1044,1044 0,0,0 556.056941382669,1589.09631416945 L640.052359892109,1589.97362222478 " fill="#000000" stroke="black" stroke-width="0.042" />
-		<path d="M640.072743623487,1588.18211247901 A960,960 0,0,1 640.106125428592,1585.7259129788 L556.115411403593,1584.47693036444 A1044,1044 0,0,0 556.079108690541,1587.14804732092 L640.072743623487,1588.18211247901 " fill="#000000" stroke="black" stroke-width="0.042" />
+		<path d="M640.072743623486,1588.18211247901 A960,960 0,0,1 640.106125428592,1585.7259129788 L556.115411403593,1584.47693036444 A1044,1044 0,0,0 556.079108690541,1587.14804732092 L640.072743623486,1588.18211247901 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M640.107311851145,1585.64635104359 A960,960 0,0,1 640.130048489268,1584.19885489007 L556.141427732079,1582.81625469296 A1044,1044 0,0,0 556.11670163812,1584.39040675991 L640.107311851145,1585.64635104359 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M640.130132999595,1584.19372198698 A960,960 0,0,1 640.167046966994,1582.09183784027 L556.181663576606,1580.52487365129 A1044,1044 0,0,0 556.14151963706,1582.81067266084 L640.130132999595,1584.19372198698 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M640.166855494141,1582.10210325223 A960,960 0,0,1 640.210762883065,1579.88482377676 L556.229204635333,1578.12474585722 A1044,1044 0,0,0 556.181455349878,1580.53603728681 L640.166855494141,1582.10210325223 " fill="#000000" stroke="black" stroke-width="0.042" />
@@ -1945,7 +1945,7 @@
 		<path d="M715.571274134351,1226.65588411806 A960,960 0,0,1 715.877028065264,1225.93239849288 L638.516268020975,1193.20148336101 A1044,1044 0,0,0 638.183760621107,1193.9882739784 L715.571274134351,1226.65588411806 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M715.944053172791,1225.77402164007 A960,960 0,0,1 717.088826749536,1223.08109605714 L639.83409909012,1190.10069196214 A1044,1044 0,0,0 638.58915782541,1193.02924853358 L715.944053172791,1225.77402164007 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M717.172494784092,1222.88516863659 A960,960 0,0,1 717.854541813382,1221.29247353568 L640.666814222053,1188.15556497005 A1044,1044 0,0,0 639.9250880777,1189.88762089229 L717.172494784092,1222.88516863659 " fill="#000000" stroke="black" stroke-width="0.042" />
-		<path d="M718.141351350515,1220.62508806973 A960,960 0,0,1 718.272255395008,1220.32094554243 L641.121077742071,1187.0990282774 A1044,1044 0,0,0 640.978719593685,1187.42978327583 L718.141351350515,1220.62508806973 " fill="#000000" stroke="black" stroke-width="0.042" />
+		<path d="M718.141351350515,1220.62508806973 A960,960 0,0,1 718.272255395007,1220.32094554243 L641.12107774207,1187.0990282774 A1044,1044 0,0,0 640.978719593685,1187.42978327583 L718.141351350515,1220.62508806973 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M718.651350977306,1219.44177992602 A960,960 0,0,1 719.158855739709,1218.26857795274 L642.085255616934,1184.86707852361 A1044,1044 0,0,0 641.533344187821,1186.14293566955 L718.651350977306,1219.44177992602 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M719.361068685623,1217.80231207728 A960,960 0,0,1 719.775454757145,1216.84892019987 L642.755807048395,1183.32320071735 A1044,1044 0,0,0 642.305162195615,1184.36001438404 L719.361068685623,1217.80231207728 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M719.843082158973,1216.69359517928 A960,960 0,0,1 721.931325066448,1211.93376583316 L645.100316009762,1177.97797034356 A1044,1044 0,0,0 642.829351847883,1183.15428475747 L719.843082158973,1216.69359517928 " fill="#000000" stroke="black" stroke-width="0.042" />
@@ -2381,8 +2381,8 @@
 	</g>
 	<g id="t9" opacity="0.7">
 		<path d="M626.56,1600 A973.44,973.44 -90,1,1 1600,2573.44 A973.44,973.44 -90,1,1 2573.44,1600 " fill="none" id="cp6" stroke="none" />
-		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1529.07597635522" y="0">			<textPath xlink:href="#cp6">genes
-			</textPath>
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1529.07597635522" y="0">
+			<textPath xlink:href="#cp6">genes</textPath>
 		</text>
 	</g>
 	<g id="t10" />
@@ -3135,7 +3135,7 @@
 		<path d="M997.777727585799,2219.53557977591 A864,864 0,0,1 996.263849516209,2218.06040206359 L937.567279330284,2278.14960781978 A948,948 0,0,0 939.228339989973,2279.76820558746 L997.777727585799,2219.53557977591 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M996.032536415313,2217.83436528821 A864,864 0,0,1 994.577211202412,2216.40834420419 L935.716662291535,2276.33693322404 A948,948 0,0,0 937.313477455691,2277.90159524678 L996.032536415313,2217.83436528821 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M988.657419802594,2210.5376725785 A864,864 0,0,1 986.008883046205,2207.87408918445 L926.315302231252,2266.97295896628 A948,948 0,0,0 929.221335616735,2269.89550185697 L988.657419802594,2210.5376725785 " fill="#000000" stroke="black" stroke-width="0.042" />
-		<path d="M984.001745207026,2205.84003671927 A864,864 0,0,1 982.802635470832,2204.61840297683 L922.797336141607,2263.40074771069 A948,948 0,0,0 924.113025991042,2264.74115140031 L984.001745207026,2205.84003671927 " fill="#000000" stroke="black" stroke-width="0.042" />
+		<path d="M984.001745207026,2205.84003671927 A864,864 0,0,1 982.802635470832,2204.61840297683 L922.797336141608,2263.40074771069 A948,948 0,0,0 924.113025991042,2264.74115140031 L984.001745207026,2205.84003671927 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M982.815568396523,2204.63160468693 A864,864 0,0,1 981.241449833803,2203.02061042408 L921.084368567644,2261.64761421531 A948,948 0,0,0 922.811526435073,2263.41523292038 L982.815568396523,2204.63160468693 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M979.102579583719,2200.81810335609 A864,864 0,0,1 977.677814932213,2199.34222108279 L917.174269161733,2257.61160368806 A948,948 0,0,0 918.737552598803,2259.23097451571 L979.102579583719,2200.81810335609 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M974.531149142095,2196.05764537207 A864,864 0,0,1 973.332354941984,2194.79716091912 L912.406333894677,2252.62466267514 A948,948 0,0,0 913.72167753091,2254.00769422768 L974.531149142095,2196.05764537207 " fill="#000000" stroke="black" stroke-width="0.042" />
@@ -3565,8 +3565,8 @@
 	</g>
 	<g id="t12" opacity="0.7">
 		<path d="M722.56,1600 A877.44,877.44 -90,1,1 1600,2477.44 A877.44,877.44 -90,1,1 2477.44,1600 " fill="none" id="cp7" stroke="none" />
-		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1378.27952898291" y="0">			<textPath xlink:href="#cp7">genes-fwd
-			</textPath>
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1378.27952898291" y="0">
+			<textPath xlink:href="#cp7">genes-fwd</textPath>
 		</text>
 	</g>
 	<g id="t13" />
@@ -4689,8 +4689,8 @@
 	</g>
 	<g id="t15" opacity="0.7">
 		<path d="M818.56,1600 A781.44,781.44 -90,1,1 1600,2381.44 A781.44,781.44 -90,1,1 2381.44,1600 " fill="none" id="cp8" stroke="none" />
-		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1227.4830816106" y="0">			<textPath xlink:href="#cp8">genes-rev
-			</textPath>
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1227.4830816106" y="0">
+			<textPath xlink:href="#cp8">genes-rev</textPath>
 		</text>
 	</g>
 	<g id="t16" />
@@ -4747,8 +4747,8 @@
 	</g>
 	<g id="t18" opacity="0.7">
 		<path d="M926.560000000001,1600 A673.439999999999,673.439999999999 -90,1,1 1600,2273.44 A673.439999999999,673.439999999999 -90,1,1 2273.44,1600 " fill="none" id="cp9" stroke="none" />
-		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1057.83707831675" y="0">			<textPath xlink:href="#cp9">tRNAs
-			</textPath>
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1057.83707831675" y="0">
+			<textPath xlink:href="#cp9">tRNAs</textPath>
 		</text>
 	</g>
 	<g id="t19" />
@@ -4771,8 +4771,8 @@
 	</g>
 	<g id="t21" opacity="0.7">
 		<path d="M1022.56,1600 A577.439999999999,577.439999999999 -90,1,1 1600,2177.44 A577.439999999999,577.439999999999 -90,1,1 2177.44,1600 " fill="none" id="cp10" stroke="none" />
-		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="907.040630944444" y="0">			<textPath xlink:href="#cp10">tRNAs-fwd
-			</textPath>
+		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="907.040630944444" y="0">
+			<textPath xlink:href="#cp10">tRNAs-fwd</textPath>
 		</text>
 	</g>
 	<g id="t22" />
@@ -4814,8 +4814,8 @@
 	</g>
 	<g id="t24" opacity="0.7">
 		<path d="M1118.56,1600 A481.439999999999,481.439999999999 -90,1,1 1600,2081.44 A481.439999999999,481.439999999999 -90,1,1 2081.44,1600 " fill="none" id="cp11" stroke="none" />
-		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="756.244183572134" y="0">			<textPath xlink:href="#cp11">tRNAs-rev
-			</textPath>
+		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="756.244183572134" y="0">
+			<textPath xlink:href="#cp11">tRNAs-rev</textPath>
 		</text>
 	</g>
 	<g id="t25" />
@@ -4833,8 +4833,8 @@
 	</g>
 	<g id="t27" opacity="0.7">
 		<path d="M1226.56,1600 A373.439999999999,373.439999999999 -90,1,1 1600,1973.44 A373.439999999999,373.439999999999 -90,1,1 1973.44,1600 " fill="none" id="cp12" stroke="none" />
-		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="586.598180278285" y="0">			<textPath xlink:href="#cp12">rRNAs
-			</textPath>
+		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="586.598180278285" y="0">
+			<textPath xlink:href="#cp12">rRNAs</textPath>
 		</text>
 	</g>
 	<g id="t28" />
@@ -4849,8 +4849,8 @@
 	</g>
 	<g id="t30" opacity="0.7">
 		<path d="M1322.56,1600 A277.439999999999,277.439999999999 -90,1,1 1600,1877.44 A277.439999999999,277.439999999999 -90,1,1 1877.44,1600 " fill="none" id="cp13" stroke="none" />
-		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="435.801732905975" y="0">			<textPath xlink:href="#cp13">rRNAs-fwd
-			</textPath>
+		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="435.801732905975" y="0">
+			<textPath xlink:href="#cp13">rRNAs-fwd</textPath>
 		</text>
 	</g>
 	<g id="t31" />
@@ -4861,12 +4861,13 @@
 	</g>
 	<g id="t33" opacity="0.7">
 		<path d="M1418.56,1600 A181.439999999999,181.439999999999 -90,1,1 1600,1781.44 A181.439999999999,181.439999999999 -90,1,1 1781.44,1600 " fill="none" id="cp14" stroke="none" />
-		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="285.005285533665" y="0">			<textPath xlink:href="#cp14">rRNAs-rev
-			</textPath>
+		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="285.005285533665" y="0">
+			<textPath xlink:href="#cp14">rRNAs-rev</textPath>
 		</text>
 	</g>
-	<g id="t34" /><!-- 
-	Generated using the Perl SVG Module V2.49
+	<g id="t34" />
+	<!-- 
+	Generated using the Perl SVG Module V2.59
 	by Ronan Oger
 	Info: http://www.roitsystems.com/
  -->

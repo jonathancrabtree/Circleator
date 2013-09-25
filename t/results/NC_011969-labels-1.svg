@@ -13,8 +13,8 @@
 	</defs>
 	<g id="t1">
 		<path d="M450.4,1600 A1149.6,1149.6 -90,1,1 1600,2749.6 A1149.6,1149.6 -90,1,1 2749.6,1600 " fill="none" id="cp1" stroke="none" />
-		<text fill="#000000" font-size="42" font-style="italic" font-weight="bold" text-anchor="middle" x="1805.78745728341" y="0">			<textPath xlink:href="#cp1">
-			</textPath>
+		<text fill="#000000" font-size="42" font-style="italic" font-weight="bold" text-anchor="middle" x="1805.78745728341" y="0">
+			<textPath xlink:href="#cp1"></textPath>
 		</text>
 	</g>
 	<g id="t2">
@@ -30,122 +30,122 @@
 		<path d="M142.6,1600 A1457.4,1457.4 -90,1,1 1600,3057.4 A1457.4,1457.4 -90,1,1 3057.4,1600 " fill="none" id="cp11" stroke="none" />
 		<path d="M127.6,1600 A1472.4,1472.4 -90,1,1 1600,3072.4 A1472.4,1472.4 -90,1,1 3072.4,1600 " fill="none" id="cp12" stroke="none" />
 		<path d="M112.6,1600 A1487.4,1487.4 -90,1,1 1600,3087.4 A1487.4,1487.4 -90,1,1 3087.4,1600 " fill="none" id="cp13" stroke="none" />
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2093.29960240194" y="0">			<textPath xlink:href="#cp2">16S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2093.29960240194" y="0">
+			<textPath xlink:href="#cp2">16S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2121.25419900257" y="0">			<textPath xlink:href="#cp3">23S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2121.25419900257" y="0">
+			<textPath xlink:href="#cp3">23S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2147.59127787681" y="0">			<textPath xlink:href="#cp4">5S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2147.59127787681" y="0">
+			<textPath xlink:href="#cp4">5S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2197.11824236135" y="0">			<textPath xlink:href="#cp5">16S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2197.11824236135" y="0">
+			<textPath xlink:href="#cp5">16S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2225.19215392396" y="0">			<textPath xlink:href="#cp6">23S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2225.19215392396" y="0">
+			<textPath xlink:href="#cp6">23S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2251.96558406007" y="0">			<textPath xlink:href="#cp7">5S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2251.96558406007" y="0">
+			<textPath xlink:href="#cp7">5S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2209.51685006807" y="0">			<textPath xlink:href="#cp2">16S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2209.51685006807" y="0">
+			<textPath xlink:href="#cp2">16S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2238.42225841158" y="0">			<textPath xlink:href="#cp3">23S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2238.42225841158" y="0">
+			<textPath xlink:href="#cp3">23S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2266.07428468127" y="0">			<textPath xlink:href="#cp4">5S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2266.07428468127" y="0">
+			<textPath xlink:href="#cp4">5S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2310.02445600029" y="0">			<textPath xlink:href="#cp2">16S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2310.02445600029" y="0">
+			<textPath xlink:href="#cp2">16S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2340.06911760096" y="0">			<textPath xlink:href="#cp3">23S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2340.06911760096" y="0">
+			<textPath xlink:href="#cp3">23S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2368.91904691466" y="0">			<textPath xlink:href="#cp4">5S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2368.91904691466" y="0">
+			<textPath xlink:href="#cp4">5S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2479.83869559209" y="0">			<textPath xlink:href="#cp2">16S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2479.83869559209" y="0">
+			<textPath xlink:href="#cp2">16S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2511.8111738574" y="0">			<textPath xlink:href="#cp3">23S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2511.8111738574" y="0">
+			<textPath xlink:href="#cp3">23S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2542.52702879844" y="0">			<textPath xlink:href="#cp4">5S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2542.52702879844" y="0">
+			<textPath xlink:href="#cp4">5S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2598.05493132606" y="0">			<textPath xlink:href="#cp5">16S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2598.05493132606" y="0">
+			<textPath xlink:href="#cp5">16S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2630.52784043951" y="0">			<textPath xlink:href="#cp6">23S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2630.52784043951" y="0">
+			<textPath xlink:href="#cp6">23S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2661.69944425742" y="0">			<textPath xlink:href="#cp7">5S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2661.69944425742" y="0">
+			<textPath xlink:href="#cp7">5S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2695.51786778963" y="0">			<textPath xlink:href="#cp8">16S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2695.51786778963" y="0">
+			<textPath xlink:href="#cp8">16S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2728.24715598095" y="0">			<textPath xlink:href="#cp9">23S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2728.24715598095" y="0">
+			<textPath xlink:href="#cp9">23S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2759.62871879125" y="0">			<textPath xlink:href="#cp10">5S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2759.62871879125" y="0">
+			<textPath xlink:href="#cp10">5S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2544.65401462702" y="0">			<textPath xlink:href="#cp2">16S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2544.65401462702" y="0">
+			<textPath xlink:href="#cp2">16S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2577.36249967337" y="0">			<textPath xlink:href="#cp3">23S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2577.36249967337" y="0">
+			<textPath xlink:href="#cp3">23S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2608.8151943021" y="0">			<textPath xlink:href="#cp4">5S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2608.8151943021" y="0">
+			<textPath xlink:href="#cp4">5S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2819.56875305563" y="0">			<textPath xlink:href="#cp11">16S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2819.56875305563" y="0">
+			<textPath xlink:href="#cp11">16S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2852.82111276806" y="0">			<textPath xlink:href="#cp12">23S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2852.82111276806" y="0">
+			<textPath xlink:href="#cp12">23S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2884.68192514769" y="0">			<textPath xlink:href="#cp13">5S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2884.68192514769" y="0">
+			<textPath xlink:href="#cp13">5S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2660.46630608093" y="0">			<textPath xlink:href="#cp5">16S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2660.46630608093" y="0">
+			<textPath xlink:href="#cp5">16S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2693.62385072262" y="0">			<textPath xlink:href="#cp6">23S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2693.62385072262" y="0">
+			<textPath xlink:href="#cp6">23S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2725.48009006879" y="0">			<textPath xlink:href="#cp7">5S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2725.48009006879" y="0">
+			<textPath xlink:href="#cp7">5S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2978.08858345618" y="0">			<textPath xlink:href="#cp2">16S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="2978.08858345618" y="0">
+			<textPath xlink:href="#cp2">16S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="3015.71271652938" y="0">			<textPath xlink:href="#cp3">23S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="3015.71271652938" y="0">
+			<textPath xlink:href="#cp3">23S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="3052.16333908295" y="0">			<textPath xlink:href="#cp4">5S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="3052.16333908295" y="0">
+			<textPath xlink:href="#cp4">5S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="3344.7916346213" y="0">			<textPath xlink:href="#cp2">16S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="3344.7916346213" y="0">
+			<textPath xlink:href="#cp2">16S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="3386.57447926873" y="0">			<textPath xlink:href="#cp3">23S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="3386.57447926873" y="0">
+			<textPath xlink:href="#cp3">23S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="3427.18623981554" y="0">			<textPath xlink:href="#cp4">5S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="3427.18623981554" y="0">
+			<textPath xlink:href="#cp4">5S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="9504.55747677526" y="0">			<textPath xlink:href="#cp3">5S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="9504.55747677526" y="0">
+			<textPath xlink:href="#cp3">5S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="9400.52826760366" y="0">			<textPath xlink:href="#cp2">23S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="9400.52826760366" y="0">
+			<textPath xlink:href="#cp2">23S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="9617.67645142891" y="0">			<textPath xlink:href="#cp4">16S rRNA
-			</textPath>
+		<text fill="black" font-size="9.69230769230769" text-anchor="middle" x="9617.67645142891" y="0">
+			<textPath xlink:href="#cp4">16S rRNA</textPath>
 		</text>
 	</g>
 	<g id="t3">
@@ -205,48 +205,48 @@
 		<line stroke="black" stroke-width="2.4" x1="1579.47476850576" x2="1579.06426387587" y1="400.175548310459" y2="376.179059276668" />
 		<path d="M328,1600 A1272,1272 -90,1,1 1600,2872 A1272,1272 -90,1,1 1600,328 " fill="none" id="cp14" stroke="none" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="400" y2="352" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="1998.05292768311" y="0">			<textPath xlink:href="#cp14">0.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1998.05292768311" y="0">
+			<textPath xlink:href="#cp14">0.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2280.05247112864" x2="2307.25456997378" y1="611.299521335285" y2="571.751502188697" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="2764.4427261786" y="0">			<textPath xlink:href="#cp14">0.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="2764.4427261786" y="0">
+			<textPath xlink:href="#cp14">0.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2720.61367287001" x2="2765.43821978481" y1="1170.78560581361" y2="1153.61703004615" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="3530.8325246741" y="0">			<textPath xlink:href="#cp14">1.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="3530.8325246741" y="0">
+			<textPath xlink:href="#cp14">1.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2766.5329868127" x2="2813.19430628521" y1="1881.42635036159" y2="1892.68340437606" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="4297.22232316959" y="0">			<textPath xlink:href="#cp14">1.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="4297.22232316959" y="0">
+			<textPath xlink:href="#cp14">1.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2401.63919786315" x2="2433.70476577767" y1="2492.95833970535" y2="2528.67667329356" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="5063.61212166509" y="0">			<textPath xlink:href="#cp14">2.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="5063.61212166509" y="0">
+			<textPath xlink:href="#cp14">2.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1754.43544426012" x2="1760.61286203053" y1="2790.02087946228" y2="2837.62171464077" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="5830.00192016058" y="0">			<textPath xlink:href="#cp14">2.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="5830.00192016058" y="0">
+			<textPath xlink:href="#cp14">2.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1052.84479824149" x2="1030.95859017115" y1="2667.99868220359" y2="2710.71862949173" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="6596.39171865608" y="0">			<textPath xlink:href="#cp14">3.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="6596.39171865608" y="0">
+			<textPath xlink:href="#cp14">3.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="543.943539268994" x2="501.701280839754" y1="2169.86380105101" y2="2192.65835309305" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="7362.78151715157" y="0">			<textPath xlink:href="#cp14">3.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="7362.78151715157" y="0">
+			<textPath xlink:href="#cp14">3.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="406.949321388996" x2="359.227294244556" y1="1471.04233925112" y2="1465.88403282116" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="8129.17131564707" y="0">			<textPath xlink:href="#cp14">4.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="8129.17131564707" y="0">
+			<textPath xlink:href="#cp14">4.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="690.106832374403" x2="653.711105669379" y1="817.635364099158" y2="786.340778663124" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="8895.56111414256" y="0">			<textPath xlink:href="#cp14">4.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="8895.56111414256" y="0">
+			<textPath xlink:href="#cp14">4.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1293.6976613357" x2="1281.44556778913" y1="439.750510739703" y2="393.340531169291" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="9661.95091263806" y="0">			<textPath xlink:href="#cp14">5.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="9661.95091263806" y="0">
+			<textPath xlink:href="#cp14">5.0Mb</textPath>
 		</text>
 	</g>
 	<g id="t4">
@@ -688,7 +688,7 @@
 		<path d="M2298.39722700405,729.541894567551 A1116,1116 0,0,1 2299.22136114853,730.203766325933 L2351.85092596616,664.73523260853 A1200,1200 0,0,0 2350.96476021941,664.023542545754 L2298.39722700405,729.541894567551 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M2299.29682300281,730.264434820462 A1116,1116 0,0,1 2299.72119783464,730.60581707671 L2352.38838476843,665.167545243774 A1200,1200 0,0,0 2351.93206774496,664.800467548884 L2299.29682300281,730.264434820462 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M2299.76729272002,730.642917990948 A1116,1116 0,0,1 2300.24488749047,731.027562264795 L2352.95149192523,665.621034693328 A1200,1200 0,0,0 2352.43794916131,665.207438699944 L2299.76729272002,730.642917990948 " fill="#000000" stroke="black" stroke-width="0.042" />
-		<path d="M2300.59143021352,731.306931125053 A1116,1116 0,0,1 2301.00587869161,731.641342508867 L2353.76976203399,666.281013450395 A1200,1200 0,0,0 2353.32411850916,665.921431317261 L2300.59143021352,731.306931125053 " fill="#000000" stroke="black" stroke-width="0.042" />
+		<path d="M2300.59143021352,731.306931125053 A1116,1116 0,0,1 2301.00587869161,731.641342508867 L2353.76976203399,666.281013450394 A1200,1200 0,0,0 2353.32411850916,665.921431317261 L2300.59143021352,731.306931125053 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M2302.01934818335,732.460470770222 A1116,1116 0,0,1 2303.59151760562,733.73504263798 L2356.55001893077,668.532303911806 A1200,1200 0,0,0 2354.85951417565,667.161796527121 L2302.01934818335,732.460470770222 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M2303.77730896538,733.88597783811 A1116,1116 0,0,1 2306.80904610346,736.35830789249 L2360.00972699296,671.353019239237 A1200,1200 0,0,0 2356.74979458643,668.694599825924 L2303.77730896538,733.88597783811 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M2306.91519232177,736.445189426475 A1116,1116 0,0,1 2307.03069224823,736.539751801516 L2360.24805618089,671.548120216684 A1200,1200 0,0,0 2360.12386271158,671.446440243522 L2306.91519232177,736.445189426475 " fill="#000000" stroke="black" stroke-width="0.042" />
@@ -2763,7 +2763,7 @@
 		<path d="M1050.55399348619,628.627215778605 A1116,1116 0,0,1 1050.78225989105,628.498134870746 L1009.44329020543,555.374338570695 A1200,1200 0,0,0 1009.19784245827,555.513135245812 L1050.55399348619,628.627215778605 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M1055.55231820005,625.816895146164 A1116,1116 0,0,1 1056.60562941368,625.228971493768 L1015.70497786417,551.859109133083 A1200,1200 0,0,0 1014.57238516134,552.491285103402 L1055.55231820005,625.816895146164 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M1056.60093096356,625.231590699444 A1116,1116 0,0,1 1057.7077643286,624.61539322659 L1016.89006917054,551.199347555473 A1200,1200 0,0,0 1015.69992576727,551.861925483274 L1056.60093096356,625.231590699444 " fill="#000000" stroke="black" stroke-width="0.042" />
-		<path d="M1057.70658897552,624.616046697798 A1116,1116 0,0,1 1059.34344205457,623.707786392519 L1018.64886242426,550.223426228515 A1200,1200 0,0,0 1016.88880535002,551.200050212685 L1057.70658897552,624.616046697798 " fill="#000000" stroke="black" stroke-width="0.042" />
+		<path d="M1057.70658897552,624.616046697797 A1116,1116 0,0,1 1059.34344205457,623.707786392519 L1018.64886242426,550.223426228515 A1200,1200 0,0,0 1016.88880535002,551.200050212685 L1057.70658897552,624.616046697797 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M1060.57325766667,623.027743661237 A1116,1116 0,0,1 1061.37869117534,622.583463573485 L1020.83730233907,549.014476960736 A1200,1200 0,0,0 1019.97124480287,549.492197485201 L1060.57325766667,623.027743661237 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M1063.38326242963,621.481488698688 A1116,1116 0,0,1 1064.21120350443,621.027903589774 L1023.8830145209,547.341831816961 A1200,1200 0,0,0 1022.99275530068,547.829557740525 L1063.38326242963,621.481488698688 " fill="#000000" stroke="black" stroke-width="0.042" />
 		<path d="M1071.85280861627,616.884267121376 A1116,1116 0,0,1 1072.97977595717,616.279672137533 L1033.31158705072,542.236206599497 A1200,1200 0,0,0 1032.09979421104,542.886308732662 L1071.85280861627,616.884267121376 " fill="#000000" stroke="black" stroke-width="0.042" />
@@ -5742,297 +5742,298 @@
 		<path d="M629.963636363637,1600 A970.036363636363,970.036363636363 -90,1,1 1600,2570.03636363636 A970.036363636363,970.036363636363 -90,1,1 2570.03636363636,1600 " fill="none" id="cp34" stroke="none" />
 		<path d="M608.145454545455,1600 A991.854545454545,991.854545454545 -90,1,1 1600,2591.85454545455 A991.854545454545,991.854545454545 -90,1,1 2591.85454545455,1600 " fill="none" id="cp35" stroke="none" />
 		<path d="M586.327272727273,1600 A1013.67272727273,1013.67272727273 -90,1,1 1600,2613.67272727273 A1013.67272727273,1013.67272727273 -90,1,1 2613.67272727273,1600 " fill="none" id="cp36" stroke="none" />
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1605.74827733461" y="0">			<textPath xlink:href="#cp36">tRNA-Ile
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1605.74827733461" y="0">
+			<textPath xlink:href="#cp36">tRNA-Ile</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1571.28732000619" y="0">			<textPath xlink:href="#cp35">tRNA-Ala
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1571.28732000619" y="0">
+			<textPath xlink:href="#cp35">tRNA-Ala</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1549.23806833779" y="0">			<textPath xlink:href="#cp34">tRNA-Ser
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1549.23806833779" y="0">
+			<textPath xlink:href="#cp34">tRNA-Ser</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1562.87538298609" y="0">			<textPath xlink:href="#cp33">tRNA-Met
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1562.87538298609" y="0">
+			<textPath xlink:href="#cp33">tRNA-Met</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1527.01014951708" y="0">			<textPath xlink:href="#cp32">tRNA-Glu
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1527.01014951708" y="0">
+			<textPath xlink:href="#cp32">tRNA-Glu</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1775.71878525234" y="0">			<textPath xlink:href="#cp36">tRNA-Asn
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1775.71878525234" y="0">
+			<textPath xlink:href="#cp36">tRNA-Asn</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1737.59163234991" y="0">			<textPath xlink:href="#cp35">tRNA-Thr
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1737.59163234991" y="0">
+			<textPath xlink:href="#cp35">tRNA-Thr</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1699.4837561885" y="0">			<textPath xlink:href="#cp34">tRNA-Glu
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1699.4837561885" y="0">
+			<textPath xlink:href="#cp34">tRNA-Glu</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1584.89648672152" y="0">			<textPath xlink:href="#cp31">tRNA-Val
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1584.89648672152" y="0">
+			<textPath xlink:href="#cp31">tRNA-Val</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1546.77254766091" y="0">			<textPath xlink:href="#cp30">tRNA-Tyr
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1546.77254766091" y="0">
+			<textPath xlink:href="#cp30">tRNA-Tyr</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1508.69278709423" y="0">			<textPath xlink:href="#cp29">tRNA-Gln
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1508.69278709423" y="0">
+			<textPath xlink:href="#cp29">tRNA-Gln</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1470.54071403502" y="0">			<textPath xlink:href="#cp28">tRNA-Lys
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1470.54071403502" y="0">
+			<textPath xlink:href="#cp28">tRNA-Lys</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1432.38293078025" y="0">			<textPath xlink:href="#cp27">tRNA-Gly
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1432.38293078025" y="0">
+			<textPath xlink:href="#cp27">tRNA-Gly</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1394.22434853454" y="0">			<textPath xlink:href="#cp26">tRNA-Ala
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1394.22434853454" y="0">
+			<textPath xlink:href="#cp26">tRNA-Ala</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1775.93527236091" y="0">			<textPath xlink:href="#cp33">tRNA-Asn
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1775.93527236091" y="0">
+			<textPath xlink:href="#cp33">tRNA-Asn</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1735.16760241296" y="0">			<textPath xlink:href="#cp32">tRNA-Ser
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1735.16760241296" y="0">
+			<textPath xlink:href="#cp32">tRNA-Ser</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1449.19089519923" y="0">			<textPath xlink:href="#cp25">tRNA-Glu
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1449.19089519923" y="0">
+			<textPath xlink:href="#cp25">tRNA-Glu</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1408.39459434814" y="0">			<textPath xlink:href="#cp24">tRNA-Val
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1408.39459434814" y="0">
+			<textPath xlink:href="#cp24">tRNA-Val</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1367.63150065434" y="0">			<textPath xlink:href="#cp23">tRNA-Asp
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1367.63150065434" y="0">
+			<textPath xlink:href="#cp23">tRNA-Asp</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1326.89655515642" y="0">			<textPath xlink:href="#cp22">tRNA-Gln
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1326.89655515642" y="0">
+			<textPath xlink:href="#cp22">tRNA-Gln</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1286.08400026879" y="0">			<textPath xlink:href="#cp21">tRNA-Lys
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1286.08400026879" y="0">
+			<textPath xlink:href="#cp21">tRNA-Lys</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1245.28130591268" y="0">			<textPath xlink:href="#cp20">tRNA-Leu
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1245.28130591268" y="0">
+			<textPath xlink:href="#cp20">tRNA-Leu</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1204.53472601292" y="0">			<textPath xlink:href="#cp19">tRNA-Arg
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1204.53472601292" y="0">
+			<textPath xlink:href="#cp19">tRNA-Arg</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1163.70820837077" y="0">			<textPath xlink:href="#cp18">tRNA-Pro
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1163.70820837077" y="0">
+			<textPath xlink:href="#cp18">tRNA-Pro</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1122.87309980133" y="0">			<textPath xlink:href="#cp17">tRNA-Gly
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1122.87309980133" y="0">
+			<textPath xlink:href="#cp17">tRNA-Gly</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1905.8491344475" y="0">			<textPath xlink:href="#cp36">tRNA-Met
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1905.8491344475" y="0">
+			<textPath xlink:href="#cp36">tRNA-Met</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1864.92286282561" y="0">			<textPath xlink:href="#cp35">tRNA-Asp
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1864.92286282561" y="0">
+			<textPath xlink:href="#cp35">tRNA-Asp</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2287.83387922674" y="0">			<textPath xlink:href="#cp36">tRNA-Asn
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2287.83387922674" y="0">
+			<textPath xlink:href="#cp36">tRNA-Asn</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2238.69298059613" y="0">			<textPath xlink:href="#cp35">tRNA-Ser
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2238.69298059613" y="0">
+			<textPath xlink:href="#cp35">tRNA-Ser</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2189.56511979403" y="0">			<textPath xlink:href="#cp34">tRNA-Glu
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2189.56511979403" y="0">
+			<textPath xlink:href="#cp34">tRNA-Glu</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2140.40912210129" y="0">			<textPath xlink:href="#cp33">tRNA-Val
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2140.40912210129" y="0">
+			<textPath xlink:href="#cp33">tRNA-Val</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2091.27121804351" y="0">			<textPath xlink:href="#cp32">tRNA-Met
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2091.27121804351" y="0">
+			<textPath xlink:href="#cp32">tRNA-Met</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2042.10513870987" y="0">			<textPath xlink:href="#cp31">tRNA-Asp
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2042.10513870987" y="0">
+			<textPath xlink:href="#cp31">tRNA-Asp</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1992.94072965904" y="0">			<textPath xlink:href="#cp30">tRNA-Phe
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1992.94072965904" y="0">
+			<textPath xlink:href="#cp30">tRNA-Phe</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1943.78118816935" y="0">			<textPath xlink:href="#cp29">tRNA-Thr
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1943.78118816935" y="0">
+			<textPath xlink:href="#cp29">tRNA-Thr</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1894.61265928039" y="0">			<textPath xlink:href="#cp28">tRNA-Tyr
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1894.61265928039" y="0">
+			<textPath xlink:href="#cp28">tRNA-Tyr</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1845.4354584871" y="0">			<textPath xlink:href="#cp27">tRNA-Trp
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1845.4354584871" y="0">
+			<textPath xlink:href="#cp27">tRNA-Trp</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1796.26140423004" y="0">			<textPath xlink:href="#cp26">tRNA-His
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1796.26140423004" y="0">
+			<textPath xlink:href="#cp26">tRNA-His</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1747.12389401512" y="0">			<textPath xlink:href="#cp25">tRNA-Gln
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1747.12389401512" y="0">
+			<textPath xlink:href="#cp25">tRNA-Gln</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1697.92610034109" y="0">			<textPath xlink:href="#cp24">tRNA-Gly
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1697.92610034109" y="0">
+			<textPath xlink:href="#cp24">tRNA-Gly</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1648.73025800329" y="0">			<textPath xlink:href="#cp23">tRNA-Cys
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1648.73025800329" y="0">
+			<textPath xlink:href="#cp23">tRNA-Cys</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1599.5294142819" y="0">			<textPath xlink:href="#cp22">tRNA-Leu
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1599.5294142819" y="0">
+			<textPath xlink:href="#cp22">tRNA-Leu</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1565.50627060013" y="0">			<textPath xlink:href="#cp21">tRNA-Gly
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1565.50627060013" y="0">
+			<textPath xlink:href="#cp21">tRNA-Gly</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2568.92405721654" y="0">			<textPath xlink:href="#cp36">tRNA-Val
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2568.92405721654" y="0">
+			<textPath xlink:href="#cp36">tRNA-Val</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2513.73599208768" y="0">			<textPath xlink:href="#cp35">tRNA-Tyr
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2513.73599208768" y="0">
+			<textPath xlink:href="#cp35">tRNA-Tyr</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2458.54622197157" y="0">			<textPath xlink:href="#cp34">tRNA-Gln
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2458.54622197157" y="0">
+			<textPath xlink:href="#cp34">tRNA-Gln</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2403.33912434737" y="0">			<textPath xlink:href="#cp33">tRNA-Lys
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2403.33912434737" y="0">
+			<textPath xlink:href="#cp33">tRNA-Lys</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2348.14235865672" y="0">			<textPath xlink:href="#cp32">tRNA-Leu
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2348.14235865672" y="0">
+			<textPath xlink:href="#cp32">tRNA-Leu</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2292.9565345936" y="0">			<textPath xlink:href="#cp31">tRNA-Gly
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2292.9565345936" y="0">
+			<textPath xlink:href="#cp31">tRNA-Gly</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2237.75551050997" y="0">			<textPath xlink:href="#cp30">tRNA-Leu
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2237.75551050997" y="0">
+			<textPath xlink:href="#cp30">tRNA-Leu</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2182.53532773302" y="0">			<textPath xlink:href="#cp29">tRNA-Arg
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2182.53532773302" y="0">
+			<textPath xlink:href="#cp29">tRNA-Arg</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2127.31019615498" y="0">			<textPath xlink:href="#cp28">tRNA-Pro
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2127.31019615498" y="0">
+			<textPath xlink:href="#cp28">tRNA-Pro</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2072.08507956295" y="0">			<textPath xlink:href="#cp27">tRNA-Ala
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2072.08507956295" y="0">
+			<textPath xlink:href="#cp27">tRNA-Ala</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2016.86920881313" y="0">			<textPath xlink:href="#cp26">tRNA-Ser
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="2016.86920881313" y="0">
+			<textPath xlink:href="#cp26">tRNA-Ser</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1961.68614585658" y="0">			<textPath xlink:href="#cp25">tRNA-Ser
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1961.68614585658" y="0">
+			<textPath xlink:href="#cp25">tRNA-Ser</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1906.46651913947" y="0">			<textPath xlink:href="#cp24">tRNA-Met
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1906.46651913947" y="0">
+			<textPath xlink:href="#cp24">tRNA-Met</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1851.2124127688" y="0">			<textPath xlink:href="#cp23">tRNA-Asp
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1851.2124127688" y="0">
+			<textPath xlink:href="#cp23">tRNA-Asp</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1795.95881986615" y="0">			<textPath xlink:href="#cp22">tRNA-Phe
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1795.95881986615" y="0">
+			<textPath xlink:href="#cp22">tRNA-Phe</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1740.69951676794" y="0">			<textPath xlink:href="#cp21">tRNA-Thr
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1740.69951676794" y="0">
+			<textPath xlink:href="#cp21">tRNA-Thr</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1685.43141845947" y="0">			<textPath xlink:href="#cp20">tRNA-Trp
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1685.43141845947" y="0">
+			<textPath xlink:href="#cp20">tRNA-Trp</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1630.16386595725" y="0">			<textPath xlink:href="#cp19">tRNA-Ile
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1630.16386595725" y="0">
+			<textPath xlink:href="#cp19">tRNA-Ile</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1574.89189652583" y="0">			<textPath xlink:href="#cp18">tRNA-Asn
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1574.89189652583" y="0">
+			<textPath xlink:href="#cp18">tRNA-Asn</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1519.60865156807" y="0">			<textPath xlink:href="#cp17">tRNA-Glu
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="1519.60865156807" y="0">
+			<textPath xlink:href="#cp17">tRNA-Glu</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="3207.39814614108" y="0">			<textPath xlink:href="#cp36">tRNA-Val
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="3207.39814614108" y="0">
+			<textPath xlink:href="#cp36">tRNA-Val</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="3155.60321650199" y="0">			<textPath xlink:href="#cp35">tRNA-Ala
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="3155.60321650199" y="0">
+			<textPath xlink:href="#cp35">tRNA-Ala</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6456.93926739029" y="0">			<textPath xlink:href="#cp36">tRNA-Met
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6456.93926739029" y="0">
+			<textPath xlink:href="#cp36">tRNA-Met</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6713.74681000711" y="0">			<textPath xlink:href="#cp36">tRNA-Gly
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6713.74681000711" y="0">
+			<textPath xlink:href="#cp36">tRNA-Gly</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="7201.47849558012" y="0">			<textPath xlink:href="#cp36">tRNA-Glu
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="7201.47849558012" y="0">
+			<textPath xlink:href="#cp36">tRNA-Glu</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="7046.57923366134" y="0">			<textPath xlink:href="#cp35">tRNA-Ser
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="7046.57923366134" y="0">
+			<textPath xlink:href="#cp35">tRNA-Ser</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6891.67829304655" y="0">			<textPath xlink:href="#cp34">tRNA-Asn
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6891.67829304655" y="0">
+			<textPath xlink:href="#cp34">tRNA-Asn</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6736.76462168499" y="0">			<textPath xlink:href="#cp33">tRNA-Ile
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6736.76462168499" y="0">
+			<textPath xlink:href="#cp33">tRNA-Ile</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6581.847702303" y="0">			<textPath xlink:href="#cp32">tRNA-Gly
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6581.847702303" y="0">
+			<textPath xlink:href="#cp32">tRNA-Gly</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6426.92909107937" y="0">			<textPath xlink:href="#cp31">tRNA-Lys
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6426.92909107937" y="0">
+			<textPath xlink:href="#cp31">tRNA-Lys</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6272.00539959843" y="0">			<textPath xlink:href="#cp30">tRNA-Thr
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6272.00539959843" y="0">
+			<textPath xlink:href="#cp30">tRNA-Thr</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6117.08133583346" y="0">			<textPath xlink:href="#cp29">tRNA-Phe
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6117.08133583346" y="0">
+			<textPath xlink:href="#cp29">tRNA-Phe</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="5962.15051732176" y="0">			<textPath xlink:href="#cp28">tRNA-Asp
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="5962.15051732176" y="0">
+			<textPath xlink:href="#cp28">tRNA-Asp</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="5807.20473041541" y="0">			<textPath xlink:href="#cp27">tRNA-Met
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="5807.20473041541" y="0">
+			<textPath xlink:href="#cp27">tRNA-Met</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="5652.2879393347" y="0">			<textPath xlink:href="#cp26">tRNA-Ser
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="5652.2879393347" y="0">
+			<textPath xlink:href="#cp26">tRNA-Ser</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="5497.35593613949" y="0">			<textPath xlink:href="#cp25">tRNA-Met
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="5497.35593613949" y="0">
+			<textPath xlink:href="#cp25">tRNA-Met</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="5342.39954360773" y="0">			<textPath xlink:href="#cp24">tRNA-Met
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="5342.39954360773" y="0">
+			<textPath xlink:href="#cp24">tRNA-Met</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="5187.45120776516" y="0">			<textPath xlink:href="#cp23">tRNA-Ala
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="5187.45120776516" y="0">
+			<textPath xlink:href="#cp23">tRNA-Ala</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="5032.49318280998" y="0">			<textPath xlink:href="#cp22">tRNA-Pro
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="5032.49318280998" y="0">
+			<textPath xlink:href="#cp22">tRNA-Pro</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="4877.52590254775" y="0">			<textPath xlink:href="#cp21">tRNA-Arg
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="4877.52590254775" y="0">
+			<textPath xlink:href="#cp21">tRNA-Arg</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="4722.55460577198" y="0">			<textPath xlink:href="#cp20">tRNA-Leu
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="4722.55460577198" y="0">
+			<textPath xlink:href="#cp20">tRNA-Leu</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="4567.58932206691" y="0">			<textPath xlink:href="#cp19">tRNA-Gly
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="4567.58932206691" y="0">
+			<textPath xlink:href="#cp19">tRNA-Gly</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="4412.62561951732" y="0">			<textPath xlink:href="#cp18">tRNA-Leu
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="4412.62561951732" y="0">
+			<textPath xlink:href="#cp18">tRNA-Leu</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="4257.6515979169" y="0">			<textPath xlink:href="#cp17">tRNA-His
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="4257.6515979169" y="0">
+			<textPath xlink:href="#cp17">tRNA-His</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="4102.66150894778" y="0">			<textPath xlink:href="#cp16">tRNA-Thr
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="4102.66150894778" y="0">
+			<textPath xlink:href="#cp16">tRNA-Thr</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="3947.66360359145" y="0">			<textPath xlink:href="#cp15">tRNA-Val
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="3947.66360359145" y="0">
+			<textPath xlink:href="#cp15">tRNA-Val</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="7493.76913761845" y="0">			<textPath xlink:href="#cp36">tRNA-Arg
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="7493.76913761845" y="0">
+			<textPath xlink:href="#cp36">tRNA-Arg</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="7082.13116040791" y="0">			<textPath xlink:href="#cp31">tRNA-Phe
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="7082.13116040791" y="0">
+			<textPath xlink:href="#cp31">tRNA-Phe</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6911.43561566549" y="0">			<textPath xlink:href="#cp30">tRNA-Asp
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6911.43561566549" y="0">
+			<textPath xlink:href="#cp30">tRNA-Asp</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6740.71272986841" y="0">			<textPath xlink:href="#cp29">tRNA-Glu
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6740.71272986841" y="0">
+			<textPath xlink:href="#cp29">tRNA-Glu</textPath>
 		</text>
-		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6569.97675944441" y="0">			<textPath xlink:href="#cp28">tRNA-Lys
-			</textPath>
+		<text fill="black" font-size="15.2727272727273" text-anchor="middle" x="6569.97675944441" y="0">
+			<textPath xlink:href="#cp28">tRNA-Lys</textPath>
 		</text>
 	</g>
 	<g id="t11" />
 	<g id="t12">
 		<path d="M1152.64,1600 A447.36,447.36 -90,1,1 1600,2047.36 A447.36,447.36 -90,1,1 2047.36,1600 " fill="none" id="cp37" stroke="none" />
-		<text fill="black" font-size="67.2" text-anchor="middle" x="702.711444754965" y="0">			<textPath xlink:href="#cp37">Test label 1
-			</textPath>
+		<text fill="black" font-size="67.2" text-anchor="middle" x="702.711444754965" y="0">
+			<textPath xlink:href="#cp37">Test label 1</textPath>
 		</text>
-	</g><!-- 
-	Generated using the Perl SVG Module V2.49
+	</g>
+	<!-- 
+	Generated using the Perl SVG Module V2.59
 	by Ronan Oger
 	Info: http://www.roitsystems.com/
  -->
