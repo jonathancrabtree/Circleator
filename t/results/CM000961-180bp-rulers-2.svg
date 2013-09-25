@@ -16,8 +16,8 @@
 		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="424" y2="400" />
 		<path d="M352,1600 A1248,1248 -90,1,1 1600,2848 A1248,1248 -90,1,1 1600,352 " fill="none" id="cp1" stroke="none" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="424" y2="376" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="1960.35381584003" y="0">			<textPath xlink:href="#cp1">0.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1960.35381584003" y="0">
+			<textPath xlink:href="#cp1">0.0Mb</textPath>
 		</text>
 	</g>
 	<g id="t2" />
@@ -26,8 +26,8 @@
 		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="568" y2="544" />
 		<path d="M496,1600 A1104,1104 -90,1,1 1600,2704 A1104,1104 -90,1,1 1600,496 " fill="none" id="cp2" stroke="none" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="568" y2="520" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="1734.15914478157" y="0">			<textPath xlink:href="#cp2">0.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1734.15914478157" y="0">
+			<textPath xlink:href="#cp2">0.0Mb</textPath>
 		</text>
 	</g>
 	<g id="t4" />
@@ -36,8 +36,8 @@
 		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="712" y2="688" />
 		<path d="M640,1600 A960,960 -90,1,1 1600,2560 A960,960 -90,1,1 1600,640 " fill="none" id="cp3" stroke="none" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="712" y2="664" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="1507.9644737231" y="0">			<textPath xlink:href="#cp3">0.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1507.9644737231" y="0">
+			<textPath xlink:href="#cp3">0.0Mb</textPath>
 		</text>
 	</g>
 	<g id="t6" />
@@ -47,8 +47,8 @@
 		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="916" y2="892" />
 		<path d="M844,1600 A756,756 -90,1,1 1600,2356 A756,756 -90,1,1 1600,844 " fill="none" id="cp4" stroke="none" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="916" y2="868" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="1187.52202305694" y="0">			<textPath xlink:href="#cp4">0.000Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1187.52202305694" y="0">
+			<textPath xlink:href="#cp4">0.000Mb</textPath>
 		</text>
 	</g>
 	<g id="t9" />
@@ -58,8 +58,8 @@
 		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="1120" y2="1096" />
 		<path d="M1048,1600 A552,552 -90,1,1 1600,2152 A552,552 -90,1,1 1600,1048 " fill="none" id="cp5" stroke="none" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="1120" y2="1072" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="867.079572390783" y="0">			<textPath xlink:href="#cp5">0kb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="867.079572390783" y="0">
+			<textPath xlink:href="#cp5">0kb</textPath>
 		</text>
 	</g>
 	<g id="t12" />
@@ -68,8 +68,8 @@
 		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="1264" y2="1240" />
 		<path d="M1192,1600 A408,408 -90,1,1 1600,2008 A408,408 -90,1,1 1600,1192 " fill="none" id="cp6" stroke="none" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="1264" y2="1216" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="640.884901332318" y="0">			<textPath xlink:href="#cp6">0bp
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="640.884901332318" y="0">
+			<textPath xlink:href="#cp6">0bp</textPath>
 		</text>
 	</g>
 	<g id="t14" />
@@ -77,8 +77,9 @@
 	<g id="t16">
 		<circle cx="1600" cy="1600" fill="none" r="132" stroke="black" stroke-width="4.8" />
 		<path d="M1396,1600 A204,204 -90,1,1 1600,1804 A204,204 -90,1,1 1600,1396 " fill="none" id="cp7" stroke="none" />
-	</g><!-- 
-	Generated using the Perl SVG Module V2.49
+	</g>
+	<!-- 
+	Generated using the Perl SVG Module V2.59
 	by Ronan Oger
 	Info: http://www.roitsystems.com/
  -->

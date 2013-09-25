@@ -13,8 +13,8 @@
 	</defs>
 	<g id="t1">
 		<path d="M450.4,1600 A1149.6,1149.6 -90,1,1 1600,2749.6 A1149.6,1149.6 -90,1,1 2749.6,1600 " fill="none" id="cp1" stroke="none" />
-		<text fill="#000000" font-size="42" font-style="italic" font-weight="bold" text-anchor="middle" x="1805.78745728341" y="0">			<textPath xlink:href="#cp1">
-			</textPath>
+		<text fill="#000000" font-size="42" font-style="italic" font-weight="bold" text-anchor="middle" x="1805.78745728341" y="0">
+			<textPath xlink:href="#cp1"></textPath>
 		</text>
 	</g>
 	<g id="t2">
@@ -22,551 +22,551 @@
 		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="400" y2="376" />
 		<path d="M328,1600 A1272,1272 -90,1,1 1600,2872 A1272,1272 -90,1,1 1600,328 " fill="none" id="cp2" stroke="none" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="400" y2="352" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="1998.05292768311" y="0">			<textPath xlink:href="#cp2">0.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1998.05292768311" y="0">
+			<textPath xlink:href="#cp2">0.0Mb</textPath>
 		</text>
 	</g>
 	<g id="t3">
 		<path d="M390.4,1600 A1209.6,1209.6 -90,1,1 1600,2809.6 A1209.6,1209.6 -90,1,1 2809.6,1600 " fill="none" id="cp3" stroke="none" />
-		<text fill="black" font-size="42" text-anchor="middle" x="1921.14673952323" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="1921.14673952323" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="1963.36974478748" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="1963.36974478748" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2005.59275005172" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2005.59275005172" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2047.81575531597" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2047.81575531597" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2090.03876058022" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2090.03876058022" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2132.26176584446" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2132.26176584446" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2174.48477110871" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2174.48477110871" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2216.70777637296" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2216.70777637296" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2258.9307816372" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2258.9307816372" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2301.15378690145" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2301.15378690145" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2343.3767921657" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2343.3767921657" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2385.59979742995" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2385.59979742995" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2427.82280269419" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2427.82280269419" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2470.04580795844" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2470.04580795844" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2512.26881322269" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2512.26881322269" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2554.49181848693" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2554.49181848693" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2596.71482375118" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2596.71482375118" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2638.93782901543" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2638.93782901543" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2681.16083427967" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2681.16083427967" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2723.38383954392" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2723.38383954392" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2765.60684480817" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2765.60684480817" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2807.82985007241" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2807.82985007241" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2850.05285533666" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2850.05285533666" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2892.27586060091" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2892.27586060091" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2934.49886586515" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2934.49886586515" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="2976.7218711294" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="2976.7218711294" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3018.94487639365" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3018.94487639365" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3061.16788165789" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3061.16788165789" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3103.39088692214" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3103.39088692214" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3145.61389218639" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3145.61389218639" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3187.83689745063" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3187.83689745063" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3230.05990271488" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3230.05990271488" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3272.28290797913" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3272.28290797913" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3314.50591324338" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3314.50591324338" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3356.72891850762" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3356.72891850762" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3398.95192377187" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3398.95192377187" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3441.17492903612" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3441.17492903612" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3483.39793430036" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3483.39793430036" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3525.62093956461" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3525.62093956461" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3567.84394482886" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3567.84394482886" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3610.0669500931" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3610.0669500931" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3652.28995535735" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3652.28995535735" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3694.5129606216" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3694.5129606216" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3736.73596588584" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3736.73596588584" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3778.95897115009" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3778.95897115009" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3821.18197641434" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3821.18197641434" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3863.40498167858" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3863.40498167858" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3905.62798694283" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3905.62798694283" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3947.85099220708" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3947.85099220708" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="3990.07399747132" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="3990.07399747132" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4032.29700273557" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4032.29700273557" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4074.52000799982" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4074.52000799982" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4116.74301326406" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4116.74301326406" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4158.96601852831" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4158.96601852831" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4201.18902379256" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4201.18902379256" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4243.41202905681" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4243.41202905681" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4285.63503432105" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4285.63503432105" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4327.8580395853" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4327.8580395853" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4370.08104484954" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4370.08104484954" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4412.30405011379" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4412.30405011379" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4454.52705537804" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4454.52705537804" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4496.75006064229" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4496.75006064229" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4538.97306590653" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4538.97306590653" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4581.19607117078" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4581.19607117078" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4623.41907643503" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4623.41907643503" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4665.64208169927" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4665.64208169927" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4707.86508696352" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4707.86508696352" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4750.08809222777" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4750.08809222777" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4792.31109749201" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4792.31109749201" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4834.53410275626" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4834.53410275626" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4876.75710802051" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4876.75710802051" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4918.98011328475" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4918.98011328475" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="4961.203118549" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="4961.203118549" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5003.42612381325" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5003.42612381325" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5045.64912907749" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5045.64912907749" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5087.87213434174" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5087.87213434174" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5130.09513960599" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5130.09513960599" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5172.31814487024" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5172.31814487024" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5214.54115013448" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5214.54115013448" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5256.76415539873" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5256.76415539873" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5298.98716066297" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5298.98716066297" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5341.21016592722" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5341.21016592722" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5383.43317119147" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5383.43317119147" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5425.65617645572" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5425.65617645572" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5467.87918171996" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5467.87918171996" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5510.10218698421" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5510.10218698421" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5552.32519224846" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5552.32519224846" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5594.5481975127" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5594.5481975127" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5636.77120277695" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5636.77120277695" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5678.9942080412" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5678.9942080412" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5721.21721330544" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5721.21721330544" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5763.44021856969" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5763.44021856969" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5805.66322383394" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5805.66322383394" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5847.88622909818" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5847.88622909818" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5890.10923436243" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5890.10923436243" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5932.33223962668" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5932.33223962668" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="5974.55524489092" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="5974.55524489092" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6016.77825015517" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6016.77825015517" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6059.00125541942" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6059.00125541942" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6101.22426068366" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6101.22426068366" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6143.44726594791" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6143.44726594791" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6185.67027121216" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6185.67027121216" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6227.8932764764" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6227.8932764764" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6270.11628174065" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6270.11628174065" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6312.3392870049" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6312.3392870049" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6354.56229226915" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6354.56229226915" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6396.78529753339" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6396.78529753339" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6439.00830279764" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6439.00830279764" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6481.23130806189" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6481.23130806189" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6523.45431332613" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6523.45431332613" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6565.67731859038" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6565.67731859038" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6607.90032385463" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6607.90032385463" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6650.12332911887" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6650.12332911887" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6692.34633438312" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6692.34633438312" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6734.56933964737" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6734.56933964737" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6776.79234491162" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6776.79234491162" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6819.01535017586" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6819.01535017586" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6861.23835544011" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6861.23835544011" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6903.46136070435" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6903.46136070435" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6945.6843659686" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6945.6843659686" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="6987.90737123285" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="6987.90737123285" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7030.13037649709" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7030.13037649709" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7072.35338176134" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7072.35338176134" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7114.57638702559" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7114.57638702559" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7156.79939228983" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7156.79939228983" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7199.02239755408" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7199.02239755408" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7241.24540281833" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7241.24540281833" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7283.46840808258" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7283.46840808258" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7325.69141334682" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7325.69141334682" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7367.91441861107" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7367.91441861107" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7410.13742387532" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7410.13742387532" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7452.36042913956" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7452.36042913956" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7494.58343440381" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7494.58343440381" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7536.80643966806" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7536.80643966806" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7579.0294449323" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7579.0294449323" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7621.25245019655" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7621.25245019655" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7663.4754554608" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7663.4754554608" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7705.69846072504" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7705.69846072504" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7747.92146598929" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7747.92146598929" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7790.14447125354" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7790.14447125354" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7832.36747651778" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7832.36747651778" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7874.59048178203" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7874.59048178203" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7916.81348704628" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7916.81348704628" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="7959.03649231052" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="7959.03649231052" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8001.25949757477" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8001.25949757477" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8043.48250283902" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8043.48250283902" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8085.70550810326" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8085.70550810326" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8127.92851336751" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8127.92851336751" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8170.15151863176" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8170.15151863176" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8212.37452389601" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8212.37452389601" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8254.59752916025" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8254.59752916025" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8296.8205344245" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8296.8205344245" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8339.04353968875" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8339.04353968875" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8381.26654495299" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8381.26654495299" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8423.48955021724" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8423.48955021724" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8465.71255548149" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8465.71255548149" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8507.93556074573" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8507.93556074573" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8550.15856600998" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8550.15856600998" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8592.38157127423" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8592.38157127423" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8634.60457653847" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8634.60457653847" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8676.82758180272" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8676.82758180272" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8719.05058706697" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8719.05058706697" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8761.27359233121" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8761.27359233121" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8803.49659759546" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8803.49659759546" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8845.71960285971" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8845.71960285971" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8887.94260812395" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8887.94260812395" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8930.1656133882" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8930.1656133882" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="8972.38861865245" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="8972.38861865245" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="9014.61162391669" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="9014.61162391669" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="9056.83462918094" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="9056.83462918094" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="9099.05763444519" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="9099.05763444519" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="9141.28063970944" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="9141.28063970944" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="9183.50364497368" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="9183.50364497368" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="9225.72665023793" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="9225.72665023793" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="9267.94965550218" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="9267.94965550218" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="9310.17266076642" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="9310.17266076642" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="9352.39566603067" y="0">			<textPath xlink:href="#cp3">G
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="9352.39566603067" y="0">
+			<textPath xlink:href="#cp3">G</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="9394.61867129492" y="0">			<textPath xlink:href="#cp3">T
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="9394.61867129492" y="0">
+			<textPath xlink:href="#cp3">T</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="9436.84167655916" y="0">			<textPath xlink:href="#cp3">A
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="9436.84167655916" y="0">
+			<textPath xlink:href="#cp3">A</textPath>
 		</text>
-		<text fill="black" font-size="42" text-anchor="middle" x="9479.06468182341" y="0">			<textPath xlink:href="#cp3">C
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="9479.06468182341" y="0">
+			<textPath xlink:href="#cp3">C</textPath>
 		</text>
 	</g>
 	<g id="t4" />
@@ -754,29 +754,29 @@
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="1092" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
 		<g id="t5.1" opacity="0.6">
 			<path d="M506.32,1600 A1093.68,1093.68 -90,1,1 1600,2693.68 A1093.68,1093.68 -90,1,1 2693.68,1600 " fill="none" id="cp4" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1717.94852668904" y="0">				<textPath xlink:href="#cp4">min=0.0000
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1717.94852668904" y="0">
+				<textPath xlink:href="#cp4">min=0.0000</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="1176" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
 		<g id="t5.2" opacity="0.6">
 			<path d="M432.82,1600 A1167.18,1167.18 -90,1,1 1600,2767.18 A1167.18,1167.18 -90,1,1 2767.18,1600 " fill="none" id="cp5" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1833.40205670847" y="0">				<textPath xlink:href="#cp5">max=100.0000
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1833.40205670847" y="0">
+				<textPath xlink:href="#cp5">max=100.0000</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="1143.8" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
 		<g id="t5.3" opacity="0.6">
 			<path d="M465.02,1600 A1134.98,1134.98 -90,1,1 1600,2734.98 A1134.98,1134.98 -90,1,1 2734.98,1600 " fill="none" id="cp6" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1782.82241498567" y="0">				<textPath xlink:href="#cp6">avg=61.6667
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1782.82241498567" y="0">
+				<textPath xlink:href="#cp6">avg=61.6667</textPath>
 			</text>
 		</g>
 	</g>
 	<g id="t6">
 		<path d="M558.4,1600 A1041.6,1041.6 -90,1,1 1600,2641.6 A1041.6,1041.6 -90,1,1 2641.6,1600 " fill="none" id="cp7" stroke="none" />
-		<text fill="#000000" font-size="42" font-style="italic" font-weight="bold" text-anchor="middle" x="1636.14145398956" y="0">			<textPath xlink:href="#cp7">%GC0-100 window-size 1
-			</textPath>
+		<text fill="#000000" font-size="42" font-style="italic" font-weight="bold" text-anchor="middle" x="1636.14145398956" y="0">
+			<textPath xlink:href="#cp7">%GC0-100 window-size 1</textPath>
 		</text>
 	</g>
 	<g id="t7" />
@@ -1056,29 +1056,29 @@
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="948" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0839999999999999" />
 		<g id="t9.1" opacity="0.6">
 			<path d="M650.32,1600 A949.68,949.68 -90,1,1 1600,2549.68 A949.68,949.68 -90,1,1 2549.68,1600 " fill="none" id="cp8" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1491.75385563058" y="0">				<textPath xlink:href="#cp8">min=0.0000
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1491.75385563058" y="0">
+				<textPath xlink:href="#cp8">min=0.0000</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="1032" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0839999999999999" />
 		<g id="t9.2" opacity="0.6">
 			<path d="M576.82,1600 A1023.18,1023.18 -90,1,1 1600,2623.18 A1023.18,1023.18 -90,1,1 2623.18,1600 " fill="none" id="cp9" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1607.20738565" y="0">				<textPath xlink:href="#cp9">max=100.0000
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1607.20738565" y="0">
+				<textPath xlink:href="#cp9">max=100.0000</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="999.8" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0839999999999999" />
 		<g id="t9.3" opacity="0.6">
 			<path d="M609.02,1600 A990.98,990.98 -90,1,1 1600,2590.98 A990.98,990.98 -90,1,1 2590.98,1600 " fill="none" id="cp10" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1556.62774392721" y="0">				<textPath xlink:href="#cp10">avg=61.6667
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1556.62774392721" y="0">
+				<textPath xlink:href="#cp10">avg=61.6667</textPath>
 			</text>
 		</g>
 	</g>
 	<g id="t10">
 		<path d="M702.4,1600 A897.6,897.6 -90,1,1 1600,2497.6 A897.6,897.6 -90,1,1 2497.6,1600 " fill="none" id="cp11" stroke="none" />
-		<text fill="#000000" font-size="42" font-style="italic" font-weight="bold" text-anchor="middle" x="1409.9467829311" y="0">			<textPath xlink:href="#cp11">%GC0-100 window-size 2
-			</textPath>
+		<text fill="#000000" font-size="42" font-style="italic" font-weight="bold" text-anchor="middle" x="1409.9467829311" y="0">
+			<textPath xlink:href="#cp11">%GC0-100 window-size 2</textPath>
 		</text>
 	</g>
 	<g id="t11" />
@@ -1223,29 +1223,29 @@
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="780" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
 		<g id="t13.1" opacity="0.6">
 			<path d="M818.32,1600 A781.68,781.68 -90,1,1 1600,2381.68 A781.68,781.68 -90,1,1 2381.68,1600 " fill="none" id="cp12" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1227.86007272903" y="0">				<textPath xlink:href="#cp12">min=0.0000
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1227.86007272903" y="0">
+				<textPath xlink:href="#cp12">min=0.0000</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="864" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
 		<g id="t13.2" opacity="0.6">
 			<path d="M744.82,1600 A855.18,855.18 -90,1,1 1600,2455.18 A855.18,855.18 -90,1,1 2455.18,1600 " fill="none" id="cp13" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1343.31360274846" y="0">				<textPath xlink:href="#cp13">max=100.0000
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1343.31360274846" y="0">
+				<textPath xlink:href="#cp13">max=100.0000</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="831.8" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
 		<g id="t13.3" opacity="0.6">
 			<path d="M766.52,1600 A833.48,833.48 -90,1,1 1600,2433.48 A833.48,833.48 -90,1,1 2433.48,1600 " fill="none" id="cp14" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1309.22732245701" y="0">				<textPath xlink:href="#cp14">avg=61.6667
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1309.22732245701" y="0">
+				<textPath xlink:href="#cp14">avg=61.6667</textPath>
 			</text>
 		</g>
 	</g>
 	<g id="t14">
 		<path d="M870.4,1600 A729.6,729.6 -90,1,1 1600,2329.6 A729.6,729.6 -90,1,1 2329.6,1600 " fill="none" id="cp15" stroke="none" />
-		<text fill="#000000" font-size="42" font-style="italic" font-weight="bold" text-anchor="middle" x="1146.05300002956" y="0">			<textPath xlink:href="#cp15">%GC0-100 window-size 4
-			</textPath>
+		<text fill="#000000" font-size="42" font-style="italic" font-weight="bold" text-anchor="middle" x="1146.05300002956" y="0">
+			<textPath xlink:href="#cp15">%GC0-100 window-size 4</textPath>
 		</text>
 	</g>
 	<g id="t15" />
@@ -1346,29 +1346,29 @@
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="672" stroke="black" stroke-dasharray="3, 3" stroke-width="0.084" />
 		<g id="t18.1" opacity="0.6">
 			<path d="M936.82,1600 A663.18,663.18 -90,1,1 1600,2263.18 A663.18,663.18 -90,1,1 2263.18,1600 " fill="none" id="cp16" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1041.72070800384" y="0">				<textPath xlink:href="#cp16">min=0.0000
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1041.72070800384" y="0">
+				<textPath xlink:href="#cp16">min=0.0000</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="588" stroke="black" stroke-dasharray="3, 3" stroke-width="0.084" />
 		<g id="t18.2" opacity="0.6">
 			<path d="M1010.32,1600 A589.68,589.68 -90,1,1 1600,2189.68 A589.68,589.68 -90,1,1 2189.68,1600 " fill="none" id="cp17" stroke="none" />
-			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="926.267177984415" y="0">				<textPath xlink:href="#cp17">max=100.0000
-				</textPath>
+			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="926.267177984415" y="0">
+				<textPath xlink:href="#cp17">max=100.0000</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="620.2" stroke="black" stroke-dasharray="3, 3" stroke-width="0.084" />
 		<g id="t18.3" opacity="0.6">
 			<path d="M988.62,1600 A611.38,611.38 -90,1,1 1600,2211.38 A611.38,611.38 -90,1,1 2211.38,1600 " fill="none" id="cp18" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="960.353458275864" y="0">				<textPath xlink:href="#cp18">avg=61.6667
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="960.353458275864" y="0">
+				<textPath xlink:href="#cp18">avg=61.6667</textPath>
 			</text>
 		</g>
 	</g>
 	<g id="t19">
 		<path d="M1062.4,1600 A537.6,537.6 -90,1,1 1600,2137.6 A537.6,537.6 -90,1,1 2137.6,1600 " fill="none" id="cp19" stroke="none" />
-		<text fill="#000000" font-size="42" font-style="italic" font-weight="bold" text-anchor="middle" x="844.460105284936" y="0">			<textPath xlink:href="#cp19">%GC0-100 window-size 4 direction in
-			</textPath>
+		<text fill="#000000" font-size="42" font-style="italic" font-weight="bold" text-anchor="middle" x="844.460105284936" y="0">
+			<textPath xlink:href="#cp19">%GC0-100 window-size 4 direction in</textPath>
 		</text>
 	</g>
 	<g id="t20" />
@@ -1469,29 +1469,29 @@
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="480" stroke="black" stroke-dasharray="3, 3" stroke-width="0.084" />
 		<g id="t23.1" opacity="0.6">
 			<path d="M1128.82,1600 A471.18,471.18 -90,1,1 1600,2071.18 A471.18,471.18 -90,1,1 2071.18,1600 " fill="none" id="cp20" stroke="none" />
-			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="740.127813259219" y="0">				<textPath xlink:href="#cp20">min=0.0000
-				</textPath>
+			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="740.127813259219" y="0">
+				<textPath xlink:href="#cp20">min=0.0000</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="396" stroke="black" stroke-dasharray="3, 3" stroke-width="0.084" />
 		<g id="t23.2" opacity="0.6">
 			<path d="M1202.32,1600 A397.68,397.68 -90,1,1 1600,1997.68 A397.68,397.68 -90,1,1 1997.68,1600 " fill="none" id="cp21" stroke="none" />
-			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="624.674283239794" y="0">				<textPath xlink:href="#cp21">max=100.0000
-				</textPath>
+			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="624.674283239794" y="0">
+				<textPath xlink:href="#cp21">max=100.0000</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="428.2" stroke="black" stroke-dasharray="3, 3" stroke-width="0.084" />
 		<g id="t23.3" opacity="0.6">
 			<path d="M1180.62,1600 A419.38,419.38 -90,1,1 1600,2019.38 A419.38,419.38 -90,1,1 2019.38,1600 " fill="none" id="cp22" stroke="none" />
-			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="658.760563531244" y="0">				<textPath xlink:href="#cp22">avg=61.6667
-				</textPath>
+			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="658.760563531244" y="0">
+				<textPath xlink:href="#cp22">avg=61.6667</textPath>
 			</text>
 		</g>
 	</g>
 	<g id="t24">
 		<path d="M1254.4,1600 A345.6,345.6 -90,1,1 1600,1945.6 A345.6,345.6 -90,1,1 1945.6,1600 " fill="none" id="cp23" stroke="none" />
-		<text fill="#000000" font-size="42" font-style="italic" font-weight="bold" text-anchor="middle" x="542.867210540316" y="0">			<textPath xlink:href="#cp23">%GC0-100 window-size 4 direction in graph-baseline 50
-			</textPath>
+		<text fill="#000000" font-size="42" font-style="italic" font-weight="bold" text-anchor="middle" x="542.867210540316" y="0">
+			<textPath xlink:href="#cp23">%GC0-100 window-size 4 direction in graph-baseline 50</textPath>
 		</text>
 	</g>
 	<g id="t25" />
@@ -1541,8 +1541,9 @@
 		<path d="M1473.09816736035,1314.97381721551 A312,312 0,0,1 1514.0011449851,1300.08635086724 L1467.69406920784,1138.59438594961 A480,480 0,0,0 1404.76641132362,1161.49818033155 L1473.09816736035,1314.97381721551 " fill="none" stroke="#000000" stroke-width="3" />
 		<path d="M1514.0011449851,1300.08635086724 A312,312 0,0,1 1556.57799250046,1291.03636255263 L1533.19691153917,1124.67132700405 A480,480 0,0,0 1467.69406920784,1138.59438594961 L1514.0011449851,1300.08635086724 " fill="none" stroke="#000000" stroke-width="3" />
 		<path d="M1556.57799250046,1291.03636255263 A312,312 0,0,1 1600,1288 L1600,1120 A480,480 0,0,0 1533.19691153917,1124.67132700405 L1556.57799250046,1291.03636255263 " fill="none" stroke="#000000" stroke-width="3" />
-	</g><!-- 
-	Generated using the Perl SVG Module V2.49
+	</g>
+	<!-- 
+	Generated using the Perl SVG Module V2.59
 	by Ronan Oger
 	Info: http://www.roitsystems.com/
  -->

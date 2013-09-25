@@ -13,32 +13,33 @@
 	</defs>
 	<g id="t1">
 		<path d="M302.4,1200 A897.6,897.6 -90,1,1 1200,2097.6 A897.6,897.6 -90,1,1 2097.6,1200 " fill="none" id="cp1" stroke="none" />
-		<text fill="#182d6c" font-family="Arial" font-size="252" font-weight="bold" text-anchor="middle" x="1409.9467829311" y="0">			<textPath xlink:href="#cp1">HOME
-			</textPath>
+		<text fill="#182d6c" font-family="Arial" font-size="252" font-weight="bold" text-anchor="middle" x="1409.9467829311" y="0">
+			<textPath xlink:href="#cp1">HOME</textPath>
 		</text>
 	</g>
 	<g id="t2">
 		<path d="M302.4,1200 A897.6,897.6 -90,1,1 1200,2097.6 A897.6,897.6 -90,1,1 2097.6,1200 " fill="none" id="cp2" stroke="none" />
-		<text fill="#182d6c" font-family="Arial" font-size="252" font-weight="bold" text-anchor="middle" x="2506.57205854418" y="0">			<textPath xlink:href="#cp2">DOCS
-			</textPath>
+		<text fill="#182d6c" font-family="Arial" font-size="252" font-weight="bold" text-anchor="middle" x="2506.57205854418" y="0">
+			<textPath xlink:href="#cp2">DOCS</textPath>
 		</text>
 	</g>
 	<g id="t3">
 		<path d="M302.4,1200 A897.6,897.6 -90,1,1 1200,2097.6 A897.6,897.6 -90,1,1 2097.6,1200 " fill="none" id="cp3" stroke="none" />
-		<text fill="#182d6c" font-family="Arial" font-size="252" font-weight="bold" text-anchor="middle" x="3916.51884147528" y="0">			<textPath xlink:href="#cp3">GALLERY
-			</textPath>
+		<text fill="#182d6c" font-family="Arial" font-size="252" font-weight="bold" text-anchor="middle" x="3916.51884147528" y="0">
+			<textPath xlink:href="#cp3">GALLERY</textPath>
 		</text>
 	</g>
 	<g id="t4">
 		<path d="M302.4,1200 A897.6,897.6 -90,1,1 1200,2097.6 A897.6,897.6 -90,1,1 2097.6,1200 " fill="none" id="cp4" stroke="none" />
-		<text fill="#182d6c" font-family="Arial" font-size="252" font-weight="bold" text-anchor="middle" x="5639.7871317244" y="0">			<textPath xlink:href="#cp4">SOFTWARE
-			</textPath>
+		<text fill="#182d6c" font-family="Arial" font-size="252" font-weight="bold" text-anchor="middle" x="5639.7871317244" y="0">
+			<textPath xlink:href="#cp4">SOFTWARE</textPath>
 		</text>
 	</g>
 	<g id="t5" opacity="0.1">
 		<path d="M1200,1200 A0,0 0,0,1 1200,1200 L600,2239.23048454133 A1200,1200 0,0,0 2327.63114494309,1610.4241719908 L1200,1200 " fill="#0000ff" stroke="black" stroke-width="2" />
-	</g><!-- 
-	Generated using the Perl SVG Module V2.49
+	</g>
+	<!-- 
+	Generated using the Perl SVG Module V2.59
 	by Ronan Oger
 	Info: http://www.roitsystems.com/
  -->

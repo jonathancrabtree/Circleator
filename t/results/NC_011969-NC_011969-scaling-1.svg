@@ -13,8 +13,8 @@
 	</defs>
 	<g id="t1" opacity="0.7">
 		<path d="M386.56,1600 A1213.44,1213.44 -90,1,1 1600,2813.44 A1213.44,1213.44 -90,1,1 2813.44,1600 " fill="none" id="cp1" stroke="none" />
-		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1906.067094786" y="0">			<textPath xlink:href="#cp1">
-			</textPath>
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1906.067094786" y="0">
+			<textPath xlink:href="#cp1"></textPath>
 		</text>
 	</g>
 	<g id="t2" />
@@ -28,8 +28,8 @@
 	</g>
 	<g id="t4" opacity="0.7">
 		<path d="M506.56,1600 A1093.44,1093.44 -90,1,1 1600,2693.44 A1093.44,1093.44 -90,1,1 2693.44,1600 " fill="none" id="cp3" stroke="none" />
-		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="1717.57153557061" y="0">			<textPath xlink:href="#cp3">contigs 0.9-1.0
-			</textPath>
+		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="1717.57153557061" y="0">
+			<textPath xlink:href="#cp3">contigs 0.9-1.0</textPath>
 		</text>
 	</g>
 	<g id="t5">
@@ -42,8 +42,8 @@
 	</g>
 	<g id="t6" opacity="0.7">
 		<path d="M746.56,1600 A853.44,853.44 -90,1,1 1600,2453.44 A853.44,853.44 -90,1,1 2453.44,1600 " fill="none" id="cp5" stroke="none" />
-		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1340.58041713984" y="0">			<textPath xlink:href="#cp5">contigs 0.7-0.8
-			</textPath>
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1340.58041713984" y="0">
+			<textPath xlink:href="#cp5">contigs 0.7-0.8</textPath>
 		</text>
 	</g>
 	<g id="t7" />
@@ -65,15 +65,15 @@
 	</g>
 	<g id="t10" opacity="0.7">
 		<path d="M986.56,1600 A613.44,613.44 -90,1,1 1600,2213.44 A613.44,613.44 -90,1,1 2213.44,1600 " fill="none" id="cp8" stroke="none" />
-		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="963.589298709061" y="0">			<textPath xlink:href="#cp8">contigs 0.50-0.55 and 0.55-0.60
-			</textPath>
+		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="963.589298709061" y="0">
+			<textPath xlink:href="#cp8">contigs 0.50-0.55 and 0.55-0.60</textPath>
 		</text>
 	</g>
 	<g id="t11" opacity="0.3" />
 	<g id="t12" opacity="0.7">
 		<path d="M266.56,1600 A1333.44,1333.44 -90,1,1 1600,2933.44 A1333.44,1333.44 -90,1,1 2933.44,1600 " fill="none" id="cp9" stroke="none" />
-		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="start" x="2094.56265400139" y="0">			<textPath xlink:href="#cp9">gaps stroke-width 4
-			</textPath>
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="start" x="2094.56265400139" y="0">
+			<textPath xlink:href="#cp9">gaps stroke-width 4</textPath>
 		</text>
 	</g>
 	<g id="t13" opacity="0.4">
@@ -81,8 +81,8 @@
 	</g>
 	<g id="t14" opacity="0.7">
 		<path d="M386.56,1600 A1213.44,1213.44 -90,1,1 1600,2813.44 A1213.44,1213.44 -90,1,1 2813.44,1600 " fill="none" id="cp10" stroke="none" />
-		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="start" x="5718.201284358" y="0">			<textPath xlink:href="#cp10">highlight 0-100kb SCALED 26.070975X
-			</textPath>
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="start" x="5718.201284358" y="0">
+			<textPath xlink:href="#cp10">highlight 0-100kb SCALED 26.070975X</textPath>
 		</text>
 	</g>
 	<g id="t15">
@@ -100,12 +100,12 @@
 		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="2080" y2="2104" />
 		<path d="M1048,1600 A552,552 -90,1,1 1600,2152 A552,552 -90,1,1 1600,1048 " fill="none" id="cp11" stroke="none" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="1120" y2="1072" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="867.079572390783" y="0">			<textPath xlink:href="#cp11">0kb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="867.079572390783" y="0">
+			<textPath xlink:href="#cp11">0kb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="2080" y2="2128" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="2601.23871717235" y="0">			<textPath xlink:href="#cp11">100kb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="2601.23871717235" y="0">
+			<textPath xlink:href="#cp11">100kb</textPath>
 		</text>
 	</g>
 	<g id="t16" opacity="0.3">
@@ -118,11 +118,12 @@
 	</g>
 	<g id="t17" opacity="0.7">
 		<path d="M1346.56,1600 A253.44,253.44 -90,1,1 1600,1853.44 A253.44,253.44 -90,1,1 1853.44,1600 " fill="none" id="cp13" stroke="none" />
-		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="398.102621062899" y="0">			<textPath xlink:href="#cp13">contigs 0-0.4
-			</textPath>
+		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="398.102621062899" y="0">
+			<textPath xlink:href="#cp13">contigs 0-0.4</textPath>
 		</text>
-	</g><!-- 
-	Generated using the Perl SVG Module V2.49
+	</g>
+	<!-- 
+	Generated using the Perl SVG Module V2.59
 	by Ronan Oger
 	Info: http://www.roitsystems.com/
  -->

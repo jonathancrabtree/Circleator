@@ -67,48 +67,48 @@
 		<line stroke="black" stroke-width="2.4" x1="1438.68470801592" x2="1435.39255919992" y1="435.116582411746" y2="411.343451440557" />
 		<line stroke="black" stroke-width="2.4" x1="1579.88527313564" x2="1579.47476850576" y1="424.17203734425" y2="400.175548310459" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="424" y2="376" />
-		<g transform="translate(1600, 352)">			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(-90)" x="0" y="0">0.0Mb
-			</text>
+		<g transform="translate(1600, 352)">
+			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(-90)" x="0" y="0">0.0Mb</text>
 		</g>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2266.45142170606" x2="2293.65352055121" y1="631.07353090858" y2="591.525511761991" />
-		<g transform="translate(2307.25456997378, 571.751502188697)">			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(-55.4788514813888)" x="0" y="0">0.5Mb
-			</text>
+		<g transform="translate(2307.25456997378, 571.751502188697)">
+			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(-55.4788514813888)" x="0" y="0">0.5Mb</text>
 		</g>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2698.20139941261" x2="2743.02594632741" y1="1179.36989369733" y2="1162.20131792988" />
-		<g transform="translate(2765.43821978481, 1153.61703004615)">			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(-20.9577029627776)" x="0" y="0">1.0Mb
-			</text>
+		<g transform="translate(2765.43821978481, 1153.61703004615)">
+			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(-20.9577029627776)" x="0" y="0">1.0Mb</text>
 		</g>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2743.20232707644" x2="2789.86364654895" y1="1875.79782335436" y2="1887.05487736883" />
-		<g transform="translate(2813.19430628521, 1932.68340437606)">			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(13.5634455558336)" x="0" y="0">1.5Mb
-			</text>
+		<g transform="translate(2813.19430628521, 1932.68340437606)">
+			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(13.5634455558336)" x="0" y="0">1.5Mb</text>
 		</g>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2385.60641390589" x2="2417.67198182041" y1="2475.09917291124" y2="2510.81750649945" />
-		<g transform="translate(2433.70476577767, 2568.67667329356)">			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(48.0845940744449)" x="0" y="0">2.0Mb
-			</text>
+		<g transform="translate(2433.70476577767, 2568.67667329356)">
+			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(48.0845940744449)" x="0" y="0">2.0Mb</text>
 		</g>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1751.34673537492" x2="1757.52415314533" y1="2766.22046187303" y2="2813.82129705153" />
-		<g transform="translate(1760.61286203053, 2877.62171464077)">			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(82.605742593056)" x="0" y="0">2.5Mb
-			</text>
+		<g transform="translate(1760.61286203053, 2877.62171464077)">
+			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(82.605742593056)" x="0" y="0">2.5Mb</text>
 		</g>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1063.78790227666" x2="1041.90169420632" y1="2646.63870855952" y2="2689.35865584766" />
-		<g transform="translate(1030.95859017115, 2750.71862949173)">			<text font-size="50" font-weight="bold" text-anchor="end" transform="rotate(297.126891111667)" x="0" y="0">3.0Mb
-			</text>
+		<g transform="translate(1030.95859017115, 2750.71862949173)">
+			<text font-size="50" font-weight="bold" text-anchor="end" transform="rotate(297.126891111667)" x="0" y="0">3.0Mb</text>
 		</g>
 		<line stroke="black" stroke-width="9.60000000000001" x1="565.064668483614" x2="522.822410054374" y1="2158.46652502999" y2="2181.26107707203" />
-		<g transform="translate(501.701280839754, 2232.65835309305)">			<text font-size="50" font-weight="bold" text-anchor="end" transform="rotate(331.648039630279)" x="0" y="0">3.5Mb
-			</text>
+		<g transform="translate(501.701280839754, 2232.65835309305)">
+			<text font-size="50" font-weight="bold" text-anchor="end" transform="rotate(331.648039630279)" x="0" y="0">3.5Mb</text>
 		</g>
 		<line stroke="black" stroke-width="9.60000000000001" x1="430.810334961216" x2="383.088307816776" y1="1473.6214924661" y2="1468.46318603614" />
-		<g transform="translate(359.227294244556, 1465.88403282116)">			<text font-size="50" font-weight="bold" text-anchor="end" transform="rotate(366.16918814889)" x="0" y="0">4.0Mb
-			</text>
+		<g transform="translate(359.227294244556, 1465.88403282116)">
+			<text font-size="50" font-weight="bold" text-anchor="end" transform="rotate(366.16918814889)" x="0" y="0">4.0Mb</text>
 		</g>
 		<line stroke="black" stroke-width="9.60000000000001" x1="708.304695726915" x2="671.908969021891" y1="833.282656817175" y2="801.988071381141" />
-		<g transform="translate(653.711105669379, 786.340778663124)">			<text font-size="50" font-weight="bold" text-anchor="end" transform="rotate(400.690336667501)" x="0" y="0">4.5Mb
-			</text>
+		<g transform="translate(653.711105669379, 786.340778663124)">
+			<text font-size="50" font-weight="bold" text-anchor="end" transform="rotate(400.690336667501)" x="0" y="0">4.5Mb</text>
 		</g>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1299.82370810899" x2="1287.57161456241" y1="462.955500524909" y2="416.545520954497" />
-		<g transform="translate(1281.44556778913, 393.340531169291)">			<text font-size="50" font-weight="bold" text-anchor="end" transform="rotate(435.211485186112)" x="0" y="0">5.0Mb
-			</text>
+		<g transform="translate(1281.44556778913, 393.340531169291)">
+			<text font-size="50" font-weight="bold" text-anchor="end" transform="rotate(435.211485186112)" x="0" y="0">5.0Mb</text>
 		</g>
 	</g>
 	<g id="t2" />
@@ -168,28 +168,28 @@
 		<line stroke="black" stroke-width="2.4" x1="1367.21022261513" x2="1361.08417584185" y1="718.210388162174" y2="695.005398376968" />
 		<line stroke="black" stroke-width="2.4" x1="1474.89834499194" x2="1471.60619617593" y1="696.621023094823" y2="672.847892123635" />
 		<line stroke="black" stroke-width="2.4" x1="1584.40082406437" x2="1583.99031943449" y1="688.133416715949" y2="664.136927682158" />
-		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="688" y2="640" />		<text font-size="50" font-weight="bold" text-anchor="start" x="1600" y="616">0.0Mb
-		</text>
-		<line stroke="black" stroke-width="9.60000000000001" x1="2116.83987805776" x2="2144.04197690291" y1="848.587636214817" y2="809.039617068228" />		<text font-size="50" font-weight="bold" text-anchor="start" x="2157.64302632548" y="789.265607494934">0.5Mb
-		</text>
-		<line stroke="black" stroke-width="9.60000000000001" x1="2451.66639138121" x2="2496.49093829601" y1="1273.79706041834" y2="1256.62848465088" />		<text font-size="50" font-weight="bold" text-anchor="start" x="2518.90321175341" y="1248.04419676716">1.0Mb
-		</text>
-		<line stroke="black" stroke-width="9.60000000000001" x1="2486.56506997765" x2="2533.22638945016" y1="1813.88402627481" y2="1825.14108028928" />		<text font-size="50" font-weight="bold" text-anchor="start" x="2556.55704918641" y="1870.76960729651">1.5Mb
-		</text>
-		<line stroke="black" stroke-width="9.60000000000001" x1="2209.24579037599" x2="2241.31135829052" y1="2278.64833817606" y2="2314.36667176428" />		<text font-size="50" font-weight="bold" text-anchor="start" x="2257.34414224778" y="2372.22583855838">2.0Mb
-		</text>
-		<line stroke="black" stroke-width="9.60000000000001" x1="1717.37093763769" x2="1723.5483554081" y1="2504.41586839133" y2="2552.01670356982" />		<text font-size="50" font-weight="bold" text-anchor="start" x="1726.6370642933" y="2615.81712115907">2.5Mb
-		</text>
-		<line stroke="black" stroke-width="9.60000000000001" x1="1184.16204666353" x2="1162.27583859319" y1="2411.67899847473" y2="2454.39894576287" />		<text font-size="50" font-weight="bold" text-anchor="end" x="1151.33273455802" y="2515.75891940694">3.0Mb
-		</text>
-		<line stroke="black" stroke-width="9.60000000000001" x1="797.397089844436" x2="755.154831415195" y1="2033.09648879877" y2="2055.89104084081" />		<text font-size="50" font-weight="bold" text-anchor="end" x="734.033702200575" y="2107.28831686183">3.5Mb
-		</text>
-		<line stroke="black" stroke-width="9.60000000000001" x1="693.281484255637" x2="645.559457111197" y1="1501.99217783085" y2="1496.8338714009" />		<text font-size="50" font-weight="bold" text-anchor="end" x="621.698443538977" y="1494.25471818592">4.0Mb
-		</text>
-		<line stroke="black" stroke-width="9.60000000000001" x1="908.481192604546" x2="872.085465899522" y1="1005.40287671536" y2="974.108291279326" />		<text font-size="50" font-weight="bold" text-anchor="end" x="853.88760254701" y="958.460998561309">4.5Mb
-		</text>
-		<line stroke="black" stroke-width="9.60000000000001" x1="1367.21022261513" x2="1354.95812906856" y1="718.210388162174" y2="671.800408591762" />		<text font-size="50" font-weight="bold" text-anchor="end" x="1348.83208229527" y="648.595418806556">5.0Mb
-		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="688" y2="640" />
+		<text font-size="50" font-weight="bold" text-anchor="start" x="1600" y="616">0.0Mb</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2116.83987805776" x2="2144.04197690291" y1="848.587636214817" y2="809.039617068228" />
+		<text font-size="50" font-weight="bold" text-anchor="start" x="2157.64302632548" y="789.265607494934">0.5Mb</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2451.66639138121" x2="2496.49093829601" y1="1273.79706041834" y2="1256.62848465088" />
+		<text font-size="50" font-weight="bold" text-anchor="start" x="2518.90321175341" y="1248.04419676716">1.0Mb</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2486.56506997765" x2="2533.22638945016" y1="1813.88402627481" y2="1825.14108028928" />
+		<text font-size="50" font-weight="bold" text-anchor="start" x="2556.55704918641" y="1870.76960729651">1.5Mb</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="2209.24579037599" x2="2241.31135829052" y1="2278.64833817606" y2="2314.36667176428" />
+		<text font-size="50" font-weight="bold" text-anchor="start" x="2257.34414224778" y="2372.22583855838">2.0Mb</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1717.37093763769" x2="1723.5483554081" y1="2504.41586839133" y2="2552.01670356982" />
+		<text font-size="50" font-weight="bold" text-anchor="start" x="1726.6370642933" y="2615.81712115907">2.5Mb</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1184.16204666353" x2="1162.27583859319" y1="2411.67899847473" y2="2454.39894576287" />
+		<text font-size="50" font-weight="bold" text-anchor="end" x="1151.33273455802" y="2515.75891940694">3.0Mb</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="797.397089844436" x2="755.154831415195" y1="2033.09648879877" y2="2055.89104084081" />
+		<text font-size="50" font-weight="bold" text-anchor="end" x="734.033702200575" y="2107.28831686183">3.5Mb</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="693.281484255637" x2="645.559457111197" y1="1501.99217783085" y2="1496.8338714009" />
+		<text font-size="50" font-weight="bold" text-anchor="end" x="621.698443538977" y="1494.25471818592">4.0Mb</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="908.481192604546" x2="872.085465899522" y1="1005.40287671536" y2="974.108291279326" />
+		<text font-size="50" font-weight="bold" text-anchor="end" x="853.88760254701" y="958.460998561309">4.5Mb</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1367.21022261513" x2="1354.95812906856" y1="718.210388162174" y2="671.800408591762" />
+		<text font-size="50" font-weight="bold" text-anchor="end" x="1348.83208229527" y="648.595418806556">5.0Mb</text>
 	</g>
 	<g id="t5" />
 	<g id="t6" />
@@ -250,48 +250,48 @@
 		<line stroke="black" stroke-width="2.4" x1="1588.91637499311" x2="1588.50587036322" y1="952.094796087648" y2="928.098307053857" />
 		<path d="M880,1600 A720,720 -90,1,1 1600,2320 A720,720 -90,1,1 1600,880 " fill="none" id="cp1" stroke="none" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="952" y2="904" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="1130.97335529233" y="0">			<textPath xlink:href="#cp1">0.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1130.97335529233" y="0">
+			<textPath xlink:href="#cp1">0.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1967.22833440946" x2="1994.43043325461" y1="1066.10174152105" y2="1026.55372237447" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="1564.77890161053" y="0">			<textPath xlink:href="#cp1">0.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1564.77890161053" y="0">
+			<textPath xlink:href="#cp1">0.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2205.1313833498" x2="2249.9559302646" y1="1368.22422713935" y2="1351.05565137189" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="1998.58444792874" y="0">			<textPath xlink:href="#cp1">1.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1998.58444792874" y="0">
+			<textPath xlink:href="#cp1">1.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2229.92781287886" x2="2276.58913235136" y1="1751.97022919526" y2="1763.22728320972" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="2432.38999424694" y="0">			<textPath xlink:href="#cp1">1.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="2432.38999424694" y="0">
+			<textPath xlink:href="#cp1">1.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2032.8851668461" x2="2064.95073476063" y1="2082.19750344089" y2="2117.9158370291" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="2866.19554056514" y="0">			<textPath xlink:href="#cp1">2.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="2866.19554056514" y="0">
+			<textPath xlink:href="#cp1">2.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1683.39513990047" x2="1689.57255767087" y1="2242.61127490963" y2="2290.21211008812" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="3300.00108688335" y="0">			<textPath xlink:href="#cp1">2.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="3300.00108688335" y="0">
+			<textPath xlink:href="#cp1">2.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1304.5361910504" x2="1282.64998298006" y1="2176.71928838994" y2="2219.43923567808" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="3733.80663320155" y="0">			<textPath xlink:href="#cp1">3.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="3733.80663320155" y="0">
+			<textPath xlink:href="#cp1">3.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1029.72951120526" x2="987.487252776017" y1="1907.72645256754" y2="1930.52100460958" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="4167.61217951976" y="0">			<textPath xlink:href="#cp1">3.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="4167.61217951976" y="0">
+			<textPath xlink:href="#cp1">3.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="955.752633550058" x2="908.030606405618" y1="1530.3628631956" y2="1525.20455676565" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="4601.41772583796" y="0">			<textPath xlink:href="#cp1">4.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="4601.41772583796" y="0">
+			<textPath xlink:href="#cp1">4.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1108.65768948218" x2="1072.26196277715" y1="1177.52309661355" y2="1146.22851117751" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="5035.22327215617" y="0">			<textPath xlink:href="#cp1">4.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="5035.22327215617" y="0">
+			<textPath xlink:href="#cp1">4.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1434.59673712128" x2="1422.34464357471" y1="973.465275799439" y2="927.055296229027" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="5469.02881847437" y="0">			<textPath xlink:href="#cp1">5.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="5469.02881847437" y="0">
+			<textPath xlink:href="#cp1">5.0Mb</textPath>
 		</text>
 	</g>
 	<g id="t8" />
@@ -311,51 +311,52 @@
 		<line stroke="black" stroke-width="2.4" x1="1501.98325162742" x2="1495.85720485414" y1="1228.7201634367" y2="1205.5151736515" />
 		<path d="M1144,1600 A456,456 -90,1,1 1600,2056 A456,456 -90,1,1 1600,1144 " fill="none" id="cp2" stroke="none" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="1216" y2="1168" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="716.283125018473" y="0">			<textPath xlink:href="#cp2">0.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="716.283125018473" y="0">
+			<textPath xlink:href="#cp2">0.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1817.61679076116" x2="1844.81888960631" y1="1283.61584682729" y2="1244.0678276807" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="991.026637686669" y="0">			<textPath xlink:href="#cp2">0.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="991.026637686669" y="0">
+			<textPath xlink:href="#cp2">0.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1958.5963753184" x2="2003.4209222332" y1="1462.65139386035" y2="1445.4828180929" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="1265.77015035487" y="0">			<textPath xlink:href="#cp2">1.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1265.77015035487" y="0">
+			<textPath xlink:href="#cp2">1.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1973.29055578006" x2="2019.95187525257" y1="1690.05643211571" y2="1701.31348613017" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="1540.51366302306" y="0">			<textPath xlink:href="#cp2">1.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1540.51366302306" y="0">
+			<textPath xlink:href="#cp2">1.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1856.52454331621" x2="1888.59011123073" y1="1885.74666870571" y2="1921.46500229392" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="1815.25717569126" y="0">			<textPath xlink:href="#cp2">2.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1815.25717569126" y="0">
+			<textPath xlink:href="#cp2">2.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1649.41934216324" x2="1655.59675993364" y1="1980.80668142793" y2="2028.40751660642" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="2090.00068835945" y="0">			<textPath xlink:href="#cp2">2.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="2090.00068835945" y="0">
+			<textPath xlink:href="#cp2">2.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1424.91033543728" x2="1403.02412736694" y1="1941.75957830515" y2="1984.47952559329" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="2364.74420102765" y="0">			<textPath xlink:href="#cp2">3.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="2364.74420102765" y="0">
+			<textPath xlink:href="#cp2">3.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1262.06193256608" x2="1219.81967413684" y1="1782.35641633632" y2="1805.15096837836" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="2639.48771369585" y="0">			<textPath xlink:href="#cp2">3.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="2639.48771369585" y="0">
+			<textPath xlink:href="#cp2">3.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1218.22378284448" x2="1170.50175570004" y1="1558.73354856036" y2="1553.5752421304" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="2914.23122636404" y="0">			<textPath xlink:href="#cp2">4.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="2914.23122636404" y="0">
+			<textPath xlink:href="#cp2">4.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1308.83418635981" x2="1272.43845965478" y1="1349.64331651173" y2="1318.3487310757" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="3188.97473903224" y="0">			<textPath xlink:href="#cp2">4.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="3188.97473903224" y="0">
+			<textPath xlink:href="#cp2">4.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1501.98325162742" x2="1489.73115808085" y1="1228.7201634367" y2="1182.31018386629" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="3463.71825170044" y="0">			<textPath xlink:href="#cp2">5.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="3463.71825170044" y="0">
+			<textPath xlink:href="#cp2">5.0Mb</textPath>
 		</text>
-	</g><!-- 
-	Generated using the Perl SVG Module V2.49
+	</g>
+	<!-- 
+	Generated using the Perl SVG Module V2.59
 	by Ronan Oger
 	Info: http://www.roitsystems.com/
  -->

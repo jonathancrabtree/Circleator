@@ -15,8 +15,8 @@
 		<circle cx="1600" cy="1600" fill="none" r="1176" stroke="black" stroke-width="4.8" />
 		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="424" y2="400" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="424" y2="376" />
-		<g transform="translate(1600, 352)">			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(-90)" x="0" y="0">0.0Mb
-			</text>
+		<g transform="translate(1600, 352)">
+			<text font-size="50" font-weight="bold" text-anchor="start" transform="rotate(-90)" x="0" y="0">0.0Mb</text>
 		</g>
 	</g>
 	<g id="t2" />
@@ -24,8 +24,8 @@
 	<g id="t4">
 		<circle cx="1600" cy="1600" fill="none" r="912" stroke="black" stroke-width="4.8" />
 		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="688" y2="664" />
-		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="688" y2="640" />		<text font-size="50" font-weight="bold" text-anchor="start" x="1600" y="616">0.0Mb
-		</text>
+		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="688" y2="640" />
+		<text font-size="50" font-weight="bold" text-anchor="start" x="1600" y="616">0.0Mb</text>
 	</g>
 	<g id="t5" />
 	<g id="t6" />
@@ -34,8 +34,8 @@
 		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="952" y2="928" />
 		<path d="M880,1600 A720,720 -90,1,1 1600,2320 A720,720 -90,1,1 1600,880 " fill="none" id="cp1" stroke="none" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="952" y2="904" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="1130.97335529233" y="0">			<textPath xlink:href="#cp1">0.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1130.97335529233" y="0">
+			<textPath xlink:href="#cp1">0.0Mb</textPath>
 		</text>
 	</g>
 	<g id="t8" />
@@ -45,11 +45,12 @@
 		<line stroke="black" stroke-width="2.4" x1="1600" x2="1600" y1="1216" y2="1192" />
 		<path d="M1144,1600 A456,456 -90,1,1 1600,2056 A456,456 -90,1,1 1600,1144 " fill="none" id="cp2" stroke="none" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="1216" y2="1168" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="716.283125018473" y="0">			<textPath xlink:href="#cp2">0.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="716.283125018473" y="0">
+			<textPath xlink:href="#cp2">0.0Mb</textPath>
 		</text>
-	</g><!-- 
-	Generated using the Perl SVG Module V2.49
+	</g>
+	<!-- 
+	Generated using the Perl SVG Module V2.59
 	by Ronan Oger
 	Info: http://www.roitsystems.com/
  -->

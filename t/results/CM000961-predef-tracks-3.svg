@@ -13,8 +13,8 @@
 	</defs>
 	<g id="t1" opacity="0.7">
 		<path d="M386.56,1600 A1213.44,1213.44 -90,1,1 1600,2813.44 A1213.44,1213.44 -90,1,1 2813.44,1600 " fill="none" id="cp1" stroke="none" />
-		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1906.067094786" y="0">			<textPath xlink:href="#cp1">
-			</textPath>
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1906.067094786" y="0">
+			<textPath xlink:href="#cp1"></textPath>
 		</text>
 	</g>
 	<g id="t2">
@@ -45,30 +45,30 @@
 		<line stroke="black" stroke-width="2.4" x1="1443.39789026601" x2="1440.20192884286" y1="434.47360423418" y2="410.687351259368" />
 		<path d="M352,1600 A1248,1248 -90,1,1 1600,2848 A1248,1248 -90,1,1 1600,352 " fill="none" id="cp2" stroke="none" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="424" y2="376" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="1960.35381584003" y="0">			<textPath xlink:href="#cp2">0.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1960.35381584003" y="0">
+			<textPath xlink:href="#cp2">0.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2743.97147736754" x2="2790.66419072948" y1="1327.41009011789" y2="1316.28397134719" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="3628.77341047876" y="0">			<textPath xlink:href="#cp2">0.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="3628.77341047876" y="0">
+			<textPath xlink:href="#cp2">0.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2130.33177197843" x2="2151.97796675306" y1="2649.63051195657" y2="2692.47257366908" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="5297.19300511749" y="0">			<textPath xlink:href="#cp2">1.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="5297.19300511749" y="0">
+			<textPath xlink:href="#cp2">1.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="701.884117753586" x2="665.226326641488" y1="2359.18631577285" y2="2390.173512335" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="6965.61259975621" y="0">			<textPath xlink:href="#cp2">1.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="6965.61259975621" y="0">
+			<textPath xlink:href="#cp2">1.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="653.312229033062" x2="614.671911850738" y1="902.319367975827" y2="873.842607485044" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="8634.03219439494" y="0">			<textPath xlink:href="#cp2">2.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="8634.03219439494" y="0">
+			<textPath xlink:href="#cp2">2.0Mb</textPath>
 		</text>
 	</g>
 	<g id="t3" opacity="0.7">
 		<path d="M410.56,1600 A1189.44,1189.44 -90,1,1 1600,2789.44 A1189.44,1189.44 -90,1,1 2789.44,1600 " fill="none" id="cp3" stroke="none" />
-		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1868.36798294292" y="0">			<textPath xlink:href="#cp3">coords
-			</textPath>
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1868.36798294292" y="0">
+			<textPath xlink:href="#cp3">coords</textPath>
 		</text>
 	</g>
 	<g id="t4" />
@@ -82,27 +82,27 @@
 	</g>
 	<g id="t6" opacity="0.7">
 		<path d="M518.56,1600 A1081.44,1081.44 -90,1,1 1600,2681.44 A1081.44,1081.44 -90,1,1 2681.44,1600 " fill="none" id="cp5" stroke="none" />
-		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1698.72197964907" y="0">			<textPath xlink:href="#cp5">contigs
-			</textPath>
+		<text fill="#ff0000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1698.72197964907" y="0">
+			<textPath xlink:href="#cp5">contigs</textPath>
 		</text>
 	</g>
 	<g id="t7" />
 	<g id="t8">
 		<path d="M581.2,1600 A1018.8,1018.8 -90,1,1 1600,2618.8 A1018.8,1018.8 -90,1,1 2618.8,1600 " fill="none" id="cp6" stroke="none" />
-		<text fill="black" font-size="21" text-anchor="middle" x="1600.32729773864" y="0">			<textPath xlink:href="#cp6">small label
-			</textPath>
+		<text fill="black" font-size="21" text-anchor="middle" x="1600.32729773864" y="0">
+			<textPath xlink:href="#cp6">small label</textPath>
 		</text>
 	</g>
 	<g id="t9">
 		<path d="M636.4,1600 A963.6,963.6 -90,1,1 1600,2563.6 A963.6,963.6 -90,1,1 2563.6,1600 " fill="none" id="cp7" stroke="none" />
-		<text fill="black" font-size="42" text-anchor="middle" x="1513.61934049956" y="0">			<textPath xlink:href="#cp7">medium label
-			</textPath>
+		<text fill="black" font-size="42" text-anchor="middle" x="1513.61934049956" y="0">
+			<textPath xlink:href="#cp7">medium label</textPath>
 		</text>
 	</g>
 	<g id="t10">
 		<path d="M746.8,1600 A853.2,853.2 -90,1,1 1600,2453.2 A853.2,853.2 -90,1,1 2453.2,1600 " fill="none" id="cp8" stroke="none" />
-		<text fill="black" font-size="84" text-anchor="middle" x="1340.20342602141" y="0">			<textPath xlink:href="#cp8">large label
-			</textPath>
+		<text fill="black" font-size="84" text-anchor="middle" x="1340.20342602141" y="0">
+			<textPath xlink:href="#cp8">large label</textPath>
 		</text>
 	</g>
 	<g id="t11" />
@@ -151,10 +151,11 @@
 		<circle cx="1600" cy="1600" fill="none" r="174" stroke="black" stroke-width="0.042" />
 	</g>
 	<g id="t21" opacity="0.7">
-		<path d="M1412.56,1600 A187.44,187.44 -90,1,1 1600,1787.44 A187.44,187.44 -90,1,1 1787.44,1600 " fill="none" id="cp14" stroke="none" />		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="1600" y="1426">gaps (tiny/small/medium/large)
-		</text>
-	</g><!-- 
-	Generated using the Perl SVG Module V2.49
+		<path d="M1412.56,1600 A187.44,187.44 -90,1,1 1600,1787.44 A187.44,187.44 -90,1,1 1787.44,1600 " fill="none" id="cp14" stroke="none" />
+		<text fill="#ff0000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="1600" y="1426">gaps (tiny/small/medium/large)</text>
+	</g>
+	<!-- 
+	Generated using the Perl SVG Module V2.59
 	by Ronan Oger
 	Info: http://www.roitsystems.com/
  -->

@@ -13,8 +13,8 @@
 	</defs>
 	<g id="t1" opacity="0.7">
 		<path d="M386.56,1600 A1213.44,1213.44 -90,1,1 1600,2813.44 A1213.44,1213.44 -90,1,1 2813.44,1600 " fill="none" id="cp1" stroke="none" />
-		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1906.067094786" y="0">			<textPath xlink:href="#cp1">
-			</textPath>
+		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1906.067094786" y="0">
+			<textPath xlink:href="#cp1"></textPath>
 		</text>
 	</g>
 	<g id="t2">
@@ -74,54 +74,54 @@
 		<line stroke="black" stroke-width="2.4" x1="1579.88527313564" x2="1579.47476850576" y1="424.17203734425" y2="400.175548310459" />
 		<path d="M352,1600 A1248,1248 -90,1,1 1600,2848 A1248,1248 -90,1,1 1600,352 " fill="none" id="cp2" stroke="none" />
 		<line stroke="black" stroke-width="9.60000000000001" x1="1600" x2="1600" y1="424" y2="376" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="1960.35381584003" y="0">			<textPath xlink:href="#cp2">0.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="1960.35381584003" y="0">
+			<textPath xlink:href="#cp2">0.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2266.45142170606" x2="2293.65352055121" y1="631.07353090858" y2="591.525511761991" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="2712.28342945825" y="0">			<textPath xlink:href="#cp2">0.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="2712.28342945825" y="0">
+			<textPath xlink:href="#cp2">0.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2698.20139941261" x2="2743.02594632741" y1="1179.36989369733" y2="1162.20131792988" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="3464.21304307647" y="0">			<textPath xlink:href="#cp2">1.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="3464.21304307647" y="0">
+			<textPath xlink:href="#cp2">1.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2743.20232707644" x2="2789.86364654895" y1="1875.79782335436" y2="1887.05487736883" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="4216.14265669469" y="0">			<textPath xlink:href="#cp2">1.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="4216.14265669469" y="0">
+			<textPath xlink:href="#cp2">1.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="2385.60641390589" x2="2417.67198182041" y1="2475.09917291124" y2="2510.81750649945" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="4968.07227031292" y="0">			<textPath xlink:href="#cp2">2.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="4968.07227031292" y="0">
+			<textPath xlink:href="#cp2">2.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1751.34673537492" x2="1757.52415314533" y1="2766.22046187303" y2="2813.82129705153" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="5720.00188393114" y="0">			<textPath xlink:href="#cp2">2.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="5720.00188393114" y="0">
+			<textPath xlink:href="#cp2">2.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1063.78790227666" x2="1041.90169420632" y1="2646.63870855952" y2="2689.35865584766" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="6471.93149754936" y="0">			<textPath xlink:href="#cp2">3.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="6471.93149754936" y="0">
+			<textPath xlink:href="#cp2">3.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="565.064668483614" x2="522.822410054374" y1="2158.46652502999" y2="2181.26107707203" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="7223.86111116758" y="0">			<textPath xlink:href="#cp2">3.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="7223.86111116758" y="0">
+			<textPath xlink:href="#cp2">3.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="430.810334961216" x2="383.088307816776" y1="1473.6214924661" y2="1468.46318603614" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="7975.7907247858" y="0">			<textPath xlink:href="#cp2">4.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="7975.7907247858" y="0">
+			<textPath xlink:href="#cp2">4.0Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="708.304695726915" x2="671.908969021891" y1="833.282656817175" y2="801.988071381141" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="8727.72033840402" y="0">			<textPath xlink:href="#cp2">4.5Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="8727.72033840402" y="0">
+			<textPath xlink:href="#cp2">4.5Mb</textPath>
 		</text>
 		<line stroke="black" stroke-width="9.60000000000001" x1="1299.82370810899" x2="1287.57161456241" y1="462.955500524909" y2="416.545520954497" />
-		<text font-size="50" font-weight="bold" text-anchor="middle" x="9479.64995202224" y="0">			<textPath xlink:href="#cp2">5.0Mb
-			</textPath>
+		<text font-size="50" font-weight="bold" text-anchor="middle" x="9479.64995202224" y="0">
+			<textPath xlink:href="#cp2">5.0Mb</textPath>
 		</text>
 	</g>
 	<g id="t3" opacity="0.7">
 		<path d="M410.56,1600 A1189.44,1189.44 -90,1,1 1600,2789.44 A1189.44,1189.44 -90,1,1 2789.44,1600 " fill="none" id="cp3" stroke="none" />
-		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1868.36798294292" y="0">			<textPath xlink:href="#cp3">coords
-			</textPath>
+		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1868.36798294292" y="0">
+			<textPath xlink:href="#cp3">coords</textPath>
 		</text>
 	</g>
 	<g id="t4" />
@@ -135,16 +135,16 @@
 	</g>
 	<g id="t6" opacity="0.7">
 		<path d="M518.56,1600 A1081.44,1081.44 -90,1,1 1600,2681.44 A1081.44,1081.44 -90,1,1 2681.44,1600 " fill="none" id="cp5" stroke="none" />
-		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1698.72197964907" y="0">			<textPath xlink:href="#cp5">contigs
-			</textPath>
+		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1698.72197964907" y="0">
+			<textPath xlink:href="#cp5">contigs</textPath>
 		</text>
 	</g>
 	<g id="t7" />
 	<g id="t8" />
 	<g id="t9" opacity="0.7">
 		<path d="M626.56,1600 A973.44,973.44 -90,1,1 1600,2573.44 A973.44,973.44 -90,1,1 2573.44,1600 " fill="none" id="cp6" stroke="none" />
-		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1529.07597635522" y="0">			<textPath xlink:href="#cp6">gaps
-			</textPath>
+		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1529.07597635522" y="0">
+			<textPath xlink:href="#cp6">gaps</textPath>
 		</text>
 	</g>
 	<g id="t10" />
@@ -1195,29 +1195,29 @@
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="852" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
 		<g id="t11.1" opacity="0.6">
 			<path d="M746.32,1600 A853.68,853.68 -90,1,1 1600,2453.68 A853.68,853.68 -90,1,1 2453.68,1600 " fill="none" id="cp7" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1340.95740825827" y="0">				<textPath xlink:href="#cp7">min=0.0000
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1340.95740825827" y="0">
+				<textPath xlink:href="#cp7">min=0.0000</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="936" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
 		<g id="t11.2" opacity="0.6">
 			<path d="M672.82,1600 A927.18,927.18 -90,1,1 1600,2527.18 A927.18,927.18 -90,1,1 2527.18,1600 " fill="none" id="cp8" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1456.41093827769" y="0">				<textPath xlink:href="#cp8">max=100.0000
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1456.41093827769" y="0">
+				<textPath xlink:href="#cp8">max=100.0000</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="881.872542013102" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
 		<g id="t11.3" opacity="0.6">
 			<path d="M716.447457986898,1600 A883.552542013102,883.552542013102 -90,1,1 1600,2483.5525420131 A883.552542013102,883.552542013102 -90,1,1 2483.5525420131,1600 " fill="none" id="cp9" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1387.88108752447" y="0">				<textPath xlink:href="#cp9">avg=35.5626
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1387.88108752447" y="0">
+				<textPath xlink:href="#cp9">avg=35.5626</textPath>
 			</text>
 		</g>
 	</g>
 	<g id="t12" opacity="0.7">
 		<path d="M734.56,1600 A865.44,865.44 -90,1,1 1600,2465.44 A865.44,865.44 -90,1,1 2465.44,1600 " fill="none" id="cp10" stroke="none" />
-		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1359.42997306137" y="0">			<textPath xlink:href="#cp10">%GC0-100
-			</textPath>
+		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1359.42997306137" y="0">
+			<textPath xlink:href="#cp10">%GC0-100</textPath>
 		</text>
 	</g>
 	<g id="t13" />
@@ -2268,29 +2268,29 @@
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="744" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
 		<g id="t14.1" opacity="0.6">
 			<path d="M854.320000000001,1600 A745.679999999999,745.679999999999 -90,1,1 1600,2345.68 A745.679999999999,745.679999999999 -90,1,1 2345.68,1600 " fill="none" id="cp11" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1171.31140496442" y="0">				<textPath xlink:href="#cp11">min=27.1400
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1171.31140496442" y="0">
+				<textPath xlink:href="#cp11">min=27.1400</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="828" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
 		<g id="t14.2" opacity="0.6">
 			<path d="M780.82,1600 A819.18,819.18 -90,1,1 1600,2419.18 A819.18,819.18 -90,1,1 2419.18,1600 " fill="none" id="cp12" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1286.76493498384" y="0">				<textPath xlink:href="#cp12">max=51.2600
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1286.76493498384" y="0">
+				<textPath xlink:href="#cp12">max=51.2600</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="773.332263735915" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
 		<g id="t14.3" opacity="0.6">
 			<path d="M824.987736264085,1600 A775.012263735915,775.012263735915 -90,1,1 1600,2375.01226373591 A775.012263735915,775.012263735915 -90,1,1 2375.01226373591,1600 " fill="none" id="cp13" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1217.38641709737" y="0">				<textPath xlink:href="#cp13">avg=35.5626
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1217.38641709737" y="0">
+				<textPath xlink:href="#cp13">avg=35.5626</textPath>
 			</text>
 		</g>
 	</g>
 	<g id="t15" opacity="0.7">
 		<path d="M842.56,1600 A757.44,757.44 -90,1,1 1600,2357.44 A757.44,757.44 -90,1,1 2357.44,1600 " fill="none" id="cp14" stroke="none" />
-		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1189.78396976753" y="0">			<textPath xlink:href="#cp14">%GCmin-max
-			</textPath>
+		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1189.78396976753" y="0">
+			<textPath xlink:href="#cp14">%GCmin-max</textPath>
 		</text>
 	</g>
 	<g id="t16" />
@@ -3341,29 +3341,29 @@
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="636" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
 		<g id="t17.1" opacity="0.6">
 			<path d="M962.320000000001,1600 A637.679999999999,637.679999999999 -90,1,1 1600,2237.68 A637.679999999999,637.679999999999 -90,1,1 2237.68,1600 " fill="none" id="cp15" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1001.66540167057" y="0">				<textPath xlink:href="#cp15">min=27.1400
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1001.66540167057" y="0">
+				<textPath xlink:href="#cp15">min=27.1400</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="720" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
 		<g id="t17.2" opacity="0.6">
 			<path d="M888.820000000001,1600 A711.179999999999,711.179999999999 -90,1,1 1600,2311.18 A711.179999999999,711.179999999999 -90,1,1 2311.18,1600 " fill="none" id="cp16" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1117.11893168999" y="0">				<textPath xlink:href="#cp16">max=51.2600
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1117.11893168999" y="0">
+				<textPath xlink:href="#cp16">max=51.2600</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="665.332263735915" stroke="black" stroke-dasharray="3, 3" stroke-width="0.0840000000000001" />
 		<g id="t17.3" opacity="0.6">
 			<path d="M932.987736264085,1600 A667.012263735915,667.012263735915 -90,1,1 1600,2267.01226373591 A667.012263735915,667.012263735915 -90,1,1 2267.01226373591,1600 " fill="none" id="cp17" stroke="none" />
-			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1047.74041380352" y="0">				<textPath xlink:href="#cp17">avg=35.5626
-				</textPath>
+			<text fill="black" font-size="7.35000000000003" text-anchor="middle" x="1047.74041380352" y="0">
+				<textPath xlink:href="#cp17">avg=35.5626</textPath>
 			</text>
 		</g>
 	</g>
 	<g id="t18" opacity="0.7">
 		<path d="M950.560000000001,1600 A649.439999999999,649.439999999999 -90,1,1 1600,2249.44 A649.439999999999,649.439999999999 -90,1,1 2249.44,1600 " fill="none" id="cp18" stroke="none" />
-		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1020.13796647368" y="0">			<textPath xlink:href="#cp18">%GCmin-max-dfa
-			</textPath>
+		<text fill="#000000" font-size="58.8000000000001" font-style="italic" font-weight="bold" text-anchor="middle" x="1020.13796647368" y="0">
+			<textPath xlink:href="#cp18">%GCmin-max-dfa</textPath>
 		</text>
 	</g>
 	<g id="t19" />
@@ -4414,29 +4414,29 @@
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="432" stroke="black" stroke-dasharray="3, 3" stroke-width="0.084" />
 		<g id="t20.1" opacity="0.6">
 			<path d="M1166.32,1600 A433.68,433.68 -90,1,1 1600,2033.68 A433.68,433.68 -90,1,1 2033.68,1600 " fill="none" id="cp19" stroke="none" />
-			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="681.22295100441" y="0">				<textPath xlink:href="#cp19">min=-1.0000
-				</textPath>
+			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="681.22295100441" y="0">
+				<textPath xlink:href="#cp19">min=-1.0000</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="516" stroke="black" stroke-dasharray="3, 3" stroke-width="0.084" />
 		<g id="t20.2" opacity="0.6">
 			<path d="M1092.82,1600 A507.18,507.18 -90,1,1 1600,2107.18 A507.18,507.18 -90,1,1 2107.18,1600 " fill="none" id="cp20" stroke="none" />
-			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="796.676481023835" y="0">				<textPath xlink:href="#cp20">max=1.0000
-				</textPath>
+			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="796.676481023835" y="0">
+				<textPath xlink:href="#cp20">max=1.0000</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="473.821415912443" stroke="black" stroke-dasharray="3, 3" stroke-width="0.084" />
 		<g id="t20.3" opacity="0.6">
 			<path d="M1124.49858408756,1600 A475.501415912443,475.501415912443 -90,1,1 1600,2075.50141591244 A475.501415912443,475.501415912443 -90,1,1 2075.50141591244,1600 " fill="none" id="cp21" stroke="none" />
-			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="746.915877501038" y="0">				<textPath xlink:href="#cp21">avg=-0.0043
-				</textPath>
+			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="746.915877501038" y="0">
+				<textPath xlink:href="#cp21">avg=-0.0043</textPath>
 			</text>
 		</g>
 	</g>
 	<g id="t21" opacity="0.7">
 		<path d="M1154.56,1600 A445.439999999999,445.439999999999 -90,1,1 1600,2045.44 A445.439999999999,445.439999999999 -90,1,1 2045.44,1600 " fill="none" id="cp22" stroke="none" />
-		<text fill="#000000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="699.695515807518" y="0">			<textPath xlink:href="#cp22">%GCskew-1-df0
-			</textPath>
+		<text fill="#000000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="699.695515807518" y="0">
+			<textPath xlink:href="#cp22">%GCskew-1-df0</textPath>
 		</text>
 	</g>
 	<g id="t22" />
@@ -5487,33 +5487,34 @@
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="323.999999999999" stroke="black" stroke-dasharray="3, 3" stroke-width="0.084" />
 		<g id="t23.1" opacity="0.6">
 			<path d="M1274.32,1600 A325.679999999999,325.679999999999 -90,1,1 1600,1925.68 A325.679999999999,325.679999999999 -90,1,1 1925.68,1600 " fill="none" id="cp23" stroke="none" />
-			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="511.576947710561" y="0">				<textPath xlink:href="#cp23">min=-0.3112
-				</textPath>
+			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="511.576947710561" y="0">
+				<textPath xlink:href="#cp23">min=-0.3112</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="407.999999999999" stroke="black" stroke-dasharray="3, 3" stroke-width="0.084" />
 		<g id="t23.2" opacity="0.6">
 			<path d="M1200.82,1600 A399.18,399.18 -90,1,1 1600,1999.18 A399.18,399.18 -90,1,1 1999.18,1600 " fill="none" id="cp24" stroke="none" />
-			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="627.030477729986" y="0">				<textPath xlink:href="#cp24">max=0.3299
-				</textPath>
+			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="627.030477729986" y="0">
+				<textPath xlink:href="#cp24">max=0.3299</textPath>
 			</text>
 		</g>
 		<circle cx="1600" cy="1600" fill="none" opacity="0.6" r="364.213443857591" stroke="black" stroke-dasharray="3, 3" stroke-width="0.084" />
 		<g id="t23.3" opacity="0.6">
 			<path d="M1234.10655614241,1600 A365.893443857591,365.893443857591 -90,1,1 1600,1965.89344385759 A365.893443857591,365.893443857591 -90,1,1 1965.89344385759,1600 " fill="none" id="cp25" stroke="none" />
-			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="574.744077609838" y="0">				<textPath xlink:href="#cp25">avg=-0.0043
-				</textPath>
+			<text fill="black" font-size="7.34999999999998" text-anchor="middle" x="574.744077609838" y="0">
+				<textPath xlink:href="#cp25">avg=-0.0043</textPath>
 			</text>
 		</g>
 	</g>
 	<g id="t24" opacity="0.7">
 		<path d="M1262.56,1600 A337.439999999999,337.439999999999 -90,1,1 1600,1937.44 A337.439999999999,337.439999999999 -90,1,1 1937.44,1600 " fill="none" id="cp26" stroke="none" />
-		<text fill="#000000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="530.049512513669" y="0">			<textPath xlink:href="#cp26">%GCskew-min-max-df0
-			</textPath>
+		<text fill="#000000" font-size="58.8" font-style="italic" font-weight="bold" text-anchor="middle" x="530.049512513669" y="0">
+			<textPath xlink:href="#cp26">%GCskew-min-max-df0</textPath>
 		</text>
 	</g>
-	<g id="t25" /><!-- 
-	Generated using the Perl SVG Module V2.49
+	<g id="t25" />
+	<!-- 
+	Generated using the Perl SVG Module V2.59
 	by Ronan Oger
 	Info: http://www.roitsystems.com/
  -->
