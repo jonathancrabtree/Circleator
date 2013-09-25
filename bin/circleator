@@ -158,10 +158,13 @@ the configuration file.
 =cut
 
 use strict;
+
+use FindBin;
+use lib "$FindBin::Bin/../lib/perl5";
+
 use Carp;
 use Clone qw (clone);
 use FileHandle;
-use FindBin;
 use Getopt::Long qw(:config no_ignore_case no_auto_abbrev pass_through);
 use Pod::Usage;
 use Log::Log4perl qw(:easy);
