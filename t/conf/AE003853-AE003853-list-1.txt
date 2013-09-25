@@ -1,5 +1,5 @@
-			../data/AE003853.gbk		
+			data/AE003853.gbk		
 gap		50000			
 genome	Vibrio cholerae O1 biovar eltor str. N16961 cII				
-AE003853R			../data/AE003853.gbk		revcomp
+AE003853R			data/AE003853.gbk		revcomp
 genome	Vibrio cholerae O1 biovar eltor str. N16961 cII revcomp				
