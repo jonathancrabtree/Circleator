@@ -1,5 +1,7 @@
 #!/usr/bin/perl
 
+$VERSION = '1.0beta1';
+
 =head1  NAME 
 
 circleator.pl - Generate SVG-format plots of circular chromosomes and/or plasmids.
