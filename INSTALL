@@ -1,17 +1,17 @@
 
 # Basic installation:
 
-perl Makefile.PL
-make 
-make test
-make install
+perl Build.PL
+./Build
+./Build test
+./Build install
 
 # To install into a noncentral location (e.g., one's home directory):
 
-perl Makefile.PL INSTALL_BASE=/somewhere/else
-make 
-make test
-make install
+perl Build.PL --install_base=/install/path
+./Build
+./Build test
+./Build install
 
 Note that the tests can take several minutes to run.
 
@@ -21,6 +21,7 @@ Note that the tests can take several minutes to run.
 
  * perl
  * bioperl
+ * libbatik-java
 
 ### Use the CPAN shell to install the remaining required Perl modules:
 
@@ -30,3 +31,12 @@ Note that the tests can take several minutes to run.
     install Log::Log4perl
     install SVG
     install Text::CSV
+
+### Manual test
+
+/install/path/bin/circleator --config=conf/genes-percentGC-GCskew-1.cfg --data=data/NC_011969.gbk >fig1.svg
+/install/path/bin/rasterize-svg fig1.svg png
+
+You may wish to create aliases for these executables if they were not installed into a
+system-wide bin/ directory.
+

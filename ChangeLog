@@ -1,6 +1,8 @@
 
 circleator-1.0beta1 (Sep ?? 2013)
- -Finished configuration file documentation page (html/docs/configuration.html)
+ -Moved code to GitHub (https://github.com/jonathancrabtree/Circleator)
+ -Moved ExtJS GUI into separate project/repository ("Ringmaster")
+ -Added Build.PL
  -Reinstated unknown sequence id warning when parsing flat file graph/heat map data.
  -Fixed bug in get_track_features causing feat-track references to be incorrectly processed.
  -Added font-width-frac option to allow overriding FONT_WIDTH_FRAC global on a per-track basis.
@@ -9,7 +11,7 @@ circleator-1.0alpha11 (Jun 04 2013)
  -Bug fix: label-units=Gb was using the label "Bb" instead of "Gb"
  -label-units is now case-insensitive i.e., label-units=mb and label-units=Mb will both work
  -Added new tests for label-units
-	
+
 circleator-1.0alpha10 (Jun 03 2013)
  -Added tests for: graph-type=line, graph-type=heat_map
  -Bug fix for case where graph-type=heat_map and no colors or color palette are supplied
