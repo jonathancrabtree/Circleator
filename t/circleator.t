@@ -23,13 +23,13 @@ use Test::More;
 ## ----------------------------------
 ## globals
 ## ----------------------------------
-my $CONF_DIR = './conf';
-my $DATA_DIR = '../data';
-my $BIN_DIR = '../bin';
-my $LIB_DIR = '../lib';
+my $CONF_DIR = 't/conf';
+my $DATA_DIR = 'data';
+my $BIN_DIR = 'bin';
+my $LIB_DIR = 'lib';
 
 # prior output for regression tests
-my $RESULTS_DIR = './results';
+my $RESULTS_DIR = 't/results';
 
 # test data
 #
@@ -103,13 +103,13 @@ my $TESTS =
      {'data' => 'AE003852-AE003853.gbk', 'conf' => 'AE003852-AE003853-contigs-and-gaps-1.cfg', 'descr' => "Positioning of contigs and contig gaps." },
 
      # multiple input contigs (using --contig_list option)
-     {'conf' => 'AE003852-AE003853-contigs-and-gaps-1.cfg', 'args' => "--contig_list=conf/AE003852-AE003853-list-1.txt", 'descr' => "Multi-contig figure using --contig_list." },
-     {'conf' => 'AE003852-AE003853-contigs-and-gaps-1.cfg', 'args' => "--contig_list=conf/AE003852-AE003853-list-2.txt", 'descr' => "Multi-contig figure using --contig_list, including explicit 'genome' feature." },
-     {'conf' => 'AE003852-AE003853-contigs-and-gaps-1.cfg', 'args' => "--contig_list=conf/AE003852-AE003853-list-3.txt", 'descr' => "Multi-contig figure using --contig_list, manual gap specification." },
-     {'conf' => 'AE003852-AE003853-contigs-and-gaps-2.cfg', 'args' => "--contig_list=conf/AE003852-AE003853-list-4.txt", 'descr' => "Multi-contig figure using --contig_list, manual gap and genome specifications." },
-     {'conf' => 'AE003852-AE003853-contigs-and-gaps-2.cfg', 'args' => "--contig_list=conf/AE003852-AE003853-list-5.txt", 'descr' => "Multi-contig figure using --contig_list, manual gap and genome specifications II." },
+     {'conf' => 'AE003852-AE003853-contigs-and-gaps-1.cfg', 'args' => "--contig_list=${CONF_DIR}/AE003852-AE003853-list-1.txt", 'descr' => "Multi-contig figure using --contig_list." },
+     {'conf' => 'AE003852-AE003853-contigs-and-gaps-1.cfg', 'args' => "--contig_list=${CONF_DIR}/AE003852-AE003853-list-2.txt", 'descr' => "Multi-contig figure using --contig_list, including explicit 'genome' feature." },
+     {'conf' => 'AE003852-AE003853-contigs-and-gaps-1.cfg', 'args' => "--contig_list=${CONF_DIR}/AE003852-AE003853-list-3.txt", 'descr' => "Multi-contig figure using --contig_list, manual gap specification." },
+     {'conf' => 'AE003852-AE003853-contigs-and-gaps-2.cfg', 'args' => "--contig_list=${CONF_DIR}/AE003852-AE003853-list-4.txt", 'descr' => "Multi-contig figure using --contig_list, manual gap and genome specifications." },
+     {'conf' => 'AE003852-AE003853-contigs-and-gaps-2.cfg', 'args' => "--contig_list=${CONF_DIR}/AE003852-AE003853-list-5.txt", 'descr' => "Multi-contig figure using --contig_list, manual gap and genome specifications II." },
      # 'revcomp' option to reverse-complement a contig
-     {'conf' => 'AE003853-AE003853-contigs-and-gaps-1.cfg', 'args' => "--contig_list=conf/AE003853-AE003853-list-1.txt", 'descr' => "Multi-contig figure using --contig_list and 'revcomp' option." },
+     {'conf' => 'AE003853-AE003853-contigs-and-gaps-1.cfg', 'args' => "--contig_list=${CONF_DIR}/AE003853-AE003853-list-1.txt", 'descr' => "Multi-contig figure using --contig_list and 'revcomp' option." },
 
      # GFF parsing
      {'data' => 'AE003852-AE003853.gbk', 'conf' => 'AE003852-AE003853-gff-1.cfg', 'descr' => "GFF file parsing." },
@@ -146,7 +146,7 @@ my $TESTS =
      # predefined config files
      # ----------------------------------------------------
      
-     {'data' => 'CM000961.gbk', 'conf_dir' => '../conf', 'conf' => 'genes-percentGC-GCskew-1.cfg', 'args' => "--pad=100 ", 'descr' => "Predefined config. file genes-percentGC-GCskew-1.cfg" },
+     {'data' => 'CM000961.gbk', 'conf_dir' => 'conf', 'conf' => 'genes-percentGC-GCskew-1.cfg', 'args' => "--pad=100 ", 'descr' => "Predefined config. file genes-percentGC-GCskew-1.cfg" },
 
     ];
 
@@ -197,10 +197,12 @@ foreach my $test (@$TESTS) {
     ++$num_tests;
 
     my $ok = 1;
-    my($seq_id) = ($data =~ /([^\/]+)\.(gbk|fsa)/);
+    my $seq_id = undef;
     if (!defined($data) && ($args =~ /\-\-contig_list=(\S+)\.txt/)) {
 	my $cl = $1;
 	$seq_id = basename($cl);
+    } else {
+	($seq_id) = ($data =~ /([^\/]+)\.(gbk|fsa)/);
     }
     if (!defined($seq_id) || ($seq_id =~ /^\s*$/)) {
 	$ok = 0; 
@@ -228,11 +230,12 @@ foreach my $test (@$TESTS) {
     }
 
     # run Circleator
-    my $cmd = "perl -I$LIB_DIR $BIN_DIR/circleator.pl ";
+    my $cmd = "perl -I$LIB_DIR $BIN_DIR/circleator ";
     $cmd .= "--data=$data_path " if (defined($data_path));
     $cmd .= "--config=$conf_path " if (defined($conf));
     $cmd .= "--sequence=$seq_path " if (defined($seq_path));
-    $cmd .= "--debug=all " if (defined($working_dir));
+#    $cmd .= "--debug=all " if (defined($working_dir));
+    $cmd .= "--debug=all ";
     $cmd .= $args if (defined($args));
     $cmd .= "> $new_svg_path 2> $log_path";
 
@@ -271,7 +274,7 @@ foreach my $test (@$TESTS) {
 	    my $date = `date`;
 	    chomp($date);
 	    my $new_svg = $svg_file;
-	    my $old_svg = "results/$svg_file";
+	    my $old_svg = "t/results/$svg_file";
 	    my($new_png, $new_small_png) = map { my $copy = $new_svg; $copy =~ s/\.svg$/$_/; $copy; } ('-5000.png', '.png');
 	    my($old_png, $old_small_png) = map { my $copy = $old_svg; $copy =~ s/\.svg$/$_/; $copy; } ('-5000.png', '.png');
 	    
