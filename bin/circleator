@@ -1,14 +1,14 @@
 #!/usr/bin/perl
 
-$VERSION = '1.0beta1';
+$VERSION = '1.0.0';
 
 =head1  NAME 
 
-circleator.pl - Generate SVG-format plots of circular chromosomes and/or plasmids.
+circleator - A Perl-based visualization tool for producing circular plots of genome-associated data.
 
 =head1 SYNOPSIS
 
-circleator.pl
+circleator
          --config=config-file.txt
          --data=annotation-and-or-sequence-data.gbk
         [--config_format=standard

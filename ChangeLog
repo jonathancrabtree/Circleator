@@ -1,5 +1,5 @@
 
-circleator-1.0beta1 (Sep ?? 2013)
+circleator-1.0.0rc1 (Sep ?? 2013)
  -Moved code to GitHub (https://github.com/jonathancrabtree/Circleator)
  -Moved ExtJS GUI into separate project/repository ("Ringmaster")
  -Added Build.PL
