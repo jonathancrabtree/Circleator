@@ -7,7 +7,8 @@ use File::Spec;
 
 ## globals
 my $USAGE = "Usage: $0 svg_file pdf|png|jpeg [output_width output_height]";
-my $BATIK_JAR = '/usr/local/packages/apache-batik-1.7/batik-rasterizer.jar';
+# path to Apache Batik SVG rasterizer
+my $RASTERIZER = 'rasterizer';
 my $DEFAULT_IMG_WIDTH = 4000;
 my $MAX_PDF_WIDTH = 2000;
 my $MTYPES = 
@@ -58,7 +59,7 @@ my $img_path = $svg_file;
 $img_path =~ s/(\.gz)?$/.${suffix}/;
 my $ih = defined($img_height) ? "-h $img_height" : "";
 my $ms = defined($mtype) ? "-m $mtype" : "";
-my $cmd = "java -mx4000m -jar $BATIK_JAR -bg '255.255.255.255' -w $img_width $ih $ms $svg_file";
+my $cmd = "$RASTERIZER -bg '255.255.255.255' -w $img_width $ih $ms $svg_file";
 &run_sys_command($cmd);
 
 exit(0);
