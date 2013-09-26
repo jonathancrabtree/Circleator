@@ -1,7 +1,6 @@
 use Module::Build;
 
-# TODO - copy conf/ files to central location in "make install"
-# TODO - check for presence of Java and APACHE BATIK module, edit rasterize-svg accordingly
+# TODO - check for presence of Apache Batik rasterizer, update rasterize-svg if needed
 # TODO - check for samtools?
 
 my $build = Module::Build->new
@@ -33,17 +32,6 @@ my $build = Module::Build->new
 	  'SVG'                         => '2.50',
 	  'Text::CSV'                   => '1.31',
       },
-      # check for presence of optional modules
-#      auto_features   => {
-#	  ssh_support => { 
-#	      description => "Use remote mirrors via ssh",
-#	      requires    => {Net::SSH => 0.08 }
-#	  },
-#     },
-      # generate additional test files as needed
-#      PL_files => { 
-#	  't/002_config.t.PL' => ['t/testconfig','t/002_config.t','t/002_config'],
-#      },
     );
 
 $build->add_build_element('cfg');
