@@ -1,0 +1,32 @@
+
+# Basic installation:
+
+perl Makefile.PL
+make 
+make test
+make install
+
+# To install into a noncentral location (e.g., one's home directory):
+
+perl Makefile.PL INSTALL_BASE=/somewhere/else
+make 
+make test
+make install
+
+Note that the tests can take several minutes to run.
+
+# Installing prerequisites, Ubuntu 13.04:
+
+### Use the Ubuntu Software Center or "sudo apt-get install" to install the following packages:
+
+ * perl
+ * bioperl
+
+### Use the CPAN shell to install the remaining required Perl modules:
+
+    sudo cpan
+    install CPAN
+    reload cpan
+    install Log::Log4perl
+    install SVG
+    install Text::CSV
