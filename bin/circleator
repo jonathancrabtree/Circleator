@@ -2,13 +2,13 @@
 
 $VERSION = '1.0.0';
 
-=head1  NAME 
+=head1 NAME 
 
 circleator - A Perl-based visualization tool for producing circular plots of genome-associated data.
 
 =head1 SYNOPSIS
 
-circleator
+  circleator
          --config=config-file.txt
          --data=annotation-and-or-sequence-data.gbk
         [--config_format=standard
@@ -29,131 +29,165 @@ circleator
          --man]
 
 =head1 OPTIONS
-    
-B<--config,-c>
-    Path to a file that specifies the circular "tracks" that should be drawn on 
-    the graphical representation of the circular chromosome or plasmid. See the online
-    documentation for more information on the configuration file format and the 
-    predefined track types that can be used therein.
 
-B<--data,-d>
-    Path to a single file that contains the sequence annotation in any BioPerl-supported 
-    format (e.g., GenBank flat file, GFF3)  May be ommitted if --contig_list is specified
+=over 8
 
-B<--config_format,-f>
-    Optional.  Config file format.  Default is 'standard'.  Current options are 'standard'
-    and 'perl'
+=item B<--config,-c>
 
-B<--data_dir,-i>
-    Optional.  Directory in which to search for input files that don't have an absolute path.
-    Default is the current working directory.
+Path to a file that specifies the circular "tracks" that should be
+drawn on the graphical representation of the circular chromosome or
+plasmid. See the online documentation for more information on the
+configuration file format and the predefined track types that can be
+used therein.
 
-B<--sequence,-s>
-    Optional.  Path to a single file that contains the chromosome or plasmid sequence in any
-    BioPerl-supported format (e.g., GenBank flat file, GFF3, FASTA.)  If the file
-    specified in the --data option already provides a DNA sequence and this option is
-    also supplied then the sequence from this option will _override_ the one that 
-    appears in the --data file.
+=item B<--data,-d>
 
-B<--seqlen,-q>
-    Optional.  Sequence length in base pairs.  This option is required _only_ if a
-    sequence length cannot be determined from the --data option _and_ the --sequence
-    option is not specified.
+Path to a single file that contains the sequence annotation in any
+BioPerl-supported format (e.g., GenBank flat file, GFF3) May be
+ommitted if --contig_list is specified
 
-B<--contig_list,-o>
-    Optional.  Path to a single tab-delimited file that lists one or more contigs that 
-    should be joined into a single circular pseudomolecule by inserting gaps of size 
-    --contig_gap_size.  Each line of the file must contain 5 or 6 tab-delimited fields, some
-    of which may be left empty.  These fields are as follows:
-      o contig id - the name/id of the sequence (optional)
-      o display name - a distinct display name to be used for the contig in figures (optional)
-      o seqlen - the length of the contig in base pairs (optional)
-      o data file - a contig annotation file in any format accepted by --data
-      o sequence file - a contig sequence file in any format accepted by --sequence
-      o revcomp - placing the keyword "revcomp" in the optional 6th field indicates that 
-        the sequence/annotation should be reverse-complemented
-    Note that if this option is provided then the --data, --sequence, and --seqlen options
-    will all be ignored.  The contig id may also be one of the following special values:
-      o genome - adds a 'genome' feature with name display name, covering all the 
-        preceding contigs that are not already associated with a genome tag
-      o gap - inserts a gap of size seqlen between the previous contig and the next.
-        if this keyword is used at any point in the file then --contig_gap_size will be
-        ignored and Circleator will _not_ automatically generate any gaps.
+=item B<--config_format,-f>
 
-B<--contig_gap_size,-s>
-    Optional.  Size of the gap, in base pairs, to place between each pair of contigs listed
-    in --contig_list or each pair of contigs/sequences that appear in the --data and/or
-    --sequence files. If --contig_list contains _any_ explicit gap features then 
-    --contig_gap_size will be ignored.
+Optional.  Config file format.  Default is 'standard'.  Current
+options are 'standard' and 'perl'
 
-B<--contig_min_size>
-    Optional.  Minimum contig size; any contig below this size will be ignored.
+=item B<--data_dir,-i>
 
-B<--debug=all,input,packing,tracks,loops>
-    Optional.  Comma-delimited list of detailed debug options to enable:
-      all - Enable all debug options listed below.
-      coordinates - Debug information for all coordinate transformations.
-      input - Print debug information for any data (sequence, annotation, etc.) read from a file.
-      loops - Print debug information for loop unrolling code (loop-start and loop-end tracks.)
-      packing - Debug information pertaining to the radial placement of features and labels.
-      tracks - Print individual track debug information as each track is rendered to SVG.
-      misc - Miscellaneous debug information - anything not covered by the other categories.
+Optional.  Directory in which to search for input files that don't
+have an absolute path.  Default is the current working directory.
 
-B<--no_seq>
-    Optional.  Set this if no sequence is available for the contigs in --contig_list, or if 
-    sequence is available but the sequences are too large to concatenate into a single 
-    pseudomolecule in BioPerl.
+=item B<--sequence,-s>
 
-B<--rotate_degrees>
-    Optional.  Number of degrees (from 0 - 360) to rotate the circle in the clockwise direction.
-    Default is 0, meaning that 0bp will appear at the top center of the circle.
+Optional.  Path to a single file that contains the chromosome or
+plasmid sequence in any BioPerl-supported format (e.g., GenBank flat
+file, GFF3, FASTA.)  If the file specified in the --data option
+already provides a DNA sequence and this option is also supplied then
+the sequence from this option will _override_ the one that appears in
+the --data file.
 
-B<--scaled_segment_list>
-    Optional. List of sequence segments to display larger or smaller than the default size.
-    Specified as a comma-delimited list of fmin-fmax:scale values, where fmin is the 0-based
-    start coordinate of the segment to scale, fmax is the 0-based end coordinate of the 
-    segment to scale, and scale is the number by which the default scale is to be multipled.
-    For example, a scale of 2 will increase the apparent size of the segment by 2, and a scale
-    of 0.25 will decrease the apparent size by a factor of 4.  An error will result if the
-    total requested amount of scaling exceeds the total available space.  For example, if a
-    request is made to increase the first half of the sequence by a factor of 3 then an 
-    error will be printed.
+=item B<--seqlen,-q>
 
-B<--scaled_segment_file>
-    Optional.  Same as --scaled_segment_list, but allows the scaled segment list (in the same
-    format) to be read from the named file.
+Optional.  Sequence length in base pairs.  This option is required
+_only_ if a sequence length cannot be determined from the --data
+option _and_ the --sequence option is not specified.
 
-B<--pad>
-    Padding (in pixels) to leave on each side of the figure.
+=item B<--contig_list,-o>
 
-B<--log,-l>
-    Optional. Path to a log file into which to write logging info.
+Optional.  Path to a single tab-delimited file that lists one or more
+contigs that should be joined into a single circular pseudomolecule by
+inserting gaps of size --contig_gap_size.  Each line of the file must
+contain 5 or 6 tab-delimited fields, some of which may be left empty.
+These fields are as follows:
+  o contig id - the name/id of the sequence (optional)
+  o display name - a distinct display name to be used for the contig in figures (optional)
+  o seqlen - the length of the contig in base pairs (optional)
+  o data file - a contig annotation file in any format accepted by --data
+  o sequence file - a contig sequence file in any format accepted by --sequence
+  o revcomp - placing the keyword "revcomp" in the optional 6th field indicates that 
+    the sequence/annotation should be reverse-complemented
+Note that if this option is provided then the --data, --sequence, and
+--seqlen options will all be ignored.  The contig id may also be one
+of the following special values:
+  o genome - adds a 'genome' feature with name display name, covering all the 
+    preceding contigs that are not already associated with a genome tag
+  o gap - inserts a gap of size seqlen between the previous contig and the next.
+    if this keyword is used at any point in the file then --contig_gap_size will be
+    ignored and Circleator will _not_ automatically generate any gaps.
 
-B<--help,-h> 
-    Display the script documentation.
+=item B<--contig_gap_size,-s>
 
-B<--man,-m>
-    Display the script documentation.
+Optional.  Size of the gap, in base pairs, to place between each pair
+of contigs listed in --contig_list or each pair of contigs/sequences
+that appear in the --data and/or --sequence files. If --contig_list
+contains _any_ explicit gap features then --contig_gap_size will be
+ignored.
+
+=item B<--contig_min_size>
+
+Optional.  Minimum contig size; any contig below this size will be
+ignored.
+
+=item B<--debug=all,input,packing,tracks,loops>
+
+Optional.  Comma-delimited list of detailed debug options to enable:
+  all - Enable all debug options listed below.
+  coordinates - Debug information for all coordinate transformations.
+  input - Print debug information for any data (sequence, annotation, etc.) read from a file.
+  loops - Print debug information for loop unrolling code (loop-start and loop-end tracks.)
+  packing - Debug information pertaining to the radial placement of features and labels.
+  tracks - Print individual track debug information as each track is rendered to SVG.
+  misc - Miscellaneous debug information - anything not covered by the other categories.
+
+=item B<--no_seq>
+
+Optional.  Set this if no sequence is available for the contigs in
+--contig_list, or if sequence is available but the sequences are too
+large to concatenate into a single pseudomolecule in BioPerl.
+
+=item B<--rotate_degrees>
+
+Optional.  Number of degrees (from 0 - 360) to rotate the circle in
+the clockwise direction.  Default is 0, meaning that 0bp will appear
+at the top center of the circle.
+
+=item B<--scaled_segment_list>
+
+Optional. List of sequence segments to display larger or smaller than
+the default size.  Specified as a comma-delimited list of
+fmin-fmax:scale values, where fmin is the 0-based start coordinate of
+the segment to scale, fmax is the 0-based end coordinate of the
+segment to scale, and scale is the number by which the default scale
+is to be multipled.  For example, a scale of 2 will increase the
+apparent size of the segment by 2, and a scale of 0.25 will decrease
+the apparent size by a factor of 4.  An error will result if the total
+requested amount of scaling exceeds the total available space.  For
+example, if a request is made to increase the first half of the
+sequence by a factor of 3 then an error will be printed.
+
+=item B<--scaled_segment_file>
+
+Optional.  Same as --scaled_segment_list, but allows the scaled
+segment list (in the same format) to be read from the named file.
+
+=item B<--pad>
+
+Padding (in pixels) to leave on each side of the figure.
+
+=item B<--log,-l>
+
+Optional. Path to a log file into which to write logging info.
+
+=item B<--help,-h> 
+
+Display the script documentation.
+
+=item B<--man,-m>
+
+Display the script documentation.
+
+=back
 
 =head1 DESCRIPTION
 
-Generate SVG-format plots of circular chromosomes and/or plasmids.
+A Perl-based visualization tool for producing circular plots of
+genome-associated data.
 
 =head1 INPUT
 
-A circular DNA sequence and/or a corresponding set of annotated sequence features, plus
-a configuration file that specifies how the aforementioned sequence and features are to
-be displayed in the resulting graphical plot.
+A circular DNA sequence and/or a corresponding set of annotated
+sequence features, plus a configuration file that specifies how the
+aforementioned sequence and features are to be displayed in the
+resulting graphical plot.
 
 =head1 OUTPUT
 
-An SVG-formatted graphical plot of the input chromosome or plasmid, as specified in
-the configuration file.
+An SVG-formatted graphical plot of the input chromosome or plasmid,
+as specified in the configuration file.
 
 =head1 CONTACT
 
-    Jonathan Crabtree
-    jonathancrabtree@gmail.com
+  Jonathan Crabtree
+  jonathancrabtree@gmail.com
 
 =cut
 
