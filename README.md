@@ -3,8 +3,9 @@ Circleator is Copyright (C) 2010-2013, Jonathan Crabtree \<<jonathancrabtree@gma
 ### Overview
 
 The Charm City Circleator--or Circleator for short--is a Perl-based
-visualization tool for producing circular plots of genome-associated
-data, like this one:
+visualization tool developed at the [Institute for Genome Sciences][igs]
+in the University of Maryland's School of Medicine. Circleator produces
+circular plots of genome-associated data, like this one:
 
 ![Sample Circleator image][sample image]
 
@@ -18,6 +19,7 @@ Common uses of the tool include:
 
 [sample image]: https://github.com/jonathancrabtree/Circleator/blob/gh-pages-dev/images/CP002104-1-600.png?raw=true "Sample Circleator Image"
 [genbank]: http://www.ncbi.nlm.nih.gov/genbank/
+[igs]: http://igs.umaryland.edu
 
 ### Key Features
 
