@@ -1,6 +1,3 @@
-![Circleator Logo][logo]
-
-[logo]: https://github.com/jonathancrabtree/Circleator/blob/gh-pages-dev/images/logo-2.png?raw=true "Circleator Logo"
 
 ### Overview
 
@@ -67,17 +64,17 @@ its prerequisites, running the program requires as little as:
 
 Examples of both of these types of files can be found in the Circleator
 source distribution. For example, from the top level of the unpacked
-Circleator zip or tar file the following command can be run to create 
-a Circleator figure for CM000961.gbk, which contains the genome of 
+Circleator zip or tar file the following command will create a Circleator 
+figure for CM000961.gbk, which contains the genome of 
 *Corynebacterium genitalium* ATCC 33030:
 
        circleator --data=data/CM000961.gbk --config=conf/genes-percent-GCskew-1.cfg > fig1.svg
 
 The resulting SVG file, `fig1.svg` can be viewed directly in many
-recent web browsers or image manipulation or viewing programs. Or, if
-the [Apache Batik][batik] package has been installed, it can be used
-to convert the image to PDF, PNG, or JPEG, using a wrapper script
-(rasterize-svg) in the Circleator distribution:
+recent web browsers or image viewers. Or, if the [Apache Batik][batik]
+package has been installed, it can be used to convert the image to
+PDF, PNG, or JPEG, using a wrapper script (rasterize-svg) from the
+Circleator distribution:
 
        rasterize-svg fig1.svg pdf
        rasterize-svg fig1.svg png
@@ -97,15 +94,15 @@ the same configuration file syntax.
 #### For new users:
   * **Walkthroughs and sample configuration files** provide HOW-TO guides for commonly-encountered datasets.
   * **Predefined track types** render standard data types using reasonable default options.
-    * *e.g.*, the keyword `genes` by itself on a line in the configuration file will display a circular track in which each gene is a curved black rectangle.
+    * *e.g.*, the keyword `genes` by itself on a line in the configuration file will display a circular track in which each gene is rendered as a curved black rectangle.
   * **Configurable track options** allow the predefined track types to be customized as little or as much as needed.
-    * *e.g.*, the line `genes color1=red` will do the same as `genes`, but using red instead of black.
+    * *e.g.*, the line `genes color1=red` will behave the same as `genes`, but using red instead of black.
 
 #### For experienced users:
   * **User-defined track types** can be created inline and then reused later in the configuration file.
   * **Feature-based scaling** allows the figure scale to be selectively expanded around features of interest.
-    * *e.g.*, Use 100X scale for any nonsynonymous SNP position and display the affected bases.
-  * **Configuration file loops** mean that figures for 60-genome SNP panels can be configured and displayed without cutting and pasting the same SNP track configuration 59 times.
+    * *e.g.*, Use 100X scale for any nonsynonymous SNP position and use the additional space to display the affected base.
+  * **Configuration file loops** mean that figures for 60-genome SNP panels can be configured and displayed without having to cut and paste the same SNP track configuration 59 times.
   * **Symbolic track references** allow tracks to reference others by name or relative position.
     * *e.g.*, Label each tRNA displayed in the preceding track with its anticodon sequence and connect the label to the corresponding feature with a blue line.
   * **Computed features** can be added to supplement those features that appear directly in the input files.
@@ -135,6 +132,6 @@ The file itself was prepared by Martin Krzywinski and downloaded from
 
 This product includes color specifications and designs developed by Cynthia Brewer (<http://colorbrewer.org>).
 
-### Citing Circleator
+### Citation
 
 A manuscript describing Circleator is currently in preparation.
