@@ -65,7 +65,7 @@ its prerequisites, running the program requires as little as:
 Examples of both of these types of files can be found in the Circleator
 source distribution. For example, from the top level of the unpacked
 Circleator zip or tar file the following command will create a Circleator 
-figure for CM000961.gbk, which contains the genome of 
+figure for [CM000961.gbk][], which contains the genome of 
 *Corynebacterium genitalium* ATCC 33030:
 
        circleator --data=data/CM000961.gbk --config=conf/genes-percent-GCskew-1.cfg > fig1.svg
@@ -80,6 +80,7 @@ Circleator distribution:
        rasterize-svg fig1.svg png
        rasterize-svg fig1.svg jpeg
 
+[CM000961.gbk]: https://github.com/jonathancrabtree/Circleator/blob/master/data/CM000961.gbk
 [install]: https://github.com/jonathancrabtree/Circleator/blob/gh-pages-dev/install.md
 
 ### Advanced Features
