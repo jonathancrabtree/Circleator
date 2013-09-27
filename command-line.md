@@ -18,6 +18,7 @@ This page covers using the command line interface.
 
 <a name='quick_start'>
 <h2>Quick start guide</h2>
+</a>
 
 This document provides a basic introduction to running the <span class='circleator'>Circleator</span> on the Linux command line.  To run the <span class='circleator'>Circleator</span> 
 you will need at least the following two things:
@@ -68,7 +69,7 @@ specify the path to the input SVG file and the desired output format
 This is what our fig1.svg looks like after converting it to PNG format:
 </p>
 
-<a href='images/CM000961-genes-percentGC-GCskew-1-5000.png'><img src='images/CM000961-genes-percentGC-GCskew-1.png' class='index_example'></a><br clear='both'>
+&#x20;<a href='images/CM000961-genes-percentGC-GCskew-1-5000.png'><img src='images/CM000961-genes-percentGC-GCskew-1.png' class='index_example'></a><br clear='both'/>
 
 The configuration file that we used in this example is composed entirely of 
 <a href='predefined-tracks.html'>predefined tracks</a>.  By default the 
@@ -91,11 +92,11 @@ tiny-cgap
 # all reverse-strand gene features (in CM000961.gbk) drawn as black curved rectangles
 genes-rev
 small-cgap
-# percent GC graph using nonoverlapping 5kb windows with range set to observed min & max values.
+# percent GC graph using nonoverlapping 5kb windows with range set to observed min &amp; max values.
 # (dfa = display Difference From Average)
 %GCmin-max-dfa
 small-cgap
-# GC-skew graph using nonoverlapping 5kb windows with range set to observed min & max values.
+# GC-skew graph using nonoverlapping 5kb windows with range set to observed min &amp; max values.
 # (df0 = display Difference From 0)
 GCskew-min-max-df0
 </pre>
@@ -109,12 +110,13 @@ to plot. In the sections that follow we'll discuss:
 <ul>
 <li><a href='#cmdline_opts'>Command line options</a> supported by the <span class='circleator'>Circleator</span></li>
 <li><a href='#config_files'>Configuration files</a>: different ways to create and/or customize them</li>
-<li><a href='#input_data'>Input data files</a>: options for supplying the <span class='circleator'>Circleator</span> with sequence(s) and annotation
+<li><a href='#input_data'>Input data files</a>: options for supplying the <span class='circleator'>Circleator</span> with sequence(s) and annotation</li>
 </ul>
 </p>
 
 <a name='cmdline_opts'>
 <h2>Other command line options</h2>
+</a>
 
 For a full list of the command line options that the <span class='circleator'>Circleator</span> 
 supports, invoke the tool with the <span class='cmdline_opt'>--help</span> option:
@@ -127,7 +129,7 @@ Here are a few key options that may be useful in addition to those covered in th
 
 <ul>
 <li>
-<span class='cmdline_opt'>--rotate_degrees=180</span> <br clear='both'>
+<span class='cmdline_opt'>--rotate_degrees=180</span> <br clear='both'/>
     Optional.  Number of degrees (from 0 - 360) to rotate the circle in the clockwise direction.
     Default is 0, meaning that 0bp will appear at the top center of the circle.
 </li>
@@ -148,7 +150,7 @@ Here are a few key options that may be useful in addition to those covered in th
       <li> display name - a distinct display name to be used for the contig in figures (optional)</li>
       <li> seqlen - the length of the contig in base pairs (optional)</li>
       <li> data file - a contig annotation file in any format accepted by <span class='cmdline_opt'>--data</span></li>
-      <li> sequence file - a contig sequence file in any format accepted by <span class='cmdline_opt'>--sequence</li>
+      <li> sequence file - a contig sequence file in any format accepted by <span class='cmdline_opt'>--sequence</span></li>
       <li> revcomp - placing the keyword "revcomp" in the optional 6th field indicates that 
         the sequence/annotation should be reverse-complemented</li>
 </ol>
@@ -182,6 +184,7 @@ Here are a few key options that may be useful in addition to those covered in th
 
 <a name='config_files'>
 <h2>Configuration files</h2>
+</a>
 
 A <span class='circleator'>Circleator</span> figure is composed of several concentric rings, each of which
 depicts a specific subset or aspect of the data plotted against a circular reference coordinate system. The rings in
@@ -213,6 +216,7 @@ For more information on writing and editing configuration files please see the d
 
 <a name='input_data'>
 <h2>Input data (sequence and annotation)</h2>
+</a>
 
 The <span class='circleator'>Circleator</span> is designed to address a variety of use cases, from displaying
 single circular microbial genomes to making figures for large multichromosomal eukaryotic genomes. There are 
@@ -228,6 +232,7 @@ sequences, separated by artificial gaps of arbitrary size:
 
 <a name='single_input_seq'>
 <h3>Using a single input sequence</h3>
+</a>
 
 The simple example shown above uses the <span class='cmdline_opt'>--data</span> command line option to generate a figure for a single sequence entry.
 This handles the case where both the sequence and its associated annotation (assuming there is any) are both in the same file.  Not all file formats
@@ -239,6 +244,7 @@ option.
 
 <a name='multiple_input_seqs'>
 <h3>Using multiple input sequences/contigs</h3>
+</a>
 
 There are two ways to handle multiple input sequences: they can either be placed into a single BioPerl-supported sequence or 
 annotation file or they can be kept in separate files.  In the former case they are passed to the <span class='circleator'>Circleator</span>
@@ -254,6 +260,7 @@ option:
 
 <a name='multiple_seqs_one_file'>
 <h4>Multiple sequences in one input file</h4>
+</a>
 The simplest way to display multiple contigs with the <span class='circleator'>Circleator</span> is to use an input file (e.g., a GenBank flat file) that contains 
 multiple sequence entries.  The file is still passed to the <span class='circleator'>Circleator</span> with the <span class='cmdline_opt'>--data</span> option, but the <span class='circleator'>Circleator</span> will automatically concatenate
 all the sequences in the input file into a single pseudomolecule, placing a gap of size 20000 bp between each adjacent pair of sequences.  The inserted
@@ -262,6 +269,7 @@ gap size can be modified by using the <span class='cmdline_opt'>--contig_gap_siz
 
 <a name='multiple_seqs_multiple_files'>
 <h4>Multiple sequences in several input files</h4>
+</a>
 If, on the other hand, you have multiple sequences split into several files then you can use the <span class='cmdline_opt'>--contig_list</span> option in place of the
 <span class='cmdline_opt'>--data</span> option.  The <span class='cmdline_opt'>--contig_list</span> option expects to be given the path to a single tab-delimited file that lists
 one or more contig annotation and/or sequence files that should be joined into a single circular pseudomolecule.  Each line of the
@@ -271,7 +279,7 @@ tab-delimited file must contain the following 5 or 6 columns, some of which may 
       <li> display name - a distinct display name to be used for the contig in figures (optional)</li>
       <li> seqlen - the length of the contig in base pairs (optional)</li>
       <li> data file - a contig annotation file in any format accepted by <span class='cmdline_opt'>--data</span></li>
-      <li> sequence file - a contig sequence file in any format accepted by <span class='cmdline_opt'>--sequence</li>
+      <li> sequence file - a contig sequence file in any format accepted by <span class='cmdline_opt'>--sequence</span></li>
       <li> revcomp - placing the keyword "revcomp" in the optional 6th field indicates that the sequence/annotation should be reverse-complemented</li>
     </ol>
 

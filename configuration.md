@@ -29,6 +29,7 @@ so much of what is discussed on this page is applicable regardless of how the to
 
 <a name='format'>
 <h2>File format</h2>
+</a>
 The standard <span class='circleator'>Circleator</span> configuration file is a tab-delimited plain text file
 designed to be edited manually. Blank lines or lines beginning with the "#" character (i.e., as in Perl-style comments)
 are ignored. Every other line contains one or more of the following tab-delimited fields:
@@ -50,10 +51,9 @@ are ignored. Every other line contains one or more of the following tab-delimite
  <li><span class='config_field'>options</span> - a comma-delimited list of track options in the format "key=value"</li>
 </ol>
 
-<em>All</em> of these fields except for the very first one (<span class='config_field'>type</span>) are optional and may be omitted, meaning
+All of these fields except for the very first one (<span class='config_field'>type</span>) are optional and may be omitted, meaning
 that they can be left out completely, rather than having to enter blank values separated by tabs. Hence the simplest possible line/track 
 in a <span class='circleator'>Circleator</span> configuration file is the name of a predefined track type and nothing else, like this:
-
 <pre>
 coords
 </pre>
@@ -126,6 +126,7 @@ include:
 
 <a name='predefined_tracks'>
 <h2>Predefined track types (<span class='config_field'>type</span>)</h2>
+</a>
 If the value in the first column of a line in the configuration file is anything other than "new" then
 it is the name of a predefined track type.  The entire set of <span class='circleator'>Circleator</span>-supported 
 predefined track types is listed
@@ -136,7 +137,8 @@ track types in configuration files can also be found in both the
 files found in the <a href='test-results/'>test-results</a> directory.
 
 <a name='user_defined_tracks'>
-<h2>User-defined tracks (<span class='config_field'>type</span>, <span class='config_field'>name</span>, <span class='config_field'>glyph</span>)</h3>
+<h2>User-defined tracks (<span class='config_field'>type</span>, <span class='config_field'>name</span>, <span class='config_field'>glyph</span>)</h2>
+</a>
 If the value in the first column of a line in the configuration file is "new" then the track is a user-defined
 track and must include columns 2 (<span class='config_field'>name</span>) and 3 (<span class='config_field'>glyph</span>), 
 either as positional fields or named values in the <span class='config_field'>options</span> field.  Here are the 
@@ -208,8 +210,8 @@ documentation and special processing directives embedded in its comments. In the
 
 
 <a name="track_position">
-<h2>Track size and position (<span class='config_field'>heightf</span>, <span class='config_field'>innerf</span>, <span class='config_field'>outerf</span>)</h3>
-
+<h2>Track size and position (<span class='config_field'>heightf</span>, <span class='config_field'>innerf</span>, <span class='config_field'>outerf</span>)</h2>
+</a>
 <p>
 There are 3 configuration file options that control <em>where</em> a track will appear.  Each track
 is defined as the area between two concentric circles, where the distance between those circles and
@@ -257,7 +259,7 @@ In this example one of the tracks (the "gap" track) has an <span class='config_f
 
 <a name='feature_selection'>
 <h2>Feature selection (<span class='config_field'>feat_type</span>,<span class='config_field'>feat_strand</span>, and other options)</h2>
-
+</a>
 <p>
 Many track and glyph types, for example the commonly-used rectangle glyph, operate on sets of features. For example, the <span class='track'>genes</span> track is defined thusly:
 </p>
@@ -287,8 +289,8 @@ new genes-fwd-too rectangle 0.07 feat-type=gene,feat-strand=1,color1=#000000
 
 <h3>Feature filter track options</h3>
 
-<span class='config_field'>feat_type</span> and <span class='config_field'>feat_strand</span> are both examples of feature "filters". That
-is, they filter or restrict the set of features on which the track will operate. The following list enumerates the other feature filters that
+&#x20;<span class='config_field'>feat_type</span> and <span class='config_field'>feat_strand</span> are both examples of feature "filters". That 
+is, they filter or restrict the set of features on which the track will operate. The following list enumerates the other feature filters that 
 <span class='circleator'>Circleator</span> supports:
 
 <ul>
@@ -444,7 +446,7 @@ new highlight_rois rectangle feat-type=roi,innerf=0,outerf=1.1,opacity=0.4,color
 </li>
 </ol>
 
-<em>NOTE:</em> Certain track types can be thought of as having both "input" and "output" features. That is, they 
+&#x20;<em>NOTE:</em> Certain track types can be thought of as having both "input" and "output" features. That is, they 
 select a subset of the available features by using 
 feature filters (the input) and then they produce a new set of features (the output) using the input features. For example, the
 <span class='track'>compute-deserts</span> track type takes a set of input features and then creates a new "desert" feature wherever
@@ -457,6 +459,7 @@ type of features that a track should create, rather than filtering the input fea
 
 <a name='colors'>
 <h2>Colors (e.g., <span class='option'>color1</span>, <span class='option'>color2</span>, <span class='option'>text-color</span>)</h2>
+</a>
 Wherever it expects a color specification (e.g., in the <span class='option'>color1</span>, <span class='option'>color2</span>, and <span class='option'>text-color</span> options) <span class='circleator'>Circleator</span> should accept any of the following:
 
 <ol>
@@ -475,16 +478,17 @@ new cr1c rectangle feat-type=gene,color1=#ff0000
 <ul>
  <li><span class='option'>sample</span> - the sample whose expression level should be used to determine the color.</li>
  <li><span class='option'>exp-default-color</span> - a default color to use if one is not specified by the following options.</li>
- <li><span class='option'>exp-thresholds</span> - a "|"-delimited list of one or more threshold values
+ <li><span class='option'>exp-thresholds</span> - a "|"-delimited list of one or more threshold values</li>
  <li><span class='option'>exp-colors</span> - a "|"-delimited list of colors, one for each value in <span class='option'>exp-thresholds</span>.</li>
 </ul>
+
 <pre>
 # Genes whose expression value is between 0 and 2 in the lung sample are colored green, those with value >2 are red:
 new genes rectangle 0.08 feat-type=CDS,color1=expression_level,color2=expression_level,sample=Lung,exp-default-color=black,exp-thresholds=0|2,exp-colors=green|red
 </pre>
 </li>
 
-<li><Span class='option'>regex_list</span> - Assigns color based on matching a feature's attribute to one or more regular expressions. Uses the following additional optiosn:
+<li><span class='option'>regex_list</span> - Assigns color based on matching a feature's attribute to one or more regular expressions. Uses the following additional options:
 <ul>
  <li><span class='option'>color[12]-regexes</span> - a "|"-delimited list of Perl regular expressions against which to match the named feature attribute.</li>
  <li><span class='option'>color[12]-colors</span> - a "|"-delimited list of color specifies, one for each of the Perl regular expressions.</li>
@@ -540,6 +544,7 @@ new snp2 rectangle heightf=0.07,feat-track=snp1,color1=snp_type_no_indel,color2=
 
 <a name='labels'>
 <h2>Labels (<span class='option'>label-text</span>, <span class='option'>label-function</span>)</h2>
+</a>
 The <span class=''>label</span> track type in <span class='circleator'>Circleator</span> allows labels (i.e., short text strings) to be drawn next to tracks and/or specific features. For example, one might label an entire track "%GC-Content" or one might label a highlighted region of interest "highly variable region 1" or one might label all tRNAs with their anticodon. There are two ways to specify what label should be drawn:
 
 <ol>
@@ -629,12 +634,14 @@ new SNPP label innerf=1.20,heightf=0.35,label-track-num=-2,label-function=tag,ta
 <pre>
 new SNPP label innerf=1.20,heightf=0.35,label-track-num=-2,label-function=snp_product,label-type=spoke,text-anchor=start
 new SNPP label innerf=1.20,heightf=0.35,label-track-num=-2,label-function=tag,tag-name=SNP_product,tag-ignore-multiple-values=1,label-type=spoke,text-anchor=start
-</pre></li>
+</pre>
+</li>
 </ul>
 </ol>
 
 <a name='opacity'>
 <h2>Opacity (<span class='option'>opacity</span>)</h2>
+</a>
 
 The opacity/transparency of any track can be set with the <span class='opacity'>opacity</span> option, which takes as its value a number between 0 and 1, with 0 meaning 0% opacity (i.e., the track is completely invisible) and 1 meaning 100% opacity (i.e., it completely obscures anything directly behind it). Values between 0 and 1 can be used to make tracks semi-transparent. For example, one might highlight a region of interest by overlaying a shaded area with opacity set to 0.3 or 0.4, like so:
 <pre>
@@ -643,8 +650,9 @@ new highlight1 rectangle user-feat-fmin=50000,user-feat-fmax=100000,color1=red,c
 
 <a name='loops'>
 <h2>Loops (<span class='track'>loop-start</span>, <span class='track'>loop-end</span>)</h2>
+</a>
 
-<span class='circleator'>Circleator</span> supports the use of loops to simplify the construction of configuration files when the same track or set of tracks must be repeated many times for a different subset of the data (e.g., as when showing SNPs, gene clusters, or BSR data for a number of genomes or strains in a large multi-strain comparison.) Loops may be added to a configuration file using two special track types, <span class='track'>loop-start</span> and <span class='track'>loop-end</span> . At present a loop may specify only a single loop variable (i.e., a special keyword that will be replaced by each of a list of values), like so:
+&#x20;<span class='circleator'>Circleator</span> supports the use of loops to simplify the construction of configuration files when the same track or set of tracks must be repeated many times for a different subset of the data (e.g., as when showing SNPs, gene clusters, or BSR data for a number of genomes or strains in a large multi-strain comparison.) Loops may be added to a configuration file using two special track types, <span class='track'>loop-start</span> and <span class='track'>loop-end</span> . At present a loop may specify only a single loop variable (i.e., a special keyword that will be replaced by each of a list of values), like so:
 
 <pre>
 # highlight a set of genes:
@@ -658,5 +666,6 @@ new le1 loop-end
 
 <a name='z_index'>
 <h2>Z-index</h2>
+</a>
 
 The Z-index of a track determines its relative stacking position (i.e., top to bottom) in the figure. Currently the Z-index of each track is determined by its position in the configuration file, with the first track in the file appearing on the bottom of the stack and the last track in the file appearing on the top of the stack.

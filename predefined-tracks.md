@@ -595,7 +595,7 @@ The predefined tracks have been grouped into the following categories to make se
 <table class='figure'>
 <tbody>
 <tr>
-<th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track' ZOOM=1440,390,320,213>small-cgap</span> track</span></th>
+<th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track' ZOOM='1440,390,320,213'>small-cgap</span> track</span></th>
 </tr>
 <tr>
 <td><a href='predefined-tracks/genes.3-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.3-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
@@ -613,7 +613,7 @@ The predefined tracks have been grouped into the following categories to make se
 <table class='figure'>
 <tbody>
 <tr>
-<th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track' ZOOM=1440,420,320,213>medium-cgap</span> track</span></th>
+<th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track' ZOOM='1440,420,320,213'>medium-cgap</span> track</span></th>
 </tr>
 <tr>
 <td><a href='predefined-tracks/genes.4-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.4-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
@@ -631,7 +631,7 @@ The predefined tracks have been grouped into the following categories to make se
 <table class='figure'>
 <tbody>
 <tr>
-<th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track' ZOOM=1440,440,320,213>large-cgap</span> track</span></th>
+<th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track' ZOOM='1440,440,320,213'>large-cgap</span> track</span></th>
 </tr>
 <tr>
 <td><a href='predefined-tracks/genes.5-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.5-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
@@ -645,7 +645,7 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<a name='graphs'><h2>4. graphs</h2>
+<a name='graphs'><h2>4. graphs</h2></a>
 <ul>
 <li><a href='#%GC0-100'><span class='track'>%GC0-100</span></a></li>
 <li><a href='#%GCmin-max'><span class='track'>%GCmin-max</span></a></li>
