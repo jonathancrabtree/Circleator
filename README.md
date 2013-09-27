@@ -94,9 +94,11 @@ See the [Documentation page][docs] for the complete download and install instruc
 ### Requirements
 
 * Perl 5.6 or later.
+* [BioPerl][]
 * The [Apache Batik][batik] package to convert SVG to PDF, JPEG, or PNG.
 
 [batik]: http://xmlgraphics.apache.org/batik/
+[bioperl]: http://www.bioperl.org
 
 ### Copyright
 
