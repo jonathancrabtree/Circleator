@@ -1,4 +1,3 @@
-Circleator is Copyright (C) 2010-2013, Jonathan Crabtree \<<jonathancrabtree@gmail.com>\>.
 
 ### Overview
 
