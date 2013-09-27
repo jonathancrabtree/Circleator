@@ -1,3 +1,6 @@
+![Circleator Logo][logo]
+
+[logo]: https://github.com/jonathancrabtree/Circleator/blob/gh-pages-dev/images/logo-2.png?raw=true "Circleator Logo"
 
 ### Overview
 
@@ -12,8 +15,8 @@ Common uses of the tool include:
 
 * Displaying the sequence and/or genes in a [GenBank][] flat file.
 * Highlighting differences and/or similarities in gene content between related organisms.
-* Comparing SNP/indel content between closely-related strains or serovars.
-* Compare gene expression values in different samples and/or experimental timepoints.
+* Comparing SNPs and indels between closely-related strains or serovars.
+* Comparing gene expression values across multiple samples or timepoints.
 * Visualizing coverage plots of RNA-Seq read alignments.
 
 [sample image]: https://github.com/jonathancrabtree/Circleator/blob/gh-pages-dev/images/CP002104-1-600.png?raw=true "Sample Circleator Image"
@@ -24,15 +27,16 @@ Common uses of the tool include:
 
 Circleator...
 
-* Builds on [BioPerl][] and the input file formats that it supports:
-  * [GenBank][] flat files, GFF, FASTA, etc.
-* Accepts a number of other commonly-used datatypes/file formats:
-  * [BSR][] and [TRF][] output, [SAM/BAM][samtools] files, [VCF][vcftools]-encoded SNPs, and various ad-hoc tab-delimited formats.
-* Outputs publication-ready figures in [SVG][] (Scalable Vector Graphics) format.
-* Requires a single configuration file whose layout mirrors the layout of the figure itself.
-* Supports several advanced features that permit simple analyses to be performed as part of the visualization.
+* Builds on [BioPerl][] and the input file formats that it supports, including:
+  * [GenBank][] flat files, GFF, FASTA
+* Accepts a number of other commonly-used datatypes and file formats:
+  * [BSR][] and [TRF][] output, [SAM/BAM][samtools] files, [VCF][vcftools]-encoded SNPs, tab-delimited files
+* Outputs publication-ready figures in the [SVG][] (Scalable Vector Graphics) format.
+* Requires only a single configuration file whose layout mirrors that of the figure itself.
+  * Predefined configuration files and "track" types are supplied for common datasets.
+  * Advanced features allow limited analyses to be performed as a figure is drawn.
 * Includes an extensive set of regression tests.
-* Offers a prototype web-based GUI ("Ringmaster"), currently under development as a separate project.
+* Offers a prototype web-based GUI (under the "Ringmaster" project.)
 
 [bioperl]: http://www.bioperl.org
 [svg]: http://www.w3.org/Graphics/SVG/
@@ -41,7 +45,47 @@ Circleator...
 [samtools]: http://samtools.sourceforge.net
 [vcftools]: http://vcftools.sourceforge.net
 
-### Advanced Configuration File Features
+### Prerequisites
+
+* Perl 5.6 or later and the following Perl modules/packages:
+  * [BioPerl][]
+  * Log::Log4perl
+  * SVG
+  * Text::CSV
+* The [Apache Batik][batik] package to convert SVG to PDF, JPEG, or PNG.
+
+[batik]: http://xmlgraphics.apache.org/batik/
+[bioperl]: http://www.bioperl.org
+
+### Getting Started
+
+First, [install Circleator][install]. After installing Circleator and
+its prerequisites, running the program requires as little as:
+
+1. A GenBank flat file for a genome of interest.
+2. A Circleator configuration file.
+
+Examples of both of these types of files can be found in the Circleator
+source distribution. For example, from the top level of the unpacked
+Circleator zip or tar file the following command can be run to create 
+a Circleator figure for CM000961.gbk, which contains the genome of 
+*Corynebacterium genitalium* ATCC 33030:
+
+       circleator --data=data/CM000961.gbk --config=conf/genes-percent-GCskew-1.cfg > fig1.svg
+
+The resulting SVG file, `fig1.svg` can be viewed directly in many
+recent web browsers or image manipulation or viewing programs. Or, if
+the [Apache Batik][batik] package has been installed, it can be used
+to convert the image to PDF, PNG, or JPEG, using a wrapper script
+(rasterize-svg) in the Circleator distribution:
+
+       rasterize-svg fig1.svg pdf
+       rasterize-svg fig1.svg png
+       rasterize-svg fig1.svg jpeg
+
+[install]: https://github.com/jonathancrabtree/Circleator/blob/gh-pages-dev/install.md
+
+### Advanced Features
 
 The Circleator configuration file format aims to make the common case
 fast and the uncommon case possible. In other words, new users should
@@ -68,39 +112,6 @@ the same configuration file syntax.
     * *e.g.*, Create and display a "SNP desert" feature in any location where there is at least 5kb of sequence that contains no SNPs.
     * *e.g.*, Create and display a "low coverage" feature in any location where the valued plotted in the read coverage graph in track 2 falls below 5.
 
-### Getting Started
-
-After installing Circleator (a Perl program) and its dependencies, getting started requires as little as:
-
-1. A GenBank flat file for a genome of interest.
-2. A Circleator configuration file.
-
-First, run the Circleator executable to generate an SVG-format figure,
-passing in the GenBank flat file and the Circleator configuration file
-as options on the command line:
-
-       circleator --data=CM000961.gbk --config=genes-percent-GCskew-1.cfg > fig1.svg
-
-Second (if needed), invoke the [Apache Batik][batik] wrapper script to convert
-the SVG to PDF, PNG, or JPEG:
-
-       rasterize-svg fig1.svg pdf
-       rasterize-svg fig1.svg png
-       rasterize-svg fig1.svg jpeg
-
-See the [Documentation page][docs] for the complete download and install instructions.
-
-[docs]: https://github.com/jonathancrabtree/Circleator/blob/gh-pages-dev/documentation.md
-
-### Requirements
-
-* Perl 5.6 or later.
-* [BioPerl][]
-* The [Apache Batik][batik] package to convert SVG to PDF, JPEG, or PNG.
-
-[batik]: http://xmlgraphics.apache.org/batik/
-[bioperl]: http://www.bioperl.org
-
 ### Copyright
 
 Circleator is Copyright (C) 2010-2013, Jonathan Crabtree \<<jonathancrabtree@gmail.com>\>
@@ -123,3 +134,7 @@ The file itself was prepared by Martin Krzywinski and downloaded from
 ### Acknowledgments
 
 This product includes color specifications and designs developed by Cynthia Brewer (<http://colorbrewer.org>).
+
+### Citing Circleator
+
+A manuscript describing Circleator is currently in preparation.
