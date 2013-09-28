@@ -4,27 +4,11 @@
 <link href="css/circleator.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<table class='header'>
-<tbody>
-<tr>
- <td class='header' rowspan='2'><img src='images/logo-2.png' class='header_logo'></td>
- <td><h1>Circleator</h1></td>
- <td class='header' rowspan='2'>
- {% case page.pagetype %}
- {% when 'home' %}
- <img src='images/nav-circle-sel-home.png' class='nav_circle'>
- {% when 'documentation' %}
- <img src='images/nav-circle-sel-docs.png' class='nav_circle'>
- {% when 'gallery' %}
- <img src='images/nav-circle-sel-gallery.png' class='nav_circle'>
- {% when 'software' %}
- <img src='images/nav-circle-sel-software.png' class='nav_circle'>
- {% endcase %}
- </td>
-</tr>
 
-<tr>
-<td>
+<div class='header1'><img src='images/banner-1a.png' class='header1'></div>
+
+<div class='header2'>
+&nbsp;&nbsp;<span style='color:#a1a3aa; background-color: #182d6c; font-weight: bold; padding: 2px;'>&nbsp;C&nbsp;I&nbsp;R&nbsp;C&nbsp;L&nbsp;E&nbsp;A&nbsp;T&nbsp;O&nbsp;R&nbsp;</span>
 {% if page.pagetype == 'home' %}
 &nbsp;home&nbsp;
 {% else %}
@@ -45,9 +29,6 @@
 {% else %}
 |&nbsp;<a href='software.html'>software</a>
 {% endif %}
-</td>
-</tr>
+</div>
 
-</tbody>
-</table>
 <div class='main'>
