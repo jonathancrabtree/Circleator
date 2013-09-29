@@ -85,6 +85,13 @@ table.figure {
     border: 2px solid #acacac;
 }
 
+span.circleator_heading {
+    color: #a1a3aa;
+    background-color: #182d6c;
+    font-weight: bold;
+    padding: 2px;
+}
+
 span.circleator {
     font-weight: bold;
 }
