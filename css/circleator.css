@@ -27,7 +27,7 @@ img.footer1 {
 }
 
 div.header2 {
-    background-color: #ffffff;
+    background-color: #d4d4d4;
     width: 100%;
     padding: 0.25em 0em 0.1em 0em;
     border-top: 2px solid #bbbbcc;
@@ -38,6 +38,16 @@ img.header_logo {
     width: 80px;
     height: 115px;
     border: 1px solid #aaaabb;
+}
+
+img.floating_logo {
+    float: left;
+    padding: 5px;
+}
+
+h3 {
+    padding-top: 1em;
+    clear: both;
 }
 
 img.index_example {
@@ -57,39 +67,10 @@ img.nav_circle {
     height: 115px;
 }
 
-div.footer {
+div.footer1 {
     border-top: 2px solid #bbbbcc;
     width: 100%;
     text-align: center;
-#    height: 1em;
-#    margin-top: 2em;
-}
-
-h1 {
-    color: #182d6c;
-    padding: 0em 0.25em 0em 0.25em;
-}
-
-h2 {
-    width: 80%;
-    color: #040474;
-    margin-top: 1.5em;
-}
-
-h3 {
-    width: 60%;
-    padding-bottom: 4px;
-    border-bottom: 1px solid #040474;
-    color: #040474;
-    margin-top: 2em;
-}
-
-h4 {
-    width: 40%;
-    padding-bottom: 4px;
-    border-bottom: 1px solid #040474;
-    color: #040474;
-    margin-top: 2em;
 }
 
 pre {

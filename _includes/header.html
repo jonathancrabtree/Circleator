@@ -1,12 +1,11 @@
 <html>
 <head>
-<title>Circleator</title>
+<title>{{ page.title }}</title>
 <link href="css/circleator.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
 <div class='header1'><img src='images/banner-1a.png' class='header1'></div>
-
 <div class='header2'>
 &nbsp;&nbsp;<span style='color:#a1a3aa; background-color: #182d6c; font-weight: bold; padding: 2px;'>&nbsp;C&nbsp;I&nbsp;R&nbsp;C&nbsp;L&nbsp;E&nbsp;A&nbsp;T&nbsp;O&nbsp;R&nbsp;</span>
 {% if page.pagetype == 'home' %}
@@ -23,11 +22,6 @@
 |&nbsp;gallery&nbsp;
 {% else %}
 |&nbsp;<a href='gallery.html'>gallery</a>&nbsp;
-{% endif %}
-{% if page.pagetype == 'software' %}
-|&nbsp;software
-{% else %}
-|&nbsp;<a href='software.html'>software</a>
 {% endif %}
 </div>
 
