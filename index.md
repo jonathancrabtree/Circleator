@@ -24,3 +24,20 @@ Common uses of the tool include:
 [sample image]: images/CP002725-2-420.png "Sample Circleator Image"
 [genbank]: http://www.ncbi.nlm.nih.gov/genbank/
 [igs]: http://igs.umaryland.edu
+
+## Getting Started
+
+Check out the [Install Guide][install], the detailed [README][] on GitHub, 
+and the [Documentation page][docs] for more information.
+
+[install]: install.html
+[readme]: http://github.com/jonathancrabtree/Circleator/blob/master/README.md
+[docs]: documentation.html
+
+## Acknowledgments
+
+This product includes color specifications and designs developed by Cynthia Brewer (<http://colorbrewer.org>).
+
+## Citation
+
+A manuscript describing Circleator is currently in preparation.
