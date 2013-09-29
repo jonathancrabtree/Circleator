@@ -16,7 +16,7 @@ Common uses of the tool include:
 * Comparing gene expression values across multiple samples or timepoints.
 * Visualizing coverage plots of RNA-Seq read alignments.
 
-[sample image]: https://github.com/jonathancrabtree/Circleator/blob/gh-pages-dev/images/CP002104-1-600.png?raw=true "Sample Circleator Image"
+[sample image]: https://github.com/jonathancrabtree/Circleator/blob/gh-pages-dev/images/CP002725-2-420.png?raw=true "Sample Circleator Image"
 [genbank]: http://www.ncbi.nlm.nih.gov/genbank/
 [igs]: http://igs.umaryland.edu
 
