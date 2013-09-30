@@ -46,9 +46,11 @@ Circleator...
 
 * Perl 5.6 or later and the following Perl modules/packages:
   * [BioPerl][]
+  * JSON
   * Log::Log4perl
   * SVG
   * Text::CSV
+  * Vcf
 * The [Apache Batik][batik] package to convert SVG to PDF, JPEG, or PNG.
 
 [batik]: http://xmlgraphics.apache.org/batik/

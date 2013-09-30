@@ -22,12 +22,14 @@ Note that the tests can take several minutes to run.
  * perl
  * bioperl
  * libbatik-java
+ * vcftools
 
 ### Use the CPAN shell to install the remaining required Perl modules:
 
     sudo cpan
     install CPAN
     reload cpan
+    install JSON
     install Log::Log4perl
     install SVG
     install Text::CSV
