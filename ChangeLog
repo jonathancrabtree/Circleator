@@ -1,7 +1,8 @@
 
-circleator-1.0.0rc1 (Sep ?? 2013)
+1.0.0rc1 (Oct ?? 2013)
+ -Changed release numbering syntax to the more standard major.minor.revision
  -Moved code to GitHub (https://github.com/jonathancrabtree/Circleator)
- -Moved ExtJS GUI into separate project/repository ("Ringmaster")
+ -Moved ExtJS GUI into separate GitHub repository ("Ringmaster")
  -Added Build.PL
  -Reinstated unknown sequence id warning when parsing flat file graph/heat map data.
  -Fixed bug in get_track_features causing feat-track references to be incorrectly processed.
