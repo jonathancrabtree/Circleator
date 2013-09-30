@@ -52,9 +52,13 @@ Circleator...
   * Text::CSV
   * Vcf
 * The [Apache Batik][batik] package to convert SVG to PDF, JPEG, or PNG.
+* The [samtools][] package in order to read SAM/BAM files.
+* The [vcftools][] package (which includes the Vcf Perl module) in order to read VCF files.
 
 [batik]: http://xmlgraphics.apache.org/batik/
 [bioperl]: http://www.bioperl.org
+[samtools]: http://samtools.sourceforge.net
+[vcftools]: http://vcftools.sourceforge.net
 
 ### Getting Started
 
