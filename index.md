@@ -27,8 +27,8 @@ Common uses of the tool include:
 
 ## Getting Started
 
-Check out the [Install Guide][install], the detailed [README][] on GitHub, 
-and the [Documentation page][docs] for more information.
+Check out the [Installation Guide][install], the detailed [README][] on GitHub, 
+and the [Documentation][docs] for more information.
 
 [install]: install.html
 [readme]: http://github.com/jonathancrabtree/Circleator/blob/master/README.md

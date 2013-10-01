@@ -4,7 +4,6 @@ body {
     padding: 0px;
     margin: 0px;
     overflow: auto;
-    line-height: 150%;
 }
 
 div.main {
@@ -32,6 +31,15 @@ div.header2 {
     padding: 0.25em 0em 0.1em 0em;
     border-top: 2px solid #bbbbcc;
     border-bottom: 2px solid #bbbbcc;
+}
+
+div.footer2 {
+    background-color: #d4d4d4;
+    width: 100%;
+    padding: 0.25em 1em 0.1em 1em;
+    border-top: 2px solid #bbbbcc;
+    border-bottom: 2px solid #bbbbcc;
+    margin: 1em 0em 0em 0em;
 }
 
 img.header_logo {
