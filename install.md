@@ -12,9 +12,14 @@ also work on Windows and MAC OS X systems:
 1. [Install Prerequisites](#install_prerequisites)
     1. Install packages
     2. Install additional Perl modules
-2. [Download Circleator](#download_circleator)
-3. [Build and Install Circleator](#build_and_install_circleator)
-4. [Test Circleator](#test_circleator)
+2. [Download Release](#download_release)
+3. [Build and Install](#build_and_install)
+4. [Test](#test)
+
+If you're having trouble with the install process send us a message 
+on the [Circleator Google Group][ggroup] and we'll try to help.
+
+[ggroup]: http://groups.google.com/group/circleator
 
 ### Install Prerequisites
 
@@ -30,6 +35,20 @@ the command line:
 * bioperl
 * libbatik-java
 * vcftools
+
+Here are the corresponding web sites for these projects if it turns out
+that you cannot obtain them in package form, or wish to install them 
+from source:
+
+* [Perl][]
+* [BioPerl][]
+* [Apache Batik][]
+* [VCFtools][]
+
+[perl]: http://www.perl.org
+[bioperl]: http://www.bioperl.org
+[apache batik]: http://xmlgraphics.apache.org/batik/
+[vcftools]: http://vcftools.sourceforge.net
 
 #### Install additional Perl modules
 
@@ -50,16 +69,16 @@ the help of a superuser or install Circleator and its dependencies in
 your home directory or some other area to which you have write
 privileges.
 
-### Download Circleator
+### Download Release
 
 The most recent Circleator release can be downloaded from the
 [Circleator releases page][releases] on GitHub.  Scroll past the
 release notes for the version you want and click on one of the "Source
-code" buttons to download a .zip or .tar.gz file.
+code" buttons to download either a .zip or .tar.gz file.
 
 [releases]: https://github.com/jonathancrabtree/Circleator/releases
 
-### Build and Install Circleator
+### Build and Install
 
 Unzip or untar the downloaded file with one of the following commands:
 
@@ -90,11 +109,11 @@ To install Circleator to a different location, do this instead:
 Note that the tests invoked by `./Build test` currently take several
 minutes (~5-6 depending on the speed of the machine) to run.
 
-### Test Circleator
+### Test
 
 After Circleator has been installed you can test that the *installed* copy is
-set up correctly by using one of the configuration files and one of the data files
-included in the distribution:
+set up correctly by using the sample configuration and data files included
+in the distribution:
 
     /install/path/bin/circleator --config=conf/genes-percentGC-GCskew-1.cfg --data=data/NC_011969.gbk >fig1.svg
     /install/path/bin/rasterize-svg fig1.svg png

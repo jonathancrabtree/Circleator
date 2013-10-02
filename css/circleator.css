@@ -36,10 +36,10 @@ div.header2 {
 div.footer2 {
     background-color: #d4d4d4;
     width: 100%;
-    padding: 0.25em 1em 0.1em 1em;
+    padding: 0.25em 1em 0.1em 0em;
     border-top: 2px solid #bbbbcc;
     border-bottom: 2px solid #bbbbcc;
-    margin: 1em 0em 0em 0em;
+    margin: 3em 0em 0em 0em;
 }
 
 img.header_logo {
