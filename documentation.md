@@ -1,36 +1,57 @@
 ---
 layout: default
 pagetype: documentation
+title: Circleator - Documentation
 ---
 
-<h2>Downloading and installing the Circleator</h2>
-The <span class='circleator'>Circleator</span> is in alpha testing at
-the <a href='http://www.igs.umaryland.edu'>Institute for Genome
-Sciences</a> (IGS) but will likely migrate to SourceForge in an upcoming
-release. At IGS the latest stable version of the software is installed
-in /usr/local/packages/circleator/ and the prototype web interface can
-be found at <a href='http://jcrabtreevm-lx.igs.umaryland.edu/circleator'>http://jcrabtreevm-lx.igs.umaryland.edu/circleator</a>.
+## Installation
 
-<h2>Running the Circleator</h2>
-<ul>
- <li><a href='command-line.html'>On the Linux command line</a></li>
- <li><a href='web-application.html'>Via the prototype ExtJS web interface</a></li>
-</ul>
+Please see the [Installation Guide][install] for detailed download 
+and installation instructions.
 
-<h2>Walkthroughs for common data types</h2>
-<ul>
- <li><a href='tutorials/quantitative_data.html'>Quantitative data</a> (e.g., graphs and heat maps)</li>
- <li><a href='tutorials/snps.html'>SNPs and indels</a></li>
- <li><a href='tutorials/alignments.html'>Alignments/coverage data in SAM/BAM format</a></li>
- <li><a href='tutorials/bsr.html'>BSR (BLAST Score Ratio) comparative data</a></li>
- <li>Gene expression data?</li>
- <li>Gene clusters?</li>
-</ul>
+[install]: install.html
+[readme]: http://github.com/jonathancrabtree/Circleator/blob/master/README.md
 
-<h2>Reference material</h2>
-<ul>
- <li><a href='configuration.html'>Configuration file reference</a></li>
- <li><a href='predefined-config-files.html'>Library of predefined configuration files</a></li>
- <li><a href='predefined-tracks.html'>Library of predefined track types</a></li>
-<!-- <li><a href='predefined-glyphs.html'>Predefined glyphs</a></li> -->
-</ul>
+## Running Circleator
+
+The current release of Circleator only provides a command-line
+interface, documented below:
+
+ * [Circleator command line documentation][cmdline]
+
+A prototype ExtJS web interface has been developed and split off into a 
+separate project/repository ("Ringmaster").
+
+[cmdline]: command-line.html
+
+## Reference Material
+ 
+ * [Configuration file format][config_ref]
+ * [Predefined track types][predef_tracks]
+ * [Gallery of sample figures][gallery]
+
+[config_ref]: configuration.html
+[predef_tracks]: predefined-tracks.html
+[gallery]: gallery.html
+
+## Tutorials
+
+The following tutorials (which will be posted here shortly) will provide detailed walkthroughs for common use-cases:
+
+ * Visualizing gene annotation and DNA sequence data from a GenBank flat file.
+ * Investigating patterns of gene conservation in two or more closely-related strains or serovars.
+ * Showing SNPs and/or indels in several microbial strains relative to a reference genome and gene set.
+ * Viewing coverage plots of RNA-Seq data from multiple transcriptomic samples.
+ * Displaying quantitative data using graphs and heat maps.
+
+## Additional Resources
+
+* The [Circleator source code][source] is available from GitHub.
+* Questions/comments may be directed to the [Circleator Google group][ggroup].
+* Bugs may also be reported via the [issue tracker][tracker] on GitHub.
+
+[source]: https://github.com/jonathancrabtree/Circleator
+[ggroup]: http://groups.google.com/group/circleator
+[tracker]: https://github.com/jonathancrabtree/Circleator/issues
+
+
