@@ -1,4 +1,7 @@
 
+1.0.0rc2 (Oct ?? 2013)
+ -
+
 1.0.0rc1 (Oct 02 2013)
  -Changed release numbering syntax to the more standard major.minor.revision
  -Moved code to GitHub (https://github.com/jonathancrabtree/Circleator)
