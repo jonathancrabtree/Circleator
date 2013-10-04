@@ -42,7 +42,7 @@ div.header2 {
 div.footer2 {
     background-color: #d4d4d4;
     width: 100%;
-    padding: 0.25em 1em 0.1em 0em;
+    padding: 0.25em 0em 0.1em 0em;
     border-top: 2px solid #bbbbcc;
     border-bottom: 2px solid #bbbbcc;
     margin: 3em 0em 0em 0em;
@@ -82,7 +82,6 @@ img.nav_circle {
 }
 
 div.footer1 {
-    border-top: 2px solid #bbbbcc;
     width: 100%;
     text-align: center;
 }
