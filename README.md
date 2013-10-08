@@ -16,7 +16,7 @@ Common uses of the tool include:
 * Comparing gene expression values across multiple samples or timepoints.
 * Visualizing coverage plots of RNA-Seq read alignments.
 
-[sample image]: https://github.com/jonathancrabtree/Circleator/blob/gh-pages-dev/images/CP002725-2-420.png?raw=true "Sample Circleator Image"
+[sample image]: http://jonathancrabtree.github.io/Circleator/images/CP002725-2-420.png?raw=true "Sample Circleator Image"
 [genbank]: http://www.ncbi.nlm.nih.gov/genbank/
 [igs]: http://igs.umaryland.edu
 
@@ -87,7 +87,7 @@ Circleator distribution:
        rasterize-svg fig1.svg jpeg
 
 [CM000961.gbk]: https://github.com/jonathancrabtree/Circleator/blob/master/data/CM000961.gbk
-[install]: https://github.com/jonathancrabtree/Circleator/blob/gh-pages-dev/install.md
+[install]: http://jonathancrabtree.github.io/Circleator/install.html
 
 ### Advanced Features
 
