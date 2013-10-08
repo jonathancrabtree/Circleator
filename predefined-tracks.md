@@ -1,10 +1,10 @@
 ---
 layout: default
-pagetype: documentation
-title: Predefined tracks
+title: Circleator - Predefined Tracks
 ---
 
-<p>
+# Circleator - Predefined Tracks
+
 The Circleator provides a number of predefined circular tracks that
 can be used to display various types of data with very little effort.
 Simply find the appropriate predefined track type in the list below
@@ -16,14 +16,12 @@ outside of the circle and moving inwards.  Most of the predefined track
 types support one or more user-configurable options, many of which are also
 described below.  Multiple options can be specified by separating them with
 a comma (but no spaces), like so:
-<pre>
-genes color1=#ff0000,color2=#000000
-</pre>
-</p>
 
-<p>
+    genes color1=#ff0000,color2=#000000
+
+
 The predefined tracks have been grouped into the following categories to make searching easier:
-</p>
+
 <ol>
 <li><a href='#sequence_coordinates_and_contigs'>sequence coordinates and contigs</a>
 <ul>
@@ -91,13 +89,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>coords</span> track with default options</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/coords.2-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/coords.2-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/coords.2-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/coords.2-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/coords.2.svg'>SVG</a>, <a href='predefined-tracks/coords.2-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/coords.2-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/coords.2.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/coords.2.svg'>SVG</a>, <a href='images/predefined-tracks/coords.2-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/coords.2-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/coords.2.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -111,13 +109,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>coords</span> track with <span class='option'>label-type</span>=curved</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/coords.3-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.3-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/coords.3-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.3-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/coords.3-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.3-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/coords.3-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.3-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.3-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.3-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.3-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.3-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.3-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.3-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.3-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.3-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/coords.3.svg'>SVG</a>, <a href='predefined-tracks/coords.3-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/coords.3-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/coords.3.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/coords.3.svg'>SVG</a>, <a href='images/predefined-tracks/coords.3-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/coords.3-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/coords.3.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -128,13 +126,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>coords</span> track with <span class='option'>label-type</span>=spoke</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/coords.4-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.4-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>8.0x</span></div></td>
-<td><a href='predefined-tracks/coords.4-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.4-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/coords.4-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.4-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/coords.4-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.4-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.4-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.4-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>8.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.4-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.4-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.4-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.4-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.4-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.4-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/coords.4.svg'>SVG</a>, <a href='predefined-tracks/coords.4-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/coords.4-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/coords.4.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/coords.4.svg'>SVG</a>, <a href='images/predefined-tracks/coords.4-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/coords.4-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/coords.4.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -145,13 +143,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>coords</span> track with <span class='option'>label-type</span>=horizontal</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/coords.5-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.5-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/coords.5-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.5-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/coords.5-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.5-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/coords.5-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.5-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.5-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.5-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.5-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.5-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.5-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.5-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.5-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.5-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/coords.5.svg'>SVG</a>, <a href='predefined-tracks/coords.5-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/coords.5-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/coords.5.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/coords.5.svg'>SVG</a>, <a href='images/predefined-tracks/coords.5-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/coords.5-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/coords.5.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -166,13 +164,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>coords</span> track with <span class='option'>tick-interval</span>=100000 (default)</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/coords.6-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.6-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/coords.6-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.6-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/coords.6-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.6-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/coords.6-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.6-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.6-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.6-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.6-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.6-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.6-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.6-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.6-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.6-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/coords.6.svg'>SVG</a>, <a href='predefined-tracks/coords.6-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/coords.6-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/coords.6.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/coords.6.svg'>SVG</a>, <a href='images/predefined-tracks/coords.6-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/coords.6-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/coords.6.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -183,13 +181,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>coords</span> track with <span class='option'>tick-interval</span>=50000</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/coords.7-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.7-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/coords.7-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.7-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/coords.7-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.7-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/coords.7-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.7-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.7-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.7-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.7-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.7-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.7-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.7-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.7-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.7-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/coords.7.svg'>SVG</a>, <a href='predefined-tracks/coords.7-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/coords.7-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/coords.7.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/coords.7.svg'>SVG</a>, <a href='images/predefined-tracks/coords.7-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/coords.7-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/coords.7.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -207,13 +205,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>coords</span> track with <span class='option'>label-interval</span>=500000 (default)</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/coords.8-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.8-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/coords.8-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.8-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/coords.8-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.8-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/coords.8-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.8-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.8-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.8-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.8-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.8-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.8-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.8-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.8-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.8-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/coords.8.svg'>SVG</a>, <a href='predefined-tracks/coords.8-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/coords.8-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/coords.8.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/coords.8.svg'>SVG</a>, <a href='images/predefined-tracks/coords.8-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/coords.8-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/coords.8.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -227,13 +225,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>coords</span> track with <span class='option'>label-interval</span>=200000,<span class='option'>label-precision</span>=2</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/coords.9-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.9-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/coords.9-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.9-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/coords.9-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.9-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/coords.9-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.9-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.9-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.9-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.9-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.9-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.9-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.9-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.9-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.9-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/coords.9.svg'>SVG</a>, <a href='predefined-tracks/coords.9-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/coords.9-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/coords.9.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/coords.9.svg'>SVG</a>, <a href='images/predefined-tracks/coords.9-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/coords.9-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/coords.9.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -247,13 +245,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>coords</span> track with <span class='option'>label-interval</span>=200000,<span class='option'>label-units</span>=Mb</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/coords.10-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.10-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/coords.10-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.10-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/coords.10-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.10-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/coords.10-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.10-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.10-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.10-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.10-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.10-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.10-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.10-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.10-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.10-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/coords.10.svg'>SVG</a>, <a href='predefined-tracks/coords.10-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/coords.10-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/coords.10.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/coords.10.svg'>SVG</a>, <a href='images/predefined-tracks/coords.10-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/coords.10-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/coords.10.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -264,13 +262,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>coords</span> track with <span class='option'>label-interval</span>=200000,<span class='option'>label-units</span>=kb</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/coords.11-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.11-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/coords.11-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.11-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/coords.11-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.11-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/coords.11-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.11-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.11-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.11-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.11-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.11-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.11-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.11-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.11-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.11-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/coords.11.svg'>SVG</a>, <a href='predefined-tracks/coords.11-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/coords.11-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/coords.11.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/coords.11.svg'>SVG</a>, <a href='images/predefined-tracks/coords.11-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/coords.11-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/coords.11.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -281,13 +279,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>coords</span> track with <span class='option'>label-interval</span>=200000,<span class='option'>label-units</span>=bp</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/coords.12-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.12-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/coords.12-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.12-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/coords.12-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.12-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/coords.12-4000x4000.png'><img class='zoom' src='predefined-tracks/coords.12-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.12-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.12-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.12-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.12-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.12-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.12-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/coords.12-4000x4000.png'><img class='zoom' src='images/predefined-tracks/coords.12-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/coords.12.svg'>SVG</a>, <a href='predefined-tracks/coords.12-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/coords.12-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/coords.12.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/coords.12.svg'>SVG</a>, <a href='images/predefined-tracks/coords.12-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/coords.12-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/coords.12.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -302,13 +300,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>contigs</span> track with default options</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/contigs.1-4000x4000.png'><img class='zoom' src='predefined-tracks/contigs.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/contigs.1-4000x4000.png'><img class='zoom' src='predefined-tracks/contigs.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/contigs.1-4000x4000.png'><img class='zoom' src='predefined-tracks/contigs.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/contigs.1-4000x4000.png'><img class='zoom' src='predefined-tracks/contigs.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/contigs.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/contigs.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/contigs.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/contigs.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/contigs.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/contigs.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/contigs.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/contigs.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/contigs.1.svg'>SVG</a>, <a href='predefined-tracks/contigs.1-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/contigs.1-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/contigs.1.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/contigs.1.svg'>SVG</a>, <a href='images/predefined-tracks/contigs.1-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/contigs.1-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/contigs.1.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -323,13 +321,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>contig-gaps</span> track with default options</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/contig-gaps.1-4000x4000.png'><img class='zoom' src='predefined-tracks/contig-gaps.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/contig-gaps.1-4000x4000.png'><img class='zoom' src='predefined-tracks/contig-gaps.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/contig-gaps.1-4000x4000.png'><img class='zoom' src='predefined-tracks/contig-gaps.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/contig-gaps.1-4000x4000.png'><img class='zoom' src='predefined-tracks/contig-gaps.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/contig-gaps.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/contig-gaps.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/contig-gaps.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/contig-gaps.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/contig-gaps.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/contig-gaps.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/contig-gaps.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/contig-gaps.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/contig-gaps.1.svg'>SVG</a>, <a href='predefined-tracks/contig-gaps.1-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/contig-gaps.1-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/contig-gaps.1.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/contig-gaps.1.svg'>SVG</a>, <a href='images/predefined-tracks/contig-gaps.1-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/contig-gaps.1-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/contig-gaps.1.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -346,13 +344,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>contigs</span> track with <span class='option'>color1</span>=#ff0000</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/contigs.2-4000x4000.png'><img class='zoom' src='predefined-tracks/contigs.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/contigs.2-4000x4000.png'><img class='zoom' src='predefined-tracks/contigs.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/contigs.2-4000x4000.png'><img class='zoom' src='predefined-tracks/contigs.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/contigs.2-4000x4000.png'><img class='zoom' src='predefined-tracks/contigs.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/contigs.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/contigs.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/contigs.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/contigs.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/contigs.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/contigs.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/contigs.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/contigs.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/contigs.2.svg'>SVG</a>, <a href='predefined-tracks/contigs.2-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/contigs.2-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/contigs.2.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/contigs.2.svg'>SVG</a>, <a href='images/predefined-tracks/contigs.2-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/contigs.2-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/contigs.2.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -388,13 +386,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>genes</span> track with default options</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/genes.1-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/genes.1-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/genes.1-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/genes.1-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/genes.1.svg'>SVG</a>, <a href='predefined-tracks/genes.1-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/genes.1-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/genes.1.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/genes.1.svg'>SVG</a>, <a href='images/predefined-tracks/genes.1-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/genes.1-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/genes.1.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -406,13 +404,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>genes-fwd</span> track with default options</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/genes-fwd.1-4000x4000.png'><img class='zoom' src='predefined-tracks/genes-fwd.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/genes-fwd.1-4000x4000.png'><img class='zoom' src='predefined-tracks/genes-fwd.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/genes-fwd.1-4000x4000.png'><img class='zoom' src='predefined-tracks/genes-fwd.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/genes-fwd.1-4000x4000.png'><img class='zoom' src='predefined-tracks/genes-fwd.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes-fwd.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes-fwd.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes-fwd.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes-fwd.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes-fwd.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes-fwd.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes-fwd.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes-fwd.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/genes-fwd.1.svg'>SVG</a>, <a href='predefined-tracks/genes-fwd.1-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/genes-fwd.1-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/genes-fwd.1.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/genes-fwd.1.svg'>SVG</a>, <a href='images/predefined-tracks/genes-fwd.1-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/genes-fwd.1-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/genes-fwd.1.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -424,13 +422,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>genes-rev</span> track with default options</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/genes-rev.1-4000x4000.png'><img class='zoom' src='predefined-tracks/genes-rev.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/genes-rev.1-4000x4000.png'><img class='zoom' src='predefined-tracks/genes-rev.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/genes-rev.1-4000x4000.png'><img class='zoom' src='predefined-tracks/genes-rev.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/genes-rev.1-4000x4000.png'><img class='zoom' src='predefined-tracks/genes-rev.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes-rev.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes-rev.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes-rev.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes-rev.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes-rev.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes-rev.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes-rev.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes-rev.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/genes-rev.1.svg'>SVG</a>, <a href='predefined-tracks/genes-rev.1-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/genes-rev.1-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/genes-rev.1.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/genes-rev.1.svg'>SVG</a>, <a href='images/predefined-tracks/genes-rev.1-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/genes-rev.1-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/genes-rev.1.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -441,13 +439,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>genes-fwd</span> and <span class='track'>genes-rev</span> tracks together</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/genes-rev.2-4000x4000.png'><img class='zoom' src='predefined-tracks/genes-rev.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/genes-rev.2-4000x4000.png'><img class='zoom' src='predefined-tracks/genes-rev.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/genes-rev.2-4000x4000.png'><img class='zoom' src='predefined-tracks/genes-rev.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/genes-rev.2-4000x4000.png'><img class='zoom' src='predefined-tracks/genes-rev.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes-rev.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes-rev.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes-rev.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes-rev.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes-rev.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes-rev.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes-rev.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes-rev.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/genes-rev.2.svg'>SVG</a>, <a href='predefined-tracks/genes-rev.2-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/genes-rev.2-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/genes-rev.2.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/genes-rev.2.svg'>SVG</a>, <a href='images/predefined-tracks/genes-rev.2-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/genes-rev.2-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/genes-rev.2.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -461,13 +459,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>tRNAs</span> track with default options</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/tRNAs.1-4000x4000.png'><img class='zoom' src='predefined-tracks/tRNAs.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/tRNAs.1-4000x4000.png'><img class='zoom' src='predefined-tracks/tRNAs.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/tRNAs.1-4000x4000.png'><img class='zoom' src='predefined-tracks/tRNAs.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/tRNAs.1-4000x4000.png'><img class='zoom' src='predefined-tracks/tRNAs.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/tRNAs.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/tRNAs.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/tRNAs.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/tRNAs.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/tRNAs.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/tRNAs.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/tRNAs.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/tRNAs.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/tRNAs.1.svg'>SVG</a>, <a href='predefined-tracks/tRNAs.1-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/tRNAs.1-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/tRNAs.1.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/tRNAs.1.svg'>SVG</a>, <a href='images/predefined-tracks/tRNAs.1-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/tRNAs.1-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/tRNAs.1.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -484,13 +482,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>tRNAs-fwd</span> and <span class='track'>tRNAs-rev</span> tracks together</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/tRNAs-rev.2-4000x4000.png'><img class='zoom' src='predefined-tracks/tRNAs-rev.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/tRNAs-rev.2-4000x4000.png'><img class='zoom' src='predefined-tracks/tRNAs-rev.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/tRNAs-rev.2-4000x4000.png'><img class='zoom' src='predefined-tracks/tRNAs-rev.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/tRNAs-rev.2-4000x4000.png'><img class='zoom' src='predefined-tracks/tRNAs-rev.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/tRNAs-rev.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/tRNAs-rev.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/tRNAs-rev.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/tRNAs-rev.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/tRNAs-rev.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/tRNAs-rev.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/tRNAs-rev.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/tRNAs-rev.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/tRNAs-rev.2.svg'>SVG</a>, <a href='predefined-tracks/tRNAs-rev.2-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/tRNAs-rev.2-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/tRNAs-rev.2.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/tRNAs-rev.2.svg'>SVG</a>, <a href='images/predefined-tracks/tRNAs-rev.2-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/tRNAs-rev.2-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/tRNAs-rev.2.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -504,13 +502,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>rRNAs</span> track with default options</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/rRNAs.1-4000x4000.png'><img class='zoom' src='predefined-tracks/rRNAs.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/rRNAs.1-4000x4000.png'><img class='zoom' src='predefined-tracks/rRNAs.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/rRNAs.1-4000x4000.png'><img class='zoom' src='predefined-tracks/rRNAs.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/rRNAs.1-4000x4000.png'><img class='zoom' src='predefined-tracks/rRNAs.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/rRNAs.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/rRNAs.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/rRNAs.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/rRNAs.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/rRNAs.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/rRNAs.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/rRNAs.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/rRNAs.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/rRNAs.1.svg'>SVG</a>, <a href='predefined-tracks/rRNAs.1-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/rRNAs.1-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/rRNAs.1.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/rRNAs.1.svg'>SVG</a>, <a href='images/predefined-tracks/rRNAs.1-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/rRNAs.1-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/rRNAs.1.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -527,13 +525,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>rRNAs-fwd</span> and <span class='track'>rRNAs-rev</span> tracks together</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/rRNAs-rev.2-4000x4000.png'><img class='zoom' src='predefined-tracks/rRNAs-rev.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/rRNAs-rev.2-4000x4000.png'><img class='zoom' src='predefined-tracks/rRNAs-rev.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/rRNAs-rev.2-4000x4000.png'><img class='zoom' src='predefined-tracks/rRNAs-rev.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/rRNAs-rev.2-4000x4000.png'><img class='zoom' src='predefined-tracks/rRNAs-rev.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/rRNAs-rev.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/rRNAs-rev.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/rRNAs-rev.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/rRNAs-rev.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/rRNAs-rev.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/rRNAs-rev.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/rRNAs-rev.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/rRNAs-rev.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/rRNAs-rev.2.svg'>SVG</a>, <a href='predefined-tracks/rRNAs-rev.2-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/rRNAs-rev.2-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/rRNAs-rev.2.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/rRNAs-rev.2.svg'>SVG</a>, <a href='images/predefined-tracks/rRNAs-rev.2-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/rRNAs-rev.2-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/rRNAs-rev.2.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -550,13 +548,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>gap</span> track with default options</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/gaps.1-4000x4000.png'><img class='zoom' src='predefined-tracks/gaps.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/gaps.1-4000x4000.png'><img class='zoom' src='predefined-tracks/gaps.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/gaps.1-4000x4000.png'><img class='zoom' src='predefined-tracks/gaps.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/gaps.1-4000x4000.png'><img class='zoom' src='predefined-tracks/gaps.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/gaps.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/gaps.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/gaps.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/gaps.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/gaps.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/gaps.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/gaps.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/gaps.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/gaps.1.svg'>SVG</a>, <a href='predefined-tracks/gaps.1-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/gaps.1-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/gaps.1.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/gaps.1.svg'>SVG</a>, <a href='images/predefined-tracks/gaps.1-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/gaps.1-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/gaps.1.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -580,13 +578,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>tiny-cgap</span> track</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/genes.2-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/genes.2-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/genes.2-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/genes.2-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/genes.2.svg'>SVG</a>, <a href='predefined-tracks/genes.2-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/genes.2-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/genes.2.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/genes.2.svg'>SVG</a>, <a href='images/predefined-tracks/genes.2-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/genes.2-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/genes.2.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -598,13 +596,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track' ZOOM='1440,390,320,213'>small-cgap</span> track</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/genes.3-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.3-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/genes.3-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.3-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/genes.3-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.3-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/genes.3-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.3-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.3-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.3-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.3-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.3-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.3-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.3-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.3-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.3-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/genes.3.svg'>SVG</a>, <a href='predefined-tracks/genes.3-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/genes.3-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/genes.3.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/genes.3.svg'>SVG</a>, <a href='images/predefined-tracks/genes.3-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/genes.3-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/genes.3.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -616,13 +614,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track' ZOOM='1440,420,320,213'>medium-cgap</span> track</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/genes.4-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.4-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/genes.4-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.4-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/genes.4-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.4-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/genes.4-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.4-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.4-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.4-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.4-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.4-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.4-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.4-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.4-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.4-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/genes.4.svg'>SVG</a>, <a href='predefined-tracks/genes.4-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/genes.4-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/genes.4.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/genes.4.svg'>SVG</a>, <a href='images/predefined-tracks/genes.4-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/genes.4-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/genes.4.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -634,13 +632,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track' ZOOM='1440,440,320,213'>large-cgap</span> track</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/genes.5-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.5-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/genes.5-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.5-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/genes.5-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.5-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/genes.5-4000x4000.png'><img class='zoom' src='predefined-tracks/genes.5-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.5-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.5-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.5-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.5-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.5-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.5-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/genes.5-4000x4000.png'><img class='zoom' src='images/predefined-tracks/genes.5-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/genes.5.svg'>SVG</a>, <a href='predefined-tracks/genes.5-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/genes.5-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/genes.5.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/genes.5.svg'>SVG</a>, <a href='images/predefined-tracks/genes.5-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/genes.5-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/genes.5.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -671,13 +669,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>%GC0-100</span> track with default options</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/PercentGC0-100.1-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGC0-100.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGC0-100.1-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGC0-100.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGC0-100.1-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGC0-100.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGC0-100.1-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGC0-100.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGC0-100.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGC0-100.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGC0-100.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGC0-100.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGC0-100.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGC0-100.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGC0-100.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGC0-100.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/PercentGC0-100.1.svg'>SVG</a>, <a href='predefined-tracks/PercentGC0-100.1-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/PercentGC0-100.1-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/PercentGC0-100.1.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/PercentGC0-100.1.svg'>SVG</a>, <a href='images/predefined-tracks/PercentGC0-100.1-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/PercentGC0-100.1-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/PercentGC0-100.1.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -692,13 +690,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>%GCmin-max</span> track with default options</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/PercentGCmin-max.1-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.1-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.1-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.1-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/PercentGCmin-max.1.svg'>SVG</a>, <a href='predefined-tracks/PercentGCmin-max.1-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/PercentGCmin-max.1-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/PercentGCmin-max.1.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/PercentGCmin-max.1.svg'>SVG</a>, <a href='images/predefined-tracks/PercentGCmin-max.1-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/PercentGCmin-max.1-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/PercentGCmin-max.1.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -713,13 +711,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>%GCmin-max-dfa</span> track with default options</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/PercentGCmin-max-dfa.1-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max-dfa.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max-dfa.1-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max-dfa.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max-dfa.1-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max-dfa.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max-dfa.1-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max-dfa.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max-dfa.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max-dfa.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max-dfa.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max-dfa.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max-dfa.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max-dfa.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max-dfa.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max-dfa.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/PercentGCmin-max-dfa.1.svg'>SVG</a>, <a href='predefined-tracks/PercentGCmin-max-dfa.1-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/PercentGCmin-max-dfa.1-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/PercentGCmin-max-dfa.1.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/PercentGCmin-max-dfa.1.svg'>SVG</a>, <a href='images/predefined-tracks/PercentGCmin-max-dfa.1-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/PercentGCmin-max-dfa.1-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/PercentGCmin-max-dfa.1.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -733,13 +731,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>%GCskew-1-df0</span> track with default options</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/GCskew-1-df0.1-4000x4000.png'><img class='zoom' src='predefined-tracks/GCskew-1-df0.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
-<td><a href='predefined-tracks/GCskew-1-df0.1-4000x4000.png'><img class='zoom' src='predefined-tracks/GCskew-1-df0.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/GCskew-1-df0.1-4000x4000.png'><img class='zoom' src='predefined-tracks/GCskew-1-df0.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/GCskew-1-df0.1-4000x4000.png'><img class='zoom' src='predefined-tracks/GCskew-1-df0.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/GCskew-1-df0.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/GCskew-1-df0.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
+<td><a href='images/predefined-tracks/GCskew-1-df0.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/GCskew-1-df0.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/GCskew-1-df0.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/GCskew-1-df0.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/GCskew-1-df0.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/GCskew-1-df0.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/GCskew-1-df0.1.svg'>SVG</a>, <a href='predefined-tracks/GCskew-1-df0.1-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/GCskew-1-df0.1-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/GCskew-1-df0.1.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/GCskew-1-df0.1.svg'>SVG</a>, <a href='images/predefined-tracks/GCskew-1-df0.1-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/GCskew-1-df0.1-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/GCskew-1-df0.1.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -753,13 +751,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>%GCskew-min-max-df0</span> track with default options</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/GCskew-min-max-df0.1-4000x4000.png'><img class='zoom' src='predefined-tracks/GCskew-min-max-df0.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
-<td><a href='predefined-tracks/GCskew-min-max-df0.1-4000x4000.png'><img class='zoom' src='predefined-tracks/GCskew-min-max-df0.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/GCskew-min-max-df0.1-4000x4000.png'><img class='zoom' src='predefined-tracks/GCskew-min-max-df0.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/GCskew-min-max-df0.1-4000x4000.png'><img class='zoom' src='predefined-tracks/GCskew-min-max-df0.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/GCskew-min-max-df0.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/GCskew-min-max-df0.1-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
+<td><a href='images/predefined-tracks/GCskew-min-max-df0.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/GCskew-min-max-df0.1-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/GCskew-min-max-df0.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/GCskew-min-max-df0.1-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/GCskew-min-max-df0.1-4000x4000.png'><img class='zoom' src='images/predefined-tracks/GCskew-min-max-df0.1-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/GCskew-min-max-df0.1.svg'>SVG</a>, <a href='predefined-tracks/GCskew-min-max-df0.1-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/GCskew-min-max-df0.1-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/GCskew-min-max-df0.1.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/GCskew-min-max-df0.1.svg'>SVG</a>, <a href='images/predefined-tracks/GCskew-min-max-df0.1-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/GCskew-min-max-df0.1-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/GCskew-min-max-df0.1.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -776,13 +774,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>%GCmin-max</span> track with <span class='option'>graph-direction</span>=out</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/PercentGCmin-max.2-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.2-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.2-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.2-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/PercentGCmin-max.2.svg'>SVG</a>, <a href='predefined-tracks/PercentGCmin-max.2-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/PercentGCmin-max.2-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/PercentGCmin-max.2.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/PercentGCmin-max.2.svg'>SVG</a>, <a href='images/predefined-tracks/PercentGCmin-max.2-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/PercentGCmin-max.2-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/PercentGCmin-max.2.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -793,13 +791,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>%GCmin-max</span> track with <span class='option'>graph-direction</span>=in</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/PercentGCmin-max.3-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.3-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.3-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.3-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.3-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.3-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.3-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.3-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.3-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.3-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.3-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.3-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.3-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.3-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.3-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.3-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/PercentGCmin-max.3.svg'>SVG</a>, <a href='predefined-tracks/PercentGCmin-max.3-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/PercentGCmin-max.3-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/PercentGCmin-max.3.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/PercentGCmin-max.3.svg'>SVG</a>, <a href='images/predefined-tracks/PercentGCmin-max.3-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/PercentGCmin-max.3-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/PercentGCmin-max.3.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -814,13 +812,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>%GCmin-max</span> track with <span class='option'>graph-type</span>=bar</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/PercentGCmin-max.4-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.4-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.4-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.4-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.4-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.4-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.4-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.4-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.4-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.4-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.4-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.4-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.4-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.4-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.4-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.4-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/PercentGCmin-max.4.svg'>SVG</a>, <a href='predefined-tracks/PercentGCmin-max.4-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/PercentGCmin-max.4-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/PercentGCmin-max.4.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/PercentGCmin-max.4.svg'>SVG</a>, <a href='images/predefined-tracks/PercentGCmin-max.4-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/PercentGCmin-max.4-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/PercentGCmin-max.4.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -831,13 +829,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>%GCmin-max</span> track with <span class='option'>graph-type</span>=line</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/PercentGCmin-max.5-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.5-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.5-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.5-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.5-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.5-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.5-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.5-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.5-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.5-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.5-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.5-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.5-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.5-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.5-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.5-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/PercentGCmin-max.5.svg'>SVG</a>, <a href='predefined-tracks/PercentGCmin-max.5-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/PercentGCmin-max.5-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/PercentGCmin-max.5.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/PercentGCmin-max.5.svg'>SVG</a>, <a href='images/predefined-tracks/PercentGCmin-max.5-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/PercentGCmin-max.5-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/PercentGCmin-max.5.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -852,13 +850,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>%GCmin-max</span> track with <span class='option'>window-size</span>=5000</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/PercentGCmin-max.6-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.6-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.6-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.6-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.6-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.6-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.6-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.6-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.6-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.6-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.6-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.6-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.6-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.6-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.6-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.6-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/PercentGCmin-max.6.svg'>SVG</a>, <a href='predefined-tracks/PercentGCmin-max.6-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/PercentGCmin-max.6-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/PercentGCmin-max.6.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/PercentGCmin-max.6.svg'>SVG</a>, <a href='images/predefined-tracks/PercentGCmin-max.6-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/PercentGCmin-max.6-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/PercentGCmin-max.6.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -869,13 +867,13 @@ The predefined tracks have been grouped into the following categories to make se
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>%GCmin-max</span> track with <span class='option'>window-size</span>=15000</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/PercentGCmin-max.7-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.7-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.7-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.7-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.7-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.7-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.7-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.7-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.7-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.7-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.7-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.7-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.7-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.7-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.7-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.7-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/PercentGCmin-max.7.svg'>SVG</a>, <a href='predefined-tracks/PercentGCmin-max.7-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/PercentGCmin-max.7-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/PercentGCmin-max.7.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/PercentGCmin-max.7.svg'>SVG</a>, <a href='images/predefined-tracks/PercentGCmin-max.7-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/PercentGCmin-max.7-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/PercentGCmin-max.7.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -893,13 +891,13 @@ in the current sequence data, or 'data_avg' to use the average value:
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>%GCmin-max</span> track with <span class='option'>graph-min</span>=0,<span class='option'>graph-max</span>=100</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/PercentGCmin-max.8-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.8-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.8-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.8-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.8-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.8-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.8-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.8-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.8-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.8-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.8-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.8-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.8-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.8-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.8-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.8-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/PercentGCmin-max.8.svg'>SVG</a>, <a href='predefined-tracks/PercentGCmin-max.8-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/PercentGCmin-max.8-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/PercentGCmin-max.8.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/PercentGCmin-max.8.svg'>SVG</a>, <a href='images/predefined-tracks/PercentGCmin-max.8-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/PercentGCmin-max.8-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/PercentGCmin-max.8.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -910,13 +908,13 @@ in the current sequence data, or 'data_avg' to use the average value:
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>%GCmin-max</span> track with <span class='option'>graph-min</span>=50</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/PercentGCmin-max.9-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.9-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.9-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.9-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.9-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.9-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.9-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.9-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.9-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.9-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.9-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.9-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.9-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.9-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.9-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.9-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/PercentGCmin-max.9.svg'>SVG</a>, <a href='predefined-tracks/PercentGCmin-max.9-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/PercentGCmin-max.9-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/PercentGCmin-max.9.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/PercentGCmin-max.9.svg'>SVG</a>, <a href='images/predefined-tracks/PercentGCmin-max.9-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/PercentGCmin-max.9-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/PercentGCmin-max.9.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -927,13 +925,13 @@ in the current sequence data, or 'data_avg' to use the average value:
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>%GCmin-max</span> track with <span class='option'>graph-min</span>=data_min</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/PercentGCmin-max.10-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.10-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.10-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.10-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.10-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.10-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.10-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.10-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.10-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.10-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.10-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.10-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.10-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.10-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.10-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.10-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/PercentGCmin-max.10.svg'>SVG</a>, <a href='predefined-tracks/PercentGCmin-max.10-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/PercentGCmin-max.10-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/PercentGCmin-max.10.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/PercentGCmin-max.10.svg'>SVG</a>, <a href='images/predefined-tracks/PercentGCmin-max.10-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/PercentGCmin-max.10-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/PercentGCmin-max.10.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -950,13 +948,13 @@ in the current sequence data, or 'data_avg' to use the average value:
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>%GCmin-max</span> track with <span class='option'>graph-baseline</span>=0</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/PercentGCmin-max.11-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.11-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.11-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.11-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.11-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.11-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.11-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.11-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.11-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.11-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.11-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.11-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.11-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.11-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.11-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.11-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/PercentGCmin-max.11.svg'>SVG</a>, <a href='predefined-tracks/PercentGCmin-max.11-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/PercentGCmin-max.11-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/PercentGCmin-max.11.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/PercentGCmin-max.11.svg'>SVG</a>, <a href='images/predefined-tracks/PercentGCmin-max.11-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/PercentGCmin-max.11-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/PercentGCmin-max.11.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -967,13 +965,13 @@ in the current sequence data, or 'data_avg' to use the average value:
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>%GCmin-max</span> track with <span class='option'>graph-baseline</span>=60</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/PercentGCmin-max.12-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.12-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.12-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.12-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.12-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.12-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/PercentGCmin-max.12-4000x4000.png'><img class='zoom' src='predefined-tracks/PercentGCmin-max.12-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.12-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.12-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>20.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.12-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.12-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.12-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.12-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/PercentGCmin-max.12-4000x4000.png'><img class='zoom' src='images/predefined-tracks/PercentGCmin-max.12-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/PercentGCmin-max.12.svg'>SVG</a>, <a href='predefined-tracks/PercentGCmin-max.12-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/PercentGCmin-max.12-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/PercentGCmin-max.12.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/PercentGCmin-max.12.svg'>SVG</a>, <a href='images/predefined-tracks/PercentGCmin-max.12-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/PercentGCmin-max.12-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/PercentGCmin-max.12.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -996,13 +994,13 @@ in the current sequence data, or 'data_avg' to use the average value:
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>small-label</span> track with <span class='option'>label-text</span>=Label1</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/small-label.2-4000x4000.png'><img class='zoom' src='predefined-tracks/small-label.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/small-label.2-4000x4000.png'><img class='zoom' src='predefined-tracks/small-label.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/small-label.2-4000x4000.png'><img class='zoom' src='predefined-tracks/small-label.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/small-label.2-4000x4000.png'><img class='zoom' src='predefined-tracks/small-label.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/small-label.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/small-label.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/small-label.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/small-label.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/small-label.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/small-label.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/small-label.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/small-label.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/small-label.2.svg'>SVG</a>, <a href='predefined-tracks/small-label.2-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/small-label.2-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/small-label.2.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/small-label.2.svg'>SVG</a>, <a href='images/predefined-tracks/small-label.2-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/small-label.2-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/small-label.2.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -1014,13 +1012,13 @@ in the current sequence data, or 'data_avg' to use the average value:
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>medium-label</span> track with <span class='option'>label-text</span>=Label1</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/medium-label.2-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.2-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.2-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.2-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/medium-label.2.svg'>SVG</a>, <a href='predefined-tracks/medium-label.2-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/medium-label.2-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/medium-label.2.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/medium-label.2.svg'>SVG</a>, <a href='images/predefined-tracks/medium-label.2-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/medium-label.2-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/medium-label.2.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -1032,13 +1030,13 @@ in the current sequence data, or 'data_avg' to use the average value:
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>large-label</span> track with <span class='option'>label-text</span>=Label1</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/large-label.2-4000x4000.png'><img class='zoom' src='predefined-tracks/large-label.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/large-label.2-4000x4000.png'><img class='zoom' src='predefined-tracks/large-label.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/large-label.2-4000x4000.png'><img class='zoom' src='predefined-tracks/large-label.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/large-label.2-4000x4000.png'><img class='zoom' src='predefined-tracks/large-label.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/large-label.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/large-label.2-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/large-label.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/large-label.2-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/large-label.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/large-label.2-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/large-label.2-4000x4000.png'><img class='zoom' src='images/predefined-tracks/large-label.2-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/large-label.2.svg'>SVG</a>, <a href='predefined-tracks/large-label.2-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/large-label.2-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/large-label.2.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/large-label.2.svg'>SVG</a>, <a href='images/predefined-tracks/large-label.2-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/large-label.2-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/large-label.2.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -1052,13 +1050,13 @@ in the current sequence data, or 'data_avg' to use the average value:
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>large-label</span> track with <span class='option'>label-type</span>=curved</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/medium-label.3-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.3-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.3-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.3-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.3-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.3-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.3-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.3-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.3-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.3-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.3-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.3-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.3-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.3-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.3-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.3-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/medium-label.3.svg'>SVG</a>, <a href='predefined-tracks/medium-label.3-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/medium-label.3-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/medium-label.3.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/medium-label.3.svg'>SVG</a>, <a href='images/predefined-tracks/medium-label.3-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/medium-label.3-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/medium-label.3.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -1069,13 +1067,13 @@ in the current sequence data, or 'data_avg' to use the average value:
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>large-label</span> track with <span class='option'>label-type</span>=spoke</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/medium-label.4-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.4-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.4-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.4-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.4-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.4-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.4-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.4-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.4-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.4-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.4-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.4-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.4-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.4-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.4-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.4-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/medium-label.4.svg'>SVG</a>, <a href='predefined-tracks/medium-label.4-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/medium-label.4-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/medium-label.4.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/medium-label.4.svg'>SVG</a>, <a href='images/predefined-tracks/medium-label.4-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/medium-label.4-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/medium-label.4.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -1086,13 +1084,13 @@ in the current sequence data, or 'data_avg' to use the average value:
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>large-label</span> track with <span class='option'>label-type</span>=horizontal</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/medium-label.5-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.5-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.5-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.5-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.5-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.5-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.5-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.5-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.5-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.5-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.5-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.5-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.5-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.5-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.5-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.5-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/medium-label.5.svg'>SVG</a>, <a href='predefined-tracks/medium-label.5-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/medium-label.5-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/medium-label.5.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/medium-label.5.svg'>SVG</a>, <a href='images/predefined-tracks/medium-label.5-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/medium-label.5-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/medium-label.5.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -1104,13 +1102,13 @@ in the current sequence data, or 'data_avg' to use the average value:
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>large-label</span> track with <span class='option'>label-text</span>=Label1, <span class='option'>label-position</span>=100000</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/medium-label.6-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.6-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.6-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.6-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.6-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.6-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.6-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.6-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.6-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.6-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.6-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.6-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.6-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.6-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.6-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.6-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/medium-label.6.svg'>SVG</a>, <a href='predefined-tracks/medium-label.6-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/medium-label.6-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/medium-label.6.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/medium-label.6.svg'>SVG</a>, <a href='images/predefined-tracks/medium-label.6-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/medium-label.6-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/medium-label.6.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -1126,13 +1124,13 @@ in the current sequence data, or 'data_avg' to use the average value:
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>medium-label</span> track with <span class='option'>label-text-anchor</span>=middle</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/medium-label.7-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.7-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.7-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.7-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.7-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.7-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.7-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.7-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.7-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.7-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.7-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.7-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.7-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.7-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.7-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.7-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/medium-label.7.svg'>SVG</a>, <a href='predefined-tracks/medium-label.7-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/medium-label.7-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/medium-label.7.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/medium-label.7.svg'>SVG</a>, <a href='images/predefined-tracks/medium-label.7-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/medium-label.7-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/medium-label.7.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -1143,13 +1141,13 @@ in the current sequence data, or 'data_avg' to use the average value:
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>medium-label</span> track with <span class='option'>label-text-anchor</span>=start</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/medium-label.8-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.8-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.8-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.8-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.8-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.8-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.8-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.8-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.8-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.8-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.8-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.8-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.8-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.8-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.8-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.8-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/medium-label.8.svg'>SVG</a>, <a href='predefined-tracks/medium-label.8-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/medium-label.8-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/medium-label.8.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/medium-label.8.svg'>SVG</a>, <a href='images/predefined-tracks/medium-label.8-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/medium-label.8-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/medium-label.8.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -1160,13 +1158,13 @@ in the current sequence data, or 'data_avg' to use the average value:
 <th class='figure_caption' colspan='4'><span class='figure_caption'><span class='track'>medium-label</span> track with <span class='option'>label-text-anchor</span>=end</span></th>
 </tr>
 <tr>
-<td><a href='predefined-tracks/medium-label.9-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.9-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.9-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.9-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.9-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.9-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
-<td><a href='predefined-tracks/medium-label.9-4000x4000.png'><img class='zoom' src='predefined-tracks/medium-label.9-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.9-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.9-z3.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>10.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.9-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.9-z2.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>5.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.9-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.9-z1.png' style='width: 210px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>2.0x</span></div></td>
+<td><a href='images/predefined-tracks/medium-label.9-4000x4000.png'><img class='zoom' src='images/predefined-tracks/medium-label.9-140x140.png' style='float: left; width: 140px; height: 140px;'></a><div style='position: absolute; margin: 1em 0em 0em 0.5em;'><span class='zoom'>1.0x</span></div></td>
 </tr>
 <tr>
-<td colspan='4'><span class='downloads'>view/download <a href='predefined-tracks/medium-label.9.svg'>SVG</a>, <a href='predefined-tracks/medium-label.9-4000x4000.png'>large PNG image</a>, <a href='predefined-tracks/medium-label.9-2000x2000.pdf'>PDF</a> or circleator <a href='predefined-tracks/medium-label.9.cfg'>config file</a></span></td>
+<td colspan='4'><span class='downloads'>view/download <a href='images/predefined-tracks/medium-label.9.svg'>SVG</a>, <a href='images/predefined-tracks/medium-label.9-4000x4000.png'>large PNG image</a>, <a href='images/predefined-tracks/medium-label.9-2000x2000.pdf'>PDF</a> or circleator <a href='images/predefined-tracks/medium-label.9.cfg'>config file</a></span></td>
 </tr>
 </tbody>
 </table>
