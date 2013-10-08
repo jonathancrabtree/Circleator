@@ -3,7 +3,7 @@ layout: default
 title: Circleator - Installation Guide
 ---
 
-## Installation Guide
+# Circleator - Installation Guide
 
 Please note that the installation guide currently covers only
 installation on Linux systems, although a similar approach should 
@@ -97,7 +97,7 @@ To install Circleator system-wide (this requires superuser privileges):
     perl Build.PL
     ./Build
     ./Build test
-    ./Build install
+    sudo ./Build install
 
 To install Circleator to a different location, do this instead:
 

@@ -4,6 +4,8 @@ pagetype: home
 title: Circleator
 ---
 
+# Circleator
+
 ## Overview
 
 The Charm City Circleator--or Circleator for short--is a Perl-based

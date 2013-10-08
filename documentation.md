@@ -4,6 +4,8 @@ pagetype: documentation
 title: Circleator - Documentation
 ---
 
+# Circleator - Documentation
+
 ## Installation
 
 Please see the [Installation Guide][install] for detailed download 
@@ -17,7 +19,7 @@ and installation instructions.
 The current release of Circleator only provides a command-line
 interface, documented below:
 
- * [Circleator command line documentation][cmdline]
+ * [Circleator command line usage][cmdline]
 
 A prototype ExtJS web interface has been developed and split off into a 
 separate project/repository ("Ringmaster").
