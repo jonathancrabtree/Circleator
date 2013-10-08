@@ -4,7 +4,7 @@
 perl Build.PL
 ./Build
 ./Build test
-./Build install
+sudo ./Build install
 
 # To install into a noncentral location (e.g., one's home directory):
 
