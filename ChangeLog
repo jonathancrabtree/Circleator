@@ -1,6 +1,7 @@
 
 1.0.0rc2 (Oct ?? 2013)
- -
+ -Fix Build.PL to work with system-wide installs [Issue #12]
+ -Add --conf_dir option to circleator
 
 1.0.0rc1 (Oct 02 2013)
  -Changed release numbering syntax to the more standard major.minor.revision

@@ -25,6 +25,7 @@ circleator - A Perl-based visualization tool for producing circular plots of gen
          --scaled_segment_file=scaled-segments.txt
          --pad=400
          --log=/path/to/debug/logfile.txt
+         --conf_dir=/etc/circleator/conf
          --help
          --man]
 
@@ -157,6 +158,11 @@ Padding (in pixels) to leave on each side of the figure.
 
 Optional. Path to a log file into which to write logging info.
 
+=item B<--conf_dir>
+Optional. Path to a directory that contains certain configuration 
+files required by Circleator, including predefined-tracks.cfg 
+and brewer.txt
+
 =item B<--help,-h> 
 
 Display the script documentation.
@@ -193,8 +199,16 @@ as specified in the configuration file.
 
 use strict;
 
-use FindBin;
-use lib "$FindBin::Bin/../lib/perl5";
+# these variables are set at build time
+my $DEFAULT_CONF_DIR;
+my $DEFAULT_LIB_DIR;
+
+BEGIN {
+    $DEFAULT_CONF_DIR = "";
+    $DEFAULT_LIB_DIR = "";
+}
+
+use lib $DEFAULT_LIB_DIR;
 
 use Carp;
 use Clone qw (clone);
@@ -334,6 +348,7 @@ my $options = {};
             "scaled_segment_file=s",
             "pad|p=i",
             "log|l=s",
+            "conf_dir=s",
             "help|h",
             "man|m",
            ) || pod2usage();
@@ -811,7 +826,7 @@ my $config_mgr = undef;
 my $config = undef;
 
 if ($cf eq 'standard') {
-  my $predef_tracks = File::Spec->catfile($FindBin::Bin, '..', 'conf', 'predefined-tracks.cfg');
+  my $predef_tracks = File::Spec->catfile($options->{'conf_dir'}, 'predefined-tracks.cfg');
   $config_mgr = Circleator::Config::Standard->new($LOGGER, {'predefined_track_file' => $predef_tracks});
   $config = $config_mgr->read_config_file($options->{'config'});
 } elsif ($cf eq 'perl') {
@@ -866,9 +881,19 @@ sub check_parameters {
   $options->{'contig_min_size'}= $DEFAULT_CONTIG_MIN_SIZE_BP if (!defined($options->{'contig_min_size'}));
   $options->{'rotate_degrees'}= $DEFAULT_ROTATE_DEGREES if (!defined($options->{'rotate_degrees'}));
   $options->{'pad'}= $DEFAULT_PAD if (!defined($options->{'pad'}));
+  $options->{'conf_dir'} = $DEFAULT_CONF_DIR if (!defined($options->{'conf_dir'}));
+
+  if ($options->{'conf_dir'} =~ /^\s*$/) {
+      die "Either --conf_dir must be specified or the package must be built according to the INSTALL document.";
+  }
 
   ## additional parameter checking
   die "--config_format must be set to either 'standard' or 'perl'" if ($options->{'config_format'} !~ /^standard|perl$/);
+  
+  foreach my $cfile ('predefined-tracks.cfg', 'brewer.txt') {
+      my $cpath = File::Spec->catfile($options->{'conf_dir'}, $cfile);
+      die "$cpath was not found or is not readable" if ((!-e $cpath) || (!-r $cpath));
+  }
 
   my $dd = $options->{'data_dir'};
   $dd = $options->{'data_dir'} = $DEFAULT_DATA_DIR if (!defined($dd));
@@ -2780,7 +2805,7 @@ sub draw_graph_track {
   ($g_baseline, $g_min, $g_max) = map { &$update_value($_); } ($g_baseline, $g_min, $g_max);
 
   if ($g_type eq 'heat_map') {
-    $hm_color_fn = &Circleator::Util::Graphs::get_heat_map_color_function($LOGGER, $track, $tracks, $config, $update_value);
+    $hm_color_fn = &Circleator::Util::Graphs::get_heat_map_color_function($LOGGER, $options->{'conf_dir'}, $track, $tracks, $config, $update_value);
   }
 
   # TODO

@@ -234,7 +234,7 @@ foreach my $test (@$TESTS) {
     $cmd .= "--data=$data_path " if (defined($data_path));
     $cmd .= "--config=$conf_path " if (defined($conf));
     $cmd .= "--sequence=$seq_path " if (defined($seq_path));
-#    $cmd .= "--debug=all " if (defined($working_dir));
+    $cmd .= "--conf_dir=conf ";
     $cmd .= "--debug=all ";
     $cmd .= $args if (defined($args));
     $cmd .= "> $new_svg_path 2> $log_path";

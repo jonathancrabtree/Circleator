@@ -32,11 +32,11 @@ sub get_svg_colors_h {
 # and based on the colors at www.colorbrewer.org
 # 
 sub get_brewer_colors_h {
-  my($logger) = @_;
+  my($logger, $conf_dir) = @_;
 
   if (!defined($Circleator::Util::Colors::BREWER_COLORS_H)) {
     my $ph = $Circleator::Util::Colors::BREWER_COLORS_H = {};
-    my $brewer_file = File::Spec->catfile($FindBin::Bin, '..', 'conf', 'brewer.txt');
+    my $brewer_file = File::Spec->catfile($conf_dir, 'brewer.txt');
     my $fh = FileHandle->new();
     $fh->open($brewer_file) || $logger->logdie("unable to read from Brewer color palette file $brewer_file");
     my $lnum = 0;
@@ -81,16 +81,16 @@ sub get_brewer_colors_h {
 }
 
 sub get_brewer_palette {
-  my($logger, $name) = @_;
-  my $bph = &get_brewer_colors_h($logger);
+  my($logger, $conf_dir, $name) = @_;
+  my $bph = &get_brewer_colors_h($logger, $conf_dir);
   my $bp = $bph->{$name};
   $logger->error("could not find Brewer palette named '$name': available options are " . join(',', grep(!/\-\d+\-\d+$/, keys %$bph))) if (!defined($bp));
   return $bp;
 }
 
 sub get_brewer_color {
-  my($logger, $name) = @_;
-  my $bph = &get_brewer_colors_h($logger);
+  my($logger, $conf_dir, $name) = @_;
+  my $bph = &get_brewer_colors_h($logger, $conf_dir);
   my $bp = $bph->{$name};
   $logger->error("could not find Brewer color named '$name': available options are " . join(',', grep(/\-\d+\-\d+$/, keys %$bph))) if (!defined($bp));
   return $bp;
@@ -99,9 +99,9 @@ sub get_brewer_color {
 # Convert a Circleator color string to an [r,g,b] listref where r,g, and b are in the range [0,255]
 #
 sub string_to_rgb {
-  my($logger, $cspec) = @_;
+  my($logger, $conf_dir, $cspec) = @_;
   my $ch = &get_svg_colors_h();
-  my $bph = &get_brewer_colors_h($logger);
+  my $bph = &get_brewer_colors_h($logger, $conf_dir);
 
   # trim leading and trailing whitespace
   $cspec =~ s/^\s*(.*)\s*$/$1/;

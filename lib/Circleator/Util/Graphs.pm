@@ -69,7 +69,7 @@ sub get_graph_and_values {
 # $update_value_fn - replaces symbolic values such as "data_min" with their actual values for the current data set
 #
 sub get_heat_map_color_function {
-  my($logger, $track, $tracks, $config, $update_value_fn) = @_;
+  my($logger, $conf_dir, $track, $tracks, $config, $update_value_fn) = @_;
   my($hm_min, $hm_max, $hmv, $hmc, $hmlb, $hmorc, $hmbp) = 
     map {$track->{$_}} 
       ('heat-map-min-value', 'heat-map-max-value', 'heat-map-values', 'heat-map-colors', 'heat-map-log-base', 
@@ -92,7 +92,7 @@ sub get_heat_map_color_function {
 
   # the list of colors from heat-map-brewer-palette overrides heat-map-colors if present
   if (defined($hmbp)) {
-    my $bp = &Circleator::Util::Colors::get_brewer_palette($logger, $hmbp);
+    my $bp = &Circleator::Util::Colors::get_brewer_palette($logger, $conf_dir, $hmbp);
     if (defined($bp)) {
       $hmc = join("|", @{$bp->{'colors'}});
     }
@@ -111,7 +111,7 @@ sub get_heat_map_color_function {
   # convert all colors to [$r,$g,$b]
   my $color_fn = sub {
     my $c = shift;
-    my $rgb = &Circleator::Util::Colors::string_to_rgb($logger, $c);
+    my $rgb = &Circleator::Util::Colors::string_to_rgb($logger, $conf_dir, $c);
     if (!defined($rgb)) {
       $logger->error("unrecognized color specifier '$c' in heat_map_colors list");
       return [0,0,0];
