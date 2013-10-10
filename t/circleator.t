@@ -356,6 +356,9 @@ sub files_differ {
     while (my $old_line = <$old_fh>) {
 	++$lnum;
 	my $new_line = <$new_fh>;
+	# ignore differences in SVG version number
+	$old_line =~ s/(SVG Module V[\d\.]+)/SVG Module/;
+	$new_line =~ s/(SVG Module V[\d\.]+)/SVG Module/;
 	# stop if difference found
 	if (!defined($new_line) || ($old_line ne $new_line)) {
 	    $first_diff_lnum = $lnum;
