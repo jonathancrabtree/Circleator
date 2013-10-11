@@ -16,7 +16,7 @@ use strict;
 use FileHandle;
 use File::Basename;
 use File::Spec;
-use File::Temp qw { tempdir };
+use File::Temp;
 use Getopt::Long qw(:config no_ignore_case no_auto_abbrev pass_through);
 use Test::More;
 
@@ -185,7 +185,9 @@ if (defined($release)) {
 }
 
 # create tempdir for SVG output
-my $tempdir = tempdir(CLEANUP => 1);
+my $tempdir_ft = File::Temp->newdir();
+my $tempdir = $tempdir_ft->dirname;
+my $keep_tempdir = 0;
 my $tnum = 0;
 my $num_tests = 0;
 my $num_passed = 0;
@@ -316,6 +318,11 @@ foreach my $test (@$TESTS) {
 	}
     }
 
+    # save tmp output files if not OK
+    if ((!$ok) && (!$keep_tempdir)) {
+	$keep_tempdir = 1;
+	$tempdir_ft->unlink_on_destroy(0);
+    }
     ok($ok, $descr);
 }
 
@@ -326,6 +333,12 @@ if (defined($hfh)) {
     $hfh->print("$num_passed/$num_tests passed, <span class='test_${ok_str}'>$num_failed failed</a><br clear='both'>\n");
     &print_html_footer($hfh);
     $hfh->close();
+}
+
+if ($keep_tempdir) {
+    diag("NOTE: Since one or more tests failed the temporary log directory $tempdir");
+    diag("has not been removed. Please submit a tarred or zipped copy of this directory");
+    diag("along with your error report to facilitate debugging.");
 }
 
 exit(0);
