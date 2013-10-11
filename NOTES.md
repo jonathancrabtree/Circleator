@@ -6,8 +6,9 @@ Notes for developers.
 * Update the ChangeLog
 * Update $VERSION in bin/circleator
 * Update README.md, documentation as needed
-* Check that prerequisites are consistent between README.md, install.md
+* Check that prerequisites are consistent between README.md and INSTALL (in master), 
+  and install.md (in gh-pages)
 * Commit
 * Test
-* Add blog post/update documentation
+* Add blog post/update documentation as needed
 
