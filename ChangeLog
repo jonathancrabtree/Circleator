@@ -1,4 +1,7 @@
 
+1.0.0rc3 (Oct 11 2013)
+ -Add missing MANIFEST file to avoid build error.
+
 1.0.0rc2 (Oct 11 2013)
  -Fix Build.PL to work with system-wide installs [Issue #12]
  -Add --conf_dir option to circleator
