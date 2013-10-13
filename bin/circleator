@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-$VERSION = '1.0.0rc3';
+$VERSION = '1.0.0rc4';
 
 =head1 NAME 
 
@@ -27,7 +27,8 @@ circleator - A Perl-based visualization tool for producing circular plots of gen
          --log=/path/to/debug/logfile.txt
          --conf_dir=/etc/circleator/conf
          --help
-         --man]
+         --man
+         --version]
 
 =head1 OPTIONS
 
@@ -170,6 +171,10 @@ Display the script documentation.
 =item B<--man,-m>
 
 Display the script documentation.
+
+=item B<--version,-v>
+
+Display the Circleator version number.
 
 =back
 
@@ -351,6 +356,7 @@ my $options = {};
             "conf_dir=s",
             "help|h",
             "man|m",
+            "version|v",
            ) || pod2usage();
 
 ## debug settings
@@ -361,6 +367,12 @@ foreach my $d_opt (split(/\s*\,\s*/, $options->{'debug'})) {
   } else {
     $debug_opts->{$d_opt} = 1;
   }
+}
+
+## display version number
+if ( $options->{'version'} ) {
+  print STDERR "Circleator version $VERSION\n";
+  exit(0);
 }
 
 ## display documentation
