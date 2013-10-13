@@ -26,6 +26,7 @@ sub ACTION_install {
     my $replace_cmd = "perl -pi.bak -e 's/\\\$DEFAULT_CONF_DIR = \"[^\"]*\";/\\\$DEFAULT_CONF_DIR = \"$conf_dir\";/; s/\\\$DEFAULT_LIB_DIR = \"[^\"]*\";/\\\$DEFAULT_LIB_DIR = \"$lib_dir\";/;' $script";
     system($replace_cmd);
     die "failed to update \$DEFAULT_LIB_DIR, \$DEFAULT_CONF_DIR in $script" if ($?);
+    unlink "${script}.bak";
     $self->SUPER::ACTION_install;
 }
 SUBCLASS

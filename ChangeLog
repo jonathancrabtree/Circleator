@@ -1,6 +1,7 @@
 
 1.0.0rc4 (Oct ?? 2013)
  -Add --version option to report the current version/release number.
+ -Modify Build.PL so it doesn't install circleator.bak into /usr/local/bin/.
 
 1.0.0rc3 (Oct 11 2013)
  -Add missing MANIFEST file to avoid build error.
