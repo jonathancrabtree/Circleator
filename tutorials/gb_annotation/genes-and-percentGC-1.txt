@@ -1,0 +1,7 @@
+
+coords
+small-cgap
+genes
+small-cgap
+%GC0-100
+

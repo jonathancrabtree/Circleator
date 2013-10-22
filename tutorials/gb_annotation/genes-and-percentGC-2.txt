@@ -1,0 +1,10 @@
+
+coords
+small-cgap
+genes
+small-cgap
+# decrease graph_max from 100 to 50, increase graph_min to 25
+# and increase heightf from 0.07 to 0.15:
+%GC0-100 graph_max=50,graph_min=25,heightf=0.15
+# add a label to make it clear what's going on:
+medium-label label-text=Percent&nbsp;GC:&nbsp;25%-50%
