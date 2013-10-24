@@ -21,6 +21,17 @@ img.gallery {
     border: 1px solid #d0d0d0;
 }
 
+div.sample_image {
+    padding: 1em;
+    margin: 1em 0em 1em 0em;
+    border: 1px solid #d0d0d0;
+    width: 450px;
+}
+
+img.sample_image {
+    padding: 1em;
+}
+
 img.header1 {
     opacity: 0.2;
     margin: auto;
