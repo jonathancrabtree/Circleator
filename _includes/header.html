@@ -1,28 +1,28 @@
 <html>
 <head>
 <title>{{ page.title }}</title>
-<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-<link href="css/circleator.css" rel="stylesheet" type="text/css" />
+<link href="{{ site.baseurl }}/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="{{ site.baseurl }}/css/circleator.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
-<div class='header1'><img src='images/banner-1a.png' class='header1'></div>
+<div class='header1'><img src='{{ site.baseurl }}/images/banner-1a.png' class='header1'></div>
 <div class='header2'>
 &nbsp;&nbsp;<span class='circleator_heading'>&nbsp;C&nbsp;I&nbsp;R&nbsp;C&nbsp;L&nbsp;E&nbsp;A&nbsp;T&nbsp;O&nbsp;R&nbsp;</span>
 {% if page.pagetype == 'home' %}
 &nbsp;home&nbsp;
 {% else %}
-&nbsp;<a href='index.html'>home</a>&nbsp;
+&nbsp;<a href='{{ site.baseurl }}/index.html'>home</a>&nbsp;
 {% endif %}
 {% if page.pagetype == 'documentation' %}
 |&nbsp;documentation&nbsp;
 {% else %}
-|&nbsp;<a href='documentation.html'>documentation</a>&nbsp;
+|&nbsp;<a href='{{ site.baseurl }}/documentation.html'>documentation</a>&nbsp;
 {% endif %}
 {% if page.pagetype == 'gallery' %}
 |&nbsp;gallery&nbsp;
 {% else %}
-|&nbsp;<a href='gallery.html'>gallery</a>&nbsp;
+|&nbsp;<a href='{{ site.baseurl }}/gallery.html'>gallery</a>&nbsp;
 {% endif %}
 |&nbsp;<a href='https://github.com/jonathancrabtree/Circleator'>github</a>&nbsp;
 |&nbsp;<a href='https://github.com/jonathancrabtree/Circleator/releases'>download</a>&nbsp;
