@@ -13,7 +13,7 @@ to jump to a specific section of interest:
 1. [Install Circleator](#install_circleator)
 2. [Download a GenBank flat file for a completed genome](#download_a_genbank_flat_file_for_a_completed_genome)
 3. [Display the annotated genes](#display_the_annotated_genes)
-4. [Add a percent GC-content plot](#add_a_percent_gc-content_plot)
+4. [Add a percent GC-content plot](#add_a_percent_gccontent_plot)
 5. [Highlight a specific gene or gene(s)](#highlighting_specific_genes)
 6. [Download a GenBank flat file for an unfinished draft genome](#download_a_genbank_flat_file_for_an_unfinished_draft_genome)
 
@@ -180,3 +180,6 @@ And the figure now looks like this:
 
 </div>
 
+- gene-free region is only about 1kb (922039 - 922991)
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1160521/
+find and highlight all low-gc regions, look for HI0687 HI0688 HI0051-HI0054

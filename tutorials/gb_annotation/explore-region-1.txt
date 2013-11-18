@@ -1,17 +1,18 @@
 
 # zoom in 20X on the region from 910-930kb
-new r1 load user-feat-fmin=910000,user-feat-fmax=930000,user-feat-type=roi
-new ss1 scaled-segment-list scale=20,feat-type=roi
+new r1 load user-feat-fmin=915000,user-feat-fmax=930000,user-feat-type=roi
+new ss1 scaled-segment-list scale=25,feat-type=roi
 coords
 small-cgap
 genes
 small-cgap
 # decrease graph_max from 100 to 50, increase graph_min to 25
 # and increase heightf from 0.07 to 0.15:
-%GC0-100 graph_max=50,graph_min=25,heightf=0.15
+%GC0-100 graph_max=50,graph_min=25,heightf=0.15,outerf=0.65,window-size=1000
 # add a label to make it clear what's going on:
 medium-label label-text=Percent&nbsp;GC:&nbsp;25%-50%
 # highlight and label the zoomed region
 new h1 rectangle innerf=0,outerf=1.1,opacity=0.2,color1=purple,feat-type=roi
-coords outerf=1.2,fmin=910000,fmax=930000,tick-interval=1000,label-interval=5000
-medium-label innerf=0.6,label-text=20X,label-position=920000
+coords outerf=1.1,fmin=915000,fmax=930000,tick-interval=1000,label-interval=5000,no-circle=1,label-units=kb,label-type=horizontal
+large-label innerf=0.4,label-text=25X,label-position=922500,label-type=horizontal
+medium-label innerf=0.7,label-type=spoke,label-function=locus,overlapping-feat-type=roi,feat-type=gene,packer=none,heightf=0.04

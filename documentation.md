@@ -12,7 +12,6 @@ Please see the [Installation Guide][install] for detailed download
 and installation instructions.
 
 [install]: install.html
-[readme]: http://github.com/jonathancrabtree/Circleator/blob/master/README.md
 
 ## Running Circleator
 
@@ -28,10 +27,12 @@ separate project/repository ("Ringmaster").
 
 ## Reference Material
  
+ * [Circleator README file][readme]
  * [Configuration file format][config_ref]
  * [Predefined track types][predef_tracks]
  * [Gallery of sample figures][gallery]
 
+[readme]: http://github.com/jonathancrabtree/Circleator/blob/master/README.md
 [config_ref]: configuration.html
 [predef_tracks]: predefined-tracks.html
 [gallery]: gallery.html
@@ -40,11 +41,13 @@ separate project/repository ("Ringmaster").
 
 The following tutorials (which will be posted here shortly) will provide detailed walkthroughs for common use-cases:
 
- * Visualizing gene annotation and DNA sequence data from a GenBank flat file.
+ * Displaying annotation and sequence data from a GenBank flat file
  * Investigating patterns of gene conservation in two or more closely-related strains or serovars.
  * Showing SNPs and/or indels in several microbial strains relative to a reference genome and gene set.
  * Viewing coverage plots of RNA-Seq data from multiple transcriptomic samples.
  * Displaying quantitative data using graphs and heat maps.
+
+[gb_annotation]: tutorials/gb_annotation.html
 
 ## Additional Resources
 
