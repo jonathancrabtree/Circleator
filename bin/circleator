@@ -241,6 +241,7 @@ use Circleator::CoordTransform::Identity;
 use Circleator::CoordTransform::LinearScale;
 use Circleator::Packer::LinePacker;
 use Circleator::Parser::BSR;
+use Circleator::Parser::SNP_CLCFindVariations;
 use Circleator::Parser::SNP_MergedTable;
 use Circleator::Parser::SNP_Skirret;
 use Circleator::Parser::SNP_Table;
@@ -1093,6 +1094,8 @@ sub read_legacy_annotation_file {
 # read sequence and/or annotation from a variety of input file formats
 sub read_annotation {
   my($file, $contig_min_size, $feat_file_type, $refseq_name, $track) = @_;
+  print STDERR "read_annotation called with file type=$feat_file_type\n";
+
   # TODO - automatically dispatch to appropriate module in Circleator::Parser
   if ($feat_file_type =~ /^ucsc_.*$/i) {
     return &read_ucsc_sql_file($file, $feat_file_type, $track);
@@ -1104,6 +1107,12 @@ sub read_annotation {
     # TODO - implement file content caching in a generic manner:
     my $ssp = Circleator::Parser::SNP_Skirret->new($LOGGER, {'config' => $config});
     return $ssp->parse_file($file);
+  }
+  elsif ($feat_file_type =~ /^clc-find-variations-snp$/) {
+    # TODO - implement file content caching in a generic manner:
+    print STDERR "parsing CLC find variations output\n";
+    my $cfv = Circleator::Parser::SNP_CLCFindVariations->new($LOGGER, {'config' => $config});
+    return $cfv->parse_file($file);
   }
   elsif ($feat_file_type =~ /^merged-table-snp$/) {
     # TODO - implement file content caching in a generic manner:
