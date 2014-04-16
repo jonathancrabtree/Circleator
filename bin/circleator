@@ -1094,7 +1094,6 @@ sub read_legacy_annotation_file {
 # read sequence and/or annotation from a variety of input file formats
 sub read_annotation {
   my($file, $contig_min_size, $feat_file_type, $refseq_name, $track) = @_;
-  print STDERR "read_annotation called with file type=$feat_file_type\n";
 
   # TODO - automatically dispatch to appropriate module in Circleator::Parser
   if ($feat_file_type =~ /^ucsc_.*$/i) {
@@ -1110,9 +1109,9 @@ sub read_annotation {
   }
   elsif ($feat_file_type =~ /^clc-find-variations-snp$/) {
     # TODO - implement file content caching in a generic manner:
-    print STDERR "parsing CLC find variations output\n";
+    # DEBUG
     my $cfv = Circleator::Parser::SNP_CLCFindVariations->new($LOGGER, {'config' => $config});
-    return $cfv->parse_file($file);
+    return $cfv->parse_file($file, $refseq_name);
   }
   elsif ($feat_file_type =~ /^merged-table-snp$/) {
     # TODO - implement file content caching in a generic manner:
@@ -1833,7 +1832,7 @@ sub get_track_features {
   my $num_feat_filters = scalar(@$feat_filters);
 
   # try to set refseq_name automatically if one is not defined
-  if (!defined($refseq_name)) {
+  if (!defined($refseq_name) || ($refseq_name =~ /^\s*$/)) {
     $refseq_name = $richseq->accession_number();
     $refseq_name = $richseq->display_id() if ($refseq_name eq 'unknown');
     $LOGGER->debug("set refseq name to $refseq_name") if ($debug_opts->{'misc'});

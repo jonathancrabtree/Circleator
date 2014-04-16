@@ -9,6 +9,8 @@ our @ISA = qw(Circleator::Parser::SNP);
 # Globals
 # ------------------------------------------------------------------
 
+my $PCT_CUTOFFS = [5,10,20,30,40,50];
+
 # ------------------------------------------------------------------
 # Constructor
 # ------------------------------------------------------------------
@@ -34,11 +36,11 @@ sub new {
 # ------------------------------------------------------------------
 
 sub parse_file {
-  my($self, $file) = @_;
+  my($self, $file, $ref_seq_id) = @_;
   die "couldn't find clc_find_variations SNP file $file" if ((!-e $file) || (!-r $file));
   my $entries = [];
   my $ref_seqs = {};
-  my $variants = {};
+  my $snps = {};
   
   # prefixes used to define unique BioPerl attribute tags for SNP-related attributes
   my $tp = $self->tag_prefix();
@@ -61,45 +63,79 @@ sub parse_file {
     elsif ($lnum == 2) {
       if ($line =~ /^(.*):$/) {
         $ref_seq_name = $1;
+        # TODO - check that $ref_seq_id appears within $ref_seq_name somewhere
       } else {
         die "unable to parse reference sequence name at line $lnum of $file: $line";
       }
     } 
     # variations e.g., 
     #        3368   Difference   G  ->  A     A: 3644  C: 1     G: 7     T: 3     N: 0     -: 0   
-    elsif ($line =~ /^\s+(\d+)\s+(Difference|Deletion|Insert|Nochange)\s+([ACTG\-]+)\s+\-\>\s+([ACTG\-]+)\s+(.*)$/) {
-      my($pos, $type, $from, $to, $counts) = ($1, $2, $3, $4);
-      my $snp_data = {};
+    elsif ($line =~ /^\s+(\d+)\s+(Difference|Deletion|Insert|Nochange)\s+([ACTGN\-]+)\s+\-\>\s+([ACTGN\-]+)\s+(.*)$/) {
+      my($pos, $type, $from, $to, $counts) = ($1, $2, $3, $4, $5);
+      my $snp_data = {
+        $tp . 'ref_base' => $from,
+      };
+      my $num_diffs = 0;
+      my $num_targets = 0;
+
       # parse base counts
-      while ($counts =~ /([ACTG\-]+): (\d+)/m) {
+      my $count_list = [];
+      while ($counts =~ /([ACTGN\-]+): (\d+)/g) {
         my($b, $c) = ($1, $2);
-        my $ckey = . $tp. $b . "_count";
-        die "duplicate count for $ckey at line $lnum of $file" if (defined($snp_data->{$ckey}));
+        push(@$count_list, [$b, $c]);
+        my $ckey = $tp . $b . "_count";
+        die "duplicate count for $ckey (count=$c) at line $lnum of $file" if (defined($snp_data->{$ckey}));
         $snp_data->{$ckey} = $c;
-        # DEBUG
-        print STDERR "lnum $lnum $ckey -> $c\n";
+        $num_targets += $c;
+        $num_diffs += $c unless ($b eq $from);
       }
 
-      # TODO
-    
+#      print STDERR "counts=$counts\n";
+
+      # look at counts as percentage of the total
+      # and calculate which SNPs have 2 or more variants present at X% of the total for X=5,10,20,30,40,50
+      my $vt_counts = {};
+      map { $vt_counts->{$_} = 0; } @$PCT_CUTOFFS;
+
+      foreach my $cp (@$count_list) {
+        my($b, $c) = @$cp;
+        my $cpct = sprintf("%0.2f", ($c / $num_targets) * 100.0);
+        foreach my $pc (@$PCT_CUTOFFS) {
+          ++$vt_counts->{$pc} if ($cpct > $pc);
+        }
+#        print STDERR "${cpct}%  ";
+      }
+#      print STDERR "\n";
+      
+      foreach my $pc (@$PCT_CUTOFFS) {
+        # e.g., num_variants_gt_10
+        $snp_data->{$tp . 'num_variants_gt_' . $pc} = $vt_counts->{$pc};
+#        print STDERR "nv gt $pc: ". $vt_counts->{$pc} . ": $counts\n" if ($vt_counts->{$pc} >= 2);
+      }
+
+      $snp_data->{$tp . 'num_diffs'} = $num_diffs;
+      $snp_data->{$tp . 'num_no_hits'} = 0;
+      $snp_data->{$tp . 'num_targets'} = $num_targets;
+
       # get or create ref seq
-      my $ref_seq = $ref_seqs->{$snp_data->{$tp . 'molecule'}};
+      my $ref_seq = $ref_seqs->{$ref_seq_id};
+    
       if (!defined($ref_seq)) {
-        $ref_seq = $ref_seqs->{$snp_data->{$tp . 'molecule'}} = Bio::Seq::RichSeq->new(-seq => '', -id => $snp_data->{$tp . 'molecule'}, -alphabet => 'dna');
+        $ref_seq = $ref_seqs->{$ref_seq_id} = Bio::Seq::RichSeq->new(-seq => '', -id => $ref_seq_id, -alphabet => 'dna');
         push(@$entries, [$ref_seq, undef, undef]);
       }
-      my $start = $snp_data->{$tp . 'refpos'};
-      my $end = $start + length($snp_data->{$tp . 'refbase'}) - 1;
+      my $start = $pos;
+      my $end = $start + length($from) - 1;
       
       # should be at most one line per reference position
-      my $snp_key = join(':', $snp_data->{$tp .'molecule'}, $snp_data->{$tp . 'refpos'});
+      my $snp_key = join(':', $ref_seq_id, $pos);
       my $esnp = $snps->{$snp_key};
       $self->{'logger'}->logdie("duplicate reference location ($snp_key) at line $lnum of $file") if (defined($esnp));
       
       # new SNP feature
       my $snp_feat = new Bio::SeqFeature::Generic(-start => $start, -end => $end, -strand => 1, -primary => 'SNP', -display_name => 'SNP.' . $start, -tag => $snp_data);
       if (!$ref_seq->add_SeqFeature($snp_feat)) {
-        $self->{'logger'}->logdie("failed to add SNP feature to corresponding reference sequence for $snp_data->{'molecule'}");
+        $self->{'logger'}->logdie("failed to add SNP feature to corresponding reference sequence for $ref_seq_id");
       }
       $snps->{$snp_key} = $snp_feat;
     }
@@ -114,8 +150,6 @@ sub parse_file {
     die "expected blank line at line $lnum of $file, found this instead: $line" unless ($line =~ /^\s*$/);
   }
   
-  my @refseqs = map {$_->[0]} @$entries;
-  $self->process_snps(\@refseqs);
   return $entries;
 }
 
