@@ -1758,13 +1758,13 @@ sub get_track_features {
      $feat_file, $feat_file_type, $refseq_name, $clip_fmin, $clip_fmax,
      # feature filtering parameters:
      $feat_filters,
-     $feat_type, $feat_type_regex, $feat_strand, $feat_min_length, $feat_max_length, $feat_tag, $feat_tag_value, $feat_tag_min_value, $feat_tag_max_value, $feat_tag_regex, $overlapping_feat_type) =
+     $feat_type, $feat_type_regex, $feat_strand, $feat_min_length, $feat_max_length, $feat_tag, $feat_tag_value, $feat_tag_min_value, $feat_tag_max_value, $feat_tag_gt, $feat_tag_lt, $feat_tag_gte, $feat_tag_lte, $feat_tag_regex, $overlapping_feat_type) =
     map { $feat_track->{$_} } 
     ('features', 'feat-file', 'feat-file-type', 'refseq-name', 'clip-fmin', 'clip-fmax',
      # list of feature filters:
      'feat-filters',
      # individual track-level feature filters:
-     'feat-type', 'feat-type-regex', 'feat-strand', 'feat-min-length', 'feat-max-length', 'feat-tag', 'feat-tag-value', 'feat-tag-min-value', 'feat-tag-max-value', 'feat-tag-regex', 'overlapping-feat-type');
+     'feat-type', 'feat-type-regex', 'feat-strand', 'feat-min-length', 'feat-max-length', 'feat-tag', 'feat-tag-value', 'feat-tag-min-value', 'feat-tag-max-value', 'feat-tag-gt', 'feat-tag-lt', 'feat-tag-gte', 'feat-tag-lte', 'feat-tag-regex', 'overlapping-feat-type');
 
 #  print STDERR "got feat-type=${feat_type} for feat track, feat-tag=" . (defined($feat_tag) ? $feat_tag : "undef"). " feat filter count=" . (defined($feat_filters) ? scalar(@$feat_filters) : 0) . "\n";
 #  print STDERR "get_track_features: feat-tag=$feat_tag feat-tag-min-value=$feat_tag_min_value feat-tag-max-value=$feat_tag_max_value\n";
@@ -1774,7 +1774,7 @@ sub get_track_features {
   $feat_filters = [] if (!defined($feat_filters));
   # TODO - keep this redundant way to specify filters?
   if (defined($feat_type) || defined($feat_type_regex) || defined($feat_strand) || defined($feat_min_length) || defined($feat_max_length) || defined($feat_tag) || defined($feat_tag_value) || defined($feat_tag_regex) || defined($overlapping_feat_type)
-     || defined($feat_tag_min_value) || defined($feat_tag_max_value)) {
+     || defined($feat_tag_min_value) || defined($feat_tag_max_value) || defined($feat_tag_lt) || defined($feat_tag_lte) || defined($feat_tag_gt) || defined($feat_tag_gte)) {
 #    $LOGGER->warn("The use of feat-type, feat-type-regex, feat-strand, feat-min-length, feat-tag, feat-tag-value, feat-tag-regex is deprecated.  Please use feat-filters instead.");
     push(@$feat_filters, { 'type' => $feat_type }) if (defined($feat_type));
     push(@$feat_filters, { 'type-regex' => $feat_type_regex }) if (defined($feat_type_regex));
@@ -1796,6 +1796,22 @@ sub get_track_features {
       } 
       if (defined($feat_tag_max_value)) {
         push(@$feat_filters, { 'tag' => $feat_tag, 'max-value' => $feat_tag_max_value });
+        ++$nft;
+      } 
+      if (defined($feat_tag_gte)) {
+        push(@$feat_filters, { 'tag' => $feat_tag, 'min-value' => $feat_tag_gte });
+        ++$nft;
+      } 
+      if (defined($feat_tag_lte)) {
+        push(@$feat_filters, { 'tag' => $feat_tag, 'max-value' => $feat_tag_lte });
+        ++$nft;
+      } 
+      if (defined($feat_tag_gt)) {
+        push(@$feat_filters, { 'tag' => $feat_tag, 'gt-value' => $feat_tag_gt });
+        ++$nft;
+      } 
+      if (defined($feat_tag_lt)) {
+        push(@$feat_filters, { 'tag' => $feat_tag, 'lt-value' => $feat_tag_lt });
         ++$nft;
       } 
       if (defined($feat_tag_regex)) {
@@ -1968,7 +1984,7 @@ sub get_track_features {
     my $filters_match = 1;
 
     foreach my $filter (@$feat_filters) {
-      my($t,$tr,$s,$ml,$maxl,$tag,$val,$minval,$maxval,$re,$oft,$fn) = map {$filter->{$_}} ('type', 'type-regex', 'strand', 'min_length', 'max_length', 'tag', 'value', 'min-value', 'max-value', 'regex', 'overlapping_feat_type', 'fn');
+      my($t,$tr,$s,$ml,$maxl,$tag,$val,$minval,$maxval,$gtval,$ltval,$re,$oft,$fn) = map {$filter->{$_}} ('type', 'type-regex', 'strand', 'min_length', 'max_length', 'tag', 'value', 'min-value', 'max-value', 'gt-value', 'lt-value', 'regex', 'overlapping_feat_type', 'fn');
 
       if (defined($fn)) {
         $filters_match = &$fn($feat);
@@ -2011,6 +2027,10 @@ sub get_track_features {
               ++$num_matches if ($tv >= $minval);
             } elsif (defined($maxval)) {
               ++$num_matches if ($tv <= $maxval);
+            } elsif (defined($gtval)) {
+              ++$num_matches if ($tv > $gtval);
+            } elsif (defined($ltval)) {
+              ++$num_matches if ($tv < $ltval);
             }
             elsif (defined($re)) {
               ++$num_matches if ($tv =~ /$re/);

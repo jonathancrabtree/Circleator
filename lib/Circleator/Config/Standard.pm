@@ -109,6 +109,7 @@ my $GLOBAL_OPTS =
    'z-index',
    # filters
    'feat-type', 'feat-strand', 'feat-tag', 'feat-tag-value', 'feat-tag-min-value', 'feat-tag-max-value', 'feat-tag-regex',
+   'feat-tag-lt', 'feat-tag-lte', 'feat-tag-gt', 'feat-tag-gte', 
    'feat-min-length', 'feat-max-length', 'clip-fmin', 'clip-fmax', 'overlapping-feat-type',
    # filter by gene cluster
    'gene-cluster-genomes', 'gene-cluster-signature', 'gene-cluster-analysis', 'gene-cluster-min-genomes', 'gene-cluster-max-genomes',
