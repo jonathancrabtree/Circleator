@@ -110,7 +110,7 @@ my $GLOBAL_OPTS =
    # filters
    'feat-type', 'feat-strand', 'feat-tag', 'feat-tag-value', 'feat-tag-min-value', 'feat-tag-max-value', 'feat-tag-regex',
    'feat-tag-lt', 'feat-tag-lte', 'feat-tag-gt', 'feat-tag-gte', 
-   'feat-min-length', 'feat-max-length', 'clip-fmin', 'clip-fmax', 'overlapping-feat-type',
+   'feat-min-length', 'feat-max-length', 'clip-fmin', 'clip-fmax', 'overlapping-feat-type', 'overlapping-feat-track',
    # filter by gene cluster
    'gene-cluster-genomes', 'gene-cluster-signature', 'gene-cluster-analysis', 'gene-cluster-min-genomes', 'gene-cluster-max-genomes',
    # font width - modifies constant assumption about ratio of font width to height
@@ -126,6 +126,7 @@ my $GLYPH_OPTS =
                'heat-map-out-of-range-color', 'heat-map-brewer-palette' ],
    'ruler' => ['tick-interval', 'label-interval', 'label-type', 'label-units', 'label-precision', 'font-size', 'no-circle', 'fmin', 'fmax'],
    'rectangle' => ['inner-scale', 'outer-scale', 'stroke-width', 'stroke-dasharray'],
+   'variant-base-histogram' => ['inner-scale', 'outer-scale', 'stroke-width', 'stroke-dasharray', 'min-allele-pct', 'label-bases', 'font-height-frac'],
    'scaled-segment-list' => ['scale', 'target-bp'],
    'loop-start' => ['loop-var'],
    'loop-end' => [],
