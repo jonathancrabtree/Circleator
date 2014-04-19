@@ -9,7 +9,8 @@ our @ISA = qw(Circleator::Parser::SNP);
 # Globals
 # ------------------------------------------------------------------
 
-my $PCT_CUTOFFS = [5,10,20,30,40,50];
+# TODO - remove hard-coded cutoffs
+my $PCT_CUTOFFS = [1,5,10,20,30,40,50];
 
 # ------------------------------------------------------------------
 # Constructor
@@ -90,27 +91,65 @@ sub parse_file {
         $num_diffs += $c unless ($b eq $from);
       }
 
-#      print STDERR "counts=$counts\n";
+      # now that $num_targets is known compute each count as percentage of the total
+      my $new_count_list = [];
+      foreach my $cp (@$count_list) {
+        my($b, $c) = @$cp;
+        my $cpct = sprintf("%0.2f", ($c / $num_targets) * 100.0);
+	push(@$new_count_list, [$b, $c, $cpct]);
+      }
+
+      $count_list = $new_count_list;
+      # sort by descending percentage
+      my @desc_count_list = sort { $b->[1] <=> $a->[1] } @$count_list;
+
+      # DEBUG
+#      print STDERR "$counts\n";
+#      print STDERR join(", ", map { join(":", @$_) } @desc_count_list) . "\n";
+#      print STDERR "\n";
+
+      my $ncl = scalar(@desc_count_list);
+      for (my $i = 0;$i < $ncl;++$i) {
+	  my $ord = $i+1;
+	  my $dc = $desc_count_list[$i];
+	  my($bases, $count, $pct) = @$dc;
+	  $snp_data->{$tp . 'bases_' . $ord} = $bases;
+	  $snp_data->{$tp . 'count_' . $ord} = $count;
+	  $snp_data->{$tp . 'pct_' . $ord} = $pct;
+      }
 
       # look at counts as percentage of the total
-      # and calculate which SNPs have 2 or more variants present at X% of the total for X=5,10,20,30,40,50
-      my $vt_counts = {};
-      map { $vt_counts->{$_} = 0; } @$PCT_CUTOFFS;
+      # gt_counts:
+      #  number of variants present at >X% where X in @$PCT_CUTOFFS
+      # gte_lt_counts:
+      #  number of variants present at >=X% and < Y% where X and Y are adjacent in @$PCT_CUTOFFS
+#      my $gte_lt_counts = {};
+      my $gt_counts = {};
+#      map { $gte_lt_counts->{$_} = $gt_counts->{$_} = 0; } @$PCT_CUTOFFS;
+      my $npc = scalar(@$PCT_CUTOFFS);
 
       foreach my $cp (@$count_list) {
         my($b, $c) = @$cp;
         my $cpct = sprintf("%0.2f", ($c / $num_targets) * 100.0);
-        foreach my $pc (@$PCT_CUTOFFS) {
-          ++$vt_counts->{$pc} if ($cpct > $pc);
+	for (my $ci = 0;$ci < $npc;++$ci) {
+	    my($min, $max) = map { $PCT_CUTOFFS->[$_] } ($ci, $ci+1);
+#	    ++$gte_lt_counts->{$min} if (($cpct >= $min) && ($cpct < $max));
+	    ++$gt_counts->{$min} if ($cpct > $min);
         }
-#        print STDERR "${cpct}%  ";
       }
-#      print STDERR "\n";
       
-      foreach my $pc (@$PCT_CUTOFFS) {
-        # e.g., num_variants_gt_10
-        $snp_data->{$tp . 'num_variants_gt_' . $pc} = $vt_counts->{$pc};
-#        print STDERR "nv gt $pc: ". $vt_counts->{$pc} . ": $counts\n" if ($vt_counts->{$pc} >= 2);
+      for (my $ci = 0;$ci < $npc-1;++$ci) {
+	  my($min, $max) = map { $PCT_CUTOFFS->[$_] } ($ci, $ci+1);
+	  # e.g., num_variants_gte_10_lt_20%:
+#	  $snp_data->{$tp . 'num_variants_gte_' . $min . '_lt_' . $max . '%'} = $gte_lt_counts->{$min};
+#	  if ($gte_lt_counts->{$min} > 0) {
+#	      print STDERR $tp . 'num_variants_gte_' . $min . '_lt_' . $max . '%' . " = " . $gte_lt_counts->{$min}. "\n";
+#	  }
+	  # e.g., num_variants_gt_10%:
+	  $snp_data->{$tp . 'num_variants_gt_' . $min . '%'} = $gt_counts->{$min};
+#	  if ($gt_counts->{$min} > 0) {
+#	      print STDERR $tp . 'num_variants_gt_' . $min . '%' . " = " . $gt_counts->{$min}. "\n";
+#	  }
       }
 
       $snp_data->{$tp . 'num_diffs'} = $num_diffs;
@@ -130,7 +169,7 @@ sub parse_file {
       # should be at most one line per reference position
       my $snp_key = join(':', $ref_seq_id, $pos);
       my $esnp = $snps->{$snp_key};
-      $self->{'logger'}->logdie("duplicate reference location ($snp_key) at line $lnum of $file") if (defined($esnp));
+      $self->{'logger'}->logwarn("duplicate reference location ($snp_key) at line $lnum of $file") if (defined($esnp));
       
       # new SNP feature
       my $snp_feat = new Bio::SeqFeature::Generic(-start => $start, -end => $end, -strand => 1, -primary => 'SNP', -display_name => 'SNP.' . $start, -tag => $snp_data);
