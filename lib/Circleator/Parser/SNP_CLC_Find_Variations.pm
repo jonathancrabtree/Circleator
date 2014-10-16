@@ -54,7 +54,7 @@ sub parse_file {
   print STDERR "parsing clc_find_variants file $file\n";
 
   my $fh = FileHandle->new();
-  $fh->open($file)|| $self->{'logger'}->logdie "unable to read from clc_find_variants file $file";
+  $fh->open($file)|| $self->{'logger'}->logdie("unable to read from clc_find_variants file $file");
   my $lnum = 0;
 
   # blank line
