@@ -141,4 +141,10 @@ This product includes color specifications and designs developed by Cynthia Brew
 
 ### Citation
 
-A manuscript describing Circleator is currently in preparation.
+An Applications Note describing Circleator has been published in _Bioinformatics_:
+
+Crabtree, J., Agrawal, S., Mahurkar, A., Myers, G.S., Rasko, D.A., White, O. (2014) Circleator: flexible 
+circular visualization of genome-associated data with BioPerl and SVG. _Bioinformatics_,
+[10.1093/bioinformatics/btu505][abstract_ea].
+
+[abstract_ea]: http://bioinformatics.oxfordjournals.org/content/early/2014/08/23/bioinformatics.btu505.abstract
