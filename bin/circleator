@@ -245,7 +245,6 @@ use Circleator::Parser::SNP_CLCFindVariations;
 use Circleator::Parser::SNP_MergedTable;
 use Circleator::Parser::SNP_Skirret;
 use Circleator::Parser::SNP_Table;
-use Circleator::Parser::SNP_CLC_Find_Variations;
 use Circleator::Parser::TRF;
 use Circleator::Parser::TRF_variation;
 use Circleator::Parser::Expression_Table;
@@ -1109,8 +1108,6 @@ sub read_annotation {
     return $ssp->parse_file($file);
   }
   elsif ($feat_file_type =~ /^clc-find-variations-snp$/) {
-    # TODO - implement file content caching in a generic manner:
-    # DEBUG
     my $cfv = Circleator::Parser::SNP_CLCFindVariations->new($LOGGER, {'config' => $config});
     return $cfv->parse_file($file, $refseq_name);
   }
@@ -1122,10 +1119,6 @@ sub read_annotation {
   elsif ($feat_file_type =~ /^snp-table$/) {
     my $stp = Circleator::Parser::SNP_Table->new($LOGGER, {'config' => $config});
     return $stp->parse_file($file, $track->{'snp-ref'});
-  }
-  elsif ($feat_file_type =~ /^clc-find-variations-snp$/) {
-    my $sfv = Circleator::Parser::SNP_CLC_Find_Variations->new($LOGGER, {'config' => $config});
-    return $sfv->parse_file($file, $track->{'snp-ref'});
   }
   elsif ($feat_file_type =~ /^VCF$/) {
     my $vcf = undef;
