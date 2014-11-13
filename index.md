@@ -30,11 +30,12 @@ Common uses of the tool include:
 ## Getting Started
 
 Check out the [Installation Guide][install], the detailed [README][] on GitHub, 
-and the [Documentation][docs] for more information.
+and the [Documentation][docs] for more information. There's also a [Google Group][group] for Circleator questions and discussion.
 
 [install]: install.html
 [readme]: http://github.com/jonathancrabtree/Circleator/blob/master/README.md
 [docs]: documentation.html
+[group]: http://groups.google.com/group/circleator
 
 ## Acknowledgments
 
