@@ -1,8 +1,9 @@
-LOCUS       L42023               1830138 bp    DNA     circular BCT 23-OCT-2009
+LOCUS       L42023               1830138 bp    DNA     circular BCT 31-JAN-2014
 DEFINITION  Haemophilus influenzae Rd KW20, complete genome.
 ACCESSION   L42023 U32686-U32848
 VERSION     L42023.1  GI:6626252
 DBLINK      BioProject: PRJNA219
+            BioSample: SAMN02603991
 KEYWORDS    .
 SOURCE      Haemophilus influenzae Rd KW20
   ORGANISM  Haemophilus influenzae Rd KW20
