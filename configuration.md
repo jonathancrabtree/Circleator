@@ -12,11 +12,11 @@ option, determines almost every aspect of how Circleator will draw the figure.
 This document describes the configuration file format in detail, and covers 
 the following topics:
 
-* [File Format](#file_format)
-* [Predefined Tracks](#predefined_tracks)
-* [User Defined Tracks](#user_defined_tracks)
-* [Track Size and Position](#track_size_and_position)
-* [Feature Selection](#feature_selection)
+* [File Format](#file-format)
+* [Predefined Tracks](#predefined-tracks)
+* [User Defined Tracks](#user-defined-tracks)
+* [Track Size and Position](#track-size-and-position)
+* [Feature Selection](#feature-selection)
 * [Colors](#colors)
 * [Labels](#labels)
 * [Opacity](#opacity)
@@ -122,7 +122,7 @@ track type.
 
 [predef_tracks]: predefined-tracks.html
 
-### User Defined Tracks 
+### User Defined Tracks
 (relevant options: **type**, **name**, **glyph**)
 
 If the value in the first column of a line in the configuration file
