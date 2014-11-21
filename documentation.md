@@ -25,6 +25,18 @@ separate project/repository ("Ringmaster").
 
 [cmdline]: command-line.html
 
+## Tutorials
+
+A selection of detailed tutorials for common data types and figure formats:
+
+ * [GenBank Flat File Visualization][gb_annotation] - display the sequence and/or annotation from a GenBank flat file
+ * Investigating patterns of gene conservation in two or more closely-related strains or serovars.
+ * Showing SNPs and/or indels in several microbial strains relative to a reference genome and gene set.
+ * Viewing coverage plots of RNA-Seq data from multiple transcriptomic samples.
+ * Displaying quantitative data using graphs and heat maps.
+
+[gb_annotation]: tutorials/gb_annotation.html
+
 ## Reference Material
  
  * [Circleator README file][readme]
@@ -36,18 +48,6 @@ separate project/repository ("Ringmaster").
 [config_ref]: configuration.html
 [predef_tracks]: predefined-tracks.html
 [gallery]: gallery.html
-
-## Tutorials
-
-The following tutorials (which will be posted here shortly) will provide detailed walkthroughs for common use-cases:
-
- * Displaying annotation and sequence data from a GenBank flat file
- * Investigating patterns of gene conservation in two or more closely-related strains or serovars.
- * Showing SNPs and/or indels in several microbial strains relative to a reference genome and gene set.
- * Viewing coverage plots of RNA-Seq data from multiple transcriptomic samples.
- * Displaying quantitative data using graphs and heat maps.
-
-[gb_annotation]: tutorials/gb_annotation.html
 
 ## Additional Resources
 

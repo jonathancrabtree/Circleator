@@ -1,0 +1,30 @@
+
+# percent-GC graph with coordinates overlaid
+%GC0-100 graph-min=40,graph-max=70,no-labels=1
+coords label-interval=1000000,innerf=same
+
+contigs c1
+# show assembly gaps as light lines on the blue scaffolds
+new ag rectangle innerf=same,outerf=same,feat-type=assembly_gap,color1=white,color2=white,stroke-width=2.5,opacity=0.7
+# label each scaffold with its accession number
+medium-label innerf=same+0.01,label-function=primary_id,feat-track=c1,text-color=white,packer=none,font-weight=bold
+tiny-cgap
+
+# invisible tRNAs
+small-cgap
+tRNAs trnas heightf=0.01,color1=none,color2=none
+
+genes-fwd
+genes-rev
+small-cgap
+
+# link back to invisible tRNAs from a few tracks before
+new r1 rectangle heightf=0.01,color1=#eaeaff,color2=#eaeaff
+new r2 rectangle heightf=0.2,color1=#eaeaff,color2=#eaeaff
+large-label heightf=0.2,outerf=same,feat-track=trnas,style=signpost,label-function=product,draw-link=1,color1=#d0d0f0,color2=#7070f0,link-color=#7070f0,stroke-width=1.5,font-width-frac=3.5
+new r3 rectangle heightf=0.01,color1=#eaeaff,color2=#eaeaff
+
+# figure caption
+small-cgap
+new fc1 label 0.07 innerf=0.075,label-text=Propionibacterium&nbsp;acnes&nbsp;HL005PA3,font-style=italic,label-type=horizontal
+new fc2 label 0.06 innerf=0.01,label-text=all&nbsp;scaffolds&nbsp;>&equals;&nbsp;50kb,label-type=horizontal

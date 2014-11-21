@@ -1,0 +1,8 @@
+
+coords
+small-cgap
+contigs c1
+small-cgap
+genes
+medium-label innerf=1.0,label-function=primary_id,feat-track=c1,label-type=spoke,packer=none
+

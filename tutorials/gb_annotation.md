@@ -1,87 +1,130 @@
 ---
 layout: default
-title: Displaying Annotation and Sequence Data from a GenBank Flat File
+title: GenBank Flat File Visualization
 ---
 
-# Displaying Annotation and Sequence Data from a GenBank Flat File
+# GenBank Flat File Visualization
 
-This tutorial describes how to visualize the contents of a GenBank
-flat file, including both the annotated sequence features and the DNA
-sequence itself. Follow along step-by-step or use the following links
-to jump to a specific section of interest:
-
-1. [Install Circleator](#install_circleator)
-2. [Download a GenBank flat file for a completed genome](#download_a_genbank_flat_file_for_a_completed_genome)
-3. [Display the annotated genes](#display_the_annotated_genes)
-4. [Add a percent GC-content plot](#add_a_percent_gccontent_plot)
-5. [Highlight a specific gene or gene(s)](#highlighting_specific_genes)
-6. [Download a GenBank flat file for an unfinished draft genome](#download_a_genbank_flat_file_for_an_unfinished_draft_genome)
-
-### Install Circleator
-
-To install Circleator please follow the instructions in the Circleator [Installation Guide][install].
+In this tutorial we'll show how to create a simple Circleator figure
+for a genome sequence--and any associated annotation--in GenBank flat
+file format. We'll look at two examples, one of which is a completed
+microbial genome sequence, and one of which is an unfinished draft
+genome sequence.  Before proceeding with the tutorial, please make
+sure that you have Circleator installed as described in the Circleator
+[Installation Guide][install].
 
 [install]: /install.html
 
-### Download a GenBank flat file for a completed genome
+### Outline
 
-We'll start by drawing a Circleator figure for a single finished circular genome. 
-For this example we'll use *Haemophilus influenzae Rd KW20*, the first microbe
-ever to be sequenced. The GenBank flat file for its genome can be downloaded from
-the NCBI web site as follows:
+* **[Example 1](#ex1): Completed Genome of _Haemophilus influenzae Rd KW20_**
 
-1. Go to <http://www.ncbi.nlm.nih.gov/nuccore/L42023>
-2. Find the "Customize view" window in the top right corner of the page.
-3. Select the "Show sequence" option under "Display options" and click on "Update View"
-4. Wait for the sequence to be loaded (a notification bar should appear at the bottom of the page.)
-5. Click on "Send" at the top right of the page and then select "File" under "Choose Destination"
-6. Choose "GenBank (full)" for the Format and click on "Create File"
-7. The GenBank entry should download into a file named "sequence.gb" (or possibly "sequence.gb (1)" 
-or "sequence.gb (2)", etc., if this is not your first time doing this kind of thing.)
-8. Check the first and last few lines of the file to make sure that it looks OK:
+  1. [Download the GenBank flat file](#ex1_download_gb_ff)
+  2. [Download the Circleator configuration file](#ex1_download_config)
+  3. [Run Circleator](#ex1_run_circleator)
+  4. [Convert the figure from SVG to PNG](#ex1_convert_to_png)
+  5. [Add a percent GC-content plot](#ex1_add_percentgc)
+  6. [Magnify and highlight a region of interest](#ex1_highlight_region)
 
-        $ head -5 ~/Downloads/sequence.gb 
-        LOCUS       L42023               1830138 bp    DNA     circular BCT 23-OCT-2009
-        DEFINITION  Haemophilus influenzae Rd KW20, complete genome.
-        ACCESSION   L42023 U32686-U32848
-        VERSION     L42023.1  GI:6626252
-        DBLINK      BioProject: PRJNA219
-        $ tail -5 ~/Downloads/sequence.gb 
-          1830001 gatatagatc acaaaaaagt agtagggttt atagttttat aaaaatgctc gtgctatact
-          1830061 ctgtgcgttg tcttactgag tgagcagtat tactcaaagc aaacagattt gtttaactta
-          1830121 aataaaaggt gaaaatct
-        //
+` `
+ 
+* **[Example 2](#ex2): Draft Genome Sequence of _Propionibacterium acnes HL005PA3_**
 
-9. Rename the downloaded file so we can remember what's in it:
+  1. [Download the GenBank flat file](#ex2_download_gb_ff)
+  2. [Download the Circleator configuration file](#ex2_download_config)
+  3. [Run Circleator](#ex2_run_circleator)
+  4. [Convert the figure from SVG to PNG](#ex2_convert_to_png)
+  5. [Show the scaffold locations](#ex2_show_scaffolds)
+  6. [Filter out the short sequences](#ex2_filter_out_short_seqs)
+  7. [Add some flair](#ex2_add_flair)
+  8. [Finer-grained control of contig/scaffold placement](#ex2_finer_scaffold_control)
+  
+  
 
-        mv ~/Downloads/sequence.gb ./L42023.1.gb
+***
+<a name="ex1"></a>
 
-### Display the annotated genes
+## Example 1: Completed Genome of *Haemophilus influenzae Rd KW20*
 
-Let's start by drawing just two things: an outer circle labeled with
-sequence coordinates (0.0Mb, 0.5Mb, etc.) that represents the 1.83 Mb
-*H. influenzae Rd KW20* genome, and an inner circle with a curved
-black rectangle for each **gene** feature in the input file. The following
-3-line Circleator configuration file ([genes-only.txt][]) accomplishes this goal:
+<a name="ex1_download_gb_ff"></a>
+
+### Download the GenBank flat file
+
+The GenBank accession number for the *Haemophilus influenzae Rd KW20*
+genome sequence is L42023.1. For convenience we've downloaded the
+corresponding GenBank flat file and placed a copy on the same web server
+as the Circleator tutorials (see below). Download this .gb file by
+right-clicking on the link below and selecting "Save link as" or "Save
+as". Save the file somewhere accessible because we'll be using it
+as one of the inputs to Circleator:
+
+[L42023.1.gb][hi_gb]
+
+If you want to download a different genomic sequence entry you can do
+so by using NCBI's GenBank web site, [as described here][gb_download].
+
+[hi_gb]: /tutorials/gb_annotation/L42023.1.gb
+[gb_download]: gb_annotation/gb_download.html
+
+<a name="ex1_download_config"></a>
+
+### Download the Circleator configuration file
+
+Here is a very simple Circleator configuration file. Download it by 
+right-clicking on the following link and selecting "Save link as" or 
+"Save as":
+
+[genes-only.txt][]
+
+Take a look at the content of this file e.g., by using the cat command
+in Linux/Unix:
+
+    $ cat genes-only.txt
 
     coords
     small-cgap
     genes
 
-Note that each of these 3 things is a predefined track type. A complete list
-of these can be found on the [predefined track types page][predef_tracks]. Now 
-that we have both an input annotation file and a Circleator configuration file, 
-all that remains is to run Circleator, like so:
+Each of the lines in this file--and in any Circleator configuration
+file--corresponds to exactly one circular "track" and, by default, the
+first track listed in the file (i.e., **coords** in this case) is the
+outermost one in the figure. Each successive track/line in the
+configuration file is placed immediately inside the track before,
+until the available space in the circle has been exhausted.
 
-    circleator --data=L42023.1.gb --config=genes-only.txt --pad=100 > hinf-genes-only.svg
-    rasterize-svg hinf-genes-only.svg png 3000 3000
+In this particular configuration file each of the lines contains a
+single predefined track name (**coords**, **small-cgap**, and **genes**). These
+predefined tracks display the following:
+
+* **coords** - a circle representing the 1.83 Mb *H. influenzae Rd KW20* genome, with:
+  * a tick mark drawn every 100 kb
+  * a label (e.g., 0.0Mb, 0.5Mb) drawn every 0.5 Mb
+* **small-cgap** - a small (circular) gap between the previous track and the next
+* **genes** - a curved black rectangle at the location of each **gene** feature in the input GenBank file.
+
+A more complete list of the predefined track types can be found on the
+[predefined track types page][predef_tracks]. There is also a page that 
+describes the [configuration file format][config_ff] in detail.
 
 [predef_tracks]: /predefined-tracks.html
+[config_ff]: /configuration.html
 
-If the Circleator output includes a warning about "Unrecognized DBSOURCE data" 
-this may be ignored: it's a warning generated by certain versions of BioPerl but
-it should not affect the results. Here's what the Circleator output might look
-like on the terminal after running the command above:
+<a name="ex1_run_circleator"></a>
+
+### Run Circleator
+
+Now that we have both an input annotation file and a Circleator
+configuration file, all that remains is to run Circleator, like so:
+
+    $ circleator --data=L42023.1.gb --config=genes-only.txt --pad=100 > hinf-genes-only.svg
+
+Note that Circleator prints its (SVG) output to stdout, so we must use
+the shell redirection character (">") to place it into a file of our
+choosing (hinf-genes-only.svg) Also, if the Circleator output includes
+a warning about "Unrecognized DBSOURCE data" this may be ignored: it's
+a warning generated by certain versions of BioPerl but it should not
+affect the results. Here's what the Circleator output might look like
+on the terminal after running the above command:
 
     INFO - started drawing figure using genes-only.txt 
     INFO - reading from annot_file=./L42023.1.gb, seq_file=, with seqlen=
@@ -92,17 +135,45 @@ like on the terminal after running the command above:
     INFO - read 1 contig(s) from 1 input annotation and/or sequence file(s)
     INFO - finished drawing figure using genes-only.txt
 
-And here is the resulting figure:
+<a name="ex1_convert_to_png"></a>
+
+### Convert the figure from SVG to PNG
+
+SVG (Scalable Vector Graphics) format is a vector-based graphics
+format, meaning that the image is composed of geometrical primitives
+like lines, circles, and arcs. Magnifying a vector-based image does
+not result in any loss of image quality, making SVG well-suited for
+publication purposes, in which a very high-quality image is
+desirable. Image formats like JPEG and PNG are “raster” (pixel-based)
+formats, in which the image is made up of many colored rectangular
+blocks (the pixels), like an LCD screen. Some programs, like Adobe
+Illustrator, can view and manipulate SVG images directly. For many
+purposes, however, it is convenient to have a pixel-based image
+format. The rasterize-svg utility, distributed with Circleator, makes
+use of the Apache Batik package to convert SVG images to either PNG,
+JPEG, or PDF. (PDF is also a vector-based format, although both it and
+SVG may _contain_ pixel-based images.) Converting our SVG-format
+figure to a PNG image will take a few seconds, and can be done with
+the following command:
+
+    rasterize-svg hinf-genes-only.svg png 3000 3000
+
+When rasterizing SVG it is necessary to specify the size of the
+resulting raster image, and the "3000 3000" indicate that the image
+should be 3000 pixels wide by 3000 pixels high. Here is the resulting
+PNG image:
 
 <div class='sample_image'>
 
 <em>hinf-genes-only.png</em><br>
-(config: <a href='gb_annotation/genes-only.txt'>genes-only.txt</a>, full size <a href='gb_annotation/hinf-genes-only-3000.png'>PNG</a>&nbsp;|&nbsp;<a href='gb_annotation/hinf-genes-only.svg'>SVG</a>)  
+(data: <a href='gb_annotation/L42023.1.gb'>L42023.1.gb</a> config: <a href='gb_annotation/genes-only.txt'>genes-only.txt</a>, full size <a href='gb_annotation/hinf-genes-only-3000.png'>PNG</a>&nbsp;|&nbsp;<a href='gb_annotation/hinf-genes-only.svg'>SVG</a>)  
 <img src='gb_annotation/hinf-genes-only-400.png' class='sample_image'>
 
 </div>
 
 [genes-only.txt]: gb_annotation/genes-only.txt
+
+<a name="ex1_add_percentgc"></a>
 
 ### Add a percent GC-content plot
 
@@ -180,6 +251,387 @@ And the figure now looks like this:
 
 </div>
 
-- gene-free region is only about 1kb (922039 - 922991)
-http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1160521/
-find and highlight all low-gc regions, look for HI0687 HI0688 HI0051-HI0054
+<a name="ex1_highlight_region"></a>
+
+### Magnify and highlight a region of interest
+
+By default Circleator draws each genomic sequence to scale, but the
+scale can be changed in order to show greater detail in regions of
+interest (at the expense of having a figure that is no longer drawn to
+scale.) In this next figure we'll use the **scaled-segment-list** track
+type to modify the scale, expanding a single region from 910-930kb by
+a factor of 25. Circleator will automatically _compress_ the scale for
+the rest of the figure to compensate for the change. Let's run
+Circleator and rasterize the resulting SVG file, and then talk about
+what changes were made to the configuration file:
+
+    circleator --data=L42023.1.gb --config=explore-region-1.txt --pad=100 --debug=misc > explore-region-1.svg
+    rasterize-svg explore-region-1.svg 3000 3000
+
+Here's what the result should look like. Notice that the highlighted
+region at the bottom (highlighted in pink and labeled "25X") has been 
+expanded compared to the rest of the figure:
+
+<div class='sample_image'>
+
+<em>hinf-explore-region-1.png</em><br>
+(config: <a href='gb_annotation/explore-region-1.txt'>explore-region-1.txt</a>, full size <a href='gb_annotation/hinf-explore-region-1-3000.png'>PNG</a>&nbsp;|&nbsp;<a href='gb_annotation/hinf-explore-region-1.svg'>SVG</a>)  
+<img src='gb_annotation/hinf-explore-region-1-400.png' class='sample_image'>
+
+</div>
+
+The following two lines in [the configuration file](gb_annotation/explore-region-1.txt)
+effect the change of scale:
+
+    # zoom in 25X on the region from 910-930kb
+    new r1 load user-feat-fmin=915000,user-feat-fmax=930000,user-feat-type=roi
+    new ss1 scaled-segment-list scale=25,feat-type=roi
+
+Note that any changes in scale will affect only the _subsequent_ lines
+in the configuration file, which is why we've placed the
+scale-changing lines above at the very beginning of the file. Note
+also that we've broken the change of scale into two parts: in the
+first line we define a new user-defined feature, with position
+910-930kb and type "roi":
+
+    new r1 load user-feat-fmin=915000,user-feat-fmax=930000,user-feat-type=roi
+
+In the second line, we scale by a factor of 25X all those regions
+covered by features of type "roi" i.e., the single region we just
+created:
+
+    new ss1 scaled-segment-list scale=25,feat-type=roi
+
+The next several lines of the configuration file are identical to those
+from the previous example and then the final four lines add some color
+and labels to the expanded region:
+
+    # highlight and label the zoomed region
+    new h1 rectangle innerf=0,outerf=1.1,opacity=0.2,color1=purple,feat-type=roi
+    coords outerf=1.1,fmin=915000,fmax=930000,tick-interval=1000,label-interval=5000,no-circle=1,label-units=kb,label-type=horizontal
+    large-label innerf=0.4,label-text=25X,label-position=922500,label-type=horizontal
+    medium-label innerf=0.7,label-type=spoke,label-function=locus,overlapping-feat-type=roi,feat-type=gene,packer=none,heightf=0.04
+
+Let's look at each of these four lines in detail:
+
+    new h1 rectangle innerf=0,outerf=1.1,opacity=0.2,color1=purple,feat-type=roi
+
+The first field in any line is mandatory and must be either the name
+of a predefined track or the keyword **new** otherwise (as in this
+case.) The second optional field assigns a name to the track, **h1**
+in this case. Assigning a unique name is recommended so that other
+tracks may refer unambiguously to this one if needed. The third field
+specifies the "glyph" or underlying graphical primitive to use, in
+this case **rectangle**, the curved rectangle glyph that Circleator
+uses for many of its tracks. The final field specifies the track
+options, separated by commas. The options in this line are:
+
+* **innerf=0** : the inner "edge" of the track is the very center of the circle
+* **outerf=1.1** : the outer edge of the track is 110% of the circle's radius
+* **opacity=0.2** : the track is 80% transparent
+* **color=purple** : the track is shaded purple (light purple because of the opacity setting)
+* **feat-type=roi** : only features of type "roi" (i.e., our single region of interest) are drawn
+
+    coords outerf=1.1,fmin=915000,fmax=930000,tick-interval=1000,label-interval=5000,no-circle=1,label-units=kb,label-type=horizontal
+
+The second line (above) uses the **coords** predefined track type,
+which draws a circle and labels it with coordinate positions. We
+already have a *coords* track in the configuration file, which draws a
+full circle and then places a label every 0.5Mb. This **coords**
+track, on the other hand, covers _only_ the region of interest
+(**fmin=915000,fmax=930000**) and does not draw a circle, only tick
+marks and labels (**no-circle=1**)
+
+    large-label innerf=0.4,label-text=25X,label-position=922500,label-type=horizontal
+
+The third line (above) uses the **large-label** predefined track type
+to label the expanded region with a large "25X" label. Note that the
+label has been positioned manually at the center of the region
+(**label-position=922500**) and that a "horizontal" label type has
+been chosen (as opposed to the default, which is to draw the label on
+an arc of the circle.)
+
+    medium-label innerf=0.7,label-type=spoke,label-function=locus,overlapping-feat-type=roi,feat-type=gene,packer=none,heightf=0.04
+
+The fourth line (above) uses the **medium-label** predefined track
+type to label each gene (**feat-type=gene**) with its locus id
+(**label-function=locus**). The "spoke" **label-type** is used in this
+case to minimize the amount of space (around the circle) taken up by
+each label. Finally, _and crucially_, note that the
+**overlapping-feat-type=roi** option restricts this labeling so that
+_only_ gene features that also happen to overlap with the region of
+interest are labeled in this manner. Without this option _all_ of the
+genes would be labeled, and the labels for those not in the expanded
+region would be hard or impossible to read because they'd be packed
+too densely.
+
+
+***
+<a name="ex2"></a>
+
+##  Example 2: Draft Genome Sequence of _Propionibacterium acnes HL005PA3_
+
+<a name="ex2_download_gb_ff"></a>
+
+### Download the GenBank flat file(s)
+
+Unlike the _Haemophilus influenzae_ sequence, which is a single
+finished sequence, the _Propionibacterium acnes_ sequence is a
+high-quality draft that comprises 17 separate scaffolds. Each of the
+17 scaffold sequences is a separate GenBank entry, and we could
+download them as separate files, but the simplest approach is to
+download a single GenBank flat file that contains all 17 sequences and
+their associated annotation. For convenience we've placed a copy of
+this GenBank file at the following location. Download it by
+right-clicking on the link below and selecting "Save link as" or "Save
+as". Save the file somewhere accessible because we'll be using it as
+one of the inputs to Circleator:
+
+[GL383461-GL383477.gb][pa_gb]
+
+This file can also be downloaded from the GenBank web site with the
+following sequence of steps:
+
+1. Go to http://www.ncbi.nlm.nih.gov/genbank and search "All Databases" for "Propionibacterium acnes HL005PA3"
+2. Click on the result row for "Assembly", to get to [this page](http://www.ncbi.nlm.nih.gov/assembly/GCF_000144345.1/).
+3. Click on the "WGS Project" link, to get to [this page](http://www.ncbi.nlm.nih.gov/nuccore/ADZM00000000.1/).
+4. Click on the "WGS_SCAFLD" link at the bottom ("GL383461-GL383477") to get to [this page](http://www.ncbi.nlm.nih.gov/nuccore?term=GL383461:GL383477[PACC]).
+4. Use the "Send to:" pull-down menu at the top right to select "File" and "GenBank (full)" for the format
+5. Click on "Create File"
+6. Rename the downloaded file from "sequence.gb" to "GL383461-GL383477.gb"
+
+[pa_gb]: /tutorials/gb_annotation/GL383461-GL383477.gb
+
+<a name="ex2_download_config"></a>
+
+### Download the Circleator configuration file
+
+We'll start with the same Circleator configuration file that was used
+in [Example 1](#ex1). If you have not already downloaded it, you may do so by
+right-clicking on the following link and selecting "Save link as" or 
+"Save as":
+
+[genes-only.txt][]
+
+Recall that this 3-line configuration file displays the coordinate system
+labels and the gene features, and nothing else.
+
+[genes-only.txt]: gb_annotation/genes-only.txt
+
+<a name="ex2_run_circleator"></a>
+
+### Run Circleator
+
+Now that we have both an input annotation file and a Circleator
+configuration file, all that remains is to run Circleator, like so:
+
+    $ circleator --data=GL383461-GL383477.gb --config=genes-only.txt --pad=100 > pa-genes-only.svg
+
+Notice that the Circleator output is slightly more verbose than in 
+Example 1, because for each of the contigs and/or scaffolds in the
+input file it prints a line giving the sequence length and feature
+count:
+
+    INFO - started drawing figure using genes-only.txt
+    INFO - reading from annot_file=./GL383461-GL383477.gb, seq_file=, with seqlen=
+    INFO - GL383461: 493 feature(s) and 246684 bp of sequence
+    INFO - GL383462: 19 feature(s) and 8634 bp of sequence
+    INFO - GL383463: 649 feature(s) and 336359 bp of sequence
+    INFO - GL383464: 400 feature(s) and 182889 bp of sequence
+    INFO - GL383465: 1862 feature(s) and 893497 bp of sequence
+    INFO - GL383466: 5 feature(s) and 4650 bp of sequence
+    INFO - GL383467: 9 feature(s) and 5617 bp of sequence
+    INFO - GL383468: 219 feature(s) and 97238 bp of sequence
+    INFO - GL383469: 766 feature(s) and 347101 bp of sequence
+    INFO - GL383470: 518 feature(s) and 240912 bp of sequence
+    INFO - GL383471: 5 feature(s) and 778 bp of sequence
+    INFO - GL383472: 3 feature(s) and 1168 bp of sequence
+    INFO - GL383473: 186 feature(s) and 90326 bp of sequence
+    INFO - GL383474: 3 feature(s) and 1380 bp of sequence
+    INFO - GL383475: 3 feature(s) and 889 bp of sequence
+    INFO - GL383476: 5 feature(s) and 616 bp of sequence
+    INFO - GL383477: 37 feature(s) and 16090 bp of sequence
+    INFO - read 17 contig(s) from 1 input annotation and/or sequence file(s)
+    INFO - finished drawing figure using genes-only.txt
+
+<a name="ex2_convert_to_png"></a>
+
+### Convert the figure from SVG to PNG
+
+As [in example 1](#ex1_convert_to_png), let's convert the SVG image to PNG:
+
+    $ rasterize-svg pa-genes-only.svg png 3000 3000
+
+Here is the result:
+
+<div class='sample_image'>
+
+<em>pa-genes-only.png</em><br>
+(data: <a href='gb_annotation/GL383461-GL383477.gb'>GL383461-GL383477.gb</a> config: <a href='gb_annotation/genes-only.txt'>genes-only.txt</a>, full size <a href='gb_annotation/pa-genes-only-3000.png'>PNG</a>&nbsp;|&nbsp;<a href='gb_annotation/pa-genes-only.svg'>SVG</a>)  
+<img src='gb_annotation/pa-genes-only-400.png' class='sample_image'>
+
+</div>
+
+`genes-only.txt`:
+
+    coords
+    small-cgap
+    genes
+
+Note that in this figure we have several gene-free regions, which did
+not appear in example 1. The reason for this is that we have 17
+scaffolds and, by default, Circleator places a 20 kb gap between each
+pair of adjacent scaffolds or contigs. Also by default, Circleator
+draws the contigs/scaffolds in the same order (clockwise, starting at
+the origin) that they appear in the input GenBank file.
+
+<a name="ex2_show_scaffolds"></a>
+
+### Show the scaffold locations
+
+Let's modify the configuration file slightly so that we can see the
+scaffold locations and accession numbers in the figure. Here's the
+updated configuration file:
+
+[scaffolds-and-genes.txt][]
+
+[scaffolds-and-genes.txt]: gb_annotation/scaffolds-and-genes.txt
+
+Now run Circleator and convert the SVG figure to PNG format. Note that
+we're increasing the `--pad` amount from 100 to 200 to make room for the
+scaffold labels around the outside of the circle:
+
+    $ circleator --data=GL383461-GL383477.gb --config=scaffolds-and-genes.txt --pad=200 > pa-scaffolds-and-genes.svg
+    $ rasterize-svg pa-scaffolds-and-genes.svg png 3000 3000
+
+[GL383461-GL383477.gb]: gb_annotation/GL383461-GL383477.gb
+
+<div class='sample_image'>
+
+<em>pa-scaffolds-and-genes.png</em><br>
+(data: <a href='gb_annotation/GL383461-GL383477.gb'>GL383461-GL383477.gb</a> config: <a href='gb_annotation/scaffolds-and-genes.txt'>scaffolds-and-genes.txt</a>, full size <a href='gb_annotation/pa-scaffolds-and-genes-3000.png'>PNG</a>&nbsp;|&nbsp;<a href='gb_annotation/pa-scaffolds-and-genes.svg'>SVG</a>)  
+<img src='gb_annotation/pa-scaffolds-and-genes-400.png' class='sample_image'>
+
+</div>
+
+`scaffolds-and-genes.txt`:
+
+    coords
+    small-cgap
+    contigs c1
+    small-cgap
+    genes
+    medium-label innerf=1.0,label-function=primary_id,feat-track=c1,label-type=spoke,packer=none
+
+Note that:
+
+* the `contigs` predefined track type displays each contig or scaffold as a blue curved rectangle
+* we've given the `contigs` track a name (`c1`) so we can refer to it later
+* the `medium-label` track at the end labels each scaffold with its primary_id/accession number
+* `label-type=spoke` is used to prevent adjacent labels from overlapping
+* `packer=none` tells Circleator not to try to move labels around to avoid collisions
+* some of the scaffolds are _very_ small (616 bp according to the circleator output)
+
+<a name="ex2_filter_out_short_seqs"></a>
+
+### Filter out the short sequences
+
+Circleator has a couple of command-line options that affect the handling of multi-sequence
+input data. One is `--contig_gap_size`, which can be used to change the default gap placed
+between adjacent contigs/scaffolds (20kb by default). Another is `--contig_min_size`, which
+specifies a minimum contig/scaffold length (in bp). Sequences that are shorter than this 
+will be excluded from the display. Let's use these two options, along with the same 
+configuration file as the previous example, to change the figure a bit:
+
+    $ circleator --data=GL383461-GL383477.gb --config=scaffolds-and-genes.txt --pad=200 --contig_min_size=50000 --contig_gap_size=15000 > pa-no-short-scaffolds.svg
+    $ rasterize-svg pa-no-short-scaffolds.svg png 3000 3000
+
+Circleator reports that only 8 of the 17 scaffolds are 50kb or longer:
+
+    INFO - started drawing figure using scaffolds-and-genes.txt
+    INFO - reading from annot_file=./GL383461-GL383477.gb, seq_file=, with seqlen=
+    INFO - GL383461: 493 feature(s) and 246684 bp of sequence
+    INFO - GL383463: 649 feature(s) and 336359 bp of sequence
+    INFO - GL383464: 400 feature(s) and 182889 bp of sequence
+    INFO - GL383465: 1862 feature(s) and 893497 bp of sequence
+    INFO - GL383468: 219 feature(s) and 97238 bp of sequence
+    INFO - GL383469: 766 feature(s) and 347101 bp of sequence
+    INFO - GL383470: 518 feature(s) and 240912 bp of sequence
+    INFO - GL383473: 186 feature(s) and 90326 bp of sequence
+    INFO - read 8 contig(s) from 1 input annotation and/or sequence file(s)
+    INFO - finished drawing figure using scaffolds-and-genes.txt
+
+<div class='sample_image'>
+
+<em>pa-no-short-scaffolds.png</em><br>
+(data: <a href='gb_annotation/GL383461-GL383477.gb'>GL383461-GL383477.gb</a> config: <a href='gb_annotation/scaffolds-and-genes.txt'>scaffolds-and-genes.txt</a>, full size <a href='gb_annotation/pa-no-short-scaffolds-3000.png'>PNG</a>&nbsp;|&nbsp;<a href='gb_annotation/pa-no-short-scaffolds.svg'>SVG</a>)  
+<img src='gb_annotation/pa-no-short-scaffolds-400.png' class='sample_image'>
+
+</div>
+
+Note that:
+
+* the coordinate labels (`coords`) around the outside of the circle include the gaps as well as the scaffold sequences
+* some of the scaffold labels are colliding with the coordinate labels
+
+<a name="ex2_add_flair"></a>
+
+### Add some flair
+
+Now let's make the figure a little more interesting by adding some
+tracks and, since all of the scaffolds are now relatively long,
+overlaying the scaffold id directly on the curved blue scaffold
+rectangles. Here's the updated configuration file:
+
+[scaffolds-and-genes-plus.txt][]
+
+    $ circleator --data=GL383461-GL383477.gb --config=scaffolds-and-genes-plus.txt --pad=200 --contig_min_size=50000 --contig_gap_size=15000 > pa-no-short-scaffolds-plus.svg
+    $ rasterize-svg pa-no-short-scaffolds-plus.svg png 3000 3000
+
+[scaffolds-and-genes-plus.txt]: gb_annotation/scaffolds-and-genes-plus.txt
+
+<div class='sample_image'>
+
+<em>pa-no-short-scaffolds.png</em><br>
+(data: <a href='gb_annotation/GL383461-GL383477.gb'>GL383461-GL383477.gb</a> config: <a href='gb_annotation/scaffolds-and-genes-plus.txt'>scaffolds-and-genes-plus.txt</a>, full size <a href='gb_annotation/pa-no-short-scaffolds-plus-3000.png'>PNG</a>&nbsp;|&nbsp;<a href='gb_annotation/pa-no-short-scaffolds-plus.svg'>SVG</a>)  
+<img src='gb_annotation/pa-no-short-scaffolds-plus-400.png' class='sample_image'>
+
+</div>
+
+`scaffolds-and-genes-plus.txt`:
+    
+    # percent-GC graph with coordinates overlaid
+    %GC0-100 graph-min=40,graph-max=70,no-labels=1
+    coords label-interval=1000000,innerf=same
+    
+    contigs c1
+    # show assembly gaps as light lines on the blue scaffolds
+    new ag rectangle innerf=same,outerf=same,feat-type=assembly_gap,color1=white,color2=white,stroke-width=2.5,opacity=0.7
+    # label each scaffold with its accession number
+    medium-label innerf=same+0.01,label-function=primary_id,feat-track=c1,text-color=white,packer=none,font-weight=bold
+    tiny-cgap
+    
+    # invisible tRNAs
+    small-cgap
+    tRNAs trnas heightf=0.01,color1=none,color2=none
+    
+    genes-fwd
+    genes-rev
+    small-cgap
+    
+    # link back to invisible tRNAs from a few tracks before
+    new r1 rectangle heightf=0.01,color1=#eaeaff,color2=#eaeaff
+    new r2 rectangle heightf=0.2,color1=#eaeaff,color2=#eaeaff
+    large-label heightf=0.2,outerf=same,feat-track=trnas,style=signpost,label-function=product,draw-link=1,color1=#d0d0f0,color2=#7070f0,link-color=#7070f0,stroke-width=1.5,font-width-frac=3.5
+    new r3 rectangle heightf=0.01,color1=#eaeaff,color2=#eaeaff
+    
+    # figure caption
+    small-cgap
+    new fc1 label 0.07 innerf=0.075,label-text=Propionibacterium&nbsp;acnes&nbsp;HL005PA3,font-style=italic,label-type=horizontal
+    new fc2 label 0.06 innerf=0.01,label-text=all&nbsp;scaffolds&nbsp;>&equals;&nbsp;50kb,label-type=horizontal
+
+
+
+<a name='ex2_finer_scaffold_control'></a>
+
+### Finer-grained control of contig/scaffold placement
