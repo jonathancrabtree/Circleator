@@ -36,10 +36,10 @@ A selection of detailed tutorials for common data types and figure formats:
  * [Graphs and heat maps][graphs_heat_maps] - display quantitative data using graphs and heat maps.
 
 [gb_annotation]: tutorials/gb_annotation.html
-[gene_conservation]: 
-[snps_indels]: 
-[rna_seq_coverage]: 
-[graphs_heat_maps]: 
+[gene_conservation]: tutorials/
+[snps_indels]: tutorials/
+[rna_seq_coverage]: tutorials/
+[graphs_heat_maps]: tutorials/
 
 ## Reference Material
  

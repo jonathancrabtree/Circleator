@@ -12,10 +12,10 @@ line.  A web-based interface ("Ringmaster") to Circleator is also
 under development and a prototype has been created but not yet
 released. The following topics are covered here:
 
-* [Quick Start Guide](#quick_start_guide) - how to run Circleator on the command line
-* [Command Line Options](#command_line_options) - customizing Circleator's output with command line options
-* [Configuration File](#configuration_file) - writing/customizing the Circleator configuration file
-* [Input Data](#input_data) - various options for specifying the input sequence(s) and annotation
+* [Quick Start Guide](#quick-start-guide) - how to run Circleator on the command line
+* [Command Line Options](#command-line-options) - customizing Circleator's output with command line options
+* [Configuration File](#configuration-file) - writing/customizing the Circleator configuration file
+* [Input Data](#input-data) - various options for specifying the input sequence(s) and annotation
 
 ### Quick Start Guide
 
@@ -26,7 +26,7 @@ following two things in order to run the program successfully:
 [install]: install.html
 
 1. Sequence and/or sequence annotation in a BioPerl-supported format (*e.g.*, a GenBank flat file.)
-2. A Circleator [configuration file](#configuration_file) that specifies how to plot this information.
+2. A Circleator [configuration file](#configuration-file) that specifies how to plot this information.
 
 We'll start by using a GenBank flat file and a Circleator
 configuration file that are both included in the downloadable
@@ -216,8 +216,8 @@ containing some internal gaps of known lengths) or based on multiple
 contiguous genome sequences, separated by artificial gaps of arbitrary
 size:
 
-* [Single input sequence](#single_sequence)
-* [Multiple input sequences](#multiple_sequences)
+* [Single input sequence](#single-sequence)
+* [Multiple input sequences](#multiple-sequences)
 
 #### Single Sequence
 
@@ -242,8 +242,8 @@ using the `--data` and/or `--sequence` options, just as in the
 single input sequence case. In the latter case the paths to the various input files must be placed into a tab-delimited flat
 file that is then passed to the Circleator's `--contig_list` option:
 
-* [Multiple sequences in one file](#multiple_sequences_in_one_file)
-* [Multiple sequences in several files](#multiple_sequences_in_several_files)
+* [Multiple sequences in one file](#multiple-sequences-in-one-file)
+* [Multiple sequences in several files](#multiple-sequences-in-several-files)
 
 ##### Multiple sequences in one file
 

@@ -9,11 +9,11 @@ Please note that the installation guide currently covers only
 installation on Linux systems, although a similar approach should 
 also work on Windows and MAC OS X systems:
 
-1. [Install Prerequisites](#install_prerequisites)
+1. [Install Prerequisites](#install-prerequisites)
     1. Install packages
     2. Install additional Perl modules
-2. [Download Release](#download_release)
-3. [Build and Install](#build_and_install)
+2. [Download Release](#download-release)
+3. [Build and Install](#build-and-install)
 4. [Test](#test)
 
 If you're having trouble with the install process send us a message 
