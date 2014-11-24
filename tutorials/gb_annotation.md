@@ -631,7 +631,229 @@ rectangles. Here's the updated configuration file:
     new fc2 label 0.06 innerf=0.01,label-text=all&nbsp;scaffolds&nbsp;>&equals;&nbsp;50kb,label-type=horizontal
 
 
+There's a lot going on here, so let's take it line-by-line. Note that 
+ines that start with "#" are comments and are ignored by Circleator:
+
+    # percent-GC graph with coordinates overlaid
+
+We've changed the percent-GC graph range from 0-100 to 40-70. This is
+because the artificial 15 kb gaps between the scaffolds are runs of
+"N"s, which have 0% GC-content, and without these gap regions the
+actual minimum %GC would be significantly higher (and would depend on
+the nonoverlapping graph window size, which is 5 kb by deafult.)
+Setting `no-labels=1` prevents the min/max labels on the graph from
+overlapping the "0.0 Mb" coordinate label:
+
+    %GC0-100 graph-min=40,graph-max=70,no-labels=1
+
+
+Since the %GC graph comes _before_ the `coords` track it is drawn underneath it. This is why
+both tracks are visible even though the `opacity` option was not used. Note that we've
+changed the `label-interval` to 1 Mb (to prevent the "2.5 Mb" label from running into the
+"0 Mb" label.) and have set `innerf=same`, which means that the inner edge of this track
+(`coords`) should be set to the same value as the inner edge of the preceding track (the 
+percent-GC graph). This forces the two to overlap:
+
+    coords label-interval=1000000,innerf=same
+
+The contigs appear as blue rectangles, as before:
+    
+    contigs c1
+
+The input GenBank file contains some features of type "assembly_gap",
+to indicate the location of unclosed gaps in the scaffold
+sequences. Here we draw them as slightly transparent (`opacity=0.7`)
+white rectangles (`color1=white,color2=white`) overlaid on the
+preceding track (`outerf=same,innerf=same`).  Setting
+`feat-type=assembly_gap` ensures that only features of type
+"assembly_gap" will be highlighted in this manner. Finally, since the
+assembly gaps are all very small with respect to the total sequence
+length, we'll draw them slightly larger than they actually are in
+order to ensure that they're visible (`stroke-width=2.5`). Note that
+`stroke-width` is a CSS property that's used in SVG to specify how
+wide lines should be drawn. The `rectangle` glyph is a curved
+rectangle with both a border (whose thickness is controlled by the
+stroke-width) and also a filled interior. The two color options
+(`color1` and `color2`) determine what color to draw the border lines
+and fill the interior:
+
+    # show assembly gaps as light lines on the blue scaffolds
+    new ag rectangle innerf=same,outerf=same,feat-type=assembly_gap,color1=white,color2=white,stroke-width=2.5,opacity=0.7
+
+The next track overlays the accession number of each scaffold on the 
+blue rectangle of the scaffold itself. We set `innerf=same+0.1` to indicate
+that the label should be slightly _higher_ (i.e., closer to the outside of the
+circle) than the inside edge of the previous track (which is actually the
+gap-highlight track but that's OK, because it also has `innerf=0`) 
+The `feat-track` specifies which features are being labeled (the contigs
+from the track named `c1`) and the `label-function` specifies _how_ they
+should be labeled (with their primary id.) The remaining options specify 
+the color (`text-color=white`) and font weight (`font-weight=bold`) and
+`packer=none` tells Circleator not to move the labels around vertically 
+to avoid collisions (because we know that the scaffolds are relatively large
+and the accession numbers are relatively small, so there shouldn't be
+any collisions):
+
+    # label each scaffold with its accession number
+    medium-label innerf=same+0.01,label-function=primary_id,feat-track=c1,text-color=white,packer=none,font-weight=bold
+    tiny-cgap
+
+Next we create a track just for the tRNA features and we give it a
+name (`trnas`.) We're making it very small (`heightf=0.01`) and we're
+also making it invisible (!), by setting `color1=none,color2=none`. 
+That's because we dont actually want to draw the tRNAs until after
+we're done drawing the genes, _but_ we want to draw connecting lines
+back up to this track position so it's clear where the tRNAs are
+located relative to the other genes:
+    
+    # invisible tRNAs
+    small-cgap
+    tRNAs trnas heightf=0.01,color1=none,color2=none
+
+Now we'll draw the gene features. The only difference here is that we've
+split forward and reverse-strand genes into distinct tracks:
+    
+    genes-fwd
+    genes-rev
+    small-cgap
+
+Now we're ready to show the tRNA features.
+
+    # link back to invisible tRNAs from a few tracks before
+    new r1 rectangle heightf=0.01,color1=#eaeaff,color2=#eaeaff
+    new r2 rectangle heightf=0.2,color1=#eaeaff,color2=#eaeaff
+    large-label heightf=0.2,outerf=same,feat-track=trnas,style=signpost,label-function=product,draw-link=1,color1=#d0d0f0,color2=#7070f0,link-color=#7070f0,stroke-width=1.5,font-width-frac=3.5
+    new r3 rectangle heightf=0.01,color1=#eaeaff,color2=#eaeaff
+
+Finally we're going to add some text in the middle of the figure to
+let people know what they're looking at:
+    
+    # figure caption
+    small-cgap
+    new fc1 label 0.07 innerf=0.075,label-text=Propionibacterium&nbsp;acnes&nbsp;HL005PA3,font-style=italic,label-type=horizontal
+    new fc2 label 0.06 innerf=0.01,label-text=all&nbsp;scaffolds&nbsp;>&equals;&nbsp;50kb,label-type=horizontal
+
 
 <a name='ex2_finer_scaffold_control'></a>
 
 ### Finer-grained control of contig/scaffold placement
+
+For finer-grained control over the placement of contigs or scaffolds in a multi-sequence figure
+we have to use the `--contig_list` command line option, [as described here][contig_list_docs].
+With this option it is possible to:
+
+* Use reference sequences from multiple input files
+* Specify the order _and orientation_ of each sequence
+* Specify the gap to place between each pair of adjacent sequences
+* Tag sequences that belong to the same source genome (for displaying multiple reference genomes/organisms)
+
+[contig_list_docs]: /command-line.html#command_line_options
+
+When using `--contig_list` it's assumed that each input
+contig/scaffold is in a separate file (that contains nothing else),
+and each line of the (tab-delimited text) file referenced by
+`--contig_list` gives the location of one sequence. Here's the
+`--contig_list` file for our next example,
+[pa-scaffolds-1.txt](gb_annotation/pa-scaffolds-1.txt). It lists
+the 5 longest _P. acnes_ scaffolds, in order of decreasing size:
+
+    Scfld7			GL383465.gb	
+    gap		5000			
+    Scfld11			GL383469.gb	
+    gap		10000			
+    Scfld5			GL383463.gb	
+    gap		15000			
+    Scfld0			GL383461.gb	
+    gap		20000			
+    genome	P. acnes				
+    Scfld12			GL383470.gb	
+    gap		25000			
+    genome	unknown				
+
+And here are the individual .gb files referenced in this `contig_list` file:
+
+ * [GL383465.gb](gb_annotation/GL383465.gb)
+ * [GL383469.gb](gb_annotation/GL383469.gb)
+ * [GL383463.gb](gb_annotation/GL383463.gb)
+ * [GL383461.gb](gb_annotation/GL383461.gb)
+ * [GL383470.gb](gb_annotation/GL383470.gb)
+
+Note that:
+
+ * We've used the scaffold id (e.g., Scfld11) rather than the GenBank accession as the primary id for each sequence.
+ * This file format is very sensitive to whitespace and each line _must_ have at least 5 tab-delimited fields (even if some of them are empty, as is the case here.)
+ * We've placed a gap between each pair of scaffolds, using an increasing gap size (5kb, 10kb, 15kb, etc.) Circleator will automatically create a feature of type 'contig_gap' for each one. (It does not use 'gap' as the feature type as many GenBank files already contain features of this type.)
+ * There are two `genome` lines. These have the effect of declaring all previous scaffolds (that have not yet been assigned to a genome/organism) as coming from that genome. Circleator will automatically create a feature of type 'genome' that spans all the relevant contigs/scaffolds.
+ * When we run Circleator (see below) we'll use the `--contig_list` option in place of the `--data` and/or `--sequence` options.
+
+Now let's run Circleator and convert the SVG to PNG. For this to work correctly your current directory must contain not only the configuration file, but also the `contig_list` file *and* all 5 of the ".gb" files that it references:
+
+    $ circleator --contig_list=pa-scaffolds-1.txt  --config=scaffolds-and-genes-plus-contig-list.txt --pad=200 > pa-contig-list-1.svg
+    $ rasterize-svg pa-contig-list-1.svg png 3000 3000
+
+<div class='sample_image'>
+
+<em>pa-contig-list-1.png</em><br>
+(data: <a href='gb_annotation/GL383465.gb'>GL383465.gb</a>, <a href='gb_annotation/GL383469.gb'>GL383469.gb</a>, <a href='gb_annotation/GL383463.gb'>GL383463.gb</a>, <a href='gb_annotation/GL383461.gb'>GL383461.gb</a>, <a href='gb_annotation/GL383470.gb'>GL383470.gb</a> config: <a href='gb_annotation/scaffolds-and-genes-plus-contig-list.txt'>scaffolds-and-genes-plus-contig-list.txt</a>, full size <a href='gb_annotation/pa-contig-list-1-3000.png'>PNG</a>&nbsp;|&nbsp;<a href='gb_annotation/pa-contig-list-1.svg'>SVG</a>)  
+<img src='gb_annotation/pa-contig-list-1-400.png' class='sample_image'>
+
+</div>
+
+`scaffolds-and-genes-plus-contig-list.txt`:
+
+    # percent-GC graph with coordinates overlaid
+    %GC0-100 graph-min=40,graph-max=70,no-labels=1
+    coords label-interval=1000000,innerf=same
+    
+    contigs c1
+    # show assembly gaps as light lines on the blue scaffolds
+    new ag rectangle innerf=same,outerf=same,feat-type=assembly_gap,color1=white,color2=white,stroke-width=2.5,opacity=0.7
+    # label each scaffold with its accession number
+    medium-label innerf=same+0.01,label-function=primary_id,feat-track=c1,text-color=white,packer=none,font-weight=bold
+    tiny-cgap
+    
+    # invisible tRNAs
+    small-cgap
+    tRNAs trnas heightf=0.01,color1=none,color2=none
+    
+    genes-fwd
+    genes-rev
+    small-cgap
+    
+    # link back to invisible tRNAs from a few tracks before
+    new r1 rectangle heightf=0.01,color1=#eaeaff,color2=#eaeaff
+    new r2 rectangle heightf=0.2,color1=#eaeaff,color2=#eaeaff
+    large-label heightf=0.2,outerf=same,feat-track=trnas,style=signpost,label-function=product,draw-link=1,color1=#d0d0f0,color2=#7070f0,link-color=#7070f0,stroke-width=1.5,font-width-frac=3.5
+    new r3 rectangle heightf=0.01,color1=#eaeaff,color2=#eaeaff
+    
+    # display 'genome' feature from contig_list file
+    new gr1 rectangle outerf=0.4,heightf=0.05,feat-type=genome,color1=#a0a0a0,color2=#000000,stroke-width=2
+    medium-label grl1 innerf=same,label-function=primary_id,feat-track=gr1,font-weight=bold
+    
+    # highlight gaps between scaffolds/contigs
+    new cg1 rectangle innerf=same,outerf=1.1,feat-type=contig_gap,opacity=0.3,color1=green,color2=darkgreen,stroke-width=2
+    medium-label cgl1 innerf=1.1,feat-track=cg1,label-function=length_kb
+
+This configuration file is almost identical to the previous one. The
+only differences are that we've removed the lines responsible for
+drawing the figure caption in the center of circle, and have added
+about 7 new lines at the end. The first of those lines (see below)
+draw and label the `genome` features that were created because of the
+corresponding genome lines in the input contig file. They appear as
+the grey curved rectangles in the middle. For demonstration purposes
+we've labeled Scfld12 as "unknown" (in the contig list file, not the
+config. file) even though it's also a sequence from _P. acnes_
+
+    # display 'genome' feature from contig_list file
+    new gr1 rectangle outerf=0.4,heightf=0.05,feat-type=genome,color1=#a0a0a0,color2=#000000,stroke-width=2
+    medium-label grl1 innerf=same,label-function=primary_id,feat-track=gr1,font-weight=bold
+
+The last 3 lines highlight the newly-created `contig_gap` features in
+green and use the `length_kb` label function to automatically label
+each one with its length. As you can see in the figure, these
+contig_gaps correspond exactly to what was specified in the
+`contig_list` file.
+    
+    # highlight gaps between scaffolds/contigs
+    new cg1 rectangle innerf=same,outerf=1.1,feat-type=contig_gap,opacity=0.3,color1=green,color2=darkgreen,stroke-width=2
+    medium-label cgl1 innerf=1.1,feat-track=cg1,label-function=length_kb

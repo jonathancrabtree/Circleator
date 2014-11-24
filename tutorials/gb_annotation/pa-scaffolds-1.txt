@@ -1,0 +1,12 @@
+Scfld7			GL383465.gb	
+gap		5000			
+Scfld11			GL383469.gb	
+gap		10000			
+Scfld5			GL383463.gb	
+gap		15000			
+Scfld0			GL383461.gb	
+gap		20000			
+genome	P. acnes				
+Scfld12			GL383470.gb	
+gap		25000			
+genome	unknown				
