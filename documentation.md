@@ -30,10 +30,10 @@ separate project/repository ("Ringmaster").
 A selection of detailed tutorials for common data types and figure formats:
 
  * [GenBank Flat File Visualization][gb_annotation] - display the sequence and/or annotation from a GenBank flat file
- * [Gene conservation][gene_conservation] - visualize patterns of gene conservation in two or more closely-related strains or serovars.
- * [SNPs and indels][snps_indels] - show SNPs and/or indels in several microbial strains relative to a reference genome and gene set.
- * [RNA-Seq coverage plots][rna_seq_coverage] - view coverage plots of RNA-Seq data.
- * [Graphs and heat maps][graphs_heat_maps] - display quantitative data using graphs and heat maps.
+ * Gene conservation _(coming soon)_ - visualize patterns of gene conservation in two or more closely-related strains or serovars.
+ * SNPs and indels _(coming soon)_ - show SNPs and/or indels in several microbial strains relative to a reference genome and gene set.
+ * RNA-Seq coverage plots _(coming soon)_ - view coverage plots of RNA-Seq data.
+ * Graphs and heat maps _(coming soon)_ - display quantitative data using graphs and heat maps.
 
 [gb_annotation]: tutorials/gb_annotation.html
 [gene_conservation]: tutorials/
@@ -62,5 +62,4 @@ A selection of detailed tutorials for common data types and figure formats:
 [source]: https://github.com/jonathancrabtree/Circleator
 [ggroup]: http://groups.google.com/group/circleator
 [tracker]: https://github.com/jonathancrabtree/Circleator/issues
-
 
