@@ -35,10 +35,10 @@ A selection of Circleator-generated figures.
 <br clear='both'>
 <img src='images/logo-2-400.png' class='gallery'>
 
-[c1]: gallery/CP002725-2.cfg
-[c2]: gallery/genes-percentGC-GCskew-1.cfg
-[c3]: gallery/logo-2.cfg
-[gb_ex1]: tutorials/gb_annotation.html#ex1
-[gb_ex2]: tutorials/gb_annotation.html#ex2
-[gb_ex1_conf]: tutorials/gb_annotation/explore-region-1.txt
-[gb_ex2_conf]: tutorials/gb_annotation/scaffolds-and-genes-plus.txt
+[c1]: {{site.baseurl}}/gallery/CP002725-2.cfg
+[c2]: {{site.baseurl}}/gallery/genes-percentGC-GCskew-1.cfg
+[c3]: {{site.baseurl}}/gallery/logo-2.cfg
+[gb_ex1]: {{site.baseurl}}/tutorials/gb_annotation.html#ex1
+[gb_ex2]: {{site.baseurl}}/tutorials/gb_annotation.html#ex2
+[gb_ex1_conf]: {{site.baseurl}}/tutorials/gb_annotation/explore-region-1.txt
+[gb_ex2_conf]: {{site.baseurl}}/tutorials/gb_annotation/scaffolds-and-genes-plus.txt

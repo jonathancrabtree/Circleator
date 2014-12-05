@@ -23,7 +23,7 @@ Common uses of the tool include:
 * Comparing gene expression values across multiple samples or timepoints.
 * Visualizing coverage plots of RNA-Seq read alignments.
 
-[sample image]: images/CP002725-2-420.png "Sample Circleator Image"
+[sample image]: {{site.baseurl}}/images/CP002725-2-420.png "Sample Circleator Image"
 [genbank]: http://www.ncbi.nlm.nih.gov/genbank/
 [igs]: http://igs.umaryland.edu
 
@@ -32,9 +32,9 @@ Common uses of the tool include:
 Check out the [Installation Guide][install], the detailed [README][] on GitHub, 
 and the [Documentation][docs] for more information. There's also a [Google Group][group] for Circleator questions and discussion.
 
-[install]: install.html
+[install]: {{site.baseurl}}/install.html
 [readme]: http://github.com/jonathancrabtree/Circleator/blob/master/README.md
-[docs]: documentation.html
+[docs]: {{site.baseurl}}/documentation.html
 [group]: http://groups.google.com/group/circleator
 
 ## Acknowledgments

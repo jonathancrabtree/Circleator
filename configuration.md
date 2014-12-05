@@ -46,7 +46,7 @@ tab-delimited fields (almost all of which are optional):
 13. **zindex** - integer z-index of the track: tracks with higher z-indexes are drawn on top of those with lower z-indexes
 14. **options** - a comma-delimited list of track options in the format "key=value"
 
-[predef_tracks]: predefined-tracks.html
+[predef_tracks]: {{site.baseurl}}/predefined-tracks.html
 
 All of these fields except for the very first one (**type**) are
 optional and may be omitted completely. Hence the simplest possible
@@ -120,7 +120,7 @@ is listed on the [predefined tracks page][predef_tracks], along with
 information on the most commonly-used configuration options for each
 track type.
 
-[predef_tracks]: predefined-tracks.html
+[predef_tracks]: {{site.baseurl}}/predefined-tracks.html
 
 ### User Defined Tracks
 (relevant options: **type**, **name**, **glyph**)
@@ -230,8 +230,8 @@ tracks:
 ![Track size illustration][CM000961_tracks_med]  
 Here is the configuration file for the above figure: [tracks-1.cfg][CM000961_tracks_conf]  
 
-[CM000961_tracks_med]: images/CM000961-tracks-1-800.png
-[CM000961_tracks_conf]: tracks-1.cfg
+[CM000961_tracks_med]: {{site.baseurl}}/images/CM000961-tracks-1-800.png
+[CM000961_tracks_conf]: {{site.baseurl}}/tracks-1.cfg
 
 Going roughly from outermost to innermost the tracks in this figure are:
 
@@ -366,7 +366,7 @@ sequences/contigs and the spaces between them:
 * **contig_gap** - If the input contains multiple contigs then Circleator will create a feature of type 'contig_gap' between each pair of adjacent contigs (even if `--contig_gap_size` is set to 0). If the `--contig_list` option is used then the location and size of individual gaps can be specified explicitly in the contig list file.
 * **genome** - Circleator will add a feature of type 'genome' for each 'genome' line in the contig list file specified by `--contig_list`. See the [command line documentation][cmdline] for more information on the use of this option.
 
-[cmdline]: command-line.html
+[cmdline]: {{site.baseurl}}/command-line.html
 
 With this in mind, here are the possible feature sources for any given track:
 

@@ -13,7 +13,7 @@ genome sequence.  Before proceeding with the tutorial, please make
 sure that you have Circleator installed as described in the Circleator
 [Installation Guide][install].
 
-[install]: /install.html
+[install]: {{site.baseurl}}/install.html
 
 ### Outline
 
@@ -63,8 +63,8 @@ as one of the inputs to Circleator:
 If you want to download a different genomic sequence entry you can do
 so by using NCBI's GenBank web site, [as described here][gb_download].
 
-[hi_gb]: /tutorials/gb_annotation/L42023.1.gb
-[gb_download]: /tutorials/gb_annotation/gb_download.html
+[hi_gb]: {{site.baseurl}}/tutorials/gb_annotation/L42023.1.gb
+[gb_download]: {{site.baseurl}}/tutorials/gb_annotation/gb_download.html
 
 <a name="ex1_download_config"></a>
 
@@ -106,8 +106,8 @@ A more complete list of the predefined track types can be found on the
 [predefined track types page][predef_tracks]. There is also a page that 
 describes the [configuration file format][config_ff] in detail.
 
-[predef_tracks]: /predefined-tracks.html
-[config_ff]: /configuration.html
+[predef_tracks]: {{site.baseurl}}/predefined-tracks.html
+[config_ff]: {{site.baseurl}}/configuration.html
 
 <a name="ex1_run_circleator"></a>
 
@@ -171,7 +171,7 @@ PNG image:
 
 </div>
 
-[genes-only.txt]: gb_annotation/genes-only.txt
+[genes-only.txt]: {{site.baseurl}}/tutorials/gb_annotation/genes-only.txt
 
 <a name="ex1_add_percentgc"></a>
 
@@ -197,7 +197,7 @@ then rasterize the SVG file:
     circleator --data=L42023.1.gb --config=genes-and-percentGC-1.txt --pad=100 > hinf-genes-pctgc-1.svg
     rasterize-svg hinf-genes-pctgc-1.svg png 3000 3000
 
-[genes-and-percentGC-1.txt]: gb_annotation/genes-and-percentGC-1.txt
+[genes-and-percentGC-1.txt]: {{site.baseurl}}/tutorials/gb_annotation/genes-and-percentGC-1.txt
 
 Here is the resulting figure:
 
@@ -400,7 +400,7 @@ following sequence of steps:
 5. Click on "Create File"
 6. Rename the downloaded file from "sequence.gb" to "GL383461-GL383477.gb"
 
-[pa_gb]: /tutorials/gb_annotation/GL383461-GL383477.gb
+[pa_gb]: {{site.baseurl}}/tutorials/gb_annotation/GL383461-GL383477.gb
 
 <a name="ex2_download_config"></a>
 
@@ -416,7 +416,7 @@ right-clicking on the following link and selecting "Save link as" or
 Recall that this 3-line configuration file displays the coordinate system
 labels and the gene features, and nothing else.
 
-[genes-only.txt]: gb_annotation/genes-only.txt
+[genes-only.txt]: {{site.baseurl}}/tutorials/gb_annotation/genes-only.txt
 
 <a name="ex2_run_circleator"></a>
 
@@ -495,7 +495,7 @@ updated configuration file:
 
 [scaffolds-and-genes.txt][]
 
-[scaffolds-and-genes.txt]: gb_annotation/scaffolds-and-genes.txt
+[scaffolds-and-genes.txt]: {{site.baseurl}}/tutorials/gb_annotation/scaffolds-and-genes.txt
 
 Now run Circleator and convert the SVG figure to PNG format. Note that
 we're increasing the `--pad` amount from 100 to 200 to make room for the
@@ -504,7 +504,7 @@ scaffold labels around the outside of the circle:
     $ circleator --data=GL383461-GL383477.gb --config=scaffolds-and-genes.txt --pad=200 > pa-scaffolds-and-genes.svg
     $ rasterize-svg pa-scaffolds-and-genes.svg png 3000 3000
 
-[GL383461-GL383477.gb]: gb_annotation/GL383461-GL383477.gb
+[GL383461-GL383477.gb]: {{site.baseurl}}/tutorials/gb_annotation/GL383461-GL383477.gb
 
 <div class='sample_image'>
 
@@ -588,7 +588,7 @@ rectangles. Here's the updated configuration file:
     $ circleator --data=GL383461-GL383477.gb --config=scaffolds-and-genes-plus.txt --pad=200 --contig_min_size=50000 --contig_gap_size=15000 > pa-no-short-scaffolds-plus.svg
     $ rasterize-svg pa-no-short-scaffolds-plus.svg png 3000 3000
 
-[scaffolds-and-genes-plus.txt]: gb_annotation/scaffolds-and-genes-plus.txt
+[scaffolds-and-genes-plus.txt]: {{site.baseurl}}/tutorials/gb_annotation/scaffolds-and-genes-plus.txt
 
 <div class='sample_image'>
 

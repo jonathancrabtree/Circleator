@@ -11,7 +11,7 @@ title: Circleator - Documentation
 Please see the [Installation Guide][install] for detailed download 
 and installation instructions.
 
-[install]: install.html
+[install]: {{site.baseurl}}/install.html
 
 ## Running Circleator
 
@@ -23,7 +23,7 @@ interface, documented below:
 A prototype ExtJS web interface has been developed and split off into a 
 separate project/repository ("Ringmaster").
 
-[cmdline]: command-line.html
+[cmdline]: {{site.baseurl}}/command-line.html
 
 ## Tutorials
 
@@ -35,11 +35,11 @@ A selection of detailed tutorials for common data types and figure formats:
  * RNA-Seq coverage plots _(coming soon)_ - view coverage plots of RNA-Seq data.
  * Graphs and heat maps _(coming soon)_ - display quantitative data using graphs and heat maps.
 
-[gb_annotation]: tutorials/gb_annotation.html
-[gene_conservation]: tutorials/
-[snps_indels]: tutorials/
-[rna_seq_coverage]: tutorials/
-[graphs_heat_maps]: tutorials/
+[gb_annotation]: {{site.baseurl}}/tutorials/gb_annotation.html
+[gene_conservation]: {{site.baseurl}}/tutorials/
+[snps_indels]: {{site.baseurl}}/tutorials/
+[rna_seq_coverage]: {{site.baseurl}}/tutorials/
+[graphs_heat_maps]: {{site.baseurl}}/tutorials/
 
 ## Reference Material
  
@@ -49,9 +49,9 @@ A selection of detailed tutorials for common data types and figure formats:
  * [Gallery of sample figures][gallery]
 
 [readme]: http://github.com/jonathancrabtree/Circleator/blob/master/README.md
-[config_ref]: configuration.html
-[predef_tracks]: predefined-tracks.html
-[gallery]: gallery.html
+[config_ref]: {{site.baseurl}}/configuration.html
+[predef_tracks]: {{site.baseurl}}/predefined-tracks.html
+[gallery]: {{site.baseurl}}/gallery.html
 
 ## Additional Resources
 

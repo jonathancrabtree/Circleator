@@ -23,7 +23,7 @@ Assuming that a copy of Circleator has been installed as described in
 the [Installation Guide][install], you will need at least the
 following two things in order to run the program successfully:
 
-[install]: install.html
+[install]: {{site.baseurl}}/install.html
 
 1. Sequence and/or sequence annotation in a BioPerl-supported format (*e.g.*, a GenBank flat file.)
 2. A Circleator [configuration file](#configuration-file) that specifies how to plot this information.
@@ -85,8 +85,8 @@ a [larger version][CM000961_fullsize] showing greater detail):
 
 ![fig1.png][CM000961_small]  
 
-[CM000961_small]: images/CM000961-genes-percentGC-GCskew-1-400.png
-[CM000961_fullsize]: images/CM000961-genes-percentGC-GCskew-1-5000.png
+[CM000961_small]: {{site.baseurl}}/images/CM000961-genes-percentGC-GCskew-1-400.png
+[CM000961_fullsize]: {{site.baseurl}}/images/CM000961-genes-percentGC-GCskew-1-5000.png
 
 The configuration file that we used in this example is composed
 entirely of [predefined tracks][predef_tracks]
@@ -201,8 +201,8 @@ In terms of defining tracks within the configuration file there are also several
 
 For more information on writing and editing configuration files please see the detailed [configuration file documentation][config_ref].
 
-[config_ref]: configuration.html
-[predef_tracks]: predefined-tracks.html
+[config_ref]: {{site.baseurl}}/configuration.html
+[predef_tracks]: {{site.baseurl}}/predefined-tracks.html
 
 ### Input Data
 
