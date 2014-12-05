@@ -64,7 +64,7 @@ If you want to download a different genomic sequence entry you can do
 so by using NCBI's GenBank web site, [as described here][gb_download].
 
 [hi_gb]: /tutorials/gb_annotation/L42023.1.gb
-[gb_download]: gb_annotation/gb_download.html
+[gb_download]: /tutorials/gb_annotation/gb_download.html
 
 <a name="ex1_download_config"></a>
 
