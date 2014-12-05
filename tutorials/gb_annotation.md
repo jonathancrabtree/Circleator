@@ -747,7 +747,7 @@ With this option it is possible to:
 * Specify the gap to place between each pair of adjacent sequences
 * Tag sequences that belong to the same source genome (for displaying multiple reference genomes/organisms)
 
-[contig_list_docs]: /command-line.html#command_line_options
+[contig_list_docs]: {{site.baseurl}}/command-line.html#command_line_options
 
 When using `--contig_list` it's assumed that each input
 contig/scaffold is in a separate file (that contains nothing else),
