@@ -19,25 +19,25 @@ sure that you have Circleator installed as described in the Circleator
 
 * **[Example 1](#ex1): Completed Genome of _Haemophilus influenzae Rd KW20_**
 
-  1. [Download the GenBank flat file](#ex1-download-gb-ff)
-  2. [Download the Circleator configuration file](#ex1-download-config)
-  3. [Run Circleator](#ex1-run-circleator)
-  4. [Convert the figure from SVG to PNG](#ex1-convert-to-png)
-  5. [Add a percent GC-content plot](#ex1-add-percentgc)
-  6. [Magnify and highlight a region of interest](#ex1-highlight-region)
+  1. [Download the GenBank flat file](#ex1_download_gb_ff)
+  2. [Download the Circleator configuration file](#ex1_download_config)
+  3. [Run Circleator](#ex1_run_circleator)
+  4. [Convert the figure from SVG to PNG](#ex1_convert_to_png)
+  5. [Add a percent GC-content plot](#ex1_add_percentgc)
+  6. [Magnify and highlight a region of interest](#ex1_highlight_region)
 
 ` `
  
 * **[Example 2](#ex2): Draft Genome Sequence of _Propionibacterium acnes HL005PA3_**
 
-  1. [Download the GenBank flat file](#ex2-download-gb-ff)
-  2. [Download the Circleator configuration file](#ex2-download-config)
-  3. [Run Circleator](#ex2-run-circleator)
-  4. [Convert the figure from SVG to PNG](#ex2-convert-to-png)
-  5. [Show the scaffold locations](#ex2-show-scaffolds)
-  6. [Filter out the short sequences](#ex2-filter-out-short-seqs)
-  7. [Add some flair](#ex2-add-flair)
-  8. [Finer-grained control of contig/scaffold placement](#ex2-finer-scaffold-control)
+  1. [Download the GenBank flat file](#ex2_download_gb_ff)
+  2. [Download the Circleator configuration file](#ex2_download_config)
+  3. [Run Circleator](#ex2_run_circleator)
+  4. [Convert the figure from SVG to PNG](#ex2_convert_to_png)
+  5. [Show the scaffold locations](#ex2_show_scaffolds)
+  6. [Filter out the short sequences](#ex2_filter_out_short_seqs)
+  7. [Add some flair](#ex2_add_flair)
+  8. [Finer-grained control of contig/scaffold placement](#ex2_finer_scaffold_control)
   
   
 
@@ -458,7 +458,7 @@ count:
 
 ### Convert the figure from SVG to PNG
 
-As [in example 1](#ex1-convert-to-png), let's convert the SVG image to PNG:
+As [in example 1](#ex1_convert_to_png), let's convert the SVG image to PNG:
 
     $ rasterize-svg pa-genes-only.svg png 3000 3000
 
