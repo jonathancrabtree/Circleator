@@ -1,12 +1,13 @@
 
-1.0.0rc5 (Apr ?? 2014)
+1.0.0rc5 (??? ?? ????)
  -Add parser for clc_find_variations SNP/indel-finding tool.
  -Add feat-tag-gt, feat-tag-gte, feat-tag-lt, feat-tag-lte. Previously only 
   lte (less than or equal to) and gte (greater than or equal to) were supported, via
   feat-tag-min-value and feat-tag-max-value.
  -Add overlapping-feat-track option.
  -Add variant-base-histogram glyph
-
+ -Add configuration files and data for figures from 2014 Bioinformatics paper.
+	
 1.0.0rc4 (Oct 15 2013)
  -Add --version option to report the current version/release number.
  -Modify Build.PL so it doesn't install circleator.bak into /usr/local/bin/.
