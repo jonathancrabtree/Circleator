@@ -114,7 +114,7 @@ the same configuration file syntax.
     * *e.g.*, Label each tRNA displayed in the preceding track with its anticodon sequence and connect the label to the corresponding feature with a blue line.
   * **Computed features** can be added to supplement those features that appear directly in the input files.
     * *e.g.*, Create and display a "SNP desert" feature in any location where there is at least 5kb of sequence that contains no SNPs.
-    * *e.g.*, Create and display a "low coverage" feature in any location where the valued plotted in the read coverage graph in track 2 falls below 5.
+    * *e.g.*, Create and display a "low coverage" feature in any location where the value plotted in the read coverage graph in track 2 falls below 5.
 
 ### Copyright
 
