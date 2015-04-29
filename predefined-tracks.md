@@ -75,7 +75,7 @@ The predefined tracks have been grouped into the following categories to make se
 <li><a href='#coords'><span class='track'>coords</span></a></li>
 <li><a href='#contigs'><span class='track'>contigs</span></a></li>
 <li><a href='#contig-gaps'><span class='track'>contig-gaps</span></a></li></ul>
-<br>
+
 <h3><a name='coords'><span class='track_heading'>coords</span></a></h3>
  The <span class='track'>coords</span> track draws an outer circle with small and large tick marks at intervals that can be specified 
  with the options <span class='option'>tick-interval</span> and <span class='option'>label-interval</span>.  Each large tick mark is labeled with the sequence
@@ -381,7 +381,6 @@ The predefined tracks have been grouped into the following categories to make se
  In the examples below, all 3 track types are shown for the <span class='track'>genes</span> track, but only the
  first is shown for the other feature types:
 
-<br>
 <h3><a name='genes'><span class='track_heading'>genes</span></a></h3>
 <table class='figure'>
 <tbody>
@@ -569,7 +568,7 @@ The predefined tracks have been grouped into the following categories to make se
 <li><a href='#small-cgap'><span class='track'>small-cgap</span></a></li>
 <li><a href='#medium-cgap'><span class='track'>medium-cgap</span></a></li>
 <li><a href='#large-cgap'><span class='track'>large-cgap</span></a></li></ul>
-<br>
+
 <h3><a name='tiny-cgap'><span class='track_heading'>tiny-cgap</span></a></h3>
  By default the Circleator will not leave any space between adjacent tracks, making it difficult in some cases to clearly see
  the features being plotted.  To create a space between two adjacent tracks in the Circleator configuration file, simply add 
@@ -663,7 +662,7 @@ The predefined tracks have been grouped into the following categories to make se
   <li><span class='graph'>User-defined</span>: plots user-supplied data (TODO - not yet supported)</li>
   <li><span class='graph'>BAM coverage</span>: plots read coverage histograms based on the contents of a SAM or BAM alignment file (TODO - not yet supported)</li>
  </ul>
-<br>
+
 <h3><a name='%GC0-100'><span class='track_heading'>%GC0-100</span></a></h3>
  A graph of percent GC sequence composition, ranging from a minimum value of 0% to a maximum value of 100%.  The
  GC percentage is computed using nonoverlapping windows of length 5kb and is plotted using a circular bar graph:
@@ -992,7 +991,7 @@ in the current sequence data, or 'data_avg' to use the average value:
  option and the text will appear centered around the 0 bp position by default.  To move the text to a different location
  around the circle, use the <span class='option'>position</span> option.  The type of label to use is specified by the
  <span class='option'>label-type</span> option.
-<br>
+
 <h3><a name='small-label'><span class='track_heading'>small-label</span></a></h3>
 <table class='figure'>
 <tbody>
