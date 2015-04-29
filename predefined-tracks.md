@@ -159,7 +159,7 @@ The predefined tracks have been grouped into the following categories to make se
 <h4><span class='track_heading'>coords</span> <span class='option_heading'>tick-interval</span>=</h4>
  The tick-interval option controls how frequently (in base pairs) tick marks will be drawn around
  the outer circle of the <span class='track'>coords</span> track:
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -200,7 +200,7 @@ The predefined tracks have been grouped into the following categories to make se
  specified it may also be necessary to increase the label-precision, and which
  determines how many digits will be shown after the decimal point in the coordinate labels (and
  which defaults to 1.)
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -220,7 +220,7 @@ The predefined tracks have been grouped into the following categories to make se
 
 <h4><span class='track_heading'>coords</span> <span class='option_heading'>label-precision</span>=</h4>
  In this example the <span class='option'>label-interval</span> is decreased to 200000 (200kb) and the <span class='option'>label-precision</span> is increased to 2:
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -240,7 +240,7 @@ The predefined tracks have been grouped into the following categories to make se
 
 <h4><span class='track_heading'>coords</span> <span class='option_heading'>label-units</span>=</h4>
  The <span class='option'>label-units</span> option may be set to 'Mb' (the default), 'kb', or 'bp':
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -295,7 +295,7 @@ The predefined tracks have been grouped into the following categories to make se
 <h3><a name='contigs'><span class='track_heading'>contigs</span></a></h3>
  The <span class='track'>contigs</span> track draws a circle with a curved blue rectangle in the position of each contig/sequence
  in the input file.  It is most useful when the input contains multiple sequences:
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -455,7 +455,7 @@ The predefined tracks have been grouped into the following categories to make se
 
 <h3><a name='tRNAs'><span class='track_heading'>tRNAs</span></a></h3>
  Displays all tRNAs, regardless of strand.
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -478,7 +478,7 @@ The predefined tracks have been grouped into the following categories to make se
 <br><br>
 <h3><a name='tRNAs-rev'><span class='track_heading'>tRNAs-rev</span></a></h3>
  Displays only reverse-strand tRNAs.
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -498,7 +498,7 @@ The predefined tracks have been grouped into the following categories to make se
 
 <h3><a name='rRNAs'><span class='track_heading'>rRNAs</span></a></h3>
  Displays all rRNAs, regardless of strand.
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -518,10 +518,10 @@ The predefined tracks have been grouped into the following categories to make se
 
 <h3><a name='rRNAs-fwd'><span class='track_heading'>rRNAs-fwd</span></a></h3>
  Displays only forward-strand tRNAs.
-<br><br>
+
 <h3><a name='rRNAs-rev'><span class='track_heading'>rRNAs-rev</span></a></h3>
  Displays only reverse-strand tRNAs.
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -544,7 +544,7 @@ The predefined tracks have been grouped into the following categories to make se
  explicitly annotated in the input, and are distinct from the gaps that can be placed between adjacent 
  annotation tracks in Circleator figures (these are supported by the "cgap" tracks and are described in the 
 <a href='#track_layout'>track layout</a> section.
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -575,7 +575,7 @@ The predefined tracks have been grouped into the following categories to make se
  the features being plotted.  To create a space between two adjacent tracks in the Circleator configuration file, simply add 
  one of the following 'gap' track types on a new line between the two adjacent tracks.  The only difference between the following
  gap types is the amount of space that each one inserts:
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -667,7 +667,7 @@ The predefined tracks have been grouped into the following categories to make se
 <h3><a name='%GC0-100'><span class='track_heading'>%GC0-100</span></a></h3>
  A graph of percent GC sequence composition, ranging from a minimum value of 0% to a maximum value of 100%.  The
  GC percentage is computed using nonoverlapping windows of length 5kb and is plotted using a circular bar graph:
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -688,7 +688,7 @@ The predefined tracks have been grouped into the following categories to make se
 <h3><a name='%GCmin-max'><span class='track_heading'>%GCmin-max</span></a></h3>
  The same as %GC0-100, but using the observed minimum and maximum percent GC values for the lower and upper bounds of
  the graph.  Note that the minimum, maximum, and average values are indicated directly in the figure (at the top) by default.
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -709,7 +709,7 @@ The predefined tracks have been grouped into the following categories to make se
 <h3><a name='%GCmin-max-dfa'><span class='track_heading'>%GCmin-max-dfa</span></a></h3>
  A variant of %GCmin-max in which the baseline for the graph is the observed average value (dfa = Deviation From Average)
  instead of the observed minimum value, as was the case for %GCmin-max:
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -729,7 +729,7 @@ The predefined tracks have been grouped into the following categories to make se
 
 <h3><a name='GCskew-1-df0'><span class='track_heading'>GCskew-1-df0</span></a></h3>
  A GC-skew graph with a minimum value of -1 and a maximum value of 1.  Values are plotted against a baseline value of 0
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -749,7 +749,7 @@ The predefined tracks have been grouped into the following categories to make se
 
 <h3><a name='GCskew-min-max-df0'><span class='track_heading'>GCskew-min-max-df0</span></a></h3>
  A GC-skew graph with minimum and maximum values based on the observed minimum and maximum and plotted using a baseline value of 0.
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -772,7 +772,7 @@ The predefined tracks have been grouped into the following categories to make se
  The <span class='option'>graph-direction</span> can be set to 'out' (the default) or 'in'.  A graph direction of 'out' places lower
  values on the y-axis closer to the center of the circle and higher values on the y-axis closer to the outside of the circle.  
  A graph direction of 'in' does the opposite.
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -810,7 +810,7 @@ The predefined tracks have been grouped into the following categories to make se
 <h4><span class='track_heading'>GCskew-min-max-df0</span> <span class='option_heading'>graph-type</span>=</h4>
  The <span class='option'>graph-type</span> can be set to 'bar' (the default) or 'line'.  The former plots a bar graph whereas the latter
  plots a line graph:
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -848,7 +848,7 @@ The predefined tracks have been grouped into the following categories to make se
 <h4><span class='track_heading'>GCskew-min-max-df0</span> <span class='option_heading'>window-size</span>=</h4>
  The <span class='option'>window-size</span> option determines the size of the window (in base pairs) over which the sequence-based 
  functions are computed.  It is set to 5000 bp by default but can be customized as needed:
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -889,7 +889,7 @@ The predefined tracks have been grouped into the following categories to make se
 plotted on the graph's y-axis.  Each can be set to either a number (e.g., to 0 for the <span class='track'>%GC0-100</span> graph), or to 
 the special value 'data_min' to use the minimum value observed in the current sequence data, 'data_max' to use the maximum value observed
 in the current sequence data, or 'data_avg' to use the average value:
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -946,7 +946,7 @@ in the current sequence data, or 'data_avg' to use the average value:
  which the rectangles making up the graph will be drawn.  Setting the graph-baseline to the same value as graph-min (the default) will display a
  traditional bar graph, and setting the graph-baseline to some other value between the min and the max can be used to illustrate the deviation from 
  that value--either above or below it--at any given point in the sequence:
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -1049,7 +1049,7 @@ in the current sequence data, or 'data_avg' to use the average value:
 
 <h4><span class='track_heading'>large-label</span> <span class='option_heading'>label-type</span>=</h4>
  The <span class='option'>label-type</span> can be set to 'curved' (the default), 'spoke', or 'horizontal':
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -1123,7 +1123,7 @@ in the current sequence data, or 'data_avg' to use the average value:
  The <span class='option'>label-text-anchor</span> option specifies where the label should be positioned relative to its 
  sequence location (i.e., the value passed to the <span class='option'>position</span> option.  It can be set to 
  'center' (the default), 'start', or 'end'.
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
