@@ -62,6 +62,7 @@ remaining Perl dependencies, like so:
     install Log::Log4perl
     install SVG
     install Text::CSV
+    install Bio::FeatureIO::gff
 
 Note that if you do not have superuser privileges for the machine in
 question (i.e., to run `cpan` as root) then you will have to enlist
