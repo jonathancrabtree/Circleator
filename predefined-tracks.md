@@ -68,7 +68,10 @@ The predefined tracks have been grouped into the following categories to make se
 <li><a href='#large-label'><span class='track'>large-label</span></a></li></ul>
 </li></ol>
 
-<a name='sequence_coordinates_and_contigs'><h2>1. sequence coordinates and contigs</h2></a>
+<a name='sequence_coordinates_and_contigs'>
+<h2>1. sequence coordinates and contigs</h2>
+</a>
+
 <ul>
 <li><a href='#coords'><span class='track'>coords</span></a></li>
 <li><a href='#contigs'><span class='track'>contigs</span></a></li>
