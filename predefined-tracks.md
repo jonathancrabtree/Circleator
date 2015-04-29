@@ -68,9 +68,8 @@ The predefined tracks have been grouped into the following categories to make se
 <li><a href='#large-label'><span class='track'>large-label</span></a></li></ul>
 </li></ol>
 
-<a name='sequence_coordinates_and_contigs'>
+<a name='sequence_coordinates_and_contigs'></a>
 <h2>1. sequence coordinates and contigs</h2>
-</a>
 
 <ul>
 <li><a href='#coords'><span class='track'>coords</span></a></li>
@@ -358,7 +357,8 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<a name='sequence_features'><h2>2. sequence features</h2></a>
+<a name='sequence_features'></a>
+<h2>2. sequence features</h2>
 <ul>
 <li><a href='#genes'><span class='track'>genes</span></a></li>
 <li><a href='#genes-fwd'><span class='track'>genes-fwd</span></a></li>
@@ -562,7 +562,8 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<a name='track_layout'><h2>3. track layout</h2></a>
+<a name='track_layout'></a>
+<h2>3. track layout</h2>
 <ul>
 <li><a href='#tiny-cgap'><span class='track'>tiny-cgap</span></a></li>
 <li><a href='#small-cgap'><span class='track'>small-cgap</span></a></li>
@@ -646,7 +647,8 @@ The predefined tracks have been grouped into the following categories to make se
 </tbody>
 </table>
 
-<a name='graphs'><h2>4. graphs</h2></a>
+<a name='graphs'></a>
+<h2>4. graphs</h2>
 <ul>
 <li><a href='#%GC0-100'><span class='track'>%GC0-100</span></a></li>
 <li><a href='#%GCmin-max'><span class='track'>%GCmin-max</span></a></li>
@@ -979,7 +981,8 @@ in the current sequence data, or 'data_avg' to use the average value:
 </tbody>
 </table>
 
-<a name='labels'><h2>5. labels</h2></a>
+<a name='labels'></a>
+<h2>5. labels</h2>
 <ul>
 <li><a href='#small-label'><span class='track'>small-label</span></a></li>
 <li><a href='#medium-label'><span class='track'>medium-label</span></a></li>
