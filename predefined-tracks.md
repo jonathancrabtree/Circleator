@@ -84,7 +84,7 @@ The predefined tracks have been grouped into the following categories to make se
  (the number of digits after the decimal point, <span class='option'>label-precision</span>), and 
  font size (<span class='option'>font-size</span>).  Note that if the Circleator is drawing
  a figure with multiple contigs then the coordinate labeling will include the lengths of any gaps between the contigs.
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -104,7 +104,7 @@ The predefined tracks have been grouped into the following categories to make se
 
 <h4><span class='track_heading'>coords</span> <span class='option_heading'>label-type</span>=</h4>
  The <span class='option'>label-type</span> can be set to 'curved' (the default), 'spoke', or 'horizontal':
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -316,7 +316,7 @@ The predefined tracks have been grouped into the following categories to make se
 <h3><a name='contig-gaps'><span class='track_heading'>contig-gaps</span></a></h3>
  The <span class='track'>contig-gaps</span> track draws a circle with a curved grey rectangle in the position of each contig gap (in multi-contig figures only)
  in the input file.
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -339,7 +339,7 @@ The predefined tracks have been grouped into the following categories to make se
  options.  <span class='option'>color1</span> typically sets the fill color whereas <span class='option'>color2</span> sets the
  color used for the outline of the feature.  Currently only HTML-style hexadecimal colors of the form "#ff0000" are supported by
  these two options
-<br><br>
+
 <table class='figure'>
 <tbody>
 <tr>
@@ -475,7 +475,7 @@ The predefined tracks have been grouped into the following categories to make se
 
 <h3><a name='tRNAs-fwd'><span class='track_heading'>tRNAs-fwd</span></a></h3>
  Displays only forward-strand tRNAs.
-<br><br>
+
 <h3><a name='tRNAs-rev'><span class='track_heading'>tRNAs-rev</span></a></h3>
  Displays only reverse-strand tRNAs.
 
