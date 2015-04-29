@@ -66,8 +66,8 @@ The predefined tracks have been grouped into the following categories to make se
 <li><a href='#small-label'><span class='track'>small-label</span></a></li>
 <li><a href='#medium-label'><span class='track'>medium-label</span></a></li>
 <li><a href='#large-label'><span class='track'>large-label</span></a></li></ul>
-
 </li></ol>
+
 <a name='sequence_coordinates_and_contigs'><h2>1. sequence coordinates and contigs</h2></a>
 <ul>
 <li><a href='#coords'><span class='track'>coords</span></a></li>
