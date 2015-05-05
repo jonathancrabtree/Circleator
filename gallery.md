@@ -25,6 +25,12 @@ A selection of Circleator-generated figures.
 <br clear='both'>
 <img src='tutorials/gb_annotation/pa-no-short-scaffolds-plus-400.png' class='gallery'>
 
+* [Example 1][cp_ex1] from the Coverage Plots tutorial  
+(*Enterobacteria* phage lambda Bowtie alignments from the [Bowtie tutorial][bt2_ex])  
+([config][cp_ex1_conf], full size <a href='tutorials/coverage_plots/coverage-ex1-gb-cl-3000.png'>PNG</a>&nbsp;|&nbsp;<a href='tutorials/gb_annotation/coverage-ex1-gb-cl-3000.svg'>SVG</a>)
+<br clear='both'>
+<img src='tutorials/coverage_plots/coverage-ex1-gb-cl-400.png' class='gallery'>
+
 * Genes, percent GC, and GC-skew for *Corynebacterium genitalium ATCC 33030*  
 ([config][c2], full size <a href='images/CM000961-genes-percentGC-GCskew-1-5000.png'>PNG</a>&nbsp;|&nbsp;<a href='images/CM000961-genes-percentGC-GCskew-1-5000.pdf'>PDF</a>&nbsp;|&nbsp;<a href='images/CM000961-genes-percentGC-GCskew-1-5000.svg'>SVG</a>)
 <br clear='both'>
@@ -40,5 +46,8 @@ A selection of Circleator-generated figures.
 [c3]: {{site.baseurl}}/gallery/logo-2.cfg
 [gb_ex1]: {{site.baseurl}}/tutorials/gb_annotation.html#ex1
 [gb_ex2]: {{site.baseurl}}/tutorials/gb_annotation.html#ex2
+[cp_ex1]: {{site.baseurl}}/tutorials/coverage_plots.html#ex1
 [gb_ex1_conf]: {{site.baseurl}}/tutorials/gb_annotation/explore-region-1.txt
 [gb_ex2_conf]: {{site.baseurl}}/tutorials/gb_annotation/scaffolds-and-genes-plus.txt
+[cp_ex1_conf]: {{site.baseurl}}/tutorials/coverage_plots/coverage-ex1.txt
+[bt2_ex]: http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#getting-started-with-bowtie-2-lambda-phage-example

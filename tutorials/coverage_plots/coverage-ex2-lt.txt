@@ -1,0 +1,25 @@
+
+# percent GC plot
+%GC0-100 innerf=1.03,opacity=0.6,heightf=0.07,graph-min=0,graph-max=100,window-size=100
+
+# outer coordinate circle
+coords outerf=1.05,tick-interval=1000,label-interval=5000,label-units=kb
+
+# forward and reverse strand genes
+small-cgap
+genes-fwd heightf=0.05
+tRNAs-fwd heightf=0.05,innerf=same
+rRNAs-fwd heightf=0.05,innerf=same
+tiny-cgap
+genes-rev heightf=0.05
+tRNAs-rev heightf=0.05,innerf=same
+rRNAs-rev heightf=0.05,innerf=same
+
+small-cgap
+new bam1 graph 0.14 graph-function=FlatFile,file=eg1-coverage-100-log10.txt,graph-min=0,graph-max=1.85,window-size=100,color1=#3aa0d5
+
+small-cgap
+new bam2 graph 0.14 graph-function=FlatFile,file=eg2-coverage-100-log10.txt,graph-min=0,graph-max=1.85,window-size=100,color1=#3aa0d5
+
+small-cgap
+new bam3 graph 0.14 graph-function=FlatFile,file=eg3-coverage-100-log10.txt,graph-min=0,graph-max=1.85,window-size=100,color1=#3aa0d5
