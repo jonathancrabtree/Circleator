@@ -1,7 +1,7 @@
 # read BSR output and assign aliases to the two query genomes ("Cm", "Cp")
 new load_bsr1 load-bsr heightf=0,bsr-file=./Cc_GPIC_Cm_Nigg_Cp_AR39.txt,genome1=Cm,genome2=Cp
 
-# expand each BSR region by 500X 
+# expand each BSR region by 25X 
 new bsr_cm_d bsr 0 threshold=0.4,genomes=Cm|Cp,signature=10,color1=none,color2=none
 new ssl1 scaled-segment-list feat-track=bsr_cm_d,scale=25
 # highlight expanded regions
