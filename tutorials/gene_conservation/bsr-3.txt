@@ -5,16 +5,16 @@ new load_bsr1 load-bsr heightf=0,bsr-file=./Cc_GPIC_Cm_Nigg_Cp_AR39.txt,genome1=
 new bsr_cm_d bsr 0 threshold=0.4,genomes=Cm|Cp,signature=10,color1=none,color2=none
 new ssl1 scaled-segment-list feat-track=bsr_cm_d,scale=25
 # highlight expanded regions
-new hssl1 rectangle feat-track=ssl1,opacity=0.2,innerf=0,outerf=1.1,color1=#909090,color2=black
+new hssl1 rectangle feat-track=ssl1,opacity=0.2,innerf=0.32,outerf=1.1,color1=#909090,color2=black
 
 # label genes with locus and gene id
 small-label lg1 innerf=1.12,label-function=locus,feat-track=bsr_cm_d,packer=none,label-type=spoke
 small-label lg2 innerf=1.22,label-function=tag,tag-name=gene,feat-track=bsr_cm_d,packer=none,label-type=spoke
 
 # draw ruler/coordinates
-coords innerf=1.0
+#coords innerf=1.0
 
-tiny-cgap
+tiny-cgap outerf=1.0
 genes
 # highlight conserved hypotheticals
 new HCH rectangle feat-type=CDS,feat-tag=product,feat-tag-regex=hypothetical\sprotein,innerf=same,outerf=same,opacity=0.8,color1=#00ff00
@@ -43,5 +43,18 @@ tiny-cgap outerf=same
 new bsr_cm bsr 0.07 threshold=0.4,genomes=Cm|Cp,signature=10,color1=#1511c4,color2=#1511c4
 medium-label label-text=ONLY&nbsp;found&nbsp;in&nbsp;C.&nbsp;caviae&nbsp;GPIC&nbsp;and&nbsp;C.&nbsp;muridarum&nbsp;Nigg
 
-# caption
-large-label innerf=0,label-text=C.&nbsp;caviae&nbsp;GPIC,label-type=horizontal,font-style=italic
+# connect outer scaled circle to inner unscaled circle
+new hssl2 rectangle innerf=0.22,outerf=0.32,feat-track=ssl1,opacity=0.2,color1=#909090,color2=black,stroke-width=1,inner-scale=none,outer-scale=default
+
+# restore unscaled coordinates
+new SSLR scaled-segment-list scale=1,feat-type=dummy
+
+# inner (unscaled) circle
+coords innerf=0.22,heightf=0.008
+tiny-cgap
+
+# repeat all genes/hypotheticals track
+genes heightf=0.03
+# highlight conserved hypotheticals
+new HCH rectangle feat-type=CDS,feat-tag=product,feat-tag-regex=hypothetical\sprotein,innerf=same,outerf=same,opacity=0.8,color1=#00ff00
+
