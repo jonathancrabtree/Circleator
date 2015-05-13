@@ -11,9 +11,6 @@ new hssl1 rectangle feat-track=ssl1,opacity=0.2,innerf=0.32,outerf=1.1,color1=#9
 small-label lg1 innerf=1.12,label-function=locus,feat-track=bsr_cm_d,packer=none,label-type=spoke
 small-label lg2 innerf=1.22,label-function=tag,tag-name=gene,feat-track=bsr_cm_d,packer=none,label-type=spoke
 
-# draw ruler/coordinates
-#coords innerf=1.0
-
 tiny-cgap outerf=1.0
 genes
 # highlight conserved hypotheticals

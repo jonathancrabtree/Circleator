@@ -31,11 +31,11 @@ A selection of detailed tutorials for common data types and figure formats:
 
  * [GenBank Flat File Visualization][gb_annotation] - display the sequence and/or annotation from a GenBank flat file
  * [Coverage Plots Using BAM Files][coverage_plots] - view coverage plots of RNA-Seq and other types of BAM-encoded alignment data.
+ * [Gene Conservation Visualization][gene_conservation] - visualize patterns of gene conservation in two or more closely-related strains or serovars.
 
 Work is still ongoing for the following tutorials. If you're interested in more information on 
 displaying these datatypes, get in touch with us via e-mail or the [Circleator Google group][ggroup]:
 
- * Gene Conservation Visualization - visualize patterns of gene conservation in two or more closely-related strains or serovars.
  * SNPs and indels - show SNPs and/or indels in several microbial strains relative to a reference genome and gene set.
  * Graphs and heat maps - ways to display quantitative data using graphs and heat maps.
 
