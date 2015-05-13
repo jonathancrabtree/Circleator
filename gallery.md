@@ -13,6 +13,12 @@ A selection of Circleator-generated figures.
 <br clear='both'>
 <img src='images/CP002725-2-420.png' class='gallery'>
 
+* A user-contributed figure from Quentin Jehanne, displaying the output from a program that
+predicts interactions between known transcription factors and a given query genome (*E. coli K12* in this case):  
+(full size <a href='gallery/EcoliK12.png'>PNG</a> )
+<br clear='both'>
+<img src='gallery/EcoliK12-400.png' class='gallery'>
+
 * [Example 1][gb_ex1] from the GenBank Flat File Visualization tutorial  
 (a magnified and highlighted region of interest from the genome of _Haemophilus influenzae Rd KW20_)  
 ([config][gb_ex1_conf], full size <a href='tutorials/gb_annotation/hinf-explore-region-1-3000.png'>PNG</a>&nbsp;|&nbsp;<a href='tutorials/gb_annotation/hinf-explore-region-1.svg'>SVG</a>)
