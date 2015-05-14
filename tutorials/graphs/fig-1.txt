@@ -1,0 +1,22 @@
+
+coords
+small-cgap
+genes-fwd
+tiny-cgap
+genes-rev
+
+small-cgap
+
+# read and plot density data
+new d1 graph 0.1 graph-function=FlatFile,file=random-data-1.txt,graph-min=0,graph-max=100,window-size=5000,color1=#1a80f5
+medium-label label-text=random&nbsp;values&nbsp;plotted&nbsp;from&nbsp;tab-delimited&nbsp;flat&nbsp;file
+small-cgap
+
+# find higher-density regions 
+new hd50 compute-graph-regions graph-track=d1,region-min-length=5000,region-feat-type=high_density_region_50,graph-min-value=50
+
+# and plot them
+new phd50 rectangle 0.05 feat-type=high_density_region_50
+medium-label label-text=regions&nbsp;with&nbsp;graph&nbsp;value&nbsp;>&equals;50&nbsp;and&nbsp;length&nbsp;>5kb
+small-cgap
+
