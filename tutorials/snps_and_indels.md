@@ -75,7 +75,7 @@ And here is the Circleator configuration file for our first figure:
 
 Once you've downloaded or generated the necessary files, you're ready to run Circleator, like so:
 
-    $ circleator --data=NC_001416.1.gb --config=variants-ex1.txt > variants-ex1.svg
+    $ circleator --contig_list=contig-list-ex1-gb.txt --config=variants-ex1.txt > variants-ex1.svg
 
 <a name="ex1_convert_to_png"></a>
 
