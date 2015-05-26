@@ -27,21 +27,21 @@ separate project/repository ("Ringmaster").
 
 ## Tutorials
 
-A selection of detailed tutorials for common data types and figure formats:
+Detailed tutorials for common data types and figure formats:
 
  * [GenBank Flat File Visualization][gb_annotation] - display the sequence and/or annotation from a GenBank flat file
  * [Coverage Plots Using BAM Files][coverage_plots] - view coverage plots of RNA-Seq and other types of BAM-encoded alignment data.
  * [Gene Conservation Visualization][gene_conservation] - visualize patterns of gene conservation in two or more closely-related strains or serovars.
+ * [Displaying SNPs and indels][snps_indels] - show SNPs and/or indels in one or more microbial strains relative to a reference genome and gene set.
 
-Work is still ongoing for the following tutorials. If you're interested in more information on 
+Work is still ongoing for the following tutorial(s). If you're interested in more information on 
 displaying these datatypes, get in touch with us via e-mail or the [Circleator Google group][ggroup]:
 
- * SNPs and indels - show SNPs and/or indels in several microbial strains relative to a reference genome and gene set.
  * Graphs and heat maps - ways to display quantitative data using graphs and heat maps.
 
 [gb_annotation]: {{site.baseurl}}/tutorials/gb_annotation.html
 [gene_conservation]: {{site.baseurl}}/tutorials/gene_conservation.html
-[snps_indels]: {{site.baseurl}}/tutorials/
+[snps_indels]: {{site.baseurl}}/tutorials/snps_and_indels.html
 [coverage_plots]: {{site.baseurl}}/tutorials/coverage_plots.html
 [graphs_heat_maps]: {{site.baseurl}}/tutorials/
 
