@@ -1,0 +1,67 @@
+
+new snp1 load feat-file=./eg2.raw.vcf,feat-file-type=VCF
+
+# expand SNP loci by a factor of 100X
+new ssl1 scaled-segment-list feat-track=snp1,scale=100
+
+# highlight SNP loci
+new hssl1 rectangle feat-track=snp1,opacity=0.2,innerf=0.32,outerf=1.15,color1=#909090,color2=black
+
+# print location of SNP loci
+new sll label feat-track=snp1,innerf=1.155,outerf=1.17,label-function=position,label-type=spoke,packer=none
+
+# percent GC plot
+%GC0-100 innerf=1.03,opacity=0.6,heightf=0.07,graph-min=0,graph-max=100,window-size=100
+
+# forward and reverse strand genes
+small-cgap
+genes-fwd heightf=0.05
+tRNAs-fwd heightf=0.05,innerf=same
+rRNAs-fwd heightf=0.05,innerf=same
+tiny-cgap
+genes-rev heightf=0.05
+tRNAs-rev heightf=0.05,innerf=same
+rRNAs-rev heightf=0.05,innerf=same
+
+small-cgap
+
+# reference base(s)
+new snp rectangle heightf=0.1,feat-track=snp1,color1=black,color2=black
+new snprb label heightf=0.05,innerf=same+0.005,label-function=snp_ref_base,feat-track=snp1,packer=none,text-color=white,label-type=spoke,font-height-frac=0.3
+small-cgap heightf=0.01
+medium-label label-text=Reference&nbsp;Base(s)
+small-cgap
+
+# all variants
+new all_snps rectangle feat-type=SNP,heightf=0.1,color1=black,color2=black
+# variant base(s)
+new all_snpsl label heightf=0.05,innerf=same+0.005,label-function=snp_base,feat-type=SNP,packer=none,text-color=white,snp-query=../coverage_plots/eg2.sorted.bam,label-type=spoke,font-height-frac=0.3
+
+medium-label label-text=All&nbsp;Variants
+
+# connect outer scaled circle to inner unscaled circle
+new hssl2 rectangle innerf=0.22,outerf=0.32,feat-track=ssl1,opacity=0.2,color1=#909090,color2=black,stroke-width=1,inner-scale=none,outer-scale=default
+
+# restore unscaled coordinates
+new SSLR scaled-segment-list scale=1,feat-type=dummy
+
+# inner (unscaled) circle
+coords innerf=0.22,heightf=0.006,tick-interval=1000,label-interval=10000,label-units=kb
+
+tiny-cgap
+
+new snp2 rectangle heightf=0.02,feat-track=snp1,color1=black,color2=black
+
+tiny-cgap
+
+# forward and reverse strand genes
+genes-fwd heightf=0.02
+tRNAs-fwd innerf=same,outerf=same
+rRNAs-fwd innerf=same,outerf=same
+tiny-cgap
+genes-rev heightf=0.02
+tRNAs-rev innerf=same,outerf=same
+rRNAs-rev innerf=same,outerf=same
+tiny-cgap
+
+
