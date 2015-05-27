@@ -14,7 +14,7 @@ Circleator [Installation Guide][install].
 
 ### Outline
 
-* **[Example 1](#ex1): Reading variants from VCF files**
+* **[Example 1](#ex1): Reading single-sample variants from VCF files**
 
   1. [Download the input and configuration files](#ex1_download_files)
   2. [Run Circleator](#ex1_run_circleator)
@@ -24,7 +24,7 @@ Circleator [Installation Guide][install].
 ***
 <a name="ex1"></a>
 
-## Reading variants from VCF files
+## Reading single-sample variants from VCF files
 
 <a name="ex1_download_files"></a>
 
