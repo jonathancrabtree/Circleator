@@ -43,6 +43,12 @@ predicts interactions between known transcription factors and a given query geno
 <br clear='both'>
 <img src='tutorials/gene_conservation/bsr-3-400.png' class='gallery'>
 
+* [Example 1][snps_ex1] from the Displaying SNPs and Indels tutorial  
+(Single-sample variants read from a VCF file produced by the Bowtie tutorial)  
+([config][snps_ex1_conf], full size <a href='tutorials/snps_and_indels/variants-ex1b-3000.png'>PNG</a>&nbsp;|&nbsp;<a href='tutorials/snps_and_indels/variants-ex1b.svg'>SVG</a>)
+<br clear='both'>
+<img src='tutorials/snps_and_indels/variants-ex1b-400.png' class='gallery'>
+
 * Genes, percent GC, and GC-skew for *Corynebacterium genitalium ATCC 33030*  
 ([config][c2], full size <a href='images/CM000961-genes-percentGC-GCskew-1-5000.png'>PNG</a>&nbsp;|&nbsp;<a href='images/CM000961-genes-percentGC-GCskew-1-5000.pdf'>PDF</a>&nbsp;|&nbsp;<a href='images/CM000961-genes-percentGC-GCskew-1-5000.svg'>SVG</a>)
 <br clear='both'>
@@ -60,8 +66,10 @@ predicts interactions between known transcription factors and a given query geno
 [gb_ex2]: {{site.baseurl}}/tutorials/gb_annotation.html#ex2
 [cp_ex1]: {{site.baseurl}}/tutorials/coverage_plots.html#ex1
 [cv_ex1]: {{site.baseurl}}/tutorials/gene_conservation.html#ex1
+[snps_ex1]: {{site.baseurl}}/tutorials/snps_and_indels.html#ex1
 [gb_ex1_conf]: {{site.baseurl}}/tutorials/gb_annotation/explore-region-1.txt
 [gb_ex2_conf]: {{site.baseurl}}/tutorials/gb_annotation/scaffolds-and-genes-plus.txt
 [cp_ex1_conf]: {{site.baseurl}}/tutorials/coverage_plots/coverage-ex1.txt
 [cv_ex1_conf]: {{site.baseurl}}/tutorials/gene_conservation/bsr-3.txt
+[snps_ex1_conf]: {{site.baseurl}}/tutorials/snps_and_indels/variants-ex1b.txt
 [bt2_ex]: http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#getting-started-with-bowtie-2-lambda-phage-example
