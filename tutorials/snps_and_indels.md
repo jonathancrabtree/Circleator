@@ -100,7 +100,7 @@ Here's what the result should look like:
 
 <div class='sample_image'>
 <em>variants-ex1.png</em><br>
-(data: <a href='snps_and_indels/lambda_virus.fa'>lambda_virus.fa</a> config: <a href='snps_and_indels/variants-ex1.txt'>variants-ex1.txt</a>, full size <a href='snps_and_indels/variants-ex1-3000.png'>PNG</a>&nbsp;|&nbsp;<a href='snps_and_indels/variants-ex1.svg'>SVG</a>)  
+(data: <a href='snps_and_indels/NC_001416.1.gb'>NC_001416.1.gb</a> config: <a href='snps_and_indels/variants-ex1.txt'>variants-ex1.txt</a>, full size <a href='snps_and_indels/variants-ex1-3000.png'>PNG</a>&nbsp;|&nbsp;<a href='snps_and_indels/variants-ex1.svg'>SVG</a>)  
 <img src='snps_and_indels/variants-ex1-400.png' class='sample_image'>
 </div>
 
@@ -130,7 +130,7 @@ changing the name of the output SVG and PNG files):
 
 <div class='sample_image'>
 <em>variants-ex1b.png</em><br>
-(data: <a href='snps_and_indels/lambda_virus.fa'>lambda_virus.fa</a> config: <a href='snps_and_indels/variants-ex1b.txt'>variants-ex1b.txt</a>, full size <a href='snps_and_indels/variants-ex1b-3000.png'>PNG</a>&nbsp;|&nbsp;<a href='snps_and_indels/variants-ex1b.svg'>SVG</a>)  
+(data: <a href='snps_and_indels/NC_001416.1.gb'>NC_001416.1.gb</a> config: <a href='snps_and_indels/variants-ex1b.txt'>variants-ex1b.txt</a>, full size <a href='snps_and_indels/variants-ex1b-3000.png'>PNG</a>&nbsp;|&nbsp;<a href='snps_and_indels/variants-ex1b.svg'>SVG</a>)  
 <img src='snps_and_indels/variants-ex1b-400.png' class='sample_image'>
 </div>
 
