@@ -119,7 +119,7 @@ glyph in Circleator and, once the scale has been changed, we will have more spac
 on the variant loci. We'll use the same input contig list file, GenBank flat file, and VCF file, but the
 following modified Circleator configuration file:
 
-[contig-list-ex1b-gb.txt][]
+[variants-ex1b.txt][]
 
 Save the above file and rerun Circleator, replacing the original configuration file with the new one (and
 changing the name of the output SVG and PNG files):
@@ -143,4 +143,4 @@ In this version of the figure, notice that:
 * The small inner circle shows the genes and SNPs _without_ any scaling
 * Some of the called variants overlap (e.g., position 12580-12585)
 
-[contig-list-ex1b-gb.txt]: {{site.baseurl}}/tutorials/snps_and_indels/contig-list-ex1b-gb.txt
+[variants-ex1b.txt]: {{site.baseurl}}/tutorials/snps_and_indels/variants-ex1b.txt
