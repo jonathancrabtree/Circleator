@@ -65,7 +65,7 @@ foreach my $track (@$tracks) {
       print "<ul>\n" . join("\n", @{$track->{'track_list'}}) . "</ul>\n";
     }
     if (defined($track->{'docs'} && ($track->{'docs'} =~ /\S/))) {
-      print $track->{'docs'} . "<br>\n";
+      print $track->{'docs'} . "\n";
     }
     next;
   }
@@ -222,7 +222,7 @@ sub parse_config_file {
         $gkey =~ s/\s/_/g;
         if (!$nodoc_mode) {
           $track_list = [];
-          my $track = { 'html' => "<a name='$gkey'><h2>${groupnum}. $group</h2>\n", 'lnum' => $lnum, 'track_list' => $track_list, 'docs' => $docs };
+          my $track = { 'html' => "<a name='$gkey'></a>\n<h2>${groupnum}. $group</h2>\n", 'lnum' => $lnum, 'track_list' => $track_list, 'docs' => $docs };
           push(@$tracks, $track);
           push(@$group_list, { 'key' => $gkey, 'name' => $group, 'track_list' => []});
           ++$groupnum;
@@ -371,7 +371,7 @@ sub make_track_image {
 
 sub print_track_html {
   my($track, $conf_url, $thumb_url, $fullsize_png_url, $svg_url, $pdf_url, $zoomed_images) = @_;
-  print $track->{'docs'} . "<br><br>\n" if (defined($track->{'docs'}) && ($track->{'docs'} =~ /\S/));
+  print $track->{'docs'} . "\n" if (defined($track->{'docs'}) && ($track->{'docs'} =~ /\S/));
 
   if ($track->{'show_figure'} && !$track->{'noimage_mode'}) {
     my $zoom_div = sub {
