@@ -24,11 +24,11 @@ typedef struct _Coverage_Helper
 {
   bam_header_t *bam_header;
   int target_ind;
-  int n_alignments;
+  long n_alignments;
   bam_plbuf_t *pileup_buf;
-  int coverage_sum;
-  int window_size;
-  int next_window_end_pos;
+  long coverage_sum;
+  long window_size;
+  long next_window_end_pos;
   GHashTable *output_file_ht;
   GIOChannel *ofh;
   gboolean count_deleted_bases;
@@ -57,8 +57,8 @@ int _bam_pileup_func(uint32_t tid, uint32_t pos, int n, const bam_pileup1_t *pl,
     gsize bytecount = -1;
 
     // output extra empty windows as needed (although the first one may not be empty)
-    int num_empty = (int)((pos - ch->next_window_end_pos) / (float)ch->window_size);
-    int i;
+    long num_empty = (long)((pos - ch->next_window_end_pos) / (float)ch->window_size);
+    long i;
   
     for (i = 0;i < num_empty; ++i) {
       GString *line = g_string_new("");
@@ -90,8 +90,8 @@ int _bam_pileup_func(uint32_t tid, uint32_t pos, int n, const bam_pileup1_t *pl,
     //    fprintf(stderr, "adding %d to coverage sum, now total=%d\n", n, ch->coverage_sum);
   } 
   else {
-    int num_dels = 0;
-    int p = 0;
+    long num_dels = 0;
+    long p = 0;
 
     for (p = 0;p < n;++p) {
       bam_pileup1_t pup = pl[p];
@@ -133,6 +133,9 @@ int main(int argc, char *argv[])
   int end;
 
   int dummy_taxon_id = FIRST_UNKNOWN_TAXON_ID;
+
+  // prepare GLib for multithreaded use, just in case samtools is doing some multithreading behind the scenes
+  g_thread_init(NULL);
 
   // input/usage
   // taxid mapping is needed to group alignments by genome rather than sequence
@@ -316,8 +319,8 @@ int main(int argc, char *argv[])
       // output extra empty windows as needed 
       gsize bytecount = -1;
       if (bam_header->target_len[i] > ch->next_window_end_pos) {
-        int num_empty = (int)((bam_header->target_len[i] - ch->next_window_end_pos) / (float)ch->window_size) + 1;
-        int j;
+        long num_empty = (long)((bam_header->target_len[i] - ch->next_window_end_pos) / (float)ch->window_size) + 1;
+        long j;
         //        fprintf(stderr, "target len=%d next_window_end_pos=%d window_size=%d num_empty=%d\n", bam_header->target_len[i], ch->next_window_end_pos, ch->window_size, num_empty);
         for (j = 0;j < num_empty; ++j) {
           GString *line = g_string_new("");
@@ -333,12 +336,12 @@ int main(int argc, char *argv[])
         }
       }
 
-      int last_window_end_pos = ch->next_window_end_pos - ch->window_size;
+      long last_window_end_pos = ch->next_window_end_pos - ch->window_size;
       if (last_window_end_pos < 0) {
         fprintf(stderr, "FATAL - internal error, last_window_end_pos=%d\n", last_window_end_pos);
         return 1;
       }
-      int actual_window_size = bam_header->target_len[i] - last_window_end_pos;
+      long actual_window_size = bam_header->target_len[i] - last_window_end_pos;
       GString *gstr = g_string_new("");
       if (actual_window_size > ch->window_size) {
         fprintf(stderr, "error - length of last window is %d, which exceeds the preset window size of %d\n", actual_window_size, ch->window_size);
