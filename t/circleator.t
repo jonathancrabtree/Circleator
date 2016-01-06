@@ -28,6 +28,9 @@ my $DATA_DIR = 'data';
 my $BIN_DIR = 'bin';
 my $LIB_DIR = 'lib';
 
+# number of decimal places to which coordinate values should be compared
+my $MAX_COORD_DECIMAL_PLACES = 10;
+
 # prior output for regression tests
 my $RESULTS_DIR = 't/results';
 
@@ -366,12 +369,22 @@ sub files_differ {
     my $lnum = 0;
     my $first_diff_lnum = undef;
 
+    # only compare coordinate values up to $MAX_COORD_DECIMAL_PLACES decimal places
+    my $format_coords = sub {
+	my($str) = @_;
+	$str =~ s/(\d+\.\d+)/sprintf($MAX_COORD_DECIMAL_PLACES, $1)/ge;
+	return $str;
+    };
+
     while (my $old_line = <$old_fh>) {
 	++$lnum;
 	my $new_line = <$new_fh>;
 	# ignore differences in SVG version number
 	$old_line =~ s/(SVG Module V[\d\.]+)/SVG Module/;
 	$new_line =~ s/(SVG Module V[\d\.]+)/SVG Module/;
+	# round floating point coordinate values to 10 places
+	$old_line =~ s/([xy][12]|\<path d)=\"([^\"]+)\"/$1 . '="' . &$format_coords($2) . '"'/ge;
+	$new_line =~ s/([xy][12]|\<path d)=\"([^\"]+)\"/$1 . '="' . &$format_coords($2) . '"'/ge;
 	# stop if difference found
 	if (!defined($new_line) || ($old_line ne $new_line)) {
 	    $first_diff_lnum = $lnum;
@@ -380,7 +393,7 @@ sub files_differ {
 	}
     }
 
-    # TODO - check whether $new_fh still has data
+    # check whether $new_fh still has data (i.e., old file is a strict prefix of the new file)
     if (!defined($first_diff_lnum)) {
 	my $line = <$new_fh>;
 	if (defined($line)) {
