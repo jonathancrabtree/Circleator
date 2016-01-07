@@ -144,7 +144,8 @@ sub update_track_function_refs {
         if ($att =~ /$ff_re/) {
           my $ff_fn = $fn_factories->{$ff_re};
           my $ff = &$ff_fn($tval);
-          if (defined($ff)) {
+	  # avoid double-replacements (Issue #25)
+          if (defined($ff) && ($att !~ /original_fn/)) {
             # replace function name with the actual function
             $track->{'original_fn_' . $att} = $tval;
             $track->{$att} = &$ff($track, $att);
