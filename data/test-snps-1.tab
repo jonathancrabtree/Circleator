@@ -1,0 +1,16 @@
+molecule	refpos	syn?	refbase	strain_1	strain_2	strain_3	strain_4	strain_5	strain_6	strain_7	strain_8	gene_name	product	gene_start	gene_stop	gene_length	snps_per_gene	pos_in_gene	ref_codon	ref_aa	query_codon	query_aa	num_hits:strain_1	num_hits:strain_2	num_hits:strain_3	num_hits:strain_4	num_hits:strain_5	num_hits:strain_6	num_hits:strain_7	num_hits:strain_8	properties	Num_No_Hit	Homoplasy
+CM000961	100000	SYN	G	A	G	G	G	G	A	G	G	.	.	.	.	.	.	.	.	.	.	.	1	1	1	1	1	1	1	1	.	.	.
+CM000961	200000	SYN	A	A	G	A	A	A	A	A	A	.	.	.	.	.	.	.	.	.	.	.	1	1	1	1	1	1	1	1	.	.	.
+CM000961	300000	NSYN	A	A	A	C	A	A	A	A	A	.	.	.	.	.	.	.	.	.	.	.	1	1	1	1	1	1	1	1	.	.	.
+CM000961	400000	NSYN	C	T	C	C	C	C	C	C	C	.	.	.	.	.	.	.	.	.	.	.	1	1	1	1	1	1	1	1	.	.	.
+CM000961	500000	intronic	T	T	C	T	T	T	T	T	T	.	.	.	.	.	.	.	.	.	.	.	1	1	1	1	1	1	1	1	.	.	.
+CM000961	600000	NSYN	T	T	T	C	T	T	T	T	T	.	.	.	.	.	.	.	.	.	.	.	1	1	1	1	1	1	1	1	.	.	.
+CM000961	700000	intronic	T	A	T	T	T	T	C	T	T	.	.	.	.	.	.	.	.	.	.	.	1	1	1	1	1	1	1	1	.	.	.
+CM000961	800000	NSYN	G	G	A	G	G	G	G	G	G	.	.	.	.	.	.	.	.	.	.	.	1	1	1	1	1	1	1	1	.	.	.
+CM000961	900000	SYN	G	G	G	A	G	G	G	G	G	.	.	.	.	.	.	.	.	.	.	.	1	1	1	1	1	1	1	1	.	.	.
+CM000961	1000000	NSYN	G	A	G	G	G	G	G	G	G	.	.	.	.	.	.	.	.	.	.	.	1	1	1	1	1	1	1	1	.	.	.
+CM000961	1100000	NSYN	C	C	T	C	T	C	T	T	T	.	.	.	.	.	.	.	.	.	.	.	1	1	1	1	1	1	1	1	.	.	.
+CM000961	1200000	NSYN	G	G	G	A	G	G	A	G	G	.	.	.	.	.	.	.	.	.	.	.	1	1	1	1	1	1	1	1	.	.	.
+CM000961	1300000	NSYN	T	C	T	T	T	T	C	T	T	.	.	.	.	.	.	.	.	.	.	.	1	1	1	1	1	1	1	1	.	.	.
+CM000961	1400000	SYN	G	G	A	G	G	G	G	G	G	.	.	.	.	.	.	.	.	.	.	.	1	1	1	1	1	1	1	1	.	.	.
+CM000961	1500000	NSYN	A	A	A	G	A	A	A	A	A	.	.	.	.	.	.	.	.	.	.	.	1	1	1	1	1	1	1	1	.	.	.

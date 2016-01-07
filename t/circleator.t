@@ -43,6 +43,7 @@ my $RESULTS_DIR = 't/results';
 #
 my $TESTS = 
     [
+
      # rulers/coordinate labels
      {'data' => 'CM000961.gbk', 'conf' => 'rulers-1.cfg', 'descr' => "Sequence coordinate ruler tick-interval and label-type." },
      {'data' => 'CM000961-180bp.gbk', 'conf' => 'rulers-1.cfg', 'descr' => "Sequence coordinate ruler tick-interval and label-type." },
@@ -121,6 +122,9 @@ my $TESTS =
      {'data' => 'AE003852-AE003853.gbk', 'conf' => 'AE003852-AE003853-loops-1.cfg', 'descr' => "Basic loops." },
      {'data' => 'AE003852-AE003853.gbk', 'conf' => 'AE003852-AE003853-loops-2.cfg', 'descr' => "Nested loops." },
      {'data' => 'AE003852-AE003853.gbk', 'conf' => 'AE003852-AE003853-loops-3.cfg', 'descr' => "Nested loops II." },
+
+     # loops and SNPs (Issue #25)
+     {'data' => 'CM000961.gbk', 'conf' => 'loops-and-snps-1.cfg', 'descr' => "Multiple loops, SNPs, and functions. Test for Issue #25." },
 
      # ----------------------------------------------------
      # images used in Circleator documentation/web site
