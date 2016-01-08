@@ -12,7 +12,7 @@ Notes for developers.
 * Run the regression tests (./Build test at the top-level)
 * Go to https://github.com/jonathancrabtree/Circleator/releases
 * Click on "Draft a new release"
-* Enter the relase tag and name so that they match the format of the previous ones.
+* Enter the release tag and name so that they match the format of the previous ones.
 * Copy the relevant ChangeLog entry into the "Describe this release" box.
 * Check "This is a pre-release" if this is a release candidate (i.e. version number ends in rc1, rc2, etc.)
 * Click on "Publish release"
