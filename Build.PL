@@ -55,6 +55,8 @@ my $build = $class->new
 	  'Log::Log4perl'               => '1.42',
 	  'SVG'                         => '2.50',
 	  'Text::CSV'                   => '1.31',
+	  # newdir() was added in 0.19:
+	  'File::Temp'                  => '0.19', 
       },
     );
 
