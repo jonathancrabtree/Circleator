@@ -1,5 +1,5 @@
 
-1.0.0 (Jan ?? 2016)
+1.0.0 (Jan 13 2016)
  -Add parser for clc_find_variations SNP/indel-finding tool.
  -Add feat-tag-gt, feat-tag-gte, feat-tag-lt, feat-tag-lte. Previously only 
   lte (less than or equal to) and gte (greater than or equal to) were supported, via
@@ -10,6 +10,7 @@
  -Add utilities for extracting and log-scaling summarized coverage data from BAM files.
  -Fix for possible integer overflow in samtools/bam_get_coverage: replaced int with long.
  -Make regression tests less sensitive to platform and SVG module version [Issue #21].
+ -Make regression tests use the correct Perl executable [Issue #26].
 	
 1.0.0rc4 (Oct 15 2013)
  -Add --version option to report the current version/release number.
