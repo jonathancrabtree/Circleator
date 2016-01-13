@@ -11,6 +11,7 @@
  -Fix for possible integer overflow in samtools/bam_get_coverage: replaced int with long.
  -Make regression tests less sensitive to platform and SVG module version [Issue #21].
  -Make regression tests use the correct Perl executable [Issue #26].
+ -Tested on more recent Perl versions (5.18.2, 5.22.1) and Mac OS X 10.11.2 (El Capitan)
 	
 1.0.0rc4 (Oct 15 2013)
  -Add --version option to report the current version/release number.
