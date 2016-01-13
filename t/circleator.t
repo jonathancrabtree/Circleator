@@ -25,8 +25,7 @@ use Test::More;
 ## ----------------------------------
 my $CONF_DIR = 't/conf';
 my $DATA_DIR = 'data';
-my $BIN_DIR = 'bin';
-my $LIB_DIR = 'lib';
+my $BIN_DIR = 'blib/script';
 
 # number of decimal places to which coordinate values should be compared
 my $MAX_COORD_DECIMAL_PLACES = 10;
@@ -239,7 +238,7 @@ foreach my $test (@$TESTS) {
     }
 
     # run Circleator
-    my $cmd = "perl -I$LIB_DIR $BIN_DIR/circleator ";
+    my $cmd = "$BIN_DIR/circleator ";
     $cmd .= "--data=$data_path " if (defined($data_path));
     $cmd .= "--config=$conf_path " if (defined($conf));
     $cmd .= "--sequence=$seq_path " if (defined($seq_path));
