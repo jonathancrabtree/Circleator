@@ -53,7 +53,7 @@ sub parse_file {
     my $nf = scalar(@f);
     chomp($f[-1]);
 
-    if (($lnum == 1) && ($line =~ /^\Feature ID/i)) {
+    if (($lnum == 1) && ($line =~ /^Feature ID/i)) {
       $ns = $nf - 1;
       shift @f;
       $sample_names = \@f;
