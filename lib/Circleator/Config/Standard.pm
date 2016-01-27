@@ -108,7 +108,7 @@ my $GLOBAL_OPTS =
    'skip-track',
    'z-index',
    # filters
-   'feat-type', 'feat-strand', 'feat-tag', 'feat-tag-value', 'feat-tag-min-value', 'feat-tag-max-value', 'feat-tag-regex',
+   'feat-type', 'feat-type-regex', 'feat-strand', 'feat-tag', 'feat-tag-value', 'feat-tag-min-value', 'feat-tag-max-value', 'feat-tag-regex',
    'feat-tag-lt', 'feat-tag-lte', 'feat-tag-gt', 'feat-tag-gte', 
    'feat-min-length', 'feat-max-length', 'clip-fmin', 'clip-fmax', 'overlapping-feat-type', 'overlapping-feat-track',
    # filter by gene cluster

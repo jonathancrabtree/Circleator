@@ -32,7 +32,6 @@ sub get_function {
   return sub {
     my $f = shift;
     my $ftype = $f->primary_tag();
-    die "expression_level can only be used on CDS features, not features of type $ftype" unless ($ftype eq 'CDS');
     my $color = $default_color;
     my $tag = $EXP_TP . $sample;
 

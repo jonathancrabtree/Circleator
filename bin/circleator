@@ -4183,8 +4183,8 @@ sub draw_track {
     $tv->parse_file($file);
   }  
   elsif ($glyph eq 'load-gene-expression-table') {
-    my($file) = map { $track->{$_} } ('gene-expression-file');
-    my $et = Circleator::Parser::Expression_Table->new($LOGGER, {'config' => $config, 'seq' => $seq, 'seqlen' => $seqlen, 'bpseq' => $richseq, 'contig_location_info' => $contig_location_info, 'strict_validation' => 0});
+    my($file, $ftre) = map { $track->{$_} } ('gene-expression-file', 'feat-type-regex');
+    my $et = Circleator::Parser::Expression_Table->new($LOGGER, {'config' => $config, 'seq' => $seq, 'seqlen' => $seqlen, 'bpseq' => $richseq, 'contig_location_info' => $contig_location_info, 'strict_validation' => 0, 'feat_type_regex' => $ftre});
     $et->parse_file($file);
   }
   elsif ($glyph eq 'load-gene-cluster-table') {
