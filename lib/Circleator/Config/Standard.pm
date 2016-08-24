@@ -126,6 +126,7 @@ my $GLYPH_OPTS =
                'heat-map-out-of-range-color', 'heat-map-brewer-palette' ],
    'ruler' => ['tick-interval', 'label-interval', 'label-type', 'label-units', 'label-precision', 'font-size', 'no-circle', 'fmin', 'fmax'],
    'rectangle' => ['inner-scale', 'outer-scale', 'stroke-width', 'stroke-dasharray'],
+   'circle' => ['stroke-width', 'stroke-dasharray'],
    'variant-base-histogram' => ['inner-scale', 'outer-scale', 'stroke-width', 'stroke-dasharray', 'min-allele-pct', 'label-bases', 'font-height-frac'],
    'scaled-segment-list' => ['scale', 'target-bp'],
    'loop-start' => ['loop-var'],

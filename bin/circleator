@@ -2260,6 +2260,49 @@ sub draw_rectangle_track {
   }
 }
 
+sub draw_circle_track {
+  my ($group, $seq, $seqlen, $contig_positions, $richseq, $track, $tracks, $config) = @_;
+  my($tnum, $feat_type, $feat_type_regex, $glyph, $sf, $ef, $opacity, $zIndex, $scolor, $stroke_dasharray, $fcolor, $gfunc, $features, $no_scaling)= 
+    map { $track->{$_} } 
+      ('tnum', 'feat-type', 'feat-type-regex', 'glyph', 'start-frac', 'end-frac', 'opacity', 'z-index', 
+       'stroke-color', 'stroke-dasharray', 'fill-color', 'graph-function', 'features', 'no-scaling');
+
+  my $tfs = &get_track_features($group, $seq, $seqlen, $contig_positions, $richseq, $track, $tracks, $config);
+  my($tfeat_track, $tfeat_list) = map {$tfs->{$_}} ('track', 'features');
+  my($swidth) = map {$track->{$_}} ('stroke-width');
+
+  my ($sw0p5) = map { &get_scaled_stroke_width($radial_height, 1, $_) } (0.5);
+  $swidth = $sw0p5 if (!defined($swidth) || ($swidth eq ''));
+  foreach my $feat (@$tfeat_list) {
+      my $f_type = $feat->primary_tag();
+      my($f_start, $f_end, $f_strand) = &get_corrected_feature_coords($feat);
+      my($fmin, $fmax, $strand) = &bioperl_coords_to_chado($f_start, $f_end, $f_strand);
+      confess "no strand defined for feature of type $f_type from $f_start - $f_end" if ($f_strand eq '');
+      my $fc = ((ref $fcolor) eq 'CODE') ? &$fcolor($feat) : $fcolor;
+      my $sc = ((ref $scolor) eq 'CODE') ? &$scolor($feat) : $scolor;
+      my $sw = ((ref $swidth) eq 'CODE') ? &$swidth($feat) : $swidth;
+      $sw = undef if ($sw == 0);
+      next if (($fc eq 'none') && ($sc eq 'none'));
+      my $atts = { 'fill' => $fc, 'stroke' => $sc, 'stroke-width' => $sw };
+      $atts->{'stroke-dasharray'} = $stroke_dasharray if (defined($stroke_dasharray));
+      
+      # find center of circle
+      my $fmid = ($fmax + $fmin) / 2.0;
+      my $mf = $sf + ($radial_height/2.0);
+      my($cx, $cy) = &coord_to_circle($fmid, $mf, $seqlen);
+
+      # and radius
+      my $r = $RADIUS * $radial_height * 0.5;
+      my $ca = {
+              'cx' => $cx,
+              'cy' => $cy,
+              'r' => $r
+      };
+      map { $ca->{$_} = $atts->{$_}; } keys %$atts;
+      my $c = $svg->circle(%$ca);
+  }
+}
+
 sub draw_snp_base_histogram_track {
   my ($group, $seq, $seqlen, $contig_positions, $richseq, $track, $tracks, $config) = @_;
   my($tnum, $feat_type, $feat_type_regex, $glyph, $sf, $ef, $opacity, $zIndex, $scolor, $stroke_dasharray, $fcolor, $gfunc, $features, $no_scaling, $min_allele_pct, $label_bases, $font_height_frac)= 
@@ -3424,6 +3467,8 @@ sub draw_track {
     &draw_coordinate_labels($group, $seq, $seqlen, $contig_positions, $richseq, $track, $tracks, $config);
   } elsif ($glyph eq 'rectangle') {
     &draw_rectangle_track($group, $seq, $seqlen, $contig_positions, $richseq, $track, $tracks, $config);
+  } elsif ($glyph eq 'circle') {
+    &draw_circle_track($group, $seq, $seqlen, $contig_positions, $richseq, $track, $tracks, $config);
   } elsif ($glyph eq 'variant-base-histogram') {
     &draw_snp_base_histogram_track($group, $seq, $seqlen, $contig_positions, $richseq, $track, $tracks, $config);
   }
