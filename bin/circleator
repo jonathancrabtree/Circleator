@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 use vars qw($VERSION);
-$VERSION = '1.0.0';
+$VERSION = '1.0.1';
 
 =head1 NAME 
 
@@ -2270,6 +2270,7 @@ sub draw_circle_track {
   my $tfs = &get_track_features($group, $seq, $seqlen, $contig_positions, $richseq, $track, $tracks, $config);
   my($tfeat_track, $tfeat_list) = map {$tfs->{$_}} ('track', 'features');
   my($swidth) = map {$track->{$_}} ('stroke-width');
+  my $radial_height = $ef - $sf;
 
   my ($sw0p5) = map { &get_scaled_stroke_width($radial_height, 1, $_) } (0.5);
   $swidth = $sw0p5 if (!defined($swidth) || ($swidth eq ''));
@@ -2299,7 +2300,7 @@ sub draw_circle_track {
               'r' => $r
       };
       map { $ca->{$_} = $atts->{$_}; } keys %$atts;
-      my $c = $svg->circle(%$ca);
+      my $c = $group->circle(%$ca);
   }
 }
 

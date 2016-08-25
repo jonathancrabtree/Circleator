@@ -102,6 +102,9 @@ my $TESTS =
      {'data' => 'CM000961-180bp.gbk', 'conf' => 'labels-1.cfg', 'descr' =>  "Automatically-generated and packed labels for tRNA and rRNA features, plus manually-defined label(s)." },
      {'data' => 'NC_011969.gbk', 'conf' => 'labels-1.cfg', 'descr' =>  "Automatically-generated and packed labels for tRNA and rRNA features, plus manually-defined label(s)." },
 
+     # circle glyph
+     {'data' => 'CM000961.gbk', 'conf' => 'circles-1.cfg', 'descr' => "Circle track type." },
+
      # multiple input contigs (in one file)
      {'data' => 'AE003852-AE003853.gbk', 'conf' => 'AE003852-AE003853-contigs-and-gaps-1.cfg', 'descr' => "Positioning of contigs and contig gaps." },
 

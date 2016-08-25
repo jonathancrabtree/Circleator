@@ -1,8 +1,9 @@
 
-1.1.0 (Feb ?? 2016)
+1.0.1 (Feb ?? 2016)
  -Add feat-type-regex to 'load-gene-expression-table'. Allows reading expression data
   associated with RNA features rather than CDS features (the default.)
-
+ -Add 'circle' track type and regression test.
+	
 1.0.0 (Jan 13 2016)
  -Add parser for clc_find_variations SNP/indel-finding tool.
  -Add feat-tag-gt, feat-tag-gte, feat-tag-lt, feat-tag-lte. Previously only 
