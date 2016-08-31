@@ -89,7 +89,7 @@ my $GLOBAL_OPTS =
    'snp-ref', 'snp-query', 'snp-min-diffs', 'snp-max-diffs', 'snp-no-hit-color', 'snp-same-as-ref-color', 'snp-unknown-color', 'snp-syn-color', 
    'snp-nsyn-color', 'snp-multiple-color', 'snp-ins-color', 'snp-del-color', 'snp-intergenic-color',
    'snp-other-color', 'snp-intronic-color', 'snp-readthrough-color',
-   'snp-same-as-ref-label', 'snp-no-hit-label',
+   'snp-same-as-ref-label', 'snp-no-hit-label', 'snp-utr-color',
    # tag labels
    'tag-name', 'tag-value-separator', 'tag-ignore-multiple-values',
    # TRF
@@ -142,7 +142,7 @@ my $GLYPH_OPTS =
    'cufflinks-transcript' => ['gene-id-mapping-file'],
    'synteny-arrow' => ['gene-pairs', 'inner-scale', 'outer-scale', 'stroke-width', 'max-insertion-gene-count'],
    'label' => ['text-anchor', 'label-function', 'packer', 'reverse-pack-order', 'text-color', 'style', 'link-color', 
-               'label-type', 'draw-link', 'stroke-width', 'font-height-frac', 'font-family', 'font-style', 'font-weight',
+               'label-type', 'draw-link', 'stroke-width', 'font-height-frac', 'font-family', 'font-style', 'font-weight', 'text',
                # used by bsr_count
                'genomes', 'threshold'],
   };
