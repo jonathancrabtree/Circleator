@@ -37,6 +37,10 @@ sub new {
 
 sub transform {
   my($self, $coord) = @_;
+  # allow negative coordinates for consistency with Identity.pm
+  if ($coord < 0) {
+      $coord = $coord % $self->{'seqlen'};
+  }
   my $segment = $self->_lookup_segment($coord);
   # use linear interpolation along $segment
   my($fmin, $fmax, $sfmin, $sfmax, $unscaled_bp, $scaled_bp) =
@@ -116,6 +120,7 @@ sub _init() {
     my $leftover_unscaled_bp = $seqlen - $unscaled_bp_sum;
     # compute scale factor for the rest of the sequence not covered by the segment list
     my $leftover_seq_scale = $leftover_scaled_bp / $leftover_unscaled_bp;
+    $self->{'logger'}->debug("scaled_bp_sum=$scaled_bp_sum, leftover_seq_scale=$leftover_seq_scale");
 
     # create new segment list with explicit segment for every region of the sequence
     my $new_segments = [];
