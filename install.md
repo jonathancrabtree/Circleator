@@ -103,7 +103,7 @@ To install Circleator system-wide (this requires superuser privileges):
 To install Circleator to a different location, do this instead:
 
     perl Build.PL --install_base=/install/path
-    ./Build.PL
+    ./Build
     ./Build test
     ./Build install
 
