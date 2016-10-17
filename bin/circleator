@@ -20,11 +20,16 @@ circleator - A Perl-based visualization tool for producing circular plots of gen
          --contig_gap_size=20000
          --contig_min_size=5000
          --debug='all,coordinates,input,loops,misc,packing,tracks'
+         --linear
          --no_seq
          --rotate_degrees=0
          --scaled_segment_list='2000-3000:5,4000-5000:2,7000-9000:0.5'
          --scaled_segment_file=scaled-segments.txt
          --pad=400
+         --pad_left=400
+         --pad_right=400
+         --pad_top=400
+         --pad_bottom=400
          --log=/path/to/debug/logfile.txt
          --conf_dir=/etc/circleator/conf
          --help
@@ -121,6 +126,14 @@ Optional.  Comma-delimited list of detailed debug options to enable:
   tracks - Print individual track debug information as each track is rendered to SVG.
   misc - Miscellaneous debug information - anything not covered by the other categories.
 
+=item B<--linear>
+
+Optional.  Set this if a _linear_ plot is desired instead of a circular
+plot. Certain options (e.g., curved/radial text rendering) will have no effect
+in linear mode. In linear mode a rectangular plot is produced: the radius 
+of the circle is used as the figure height and the circumference of the
+circle is used as the figure width.
+
 =item B<--no_seq>
 
 Optional.  Set this if no sequence is available for the contigs in
@@ -154,7 +167,27 @@ segment list (in the same format) to be read from the named file.
 
 =item B<--pad>
 
-Padding (in pixels) to leave on each side of the figure.
+Default padding (in pixels) to leave on each side of the figure. 
+
+=item B<--pad_left>
+
+Padding (in pixels) to leave on the left side of the figure. Set to
+the value given by --pad if not defined.
+
+=item B<--pad_right>
+
+Padding (in pixels) to leave on the right side of the figure. Set to
+the value given by --pad if not defined.
+
+=item B<--pad_top>
+
+Padding (in pixels) to leave on the top side of the figure. Set to
+the value given by --pad if not defined.
+
+=item B<--pad_bottom>
+
+Padding (in pixels) to leave on the bottom side of the figure. Set to
+the value given by --pad if not defined.
 
 =item B<--log,-l>
 
@@ -349,11 +382,16 @@ my $options = {};
             "contig_gap_size|g=s",
             "contig_min_size=s",
             "debug=s",
+            "linear!",
             "no_seq!",
             "rotate_degrees=s",
             "scaled_segment_list=s",
             "scaled_segment_file=s",
             "pad|p=i",
+            "pad_left=i",
+            "pad_right=i",
+            "pad_top=i",
+            "pad_bottom=i",
             "log|l=s",
             "conf_dir=s",
             "help|h",
@@ -384,10 +422,11 @@ if ( $options->{'help'} || $options->{'man'} ) {
 &check_parameters($options);
 my $ROTATE_DEGREES = $options->{'rotate_degrees'};
 
-my $SVG_WIDTH = ($RADIUS * 2) + ($options->{'pad'} * 2);
-my $SVG_HEIGHT = ($RADIUS * 2) + ($options->{'pad'} * 2);
-my $XOFFSET = $RADIUS + $options->{'pad'};
-my $YOFFSET = $RADIUS + $options->{'pad'};
+my $SVG_WIDTH = ($RADIUS * 2) + ($options->{'left_pad'} + $options->{'right_pad'});
+my $SVG_HEIGHT = ($RADIUS * 2) + ($options->{'top_pad'} + $options->{'bottom_pad'});
+my $XOFFSET = $RADIUS + $options->{'left_pad'};
+my $YOFFSET = $RADIUS + $options->{'top_pad'};
+my $LINEAR = $options->{'linear'};
 
 ## logging
 # Configuration in a string ...
@@ -894,8 +933,11 @@ sub check_parameters {
   $options->{'contig_gap_size'}= $DEFAULT_CONTIG_GAP_SIZE_BP if (!defined($options->{'contig_gap_size'}));
   $options->{'contig_min_size'}= $DEFAULT_CONTIG_MIN_SIZE_BP if (!defined($options->{'contig_min_size'}));
   $options->{'rotate_degrees'}= $DEFAULT_ROTATE_DEGREES if (!defined($options->{'rotate_degrees'}));
-  $options->{'pad'}= $DEFAULT_PAD if (!defined($options->{'pad'}));
   $options->{'conf_dir'} = $DEFAULT_CONF_DIR if (!defined($options->{'conf_dir'}));
+
+  # padding
+  $options->{'pad'}= $DEFAULT_PAD if (!defined($options->{'pad'}));
+  map { my $pkey = 'pad_' . $_; options->{$pkey} = $options->{'pad'} if (!defined($options->{$pkey})); } ('left', 'right', 'top', 'bottom');
 
   if ($options->{'conf_dir'} =~ /^\s*$/) {
       die "Either --conf_dir must be specified or the package must be built according to the INSTALL document.";
