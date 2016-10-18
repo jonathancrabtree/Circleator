@@ -1,11 +1,12 @@
 
-1.0.1 (Feb ?? 2016)
+1.0.1 (?? 2016)
  -Add feat-type-regex to 'load-gene-expression-table'. Allows reading expression data
   associated with RNA features rather than CDS features (the default.)
  -Add 'circle' track type and regression test.
  -Add new label functions: literal_text, product_name
  -Add new color function: snp_type_incl_utr
  -Modify LinearScale.pm to allow negative coordinates.
+ -Modify circleator.t to round circle (cx, cy) coordinates when comparing SVG.
 	
 1.0.0 (Jan 13 2016)
  -Add parser for clc_find_variations SNP/indel-finding tool.
