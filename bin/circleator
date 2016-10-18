@@ -422,10 +422,10 @@ if ( $options->{'help'} || $options->{'man'} ) {
 &check_parameters($options);
 my $ROTATE_DEGREES = $options->{'rotate_degrees'};
 
-my $SVG_WIDTH = ($RADIUS * 2) + ($options->{'left_pad'} + $options->{'right_pad'});
-my $SVG_HEIGHT = ($RADIUS * 2) + ($options->{'top_pad'} + $options->{'bottom_pad'});
-my $XOFFSET = $RADIUS + $options->{'left_pad'};
-my $YOFFSET = $RADIUS + $options->{'top_pad'};
+my $SVG_WIDTH = ($RADIUS * 2) + ($options->{'pad_left'} + $options->{'pad_right'});
+my $SVG_HEIGHT = ($RADIUS * 2) + ($options->{'pad_top'} + $options->{'pad_bottom'});
+my $XOFFSET = $RADIUS + $options->{'pad_left'};
+my $YOFFSET = $RADIUS + $options->{'pad_top'};
 my $LINEAR = $options->{'linear'};
 
 ## logging
@@ -936,8 +936,8 @@ sub check_parameters {
   $options->{'conf_dir'} = $DEFAULT_CONF_DIR if (!defined($options->{'conf_dir'}));
 
   # padding
-  $options->{'pad'}= $DEFAULT_PAD if (!defined($options->{'pad'}));
-  map { my $pkey = 'pad_' . $_; options->{$pkey} = $options->{'pad'} if (!defined($options->{$pkey})); } ('left', 'right', 'top', 'bottom');
+  $options->{'pad'} = $DEFAULT_PAD if (!defined($options->{'pad'}));
+  map { my $pkey = 'pad_' . $_; $options->{$pkey} = $options->{'pad'} if (!defined($options->{$pkey})); } ('left', 'right', 'top', 'bottom');
 
   if ($options->{'conf_dir'} =~ /^\s*$/) {
       die "Either --conf_dir must be specified or the package must be built according to the INSTALL document.";
