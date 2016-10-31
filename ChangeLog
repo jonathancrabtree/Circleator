@@ -7,6 +7,7 @@
  -Add new color function: snp_type_incl_utr
  -Modify LinearScale.pm to allow negative coordinates.
  -Modify circleator.t to round circle (cx, cy) coordinates when comparing SVG.
+ -Undo bam_get_coverage.c regression from previous commit.
 	
 1.0.0 (Jan 13 2016)
  -Add parser for clc_find_variations SNP/indel-finding tool.

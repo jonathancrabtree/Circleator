@@ -134,9 +134,6 @@ int main(int argc, char *argv[])
 
   int dummy_taxon_id = FIRST_UNKNOWN_TAXON_ID;
 
-  // prepare GLib for multithreaded use, just in case samtools is doing some multithreading behind the scenes
-  g_thread_init(NULL);
-
   // input/usage
   // taxid mapping is needed to group alignments by genome rather than sequence
   if ((argc != 9) && (argc != 6) && (argc != 4)) {
