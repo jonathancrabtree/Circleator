@@ -389,8 +389,8 @@ sub files_differ {
 	$old_line =~ s/(SVG Module V[\d\.]+)/SVG Module/;
 	$new_line =~ s/(SVG Module V[\d\.]+)/SVG Module/;
 	# round floating point coordinate values to 10 places
-	$old_line =~ s/([xy][12]|\<path d)=\"([^\"]+)\"/$1 . '="' . &$format_coords($2) . '"'/ge;
-	$new_line =~ s/([xy][12]|\<path d)=\"([^\"]+)\"/$1 . '="' . &$format_coords($2) . '"'/ge;
+	$old_line =~ s/([xy][12]|\<path d|c[xy])=\"([^\"]+)\"/$1 . '="' . &$format_coords($2) . '"'/ge;
+	$new_line =~ s/([xy][12]|\<path d|c[xy])=\"([^\"]+)\"/$1 . '="' . &$format_coords($2) . '"'/ge;
 	# stop if difference found
 	if (!defined($new_line) || ($old_line ne $new_line)) {
 	    $first_diff_lnum = $lnum;
