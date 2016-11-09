@@ -2632,7 +2632,7 @@ sub draw_label_track {
 		my $te = $group->text('x' => $tx1, 'y' => $ty1, %$textArgs);
 		$te->cdata($txt);
       } elsif ($lt eq 'spoke') {
-		my $quad = &coord_to_quadrant($pos, $seqlen);
+		my $quad = $DRAW->coord_to_quadrant($pos);
 
         # TODO - figure out adjustment to $pos to increase (right side of circle) or decrease (left side of circle) offset by half font height
         my($fhf, $cwbp) = &get_font_height_frac_and_char_width_bp($seqlen, $sf, $ef, $nt, $tier_gap_frac, $track_fhf, $track_fwf);
@@ -2647,8 +2647,8 @@ sub draw_label_track {
         $mod_pos = $mod_pos % $seqlen if ($mod_pos > $seqlen);
 
         my $pos = $DRAW->invert_transform($mod_pos);
-	my $mod_quad = &coord_to_quadrant($pos, $seqlen);
-	my $deg = &coord_to_degrees($pos);
+	my $mod_quad = $DRAW->coord_to_quadrant($pos);
+	my $deg = $DRAW->coord_to_degrees($pos);
         my($tx1, $ty1) = $DRAW->coord_to_circle($pos, $sf, $seqlen);
 
 		# modify anchor based on quadrant if drawing spoke labels
@@ -2667,7 +2667,7 @@ sub draw_label_track {
 #            $mod_pos += $cwbp;
 #          }
 #          $pos = $DRAW->invert_transform($mod_pos);
-#          $deg = &coord_to_degrees($pos);
+#          $deg = $DRAW->coord_to_degrees($pos);
 #          ($tx1, $ty1) = $DRAW->coord_to_circle($pos, $sf, $seqlen);
 #        }
 
@@ -3721,8 +3721,8 @@ sub draw_track {
 #        $group->circle( 'cx' => $cx1, 'cy' => $cy1, 'r' => $cr, 'stroke' => 'black', 'stroke-width' => $ssw, 'fill' => 'none' );
 
         # draw an ellipse
-        my $deg = &coord_to_degrees($position);
-        my $quad = &coord_to_quadrant($position);
+        my $deg = $DRAW->coord_to_degrees($position);
+        my $quad = $DRAW->coord_to_quadrant($position);
         $deg += 180 if ($quad =~ /l$/);
 		my $eg = $group->group( 'transform' => "translate($cx1, $cy1)");
         $eg->ellipse( 'cx' => 0, 'cy' => 0, 'rx' => $ssw,'ry' => $cr, 'stroke' => 'black', 'stroke-width' => $ssw, 

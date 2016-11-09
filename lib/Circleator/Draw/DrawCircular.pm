@@ -415,7 +415,8 @@ sub coord_to_circle {
 #  'br' - bottom right
 #
 sub coord_to_quadrant {
-  my($self, $coord, $seqlen) = @_;
+  my($self, $coord) = @_;
+  my $seqlen = $self->seqlen();
   my $deg = $self->coord_to_degrees($coord);
   # don't use %, because we want this to stay a floating point value
   my $dn = $deg;
