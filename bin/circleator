@@ -238,6 +238,9 @@ as specified in the configuration file.
 
 use strict;
 
+# TODO - factor this out
+use Math::Trig ':pi';
+
 # these variables are set at build time
 my $DEFAULT_CONF_DIR;
 my $DEFAULT_LIB_DIR;
@@ -255,13 +258,8 @@ use FileHandle;
 use Getopt::Long qw(:config no_ignore_case no_auto_abbrev pass_through);
 use Pod::Usage;
 use Log::Log4perl qw(:easy);
-use POSIX qw (floor);
 use SVG;
 use Text::CSV;
-
-# coordinate system conversions
-use Math::Trig ':radial';
-use Math::Trig ':pi';
 
 # BioPerl
 use Bio::FeatureIO::gff;
@@ -272,6 +270,8 @@ use Bio::SeqFeature::Generic;
 
 use Circleator::CoordTransform::Identity;
 use Circleator::CoordTransform::LinearScale;
+use Circleator::Draw::DrawCircular;
+use Circleator::Draw::DrawLinear;
 use Circleator::Packer::LinePacker;
 use Circleator::Parser::BSR;
 use Circleator::Parser::SNP_CLCFindVariations;
@@ -296,39 +296,23 @@ use Circleator::Config::Standard;
 my $LOGGER = undef;
 # all debug options except for 'all'
 my $DEBUG_OPTS = ['coordinates', 'input', 'loops', 'misc', 'packing', 'tracks'];
-# TODO - this shouldn't be global:
-my $TRANSFORM = undef;
 my $XML_XLINK = 'http://www.w3.org/1999/xlink';
-my $RADIUS = 1200;
-# target ratio of stroke width to effective tier height (in pixels)
-my $TARGET_STROKE_WIDTH_RATIO = 1000;
 
 my $DEFAULT_CONFIG_FORMAT = 'standard';
 my $DEFAULT_DATA_DIR = '.';
-# TODO - automatically compute the pad amount required from the labeling style selected?
+
+my $DEFAULT_RADIUS = 1200;
 my $DEFAULT_PAD = 400;
-my $SVG_ID_COUNTER = 0;
-my $DEFAULT_RULER_FONT_SIZE = 50;
-my $FONT_BASELINE_FRAC = 0.8;
 # approximate average font width as a fraction of font height
 my $FONT_WIDTH_FRAC = 0.8;
-my $DEFAULT_COORD_LABEL_TYPE = 'horizontal';
 my $DEFAULT_TIER_GAP_FRAC = 0.2;
 
 # where to place the sequence origin from 0-360 degrees (0 = top center)
 my $DEFAULT_ROTATE_DEGREES = 0;
-# where Math::Trig places the origin by default
-my $MATH_TRIG_ORIGIN_DEGREES = 90;
+
 # gaps to place between contigs in --contig_list mode
 my $DEFAULT_CONTIG_GAP_SIZE_BP = 20000;
 my $DEFAULT_CONTIG_MIN_SIZE_BP = 0;
-
-my $QUADRANTS = {
-                 '0' => 'tr',
-                 '1' => 'br',
-                 '2' => 'bl',
-                 '3' => 'tl',
-                };
 
 # TODO - factor this out...way out
 my $UCSC_TABLES = {
@@ -420,13 +404,6 @@ if ( $options->{'help'} || $options->{'man'} ) {
   pod2usage( {-exitval => 0, -verbose => 2, -output => \*STDERR} );
 }
 &check_parameters($options);
-my $ROTATE_DEGREES = $options->{'rotate_degrees'};
-
-my $SVG_WIDTH = ($RADIUS * 2) + ($options->{'pad_left'} + $options->{'pad_right'});
-my $SVG_HEIGHT = ($RADIUS * 2) + ($options->{'pad_top'} + $options->{'pad_bottom'});
-my $XOFFSET = $RADIUS + $options->{'pad_left'};
-my $YOFFSET = $RADIUS + $options->{'pad_top'};
-my $LINEAR = $options->{'linear'};
 
 ## logging
 # Configuration in a string ...
@@ -449,7 +426,6 @@ if (defined($options->{'log'})) {
 
 $LOGGER->level($DEBUG) if (scalar(keys %$debug_opts) > 0);
 $LOGGER->info("started drawing figure using " . $options->{'config'});
-my $IDENTITY_TRANSFORM = Circleator::CoordTransform::Identity->new($LOGGER, {});
 
 ## main program
 
@@ -855,6 +831,15 @@ if (defined($options->{'scaled_segment_file'})) {
   }
 }
 
+# create drawing object based on drawing mode
+my $DRAW = undef;
+if (defined($options->{'linear'})) {
+    $DRAW = Circleator::Draw::DrawLinear->new();
+} else {
+    $DRAW = Circleator::Draw::DrawCircular->new();
+}
+$DRAW->init($LOGGER, $seqlen, $DEFAULT_RADIUS, $debug_opts, $options);
+
 # parse scaled_segment_list to determine coordinate transform
 if (defined($options->{'scaled_segment_list'})) {
   my $ssl = $options->{'scaled_segment_list'};
@@ -868,9 +853,7 @@ if (defined($options->{'scaled_segment_list'})) {
     }
   }
   my $params = {'seqlen' => $seqlen, 'segments' => $ssl};
-  $TRANSFORM = Circleator::CoordTransform::LinearScale->new($LOGGER, $params, $debug_opts->{'coordinates'});
-} else {
-  $TRANSFORM = $IDENTITY_TRANSFORM;
+  $DRAW->push_transform(Circleator::CoordTransform::LinearScale->new($LOGGER, $params, $debug_opts->{'coordinates'}));
 }
 
 # read configuration file
@@ -956,10 +939,6 @@ sub check_parameters {
   if (defined($dd) && (!-e $dd) || (!-r $dd) || (!-d $dd)) {
     die "--data_dir=$dd does not exist or is not a readable directory";
   }
-}
-
-sub new_svg_id {
-  return ++$SVG_ID_COUNTER;
 }
 
 sub get_file_path {
@@ -1694,79 +1673,6 @@ sub read_bioperl_sequences {
   return $seqh;
 }
 
-# Map linear sequence coordinate to a number of degrees between 0 and 360
-#
-sub coord_to_degrees {
-  my($coord, $seqlen, $correction) = @_;
-  $correction = 0 if (!defined($correction));
-  # TODO - move conversion code into a separate class, which HAS-A optional coord transform
-  die "no transform defined" if (!defined($TRANSFORM));
-  my $mod_coord = $TRANSFORM->transform($coord);
-  my $deg = (($mod_coord/$seqlen) * 360.0);
-  # take current rotation into account
-  $deg += ($ROTATE_DEGREES + $correction);
-  # don't use %, because we want this to stay a floating point value
-  while ($deg < 0) { $deg += 360; }
-  while ($deg > 360) { $deg -= 360; }
-  return $deg;
-}
-
-# Map linear coordinate plus distance from circle center (0-1) to a point on the circle.
-#
-sub coord_to_circle {
-  my($coord, $center_dist, $seqlen) = @_;
-  my $rho = $center_dist * $RADIUS;
-  my $deg = &coord_to_degrees($coord, $seqlen, -$MATH_TRIG_ORIGIN_DEGREES);
-  my $theta = Math::Trig::deg2rad($deg);
-  my($x, $y, $z) = cylindrical_to_cartesian($rho, $theta, 0);
-#  print STDERR "coord_to_circle coord=$coord deg=$deg theta=$theta\n";
-  return ($x + $XOFFSET, $y + $YOFFSET);
-}
-
-# Convert linear sequence coordinate to a quadrant:
-#  'tr' - top right
-#  'tl' - top left
-#  'bl' - bottom left
-#  'br' - bottom right
-#
-sub coord_to_quadrant {
-  my($coord, $seqlen) = @_;
-  my $deg = coord_to_degrees($coord, $seqlen);
-  # don't use %, because we want this to stay a floating point value
-  my $dn = $deg;
-  while ($dn < 0) { $dn += 360; }
-  while ($dn > 360) { $dn -= 360; }
-  die "unexpected dn=$dn" if (($dn < 0) || ($dn > 360));
-  my $quad = int($dn / 90.0) % 4;
-  die "unexpected quad=$quad for dn=$dn" if (($quad <0) || ($quad > 3));
-  return $QUADRANTS->{$quad};
-}
-
-# Scale stroke width based on track height (and, if applicable, number of tiers.)
-#  t_height - track height expressed as a radial fraction between 0 and 1
-#  n_tiers - number of tiers: either undef or a number >= 0
-#  stroke_width - stroke width before scaling
-#
-sub get_scaled_stroke_width {
-  my($t_height, $n_tiers, $stroke_width) = @_;
-  $n_tiers = 1 if (!defined($n_tiers));
-  $LOGGER->logdie("invalid number of tiers ($n_tiers)") if ($n_tiers < 0);
-  my $effective_t_height = $t_height / $n_tiers;
-  # TODO - allow definition of global stroke-width multiplier that modifies $TARGET_STROKE_WIDTH_RATIO
-
-  # everything is based off the (arbitrary) resolution at which a stroke width of 1 looks decent
-  my $effective_t_height_px = $effective_t_height * $RADIUS;
-  my $scale_factor = $effective_t_height_px / $TARGET_STROKE_WIDTH_RATIO;
-  my $scaled_stroke_width = ($stroke_width * $scale_factor);
-
-  if ($scaled_stroke_width < 0) {
-    confess "got negative scaled stroke width: t_height=$t_height n_tiers=$n_tiers, stroke_width=$stroke_width, scale_factor=$scale_factor\n";
-    die;
-  }
-
-  return $scaled_stroke_width;
-}
-
 # Retrieve the list of selected features for a track.
 #
 # Returns a hashref with the following keys:
@@ -2114,146 +2020,6 @@ sub get_track_features {
   return {'track' => $feat_track, 'features' => $filtered_feat_list};
 }
 
-# TODO - Roll this into the general track labeling mechanism.
-# TODO - Handle the complication that the labels may extend beyond the boundaries 
-# of the SVG image, requiring (retroactive?) changes to $SVG_WIDTH and $SVG_HEIGHT.
-
-# Draws a circle at $sf and tick marks from $sf to $ef.  Outside $ef coordinate labels will be drawn.
-# label_type must be one of the following:
-#   horizontal - labels are draw horizontally 
-#   spoke - labels are drawn as spokes radiating out from the outside of the circle
-#   curved - labels are drawn wrapped around the outside of the circle
-#
-sub draw_coordinate_labels {
-  my($group, $seq, $seqlen, $contig_positions, $richseq, $track, $all_tracks, $config) = @_;
-  my($feat_type, $glyph, $sf, $ef, $tickInterval, $labelInterval, $labelType, 
-     $labelUnits, $labelPrecision, $fontSize, $noCircle,
-     # optionally restrict the label and tick drawing to a specific interval defined by $fmin - $fmax
-    $fmin, $fmax) = 
-    map { $track->{$_} } ('feat-type', 'glyph', 'start-frac', 'end-frac', 'tick-interval', 
-                          'label-interval', 'label-type', 'label-units', 'label-precision', 'font-size', 'no-circle', 'fmin', 'fmax');
-
-  if (!defined($labelType)) {
-    $labelType = $DEFAULT_COORD_LABEL_TYPE;
-  } 
-  if ($labelType !~ /^horizontal|spoke|curved$/) {
-    $LOGGER->logdie("unsupported label_type of $labelType requested: only horizontal, spoke, and curved are supported");
-  }
-  $labelUnits = "Mb" if (!defined($labelUnits));
-  $labelPrecision = "1" if (!defined($labelPrecision));
-
-  $fmin = 0 if (!defined($fmin) || ($fmin < 0));
-  $fmax = $seqlen if (!defined($fmax) || ($fmax > $seqlen));
-  my $seqIntLen = ($fmax - $fmin);
-
-  # TODO - print warnings if tickInterval and/or labelInterval result in either too few or too many ticks/labels
-  my $nTicks = defined($tickInterval) ? ($seqIntLen / $tickInterval) : 0;
-  my $nLabels = defined($labelInterval) ? ($seqIntLen / $labelInterval) : 0;
-  my $radial_height = $ef - $sf;
-  my ($sw1, $sw2, $sw3) = map { &get_scaled_stroke_width($radial_height, 1, $_) } (200,100,400);
-  $fontSize = $DEFAULT_RULER_FONT_SIZE if (!defined($fontSize));
-
-  # draw circle at $sf
-  # TODO - not clear whether it's better to draw the entire circle or just the arc, if fmin-fmax != 0-seqlen
-  my $r = $sf * $RADIUS;
-  $group->circle( 'cx' => $XOFFSET, 'cy' => $YOFFSET, 'r' => $r, 'stroke' => 'black', 'stroke-width' => $sw1, 'fill' => 'none' ) unless ($noCircle);
-
-  my $getTickOrLabelIndices = sub {
-    my($fmin, $fmax, $interval) = @_;
-    my $start_ind = floor($fmin / $interval);
-    my $start_posn = $start_ind * $interval;
-    ++$start_ind if ($start_posn < $fmin);
-    my $end_ind = floor($fmax / $interval);
-    $LOGGER->debug("converted fmin=$fmin, fmax=$fmax, interval=$interval to start_ind=$start_ind, end_ind=$end_ind") if ($debug_opts->{'coordinates'});
-    return ($start_ind, $end_ind);
-  };
-
-  if ((defined($tickInterval)) && ($seqIntLen >= 0)) {
-    my($first_tick_ind, $last_tick_ind) = &$getTickOrLabelIndices($fmin, $fmax, $tickInterval);
-    for (my $t = $first_tick_ind;$t <= $last_tick_ind;++$t) {
-      my $pos = $tickInterval * $t;
-      my($ix1, $iy1) = &coord_to_circle($pos, $sf, $seqlen);
-      my($ox1, $oy1) = &coord_to_circle($pos, $ef, $seqlen);
-      $group->line('x1' => $ix1, 'y1' => $iy1, 'x2' => $ox1, 'y2' => $oy1, 'stroke' => 'black', 'stroke-width' => $sw2);
-    }
-  }
-
-  my $tef = $ef + ($ef - $sf);
-  my $tef2 = $ef + (($ef - $sf) * 2);
-  my $er = $tef2 * $RADIUS;
-
-  # circular paths (left side and right side) for curved text layout
-  my $circlePathId = undef;
-  if ($labelType eq 'curved') {
-    $circlePathId = "cp" . &new_svg_id();
-    my($bx,$by,$tx,$ty) = ($XOFFSET,$YOFFSET+$er,$XOFFSET,$YOFFSET-$er);
-    my($lx,$ly,$rx,$ry) = ($XOFFSET-$er,$YOFFSET,$XOFFSET+$er,$YOFFSET);
-    my $xar = -$MATH_TRIG_ORIGIN_DEGREES;
-
-    # circle starts at 9 o'clock and then goes for 450 degrees
-    # this allows rendering labels that cross the origin.  90 degrees will be added to compensate
-    my $cp = $group->path('id' => $circlePathId,
-                          'd' =>
-                          "M${lx},${ly} " .
-                          "A$er,$er $xar,1,1 ${bx},${by} " .
-                          "A$er,$er $xar,1,1 ${tx},${ty} ",
-                          'fill' => "none",
-                          'stroke' => "none");
-  }
-
-  my $ft_offset = pi2 * $er * (($MATH_TRIG_ORIGIN_DEGREES + $ROTATE_DEGREES)/360.0);
-
-  if ((defined($labelInterval)) && ($seqIntLen >= 0)) {
-    my($first_label_ind, $last_label_ind) = &$getTickOrLabelIndices($fmin, $fmax, $labelInterval);
-    for (my $l = $first_label_ind;$l <= $last_label_ind; ++$l) {
-      my $pos = $labelInterval * $l;
-      my($ix1, $iy1) = &coord_to_circle($pos, $sf, $seqlen);
-      my($ox1, $oy1) = &coord_to_circle($pos, $tef, $seqlen);
-      my($oox1, $ooy1) = &coord_to_circle($pos, $tef2, $seqlen);
-      
-      # draw larger tick
-      $group->line('x1' => $ix1, 'y1' => $iy1, 'x2' => $ox1, 'y2' => $oy1, 'stroke' => 'black', 'stroke-width' => $sw3);
-      my $deg = &coord_to_degrees($pos, $seqlen);
-      my $quad = &coord_to_quadrant($pos, $seqlen);
-      $LOGGER->debug("mapped pos=$pos to deg=$deg quad=$quad") if ($debug_opts->{'coordinates'});
-      
-      # anchor left side labels at the end, right side labels at the start
-      my $anchor = ($quad =~ /l$/) ? "end" : "start";
-      # shift labels down if they're in the bottom quadrants
-      $ooy1 += ($fontSize * $FONT_BASELINE_FRAC) if ($quad =~ /^b/);
-      
-      my $coordLabel = undef;
-      if ($labelUnits =~ /^gb$/i) {
-        $coordLabel = sprintf("%.${labelPrecision}f", $pos/1000000000.0) . "Gb";
-      } elsif ($labelUnits =~ /^mb$/i) {
-        $coordLabel = sprintf("%.${labelPrecision}f", $pos/1000000.0) . "Mb";
-      } elsif ($labelUnits =~ /^kb$/i) {
-        $coordLabel = sprintf("%.${labelPrecision}f", $pos/1000.0) . "kb";
-      } else {
-        $coordLabel = sprintf("%.${labelPrecision}f", $pos) . "bp";
-      }
-      
-      if ($labelType eq 'horizontal') {
-        $group->text('x' => $oox1, 'y' => $ooy1, 'text-anchor' => $anchor, 'font-size' => $fontSize, 'font-weight' => 'bold')->cdata($coordLabel);
-      } elsif ($labelType eq 'spoke') {
-        my $tg = $group->group( 'transform' => "translate($oox1, $ooy1)");
-        my $tr = $deg - 90;
-        $tr += 180 if ($quad =~ /l$/);
-        $tg->text('x' => 0, 'y' => 0, 'text-anchor' => $anchor, 'font-size' => $fontSize, 'font-weight' => 'bold', 'transform' => "rotate($tr)")->cdata($coordLabel);
-      } elsif ($labelType eq 'curved') {
-        # select left or right path depending on quadrant
-        my $cpid = undef;
-        # calculate translation needed to put the label in the right place
-        my $mod_pos = $TRANSFORM->transform($pos);
-        $LOGGER->debug("converted pos=$pos to mod_pos=$mod_pos") if ($debug_opts->{'coordinates'});
-        my $ft = pi2 * $er * ($mod_pos/$seqlen) + $ft_offset;
-        my $txt = $group->text('x' => $ft, 'y' => 0, 'text-anchor' => 'middle', 'font-size' => $fontSize, 'font-weight' => 'bold');
-        $txt->textPath('xlink:href' => "#" . $circlePathId)->cdata($coordLabel);
-      }
-    }
-  }
-}
-
 sub get_font_height_frac_and_char_width_bp {
   my($seqlen, $sf, $ef, $ntiers, $tier_gap_frac, $track_font_height_frac, $track_font_width_frac) = @_;
   $track_font_width_frac = $FONT_WIDTH_FRAC if (!defined($track_font_width_frac));
@@ -2262,11 +2028,11 @@ sub get_font_height_frac_and_char_width_bp {
   my $tier_height = $radial_height / $ntiers;
   my $fhf = ($tier_height * (1 - ($tier_gap_frac * 1.5))) * $track_font_height_frac;
   # approximate average width of a single character at radius = $sf (assuming only 1 tier)
-  my $char_width_px = $fhf * $RADIUS * $track_font_width_frac;
+  my $char_width_px = $fhf * $DRAW->radius() * $track_font_width_frac;
   # HACK - use average of inner and outer circles to estimate font size
   # this workaround still has the problem that it underestimates label size for the inner tiers, where 
   # a fixed width in pixels will correspond to a larger bp range
-  my $circum_px = pi2 * (($sf+$ef)/2) * $RADIUS;
+  my $circum_px = $DRAW->circumference(($sf+$ef)/2);
   my $char_width_bp = ($char_width_px/$circum_px) * $seqlen;
 #  print STDERR "get_font_height_frac_and_char_width_bp ntiers=$ntiers radial_height=$radial_height tier_height=$tier_height fhf=$fhf char_width_px=$char_width_px circum_px=$circum_px char_width_bp=$char_width_bp seqlen=$seqlen\n";
   return($fhf, $char_width_bp);
@@ -2284,7 +2050,8 @@ sub draw_rectangle_track {
   my($inner_scale, $outer_scale, $swidth) = map {$track->{$_}} ('inner-scale', 'outer-scale', 'stroke-width');
   # TODO - factor this out and make it call the appropriate drawing function(s) as callbacks
   my $radial_height = $ef - $sf;
-  my ($sw0p5) = map { &get_scaled_stroke_width($radial_height, 1, $_) } (0.5);
+  my ($sw0p5) = map { $DRAW->get_scaled_stroke_width($radial_height, 1, $_) } (0.5);
+  print STDERR "sw0p5=$sw0p5\n";
   $swidth = $sw0p5 if (!defined($swidth) || ($swidth eq ''));
   foreach my $feat (@$tfeat_list) {
     my $f_type = $feat->primary_tag();
@@ -2298,7 +2065,7 @@ sub draw_rectangle_track {
     next if (($fc eq 'none') && ($sc eq 'none'));
     my $atts = { 'fill' => $fc, 'stroke' => $sc, 'stroke-width' => $sw };
     $atts->{'stroke-dasharray'} = $stroke_dasharray if (defined($stroke_dasharray));
-    &draw_curved_rect($group, $seqlen, $fmin, $fmax, $sf, $ef, $atts, $inner_scale, $outer_scale);
+    $DRAW->draw_rect($group, $fmin, $fmax, $sf, $ef, $atts, $inner_scale, $outer_scale);
   }
 }
 
@@ -2314,7 +2081,7 @@ sub draw_circle_track {
   my($swidth) = map {$track->{$_}} ('stroke-width');
   my $radial_height = $ef - $sf;
 
-  my ($sw0p5) = map { &get_scaled_stroke_width($radial_height, 1, $_) } (0.5);
+  my ($sw0p5) = map { $DRAW->get_scaled_stroke_width($radial_height, 1, $_) } (0.5);
   $swidth = $sw0p5 if (!defined($swidth) || ($swidth eq ''));
   foreach my $feat (@$tfeat_list) {
       my $f_type = $feat->primary_tag();
@@ -2332,10 +2099,10 @@ sub draw_circle_track {
       # find center of circle
       my $fmid = ($fmax + $fmin) / 2.0;
       my $mf = $sf + ($radial_height/2.0);
-      my($cx, $cy) = &coord_to_circle($fmid, $mf, $seqlen);
+      my($cx, $cy) = $DRAW->coord_to_circle($fmid, $mf, $seqlen);
 
       # and radius
-      my $r = $RADIUS * $radial_height * 0.5;
+      my $r = $DRAW->radius() * $radial_height * 0.5;
       my $ca = {
               'cx' => $cx,
               'cy' => $cy,
@@ -2361,7 +2128,7 @@ sub draw_snp_base_histogram_track {
   my($inner_scale, $outer_scale, $swidth) = map {$track->{$_}} ('inner-scale', 'outer-scale', 'stroke-width');
   # TODO - factor this out and make it call the appropriate drawing function(s) as callbacks
   my $radial_height = $ef - $sf;
-  my ($sw0p5) = map { &get_scaled_stroke_width($radial_height, 1, $_) } (0.5);
+  my ($sw0p5) = map { $DRAW->get_scaled_stroke_width($radial_height, 1, $_) } (0.5);
   $swidth = $sw0p5 if (!defined($swidth) || ($swidth eq ''));
   my $cfv = Circleator::Parser::SNP_CLCFindVariations->new($LOGGER, {'config' => $config});
   my $tp = $cfv->tag_prefix();
@@ -2418,7 +2185,7 @@ sub draw_snp_base_histogram_track {
 	    my $a_fmax = $fmin + ($aw * ($a+1));
 	    my $a_ef = $sf + (($ef - $sf) * ($pct/100.0));
 #	    print STDERR "a=$a a_fmin=$a_fmin, a_fmax=$a_fmax a_ef=$a_ef sf=$sf ef=$ef\n";
-	    &draw_curved_rect($group, $seqlen, $a_fmin, $a_fmax, $sf, $a_ef, $atts, $inner_scale, $outer_scale);
+	    $DRAW->draw_rect($group, $a_fmin, $a_fmax, $sf, $a_ef, $atts, $inner_scale, $outer_scale);
 	    # label base immediately below
 	    my $lbl_posn = $fmin + ($aw * ($a+0.5));
 	    push(@$lbls, {'text' => $bases, 'position' => $lbl_posn, 'fmin' => $lbl_posn, 'fmax' => $lbl_posn, 'text-anchor' => 'end'});
@@ -2558,15 +2325,15 @@ sub draw_label_track {
 
   # run packing algorithm for a given font size (expressed as a tier count)
   my $do_pack = sub {
-	my $num_tiers = shift;
-	my($fhf, $cwbp) = &get_font_height_frac_and_char_width_bp($seqlen, $sf, $ef, $num_tiers, $tier_gap_frac, $track_fhf, $track_fwf);
+    my $num_tiers = shift;
+    my($fhf, $cwbp) = &get_font_height_frac_and_char_width_bp($seqlen, $sf, $ef, $num_tiers, $tier_gap_frac, $track_fhf, $track_fwf);
 
-	# update pack_fmin, pack_fmax based on font size $fhf
-	foreach my $label (@$labels) {
+    # update pack_fmin, pack_fmax based on font size $fhf
+    foreach my $label (@$labels) {
       my($fmin, $fmax, $label_text) = map {$label->{$_}} ('fmin', 'fmax', 'text');
       # do label width comparison in _transformed_ coordinate space, because font size is unaffected by the transformations
-      my $mod_fmin = $TRANSFORM->transform($fmin);
-      my $mod_fmax = $TRANSFORM->transform($fmax);
+      my $mod_fmin = $DRAW->transform($fmin);
+      my $mod_fmax = $DRAW->transform($fmax);
 
       # approximate label width in transformed coordinates
       my $label_len = length($label_text);
@@ -2587,10 +2354,10 @@ sub draw_label_track {
       my $mod_fmax_out_of_range = ($mod_pack_fmax > $seqlen);
       $mod_pack_fmax = $mod_pack_fmax % $seqlen if ($mod_fmax_out_of_range);
 
-      my $pack_fmin = $TRANSFORM->invert_transform($mod_pack_fmin);
-      my $pack_fmax = $TRANSFORM->invert_transform($mod_pack_fmax);
+      my $pack_fmin = $DRAW->invert_transform($mod_pack_fmin);
+      my $pack_fmax = $DRAW->invert_transform($mod_pack_fmax);
       $pack_fmax += $seqlen if ($mod_fmax_out_of_range);
-      my $label_position = $TRANSFORM->invert_transform($mod_label_position);
+      my $label_position = $DRAW->invert_transform($mod_label_position);
 #      print STDERR "label_text='$label_text' label_len=$label_len cwbp=$cwbp label_width_bp=$approx_label_width_bp inverted label_position=$label_position\n";
       $label->{'pack-fmin'} = $pack_fmin;
       $label->{'pack-fmax'} = $pack_fmax;
@@ -2728,27 +2495,27 @@ sub draw_label_track {
     
   # assign font sizes and vertical offsets
   for (my $t = 0;$t < $nt; ++$t) {
-	my $tier = $tiers->[$t];
-	my $t_sf = $sf + ($tier_height * $t);
-	my $t_ef = $t_sf + $tier_height - ($tier_height * $tier_gap_frac);
-	my $m_tier_height = $t_ef - $t_sf;
-
-	$LOGGER->debug("tiernum=$t t_sf=$t_sf t_ef=$t_ef") if ($debug_opts->{'packing'});
-
-	# path for circular labels
-	# circle starts at 9 o'clock and then goes for 450 degrees
-	# this allows rendering labels that cross the origin.  90 degrees will be added to compensate
-	my $circlePathId = "cp" . &new_svg_id();
-
-	# approximate baseline radius
-	my $br = ($t_ef - ($m_tier_height * $FONT_BASELINE_FRAC)) * $RADIUS;
-    my $ft_offset = pi2 * $br * (($MATH_TRIG_ORIGIN_DEGREES + $ROTATE_DEGREES)/360.0);
-
-	# TODO - this is copied from draw_coordinate_labels and should be factored out
-	my($bx,$by,$tx,$ty) = ($XOFFSET,$YOFFSET+$br,$XOFFSET,$YOFFSET-$br);
-	my($lx,$ly,$rx,$ry) = ($XOFFSET-$br,$YOFFSET,$XOFFSET+$br,$YOFFSET);
-	my $xar = -$MATH_TRIG_ORIGIN_DEGREES;
-	my $cp = $group->path('id' => $circlePathId,
+    my $tier = $tiers->[$t];
+    my $t_sf = $sf + ($tier_height * $t);
+    my $t_ef = $t_sf + $tier_height - ($tier_height * $tier_gap_frac);
+    my $m_tier_height = $t_ef - $t_sf;
+    
+    $LOGGER->debug("tiernum=$t t_sf=$t_sf t_ef=$t_ef") if ($debug_opts->{'packing'});
+    
+    # path for circular labels
+    # circle starts at 9 o'clock and then goes for 450 degrees
+    # this allows rendering labels that cross the origin.  90 degrees will be added to compensate
+    my $circlePathId = "cp" . $DRAW->new_svg_id();
+    
+    # approximate baseline radius
+    my $br = ($t_ef - ($m_tier_height * $DRAW->font_baseline_frac())) * $DRAW->radius();
+    my $ft_offset = pi2 * $br * (($DRAW->origin_degrees() + $DRAW->rotate_degrees())/360.0);
+    
+    # TODO - this is copied from draw_coordinate_labels and should be factored out
+    my($bx,$by,$tx,$ty) = ($DRAW->xoffset(),$DRAW->yoffset()+$br,$DRAW->xoffset(),$DRAW->yoffset()-$br);
+    my($lx,$ly,$rx,$ry) = ($DRAW->xoffset()-$br,$DRAW->yoffset(),$DRAW->xoffset()+$br,$DRAW->yoffset());
+    my $xar = -$DRAW->origin_degrees();
+    my $cp = $group->path('id' => $circlePathId,
                           'd' =>
                           "M${lx},${ly} " .
                           "A$br,$br $xar,1,1 ${bx},${by} " .
@@ -2756,17 +2523,17 @@ sub draw_label_track {
                           'fill' => "none",
                           'stroke' => "none");
 
-	foreach my $lbl (@$tier) {
+    foreach my $lbl (@$tier) {
       $lbl->{'font-height-frac'} = $font_height_frac;
       $lbl->{'sf'} = $t_sf;
       $lbl->{'ef'} = $t_ef;
       $lbl->{'ft-offset'} = $ft_offset;
       $lbl->{'path-id'} = $circlePathId;
       $lbl->{'baseline-radius'} = $br;
-	}
+    }
   }
     
-  my ($sw1, $sw2, $sw3) = map { &get_scaled_stroke_width($radial_height, $nt, $_) } (5,10,100);
+  my ($sw1, $sw2, $sw3) = map { $DRAW->get_scaled_stroke_width($radial_height, $nt, $_) } (5,10,100);
 
   # draw signpost connecting lines first
   foreach my $lbl (@$labels) {
@@ -2791,13 +2558,13 @@ sub draw_label_track {
 		my $tt_ef = $ltrack->{'end-frac'};
 		# target track is _outside_ this one
         if (defined($ltrack) && ($ltrack->{'tnum'} > $tnum)) {
-          ($lx1, $ly1) = &coord_to_circle($pos, $lsf, $seqlen);
-          ($tx1, $ty1) = &coord_to_circle($pos, $tt_ef, $seqlen);
+          ($lx1, $ly1) = $DRAW->coord_to_circle($pos, $lsf, $seqlen);
+          ($tx1, $ty1) = $DRAW->coord_to_circle($pos, $tt_ef, $seqlen);
 		} 
 		# target track is _inside_ this one
 		else {
-          ($lx1, $ly1) = &coord_to_circle($pos, $lef, $seqlen);
-          ($tx1, $ty1) = &coord_to_circle($pos, $tt_sf, $seqlen);
+          ($lx1, $ly1) = $DRAW->coord_to_circle($pos, $lef, $seqlen);
+          ($tx1, $ty1) = $DRAW->coord_to_circle($pos, $tt_sf, $seqlen);
 		}
 		$group->line('x1' => $lx1, 'y1' => $ly1, 'x2' => $tx1, 'y2' => $ty1, 'stroke' => $lc, 'stroke-width' => $stroke_width );
       }
@@ -2828,11 +2595,11 @@ sub draw_label_track {
       }
     }
 	$pos = 0 if (!defined($pos));
-	$fhf = $FONT_BASELINE_FRAC if (!defined($fhf));
+	$fhf = $DRAW->font_baseline_frac() if (!defined($fhf));
 	$lt = $g_label_type if (!defined($lt));
-	my $fh = $fhf * $RADIUS;
+	my $fh = $fhf * $DRAW->radius();
     # TODO - factor these two lines out into coord_to_circumferential_coord (better name for this?)
-    my $mod_pos = $TRANSFORM->transform($pos);
+    my $mod_pos = $DRAW->transform($pos);
 	my $ft = pi2 * $br * ($mod_pos/$seqlen) + $fto;
 
 	if ($style eq 'signpost') {
@@ -2841,7 +2608,7 @@ sub draw_label_track {
 		my($lx1, $ly1, $tx1, $ty1);
         # draw curved rectangle around the label
         my $atts = { 'fill' => $fc, 'stroke' => $sc, 'stroke-width' => $sw2 };
-        &draw_curved_rect($group, $seqlen, $pfmin, $pfmax, $lsf, $lef, $atts);
+	$DRAW->draw_rect($group, $pfmin, $pfmax, $lsf, $lef, $atts);
 #        print STDERR "txt=$txt pfmin=$pfmin pfmax=$pfmax\n";
       }
     }
@@ -2860,7 +2627,7 @@ sub draw_label_track {
       my $te = $group->text('x' => $ft, 'y' => 0, %$textArgs);
       $te->textPath('xlink:href' => "#" . $cpid)->cdata($txt);
 	} else {
-      my($tx1, $ty1) = &coord_to_circle($pos, $sf, $seqlen);
+      my($tx1, $ty1) = $DRAW->coord_to_circle($pos, $sf, $seqlen);
       if ($lt eq 'horizontal') {
 		my $te = $group->text('x' => $tx1, 'y' => $ty1, %$textArgs);
 		$te->cdata($txt);
@@ -2869,7 +2636,7 @@ sub draw_label_track {
 
         # TODO - figure out adjustment to $pos to increase (right side of circle) or decrease (left side of circle) offset by half font height
         my($fhf, $cwbp) = &get_font_height_frac_and_char_width_bp($seqlen, $sf, $ef, $nt, $tier_gap_frac, $track_fhf, $track_fwf);
-        my $mod_pos = $TRANSFORM->transform($pos);
+        my $mod_pos = $DRAW->transform($pos);
 
         # TODO - this is not correct
         if ($quad =~ /r$/) {
@@ -2879,10 +2646,10 @@ sub draw_label_track {
         }
         $mod_pos = $mod_pos % $seqlen if ($mod_pos > $seqlen);
 
-        my $pos = $TRANSFORM->invert_transform($mod_pos);
-		my $mod_quad = &coord_to_quadrant($pos, $seqlen);
-		my $deg = &coord_to_degrees($pos, $seqlen);
-        my($tx1, $ty1) = &coord_to_circle($pos, $sf, $seqlen);
+        my $pos = $DRAW->invert_transform($mod_pos);
+	my $mod_quad = &coord_to_quadrant($pos, $seqlen);
+	my $deg = &coord_to_degrees($pos);
+        my($tx1, $ty1) = $DRAW->coord_to_circle($pos, $sf, $seqlen);
 
 		# modify anchor based on quadrant if drawing spoke labels
 		if ($ta eq 'start') {
@@ -2899,9 +2666,9 @@ sub draw_label_track {
 #          } else {
 #            $mod_pos += $cwbp;
 #          }
-#          $pos = $TRANSFORM->invert_transform($mod_pos);
-#          $deg = &coord_to_degrees($pos, $seqlen);
-#          ($tx1, $ty1) = &coord_to_circle($pos, $sf, $seqlen);
+#          $pos = $DRAW->invert_transform($mod_pos);
+#          $deg = &coord_to_degrees($pos);
+#          ($tx1, $ty1) = $DRAW->coord_to_circle($pos, $sf, $seqlen);
 #        }
 
         my $hfh = $fh/2.0;
@@ -3069,10 +2836,10 @@ sub draw_graph_track {
   }
 
   # inner and outer radii
-  my $ir = $RADIUS * $sf;
-  my $or = $RADIUS * $ef;
+  my $ir = $DRAW->radius() * $sf;
+  my $or = $DRAW->radius() * $ef;
   my $radial_height = $ef - $sf;
-  my ($sw0p5, $sw1, $sw4) = map { &get_scaled_stroke_width($radial_height, 1, $_) } (0.5,1,4);
+  my ($sw0p5, $sw1, $sw4) = map { $DRAW->get_scaled_stroke_width($radial_height, 1, $_) } (0.5,1,4);
   $swidth = $sw0p5 if (!defined($swidth));
 
   # map graph value to a number in the range $sf - $ef and a flag that indicates 
@@ -3170,7 +2937,7 @@ sub draw_graph_track {
         my $clipped = $rsf_clipped || $ref_clipped;
         # TODO - render clipped values differently
         my($rf_min,$rf_max) = ($rsf > $ref) ? ($ref, $rsf) : ($rsf, $ref);
-        &draw_curved_rect($group, $seqlen, $fmin, $fmax, $rf_min, $rf_max, $atts);
+        $DRAW->draw_rect($group, $fmin, $fmax, $rf_min, $rf_max, $atts);
       }
     } 
     elsif ($g_type eq 'heat_map') {
@@ -3181,7 +2948,7 @@ sub draw_graph_track {
       ($rsf, $rsf_clipped) = &$value_to_radial_frac($g_min);
       my($ref, $ref_clipped) = &$value_to_radial_frac($g_max);
       my($rf_min,$rf_max) = ($rsf > $ref) ? ($ref, $rsf) : ($rsf, $ref);
-      &draw_curved_rect($group, $seqlen, $fmin, $fmax, $rf_min, $rf_max, $atts);
+      $DRAW->draw_rect($group, $fmin, $fmax, $rf_min, $rf_max, $atts);
     }
 
     # show confidence interval
@@ -3206,7 +2973,7 @@ sub draw_graph_track {
         $ci_atts = $atts if (!defined($ci_atts));
         my($ref1, $ref_clipped1) = &$value_to_radial_frac($v1);
         my($ref2, $ref_clipped2) = &$value_to_radial_frac($v2);
-        &draw_curved_line($group, $seqlen, $last_midpt, $midpt, 0, $ref1, $ref2, $atts);
+        $DRAW->draw_curved_line($group, $last_midpt, $midpt, 0, $ref1, $ref2, $atts);
       }
     }
     $last_mvals = $mvalues;
@@ -3219,7 +2986,7 @@ sub draw_graph_track {
   my $lbl_opacity = '0.6';
 
   if ((!$minf_clipped) && (!$no_circles)) {
-    $group->circle( 'cx' => $XOFFSET, 'cy' => $YOFFSET, 'r' => $minf * $RADIUS, 'stroke' => 'black', 'stroke-width' => $sw1, 'fill' => 'none', 'opacity' => $lbl_opacity, 'stroke-dasharray' => '3, 3' );
+    $group->circle( 'cx' => $DRAW->xoffset(), 'cy' => $DRAW->yoffset(), 'r' => $minf * $DRAW->radius(), 'stroke' => 'black', 'stroke-width' => $sw1, 'fill' => 'none', 'opacity' => $lbl_opacity, 'stroke-dasharray' => '3, 3' );
 	# TODO - make labeling optional
 	my($lminf,$lmaxf) = ($minf == $sf) ? ($minf, $minf + $lfh) : ($minf - $lfh, $minf);
 	my $lt = { 'tnum' => $tnum . ".1", 'start-frac' => $lminf, 'end-frac' => $lmaxf, 'glyph' => 'label', 'labels' => [{'text' => sprintf("min=%0.4f", $g_min)}], 'opacity' => $lbl_opacity };
@@ -3228,7 +2995,7 @@ sub draw_graph_track {
 
   my($maxf, $maxf_clipped) = &$value_to_radial_frac($g_max);
   if ((!$maxf_clipped) && (!$no_circles)) {
-    $group->circle( 'cx' => $XOFFSET, 'cy' => $YOFFSET, 'r' => $maxf * $RADIUS, 'stroke' => 'black', 'stroke-width' => $sw1, 'fill' => 'none', 'opacity' => $lbl_opacity, 'stroke-dasharray' => '3, 3' );
+    $group->circle( 'cx' => $DRAW->xoffset(), 'cy' => $DRAW->yoffset(), 'r' => $maxf * $DRAW->radius(), 'stroke' => 'black', 'stroke-width' => $sw1, 'fill' => 'none', 'opacity' => $lbl_opacity, 'stroke-dasharray' => '3, 3' );
 	# TODO - make labeling optional
 	my($lminf,$lmaxf) = ($maxf == $sf) ? ($maxf, $maxf + $lfh) : ($maxf - $lfh, $maxf);
 	my $lt = { 'tnum' => $tnum . ".2", 'start-frac' => $lminf, 'end-frac' => $lmaxf, 'glyph' => 'label', 'labels' => [{'text' => sprintf("max=%0.4f", $g_max)}], 'opacity' => $lbl_opacity };
@@ -3237,7 +3004,7 @@ sub draw_graph_track {
 
   my($avgf, $avgf_clipped) = &$value_to_radial_frac($avg);
   if ((!$avgf_clipped) && (!$no_circles)) {
-    $group->circle( 'cx' => $XOFFSET, 'cy' => $YOFFSET, 'r' => $avgf * $RADIUS, 'stroke' => 'black', 'stroke-width' => $sw1, 'fill' => 'none', 'opacity' => $lbl_opacity, 'stroke-dasharray' => '3, 3' );
+    $group->circle( 'cx' => $DRAW->xoffset(), 'cy' => $DRAW->yoffset(), 'r' => $avgf * $DRAW->radius(), 'stroke' => 'black', 'stroke-width' => $sw1, 'fill' => 'none', 'opacity' => $lbl_opacity, 'stroke-dasharray' => '3, 3' );
 	# TODO - make labeling optional
 	my($lminf,$lmaxf) = ($avgf - $lfh, $avgf);
     # default = display label inside the average line
@@ -3262,7 +3029,7 @@ sub draw_graph_track {
       $align = 'below' if (!defined($align) || ($align eq ''));
 
       if (!$cf_clipped) {
-        $group->circle( 'cx' => $XOFFSET, 'cy' => $YOFFSET, 'r' => $cf * $RADIUS, 'stroke' => 'black', 'stroke-width' => $sw1, 'fill' => 'none', 'opacity' => $lbl_opacity, 'stroke-dasharray' => '3, 3' );
+        $group->circle( 'cx' => $DRAW->xoffset(), 'cy' => $DRAW->yoffset(), 'r' => $cf * $DRAW->radius(), 'stroke' => 'black', 'stroke-width' => $sw1, 'fill' => 'none', 'opacity' => $lbl_opacity, 'stroke-dasharray' => '3, 3' );
 
         if (defined($label)) {
           my($lminf,$lmaxf) = ($cf - $lfh, $cf);
@@ -3287,179 +3054,6 @@ sub draw_graph_track {
   }
 }
 
-# Change the scale/sequence transform and return a subroutine that will restore it to the original value.
-sub set_scale {
-  my($scale) = @_;
-  my $saved_scale = $TRANSFORM;
-
-  if (!defined($scale) || ($scale eq 'default')) {
-    # no-op
-  } elsif ($scale eq 'none') {
-    $TRANSFORM = $IDENTITY_TRANSFORM;
-  } else {
-    $LOGGER->logdie("unrecognized scale $scale");
-  }
-
-  return sub {
-    $TRANSFORM = $saved_scale;
-  };
-}
-
-sub draw_curved_rect {
-  my($svg, $seqlen, $fmin, $fmax, $sf, $ef, $pathAtts, $innerScale, $outerScale) = @_;
-  my $is_circle = ($fmax - $fmin) >= $seqlen;
-  $fmin += $seqlen if ($fmin < 0);
-
-  # convert fmin and fmax to appropriate inner/outer points on the circle
-  # inner circle:
-  my $restore_scale = &set_scale($innerScale);
-  my($ix1, $iy1) = &coord_to_circle($fmin, $sf, $seqlen);
-  my($ix2, $iy2) = &coord_to_circle($fmax, $sf, $seqlen);
-  &$restore_scale();
-
-  # outer circle:
-  my $restore_scale = &set_scale($outerScale);
-  my($ox1, $oy1) = &coord_to_circle($fmin, $ef, $seqlen);
-  my($ox2, $oy2) = &coord_to_circle($fmax, $ef, $seqlen);
-  &$restore_scale();
-
-  # inner and outer radii
-  my $ir = $RADIUS * $sf;
-  my $or = $RADIUS * $ef;
-
-  # special case: feature fills the entire circle
-  # TODO - check whether a different approach is faster when there are many such features
-  if ($is_circle) {
-    # in this case 2 concentric circles are drawn and the region between them is filled
-    my $circlePathAtts = {};
-    my $fillAtts = {};
-    foreach my $att (keys %$pathAtts) {
-      my $val = $pathAtts->{$att};
-      if ($att =~ /^fill/i) {
-        $fillAtts->{$att} = $val;
-      } else {
-        $circlePathAtts->{$att} = $val;
-      }
-    }
-    # inner and outer circles
-    my $mask_id = &new_svg_id();
-    # in the mask white is used to allow pixels through, black is used to mask them out
-    my $mask = $svg->mask('id' => $mask_id, 'maskUnits' => 'userSpaceOnUse', 'x' => 0, 'y' => 0, 'width' => $SVG_WIDTH, 'height' => $SVG_HEIGHT);
-    $mask->rect( 'x' => 0, 'y' => 0, 'width' => $SVG_WIDTH, 'height' => $SVG_HEIGHT, 'r' => $ir, 'fill' => 'white');
-    $mask->circle( 'cx' => $XOFFSET, 'cy' => $YOFFSET, 'r' => $ir, 'fill' => 'black', %$circlePathAtts);
-    # outer circle with masked fill
-    $pathAtts->{'mask'} = 'url(#' . $mask_id . ')';
-    $svg->circle( 'cx' => $XOFFSET, 'cy' => $YOFFSET, 'r' => $or, 'fill' => 'none', %$pathAtts);
-    # inner circle with no fill
-    $svg->circle( 'cx' => $XOFFSET, 'cy' => $YOFFSET, 'r' => $ir, 'fill' => 'none', %$circlePathAtts);
-  } else {
-    # x-axis rotation; irrelevant unless rx != ry
-    my $xar = 0; 
-    # this must be set to 1 if the arc will be more than 180 degrees
-    my $mod_fmax = $TRANSFORM->transform($fmax);
-    my $mod_fmin = $TRANSFORM->transform($fmin);
-    my $large_arc_flag = ((($mod_fmax-$mod_fmin)/$seqlen) <= 0.5) ? '0' : '1';
-#    print STDERR "drawing arc fmin=$fmin fmax=$fmax mod_fmax=$mod_fmax mod_fmin=$mod_fmin seqlen=$seqlen large_arc_flag=$large_arc_flag\n";
-    # positive angle sweep
-    my $sweep_flag = '1';
-    my $unsweep_flag = '0';
-    my $inner_arc = "A$ir,$ir $xar,$large_arc_flag,$sweep_flag $ix2,$iy2 ";
-    my $outer_arc = "A$or,$or $xar,$large_arc_flag,$unsweep_flag $ox1,$oy1 ";
-    my $pa = {
-              'd' => 
-              "M$ix1,$iy1 " .
-              $inner_arc .
-              "L$ox2,$oy2 " .
-              $outer_arc .
-              "L$ix1,$iy1 "
-             };
-    map { $pa->{$_} = $pathAtts->{$_}; } keys %$pathAtts;
-    my $p = $svg->path(%$pa);
-  }
-}
-
-# $is_reversed - whether to draw arrow in counterclockwise direction
-sub draw_curved_arrow {
-  my($svg, $seqlen, $fmin, $fmax, $is_reversed, $sf, $ef, $pathAtts, $innerScale, $outerScale) = @_;
-  my $is_circle = ($fmax - $fmin) >= $seqlen;
-  $fmin += $seqlen if ($fmin < 0);
-  $fmax += $seqlen if ($fmax < $fmin);
-
-  my $marker = $is_reversed ? "triangle-left" : "triangle-right";
-  my $marker_posn = $is_reversed ? "start" : "end";
-  $LOGGER->logdie("draw_curved_arrow has fmin($fmin) > fmax($fmax)") if ($fmin > $fmax);
-  
-  # radius
-  my $mf = ($sf + $ef) / 2.0;
-  my $mr = $RADIUS * $mf;
-
-  # convert fmin and fmax to points on the circle
-  my $restore_scale = &set_scale($innerScale);
-  my($x1, $y1) = &coord_to_circle($fmin, $mf, $seqlen);
-  my($x2, $y2) = &coord_to_circle($fmax, $mf, $seqlen);
-  &$restore_scale();
-
-  # special case: feature fills the entire circle
-  if ($is_circle) {
-    $svg->circle( 'cx' => $XOFFSET, 'cy' => $YOFFSET, 'r' => $mr, 'fill' => 'none', %$pathAtts);
-    # TODO - add arrow at the appropriate location
-    $LOGGER->logdie("draw_curved_arrow does not yet support features > seqlen");
-  } 
-  else {
-    # x-axis rotation; irrelevant unless rx != ry
-    my $xar = 0; 
-    # this must be set to 1 if the arc will be more than 180 degrees
-    my $mod_fmax = $TRANSFORM->transform($fmax);
-    my $mod_fmin = $TRANSFORM->transform($fmin);
-    my $large_arc_flag = ((($mod_fmax-$mod_fmin)/$seqlen) <= 0.5) ? '0' : '1';
-#    print STDERR "drawing arc mod_fmax=$mod_fmax mod_fmin=$mod_fmin seqlen=$seqlen large_arc_flag=$large_arc_flag\n";
-    # positive angle sweep
-    my $sweep_flag = '1';
-    my $inner_arc = "A$mr,$mr $xar,$large_arc_flag,$sweep_flag $x2,$y2 ";
-
-    my $pa = { 'd' => "M$x1,$y1 " . $inner_arc, "marker-${marker_posn}" => "url(#${marker})" };
-    map { $pa->{$_} = $pathAtts->{$_}; } keys %$pathAtts;
-    my $p = $svg->path(%$pa);
-  }
-}
-
-# $is_reversed - whether to draw arrow in counterclockwise direction
-sub draw_curved_line {
-  my($svg, $seqlen, $fmin, $fmax, $is_reversed, $sf, $ef, $pathAtts, $innerScale, $outerScale) = @_;
-  $fmin += $seqlen if ($fmin < 0);
-  $fmax += $seqlen if ($fmax < $fmin);
-
-  # radius
-  my $sr = $RADIUS * $sf;
-  my $er = $RADIUS * $ef;
-
-  # convert fmin and fmax to points on the circle
-  my $restore_scale = &set_scale($innerScale);
-  my($x1, $y1) = &coord_to_circle($fmin, $sf, $seqlen);
-  my($x2, $y2) = &coord_to_circle($fmax, $ef, $seqlen);
-  &$restore_scale();
-
-  # x-axis rotation; irrelevant unless rx != ry
-  my $xar = 0; 
-  # this must be set to 1 if the arc will be more than 180 degrees
-  my $mod_fmax = $TRANSFORM->transform($fmax);
-  my $mod_fmin = $TRANSFORM->transform($fmin);
-  my $large_arc_flag = ((($mod_fmax-$mod_fmin)/$seqlen) <= 0.5) ? '0' : '1';
-  # positive angle sweep
-  my $sweep_flag = '1';
-  my $inner_arc = "A$sr,$er $xar,$large_arc_flag,$sweep_flag $x2,$y2 ";
-  my $pa = { 'd' => "M$x1,$y1 " . $inner_arc };
-  map { $pa->{$_} = $pathAtts->{$_}; } keys %$pathAtts;
-  my $p = $svg->path(%$pa);
-}
-
-sub draw_radial_line {
-  my($svg, $seqlen, $fmin, $sf, $ef, $pathAtts) = @_;
-  my($x1, $y1) = &coord_to_circle($fmin, $sf, $seqlen);
-  my($x2, $y2) = &coord_to_circle($fmin, $ef, $seqlen);
-  $svg->line('x1' => $x1, 'y1' => $y1, 'x2' => $x2, 'y2' => $y2, %$pathAtts);
-}
-
 # $seq - reference to literal DNA sequence.  may be undef.
 # $richseq - BioPerl Bio::Seq::RichSeq
 #
@@ -3472,10 +3066,8 @@ sub draw_track {
   return if ($skip_track);
 
   # save and restore coordinate transform
-  my $saved_transform = undef;
   if ($no_scaling) {
-    $saved_transform = $TRANSFORM;
-    $TRANSFORM = $IDENTITY_TRANSFORM;
+    $DRAW->push_identity_transform();
   }
 
   if ($ef < $sf) {
@@ -3507,7 +3099,7 @@ sub draw_track {
   } elsif ($glyph eq 'graph') {
     &draw_graph_track($group, $seq, $seqlen, $contig_positions, $richseq, $track, $tracks, $config);
   } elsif ($glyph eq 'ruler') {
-    &draw_coordinate_labels($group, $seq, $seqlen, $contig_positions, $richseq, $track, $tracks, $config);
+    $DRAW->draw_coordinate_labels($group, $seq, $contig_positions, $richseq, $track, $tracks, $config);
   } elsif ($glyph eq 'rectangle') {
     &draw_rectangle_track($group, $seq, $seqlen, $contig_positions, $richseq, $track, $tracks, $config);
   } elsif ($glyph eq 'circle') {
@@ -3529,7 +3121,7 @@ sub draw_track {
     my $tfs = &get_track_features($group, $seq, $seqlen, $contig_positions, $richseq, $track, $tracks, $config);
     my($tfeat_track, $tfeat_list) = map {$tfs->{$_}} ('track', 'features');
     my $radial_height = $ef - $sf;
-    my ($sw0p5) = map { &get_scaled_stroke_width($radial_height, 1, $_) } (0.5);
+    my ($sw0p5) = map { $DRAW->get_scaled_stroke_width($radial_height, 1, $_) } (0.5);
     # get max fpkm and pull out just the transcripts
     my $max_fpkm = 0;
     my $max_fpkm_log10 = 0;
@@ -3628,8 +3220,8 @@ sub draw_track {
 
         my($fhf, $cwbp) = &get_font_height_frac_and_char_width_bp($seqlen, $sf, $ef, $num_tiers, $DEFAULT_TIER_GAP_FRAC, undef, $track_fwf);
         # do label width comparison in _transformed_ coordinate space, because font size is unaffected by the transformations
-        my $mod_fmin = $TRANSFORM->transform($fmin);
-        my $mod_fmax = $TRANSFORM->transform($fmax);
+        my $mod_fmin = $DRAW->transform($fmin);
+        my $mod_fmax = $DRAW->transform($fmax);
         # approximate label width in transformed coordinates
         my $label_len = length($tlabel);
         my $approx_label_width_bp = $no_labels ? ($tlen * 1.1) : $label_len * $cwbp;
@@ -3645,9 +3237,9 @@ sub draw_track {
         my $mod_label_position = ($mod_pack_fmin + $mod_pack_fmax)/2;
 
         # now map back to original coordinates
-        my $pack_fmin = $TRANSFORM->invert_transform($mod_pack_fmin);
-        my $pack_fmax = $TRANSFORM->invert_transform($mod_pack_fmax);
-        my $label_position = $TRANSFORM->invert_transform($mod_label_position);
+        my $pack_fmin = $DRAW->invert_transform($mod_pack_fmin);
+        my $pack_fmax = $DRAW->invert_transform($mod_pack_fmax);
+        my $label_position = $DRAW->invert_transform($mod_label_position);
 
         my $tfeat = {
                      'pack-fmin' => $pack_fmin,
@@ -3694,9 +3286,9 @@ sub draw_track {
       return ($fmin, $fmax, $strand);
     };
 
-    my($sw10, $sw1) = map { &get_scaled_stroke_width($radial_height, 1, $_) } (10, 1);
-#    $group->circle( 'cx' => $XOFFSET, 'cy' => $YOFFSET, 'r' => $sf * $RADIUS, 'stroke' => 'black', 'stroke-width' => $sw10, 'fill' => 'none' );
-#    $group->circle( 'cx' => $XOFFSET, 'cy' => $YOFFSET, 'r' => $ef * $RADIUS, 'stroke' => 'black', 'stroke-width' => $sw10, 'fill' => 'none' );
+    my($sw10, $sw1) = map { $DRAW->get_scaled_stroke_width($radial_height, 1, $_) } (10, 1);
+#    $group->circle( 'cx' => $DRAW->xoffset(), 'cy' => $DRAW->yoffset(), 'r' => $sf * $DRAW->radius(), 'stroke' => 'black', 'stroke-width' => $sw10, 'fill' => 'none' );
+#    $group->circle( 'cx' => $DRAW->xoffset(), 'cy' => $DRAW->yoffset(), 'r' => $ef * $DRAW->radius(), 'stroke' => 'black', 'stroke-width' => $sw10, 'fill' => 'none' );
 
     my $ltn = 1;
 
@@ -4024,7 +3616,7 @@ sub draw_track {
     my $slsf = $sf;
     my $slef = $sf + $rh8 * 0.75;
 
-    my ($ssw) = map { &get_scaled_stroke_width($rh8, 1, $_) } (250);
+    my ($ssw) = map { $DRAW->get_scaled_stroke_width($rh8, 1, $_) } (250);
     my $num_qry_groups = scalar(@$qry_groups);
     my $last_end_posn = undef;
     my $last_end_posn_qgnum = undef;
@@ -4119,8 +3711,8 @@ sub draw_track {
         # TODO - use perpendicular line and/or ellipse instead (or use line for "dead end" discontinuity, circle otherwise?)
         my $circumf = ((log($ng)/log(10))+1) * $rh8 * 4;
         my $crf = $circumf / pi2;
-        my $cr = $RADIUS * $crf;
-        my($cx1, $cy1) = &coord_to_circle($position, $amf + $crf, $seqlen);
+        my $cr = $DRAW->radius() * $crf;
+        my($cx1, $cy1) = $DRAW->coord_to_circle($position, $amf + $crf, $seqlen);
 
         # TODO - make this glyph configurable (circle/ellipse/line)
         # TODO - use bezier curves to make a smoother transition from the main arc?
@@ -4129,16 +3721,16 @@ sub draw_track {
 #        $group->circle( 'cx' => $cx1, 'cy' => $cy1, 'r' => $cr, 'stroke' => 'black', 'stroke-width' => $ssw, 'fill' => 'none' );
 
         # draw an ellipse
-        my $deg = &coord_to_degrees($position, $seqlen);
-        my $quad = &coord_to_quadrant($position, $seqlen);
+        my $deg = &coord_to_degrees($position);
+        my $quad = &coord_to_quadrant($position);
         $deg += 180 if ($quad =~ /l$/);
 		my $eg = $group->group( 'transform' => "translate($cx1, $cy1)");
         $eg->ellipse( 'cx' => 0, 'cy' => 0, 'rx' => $ssw,'ry' => $cr, 'stroke' => 'black', 'stroke-width' => $ssw, 
                       'fill' => 'none', 'transform' => "rotate($deg)" );
 
         # draw a line
-#        my($lx1, $ly1) = &coord_to_circle($position, $amf, $seqlen);
-#        my($lx2, $ly2) = &coord_to_circle($position, $amf + ($crf * 2), $seqlen);
+#        my($lx1, $ly1) = $DRAW->coord_to_circle($position, $amf, $seqlen);
+#        my($lx2, $ly2) = $DRAW->coord_to_circle($position, $amf + ($crf * 2), $seqlen);
 #        $group->line('x1' => $lx1, 'y1' => $ly1, 'x2' => $lx2, 'y2' => $ly2, 'stroke' => 'black', 'stroke-width' => $ssw);
 
         # label each gapped segment
@@ -4231,7 +3823,7 @@ sub draw_track {
 
     $LOGGER->debug("scaled-segment-list merged " . scalar(@$ssl) . " segment(s) into " . scalar(@$m_ssl) . " nonoverlapping segment(s)") if ($debug_opts->{'coordinates'});
     my $params = {'seqlen' => $seqlen, 'segments' => $m_ssl};
-    $TRANSFORM = Circleator::CoordTransform::LinearScale->new($LOGGER, $params, $config);
+    $DRAW->push_transform(Circleator::CoordTransform::LinearScale->new($LOGGER, $params, $config));
   }
   # dummy glyph - does nothing but transform an existing set of features into a new set of features
   elsif ($glyph eq 'compute-deserts') {
@@ -4310,8 +3902,8 @@ sub draw_track {
     &draw_rectangle_track($group, $seq, $seqlen, $contig_positions, $richseq, $track, $tracks);
   }
 
-  if (defined($saved_transform)) {
-    $TRANSFORM = $saved_transform;
+  if ($no_scaling) {
+    $DRAW->pop_transform();
   }
 }
 
@@ -4322,8 +3914,8 @@ sub draw_image {
                     'printerror' => 1,
                     'raiseerror' => 0,
                     'xml_xlink' => $XML_XLINK,
-                    'width' => $SVG_WIDTH,
-                    'height' => $SVG_HEIGHT,
+                    'width' => $DRAW->svg_width(),
+                    'height' => $DRAW->svg_height(),
                    );
 
   # create some shared SVG definitions
@@ -4371,6 +3963,7 @@ sub draw_image {
 }
 
 # Merge overlapping intervals, ignoring strand
+# TODO - move to Util/
 sub merge_overlapping_intervals {
     my($intervals) = @_;
     my @copy = ();
