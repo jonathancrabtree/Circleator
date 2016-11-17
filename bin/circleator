@@ -30,6 +30,8 @@ circleator - A Perl-based visualization tool for producing circular plots of gen
          --pad_right=400
          --pad_top=400
          --pad_bottom=400
+         --radius=1200
+         --seq_width=3200
          --log=/path/to/debug/logfile.txt
          --conf_dir=/etc/circleator/conf
          --help
@@ -188,6 +190,13 @@ the value given by --pad if not defined.
 
 Padding (in pixels) to leave on the bottom side of the figure. Set to
 the value given by --pad if not defined.
+
+=item B<--radius>
+Radius of the circle (in pixels.) Default is 1200.
+
+=item B<--seq_width>
+Width of the sequence (in pixels.) Ignored unless the --linear flag is set,
+in which case it defaults to 2 * pi * radius.
 
 =item B<--log,-l>
 
@@ -376,6 +385,8 @@ my $options = {};
             "pad_right=i",
             "pad_top=i",
             "pad_bottom=i",
+            "radius=i",
+            "seq_width=i",
             "log|l=s",
             "conf_dir=s",
             "help|h",
@@ -838,7 +849,7 @@ if (defined($options->{'linear'})) {
 } else {
     $DRAW = Circleator::Draw::DrawCircular->new();
 }
-$DRAW->init($LOGGER, $seqlen, $DEFAULT_RADIUS, $debug_opts, $options);
+$DRAW->init($LOGGER, $seqlen, $debug_opts, $options);
 
 # parse scaled_segment_list to determine coordinate transform
 if (defined($options->{'scaled_segment_list'})) {
@@ -921,6 +932,8 @@ sub check_parameters {
   # padding
   $options->{'pad'} = $DEFAULT_PAD if (!defined($options->{'pad'}));
   map { my $pkey = 'pad_' . $_; $options->{$pkey} = $options->{'pad'} if (!defined($options->{$pkey})); } ('left', 'right', 'top', 'bottom');
+
+  $options->{'radius'} = $DEFAULT_RADIUS if (!defined($options->{'radius'}));
 
   if ($options->{'conf_dir'} =~ /^\s*$/) {
       die "Either --conf_dir must be specified or the package must be built according to the INSTALL document.";
@@ -2051,7 +2064,6 @@ sub draw_rectangle_track {
   # TODO - factor this out and make it call the appropriate drawing function(s) as callbacks
   my $radial_height = $ef - $sf;
   my ($sw0p5) = map { $DRAW->get_scaled_stroke_width($radial_height, 1, $_) } (0.5);
-  print STDERR "sw0p5=$sw0p5\n";
   $swidth = $sw0p5 if (!defined($swidth) || ($swidth eq ''));
   foreach my $feat (@$tfeat_list) {
     my $f_type = $feat->primary_tag();
@@ -2099,7 +2111,7 @@ sub draw_circle_track {
       # find center of circle
       my $fmid = ($fmax + $fmin) / 2.0;
       my $mf = $sf + ($radial_height/2.0);
-      my($cx, $cy) = $DRAW->coord_to_circle($fmid, $mf, $seqlen);
+      my($cx, $cy) = $DRAW->bp_to_xy($fmid, $mf, $seqlen);
 
       # and radius
       my $r = $DRAW->radius() * $radial_height * 0.5;
@@ -2558,13 +2570,13 @@ sub draw_label_track {
 		my $tt_ef = $ltrack->{'end-frac'};
 		# target track is _outside_ this one
         if (defined($ltrack) && ($ltrack->{'tnum'} > $tnum)) {
-          ($lx1, $ly1) = $DRAW->coord_to_circle($pos, $lsf, $seqlen);
-          ($tx1, $ty1) = $DRAW->coord_to_circle($pos, $tt_ef, $seqlen);
+          ($lx1, $ly1) = $DRAW->bp_to_xy($pos, $lsf, $seqlen);
+          ($tx1, $ty1) = $DRAW->bp_to_xy($pos, $tt_ef, $seqlen);
 		} 
 		# target track is _inside_ this one
 		else {
-          ($lx1, $ly1) = $DRAW->coord_to_circle($pos, $lef, $seqlen);
-          ($tx1, $ty1) = $DRAW->coord_to_circle($pos, $tt_sf, $seqlen);
+          ($lx1, $ly1) = $DRAW->bp_to_xy($pos, $lef, $seqlen);
+          ($tx1, $ty1) = $DRAW->bp_to_xy($pos, $tt_sf, $seqlen);
 		}
 		$group->line('x1' => $lx1, 'y1' => $ly1, 'x2' => $tx1, 'y2' => $ty1, 'stroke' => $lc, 'stroke-width' => $stroke_width );
       }
@@ -2627,7 +2639,7 @@ sub draw_label_track {
       my $te = $group->text('x' => $ft, 'y' => 0, %$textArgs);
       $te->textPath('xlink:href' => "#" . $cpid)->cdata($txt);
 	} else {
-      my($tx1, $ty1) = $DRAW->coord_to_circle($pos, $sf, $seqlen);
+      my($tx1, $ty1) = $DRAW->bp_to_xy($pos, $sf, $seqlen);
       if ($lt eq 'horizontal') {
 		my $te = $group->text('x' => $tx1, 'y' => $ty1, %$textArgs);
 		$te->cdata($txt);
@@ -2649,7 +2661,7 @@ sub draw_label_track {
         my $pos = $DRAW->invert_transform($mod_pos);
 	my $mod_quad = $DRAW->coord_to_quadrant($pos);
 	my $deg = $DRAW->coord_to_degrees($pos);
-        my($tx1, $ty1) = $DRAW->coord_to_circle($pos, $sf, $seqlen);
+        my($tx1, $ty1) = $DRAW->bp_to_xy($pos, $sf, $seqlen);
 
 		# modify anchor based on quadrant if drawing spoke labels
 		if ($ta eq 'start') {
@@ -2668,7 +2680,7 @@ sub draw_label_track {
 #          }
 #          $pos = $DRAW->invert_transform($mod_pos);
 #          $deg = $DRAW->coord_to_degrees($pos);
-#          ($tx1, $ty1) = $DRAW->coord_to_circle($pos, $sf, $seqlen);
+#          ($tx1, $ty1) = $DRAW->bp_to_xy($pos, $sf, $seqlen);
 #        }
 
         my $hfh = $fh/2.0;
@@ -3099,7 +3111,7 @@ sub draw_track {
   } elsif ($glyph eq 'graph') {
     &draw_graph_track($group, $seq, $seqlen, $contig_positions, $richseq, $track, $tracks, $config);
   } elsif ($glyph eq 'ruler') {
-    $DRAW->draw_coordinate_labels($group, $seq, $contig_positions, $richseq, $track, $tracks, $config);
+    $DRAW->draw_coordinate_labels($group, $seq, $contig_positions, $track, $tracks, $config);
   } elsif ($glyph eq 'rectangle') {
     &draw_rectangle_track($group, $seq, $seqlen, $contig_positions, $richseq, $track, $tracks, $config);
   } elsif ($glyph eq 'circle') {
@@ -3712,7 +3724,7 @@ sub draw_track {
         my $circumf = ((log($ng)/log(10))+1) * $rh8 * 4;
         my $crf = $circumf / pi2;
         my $cr = $DRAW->radius() * $crf;
-        my($cx1, $cy1) = $DRAW->coord_to_circle($position, $amf + $crf, $seqlen);
+        my($cx1, $cy1) = $DRAW->bp_to_xy($position, $amf + $crf, $seqlen);
 
         # TODO - make this glyph configurable (circle/ellipse/line)
         # TODO - use bezier curves to make a smoother transition from the main arc?
@@ -3729,8 +3741,8 @@ sub draw_track {
                       'fill' => 'none', 'transform' => "rotate($deg)" );
 
         # draw a line
-#        my($lx1, $ly1) = $DRAW->coord_to_circle($position, $amf, $seqlen);
-#        my($lx2, $ly2) = $DRAW->coord_to_circle($position, $amf + ($crf * 2), $seqlen);
+#        my($lx1, $ly1) = $DRAW->bp_to_xy($position, $amf, $seqlen);
+#        my($lx2, $ly2) = $DRAW->bp_to_xy($position, $amf + ($crf * 2), $seqlen);
 #        $group->line('x1' => $lx1, 'y1' => $ly1, 'x2' => $lx2, 'y2' => $ly2, 'stroke' => 'black', 'stroke-width' => $ssw);
 
         # label each gapped segment

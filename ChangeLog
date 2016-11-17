@@ -8,6 +8,9 @@
  -Modify LinearScale.pm to allow negative coordinates.
  -Modify circleator.t to round circle (cx, cy) coordinates when comparing SVG.
  -Undo bam_get_coverage.c regression from previous commit.
+ -Add --linear option to draw rectangular/linear figures instead of circular ones (!)
+ -Add --radius option to control the size of the circle (or the height of the image in --linear mode)
+ -Add -seq_width option to control the width of the image in --linear mode.
 	
 1.0.0 (Jan 13 2016)
  -Add parser for clc_find_variations SNP/indel-finding tool.

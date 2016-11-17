@@ -5,13 +5,11 @@ package Circleator::Draw::DrawCircular;
 # Circular drawing routines
 
 use strict;
-use Carp;
 use Circleator::Draw::Draw;
 
 # coordinate system conversions
 use Math::Trig ':radial';
 use Math::Trig ':pi';
-use POSIX qw (floor);
 
 our @ISA = ('Circleator::Draw::Draw');
 
@@ -54,14 +52,14 @@ sub draw_rect {
   # convert fmin and fmax to appropriate inner/outer points on the circle
   # inner circle:
   my $restore_scale = $self->set_scale($innerScale);
-  my($ix1, $iy1) = $self->coord_to_circle($fmin, $sf, $seqlen);
-  my($ix2, $iy2) = $self->coord_to_circle($fmax, $sf, $seqlen);
+  my($ix1, $iy1) = $self->bp_to_xy($fmin, $sf);
+  my($ix2, $iy2) = $self->bp_to_xy($fmax, $sf);
   &$restore_scale();
   
   # outer circle:
   my $restore_scale = $self->set_scale($outerScale);
-  my($ox1, $oy1) = $self->coord_to_circle($fmin, $ef, $seqlen);
-  my($ox2, $oy2) = $self->coord_to_circle($fmax, $ef, $seqlen);
+  my($ox1, $oy1) = $self->bp_to_xy($fmin, $ef);
+  my($ox2, $oy2) = $self->bp_to_xy($fmax, $ef);
   &$restore_scale();
   
   # inner and outer radii
@@ -119,30 +117,6 @@ sub draw_rect {
   }
 }
 
-
-# Scale stroke width based on track height (and, if applicable, number of tiers.)
-#  t_height - track height expressed as a radial fraction between 0 and 1
-#  n_tiers - number of tiers: either undef or a number >= 0
-#  stroke_width - stroke width before scaling
-#
-sub get_scaled_stroke_width {
-  my($self, $t_height, $n_tiers, $stroke_width) = @_;
-  $n_tiers = 1 if (!defined($n_tiers));
-  $self->logger()->logdie("invalid number of tiers ($n_tiers)") if ($n_tiers < 0);
-  my $effective_t_height = $t_height / $n_tiers;
-  # everything is based off the (arbitrary) resolution at which a stroke width of 1 looks decent
-  my $effective_t_height_px = $effective_t_height * $self->radius();
-  my $scale_factor = $effective_t_height_px / $self->target_stroke_width_ratio();
-  my $scaled_stroke_width = ($stroke_width * $scale_factor);
-
-  if ($scaled_stroke_width < 0) {
-    confess "got negative scaled stroke width: t_height=$t_height n_tiers=$n_tiers, stroke_width=$stroke_width, scale_factor=$scale_factor\n";
-    die;
-  }
-
-  return $scaled_stroke_width;
-}
-
 # $is_reversed - whether to draw arrow in counterclockwise direction
 sub draw_curved_line {
   my($self, $svg, $fmin, $fmax, $is_reversed, $sf, $ef, $pathAtts, $innerScale, $outerScale) = @_;
@@ -157,8 +131,8 @@ sub draw_curved_line {
 
   # convert fmin and fmax to points on the circle
   my $restore_scale = $self->set_scale($innerScale);
-  my($x1, $y1) = $self->coord_to_circle($fmin, $sf, $seqlen);
-  my($x2, $y2) = $self->coord_to_circle($fmax, $ef, $seqlen);
+  my($x1, $y1) = $self->bp_to_xy($fmin, $sf);
+  my($x2, $y2) = $self->bp_to_xy($fmax, $ef);
   &$restore_scale();
 
   # x-axis rotation; irrelevant unless rx != ry
@@ -178,8 +152,8 @@ sub draw_curved_line {
 sub draw_radial_line {
   my($self, $svg, $fmin, $sf, $ef, $pathAtts) = @_;
   my $seqlen = $self->seqlen();
-  my($x1, $y1) = $self->coord_to_circle($fmin, $sf, $seqlen);
-  my($x2, $y2) = $self->coord_to_circle($fmin, $ef, $seqlen);
+  my($x1, $y1) = $self->bp_to_xy($fmin, $sf);
+  my($x2, $y2) = $self->bp_to_xy($fmin, $ef);
   $svg->line('x1' => $x1, 'y1' => $y1, 'x2' => $x2, 'y2' => $y2, %$pathAtts);
 }
 
@@ -192,67 +166,39 @@ sub draw_radial_line {
 #   curved - labels are drawn wrapped around the outside of the circle
 #
 sub draw_coordinate_labels {
-  my($self, $group, $seq, $contig_positions, $richseq, $track, $all_tracks, $config) = @_;
-  $self->logger()->debug("draw_coordinate_labels begin");
+  my($self, $group, $seq, $contig_positions, $track, $all_tracks, $config) = @_;
   my $seqlen = $self->seqlen();
-  my($feat_type, $glyph, $sf, $ef, $tickInterval, $labelInterval, $labelType, 
-     $labelUnits, $labelPrecision, $fontSize, $noCircle,
-     # optionally restrict the label and tick drawing to a specific interval defined by $fmin - $fmax
-    $fmin, $fmax) = 
-    map { $track->{$_} } ('feat-type', 'glyph', 'start-frac', 'end-frac', 'tick-interval', 
-                          'label-interval', 'label-type', 'label-units', 'label-precision', 'font-size', 'no-circle', 'fmin', 'fmax');
+  my $args = $self->_draw_coordinate_labels_track_args($track);
 
-  if (!defined($labelType)) {
-    $labelType = $self->default_coord_label_type();
-  } 
-  if ($labelType !~ /^horizontal|spoke|curved$/) {
-    $self->logger()->logdie("unsupported label_type of $labelType requested: only horizontal, spoke, and curved are supported");
-  }
-  $labelUnits = "Mb" if (!defined($labelUnits));
-  $labelPrecision = "1" if (!defined($labelPrecision));
-
-  $fmin = 0 if (!defined($fmin) || ($fmin < 0));
-  $fmax = $seqlen if (!defined($fmax) || ($fmax > $seqlen));
+  my($sf, $ef, $tickInterval, $labelInterval, $labelType, $labelUnits, $labelPrecision, $fontSize, $noCircle, $fmin, $fmax) = map { $args->{$_} } 
+  ('start-frac', 'end-frac', 'tick-interval', 'label-interval', 'label-type', 'label-units', 'label-precision', 'font-size', 'no-circle', 'fmin', 'fmax');
   my $seqIntLen = ($fmax - $fmin);
 
-  # TODO - print warnings if tickInterval and/or labelInterval result in either too few or too many ticks/labels
   my $nTicks = defined($tickInterval) ? ($seqIntLen / $tickInterval) : 0;
   my $nLabels = defined($labelInterval) ? ($seqIntLen / $labelInterval) : 0;
   my $radial_height = $ef - $sf;
   my ($sw1, $sw2, $sw3) = map { $self->get_scaled_stroke_width($radial_height, 1, $_) } (200,100,400);
-  $fontSize = $self->default_ruler_font_size() if (!defined($fontSize));
 
   # draw circle at $sf
   # TODO - not clear whether it's better to draw the entire circle or just the arc, if fmin-fmax != 0-seqlen
   my $r = $sf * $self->radius();
   $group->circle( 'cx' => $self->xoffset(), 'cy' => $self->yoffset(), 'r' => $r, 'stroke' => 'black', 'stroke-width' => $sw1, 'fill' => 'none' ) unless ($noCircle);
 
-  my $getTickOrLabelIndices = sub {
-    my($fmin, $fmax, $interval) = @_;
-    my $start_ind = floor($fmin / $interval);
-    my $start_posn = $start_ind * $interval;
-    ++$start_ind if ($start_posn < $fmin);
-    my $end_ind = floor($fmax / $interval);
-    $self->logger()->debug("converted fmin=$fmin, fmax=$fmax, interval=$interval to start_ind=$start_ind, end_ind=$end_ind") if ($self->debug_opt('coordinates'));
-    return ($start_ind, $end_ind);
-  };
-
-  $self->logger()->debug("draw_coordinate_labels - tick drawing begin");
+  # draw small ticks
   if ((defined($tickInterval)) && ($seqIntLen >= 0)) {
-    my($first_tick_ind, $last_tick_ind) = &$getTickOrLabelIndices($fmin, $fmax, $tickInterval);
-    $self->logger()->debug("first_tick_ind=$first_tick_ind last_tick_ind=$last_tick_ind");
+    my($first_tick_ind, $last_tick_ind) = $self->_get_interval_multiples_in_range($fmin, $fmax, $tickInterval);
     for (my $t = $first_tick_ind;$t <= $last_tick_ind;++$t) {
       my $pos = $tickInterval * $t;
-      my($ix1, $iy1) = $self->coord_to_circle($pos, $sf, $seqlen);
-      my($ox1, $oy1) = $self->coord_to_circle($pos, $ef, $seqlen);
+      my($ix1, $iy1) = $self->bp_to_xy($pos, $sf);
+      my($ox1, $oy1) = $self->bp_to_xy($pos, $ef);
       $group->line('x1' => $ix1, 'y1' => $iy1, 'x2' => $ox1, 'y2' => $oy1, 'stroke' => 'black', 'stroke-width' => $sw2);
     }
   }
-  $self->logger()->debug("draw_coordinate_labels - tick drawing done");
 
   my $tef = $ef + ($ef - $sf);
   my $tef2 = $ef + (($ef - $sf) * 2);
   my $er = $tef2 * $self->radius();
+  my $ft_offset = pi2 * $er * (($self->origin_degrees() + $self->rotate_degrees())/360.0);
 
   # circular paths (left side and right side) for curved text layout
   my $circlePathId = undef;
@@ -273,16 +219,14 @@ sub draw_coordinate_labels {
                           'stroke' => "none");
   }
 
-  my $ft_offset = pi2 * $er * (($self->origin_degrees() + $self->rotate_degrees())/360.0);
-
-  $self->logger()->debug("draw_coordinate_labels - coordinate labeling begin");
+  # large ticks and coordinate labels
   if ((defined($labelInterval)) && ($seqIntLen >= 0)) {
-    my($first_label_ind, $last_label_ind) = &$getTickOrLabelIndices($fmin, $fmax, $labelInterval);
+    my($first_label_ind, $last_label_ind) = $self->_get_interval_multiples_in_range($fmin, $fmax, $labelInterval);
     for (my $l = $first_label_ind;$l <= $last_label_ind; ++$l) {
       my $pos = $labelInterval * $l;
-      my($ix1, $iy1) = $self->coord_to_circle($pos, $sf, $seqlen);
-      my($ox1, $oy1) = $self->coord_to_circle($pos, $tef, $seqlen);
-      my($oox1, $ooy1) = $self->coord_to_circle($pos, $tef2, $seqlen);
+      my($ix1, $iy1) = $self->bp_to_xy($pos, $sf);
+      my($ox1, $oy1) = $self->bp_to_xy($pos, $tef);
+      my($oox1, $ooy1) = $self->bp_to_xy($pos, $tef2);
       
       # draw larger tick
       $group->line('x1' => $ix1, 'y1' => $iy1, 'x2' => $ox1, 'y2' => $oy1, 'stroke' => 'black', 'stroke-width' => $sw3);
@@ -294,18 +238,8 @@ sub draw_coordinate_labels {
       my $anchor = ($quad =~ /l$/) ? "end" : "start";
       # shift labels down if they're in the bottom quadrants
       $ooy1 += ($fontSize * $self->font_baseline_frac()) if ($quad =~ /^b/);
-      
-      my $coordLabel = undef;
-      if ($labelUnits =~ /^gb$/i) {
-        $coordLabel = sprintf("%.${labelPrecision}f", $pos/1000000000.0) . "Gb";
-      } elsif ($labelUnits =~ /^mb$/i) {
-        $coordLabel = sprintf("%.${labelPrecision}f", $pos/1000000.0) . "Mb";
-      } elsif ($labelUnits =~ /^kb$/i) {
-        $coordLabel = sprintf("%.${labelPrecision}f", $pos/1000.0) . "kb";
-      } else {
-        $coordLabel = sprintf("%.${labelPrecision}f", $pos) . "bp";
-      }
-      
+      my $coordLabel = $self->_format_coordinate($pos, $labelUnits, $labelPrecision);
+
       if ($labelType eq 'horizontal') {
         $group->text('x' => $oox1, 'y' => $ooy1, 'text-anchor' => $anchor, 'font-size' => $fontSize, 'font-weight' => 'bold')->cdata($coordLabel);
       } elsif ($labelType eq 'spoke') {
@@ -325,8 +259,6 @@ sub draw_coordinate_labels {
       }
     }
   }
-  $self->logger()->debug("draw_coordinate_labels - coordinate labeling end");
-  $self->logger()->debug("draw_coordinate_labels end");
 }
 
 # $is_reversed - whether to draw arrow in counterclockwise direction
@@ -347,8 +279,8 @@ sub draw_curved_arrow {
 
   # convert fmin and fmax to points on the circle
   my $restore_scale = $self->set_scale($innerScale);
-  my($x1, $y1) = $self->coord_to_circle($fmin, $mf, $seqlen);
-  my($x2, $y2) = $self->coord_to_circle($fmax, $mf, $seqlen);
+  my($x1, $y1) = $self->bp_to_xy($fmin, $mf);
+  my($x2, $y2) = $self->bp_to_xy($fmax, $mf);
   &$restore_scale();
 
   # special case: feature fills the entire circle
@@ -379,6 +311,26 @@ sub draw_curved_arrow {
 # DrawCircular
 # ------------------------------------------------------------------
 
+sub xoffset { 
+    my($self) = @_; 
+    return $self->radius() + $self->pad_left(); 
+}
+
+sub yoffset { 
+    my($self) = @_; 
+    return $self->radius() + $self->pad_top(); 
+}
+
+sub svg_width {
+    my($self) = @_;
+    return ($self->radius() * 2) + $self->pad_left() + $self->pad_right();
+}
+
+sub svg_height {
+    my($self) = @_;
+    return ($self->radius() * 2) + $self->pad_top() + $self->pad_bottom();
+}
+
 # Map linear sequence coordinate to a number of degrees between 0 and 360
 #
 sub coord_to_degrees {
@@ -398,11 +350,11 @@ sub coord_to_degrees {
 
 # Map linear coordinate plus distance from circle center (0-1) to a point on the circle.
 #
-sub coord_to_circle {
-  my($self, $coord, $center_dist) = @_;
+sub bp_to_xy {
+  my($self, $bp, $frac) = @_;
   my $seqlen = $self->seqlen();
-  my $rho = $center_dist * $self->radius();
-  my $deg = $self->coord_to_degrees($coord, -$self->origin_degrees());
+  my $rho = $frac * $self->radius();
+  my $deg = $self->coord_to_degrees($bp, -$self->origin_degrees());
   my $theta = Math::Trig::deg2rad($deg);
   my($x, $y, $z) = cylindrical_to_cartesian($rho, $theta, 0);
   return ($x + $self->xoffset(), $y + $self->yoffset());
