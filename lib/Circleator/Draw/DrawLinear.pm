@@ -41,6 +41,7 @@ sub init {
 sub draw_rect {
   my($self, $svg, $fmin, $fmax, $sf, $ef, $atts, $innerScale, $outerScale) = @_;
   my $seqlen = $self->seqlen();
+  my $is_circle = ($fmax - $fmin) >= $seqlen;
 
   my $restore_scale = $self->set_scale($innerScale);
   my($ix1, $iy1) = $self->bp_to_xy($fmin, $sf);
@@ -55,10 +56,14 @@ sub draw_rect {
   my $w = $ix2 - $ix1;
   my $h = $iy2 - $oy2;
 
-  # TODO - if the rectangle spans the entire sequence then don't draw the left and right sides
+  # if the rectangle spans the entire sequence then don't draw the left and right sides
   # (this is analagous to drawing 2 concentric circles in the same case in circular drawing mode)
-
-  $svg->rect('x' => $ix1, 'y' => $oy1, 'width' => $w, 'height' => $h, %$atts);
+  if ($is_circle) {
+      $svg->line('x1' => $ix1, 'y1' => $iy1, 'x2' => $ix2, 'y2' => $iy2, %$atts);
+      $svg->line('x1' => $ox1, 'y1' => $oy1, 'x2' => $ox2, 'y2' => $oy2, %$atts);
+  } else {
+      $svg->rect('x' => $ix1, 'y' => $oy1, 'width' => $w, 'height' => $h, %$atts);
+  }
 }  
 
 sub draw_coordinate_labels {
