@@ -92,10 +92,8 @@ sub draw_coordinate_labels {
     return ($start_ind, $end_ind);
   };
 
-  $self->logger()->debug("draw_coordinate_labels - tick drawing begin");
   if ((defined($tickInterval)) && ($seqIntLen >= 0)) {
     my($first_tick_ind, $last_tick_ind) = &$getTickOrLabelIndices($fmin, $fmax, $tickInterval);
-    $self->logger()->debug("first_tick_ind=$first_tick_ind last_tick_ind=$last_tick_ind");
     for (my $t = $first_tick_ind;$t <= $last_tick_ind;++$t) {
       my $pos = $tickInterval * $t;
       my($ix1, $iy1) = $self->bp_to_xy($pos, $sf);
@@ -103,16 +101,13 @@ sub draw_coordinate_labels {
       $group->line('x1' => $ix1, 'y1' => $iy1, 'x2' => $ox1, 'y2' => $oy1, 'stroke' => 'black', 'stroke-width' => $sw2);
     }
   }
-  $self->logger()->debug("draw_coordinate_labels - tick drawing done");
 
   my $tef = $ef + ($ef - $sf);
   my $tef2 = $ef + (($ef - $sf) * 2);
   my $er = $tef2 * $self->radius();
 
-  $self->logger()->debug("draw_coordinate_labels - coordinate labeling begin");
   if ((defined($labelInterval)) && ($seqIntLen >= 0)) {
     my($first_label_ind, $last_label_ind) = &$getTickOrLabelIndices($fmin, $fmax, $labelInterval);
-    $self->logger()->debug("first_label_ind=$first_label_ind last_label_ind=$last_label_ind");
 
     for (my $l = $first_label_ind;$l <= $last_label_ind; ++$l) {
       my $pos = $labelInterval * $l;
