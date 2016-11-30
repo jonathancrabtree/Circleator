@@ -66,10 +66,10 @@ sub draw_rect {
   }
 }  
 
-sub draw_coordinate_labels {
+sub draw_ruler_track {
   my($self, $group, $seq, $contig_positions, $track, $all_tracks, $config) = @_;
   my $seqlen = $self->seqlen();
-  my $args = $self->_draw_coordinate_labels_track_args($track);
+  my $args = $self->_draw_ruler_track_args($track);
 
   my($sf, $ef, $tickInterval, $labelInterval, $labelType, $labelUnits, $labelPrecision, $fontSize, $noCircle, $fmin, $fmax) = map { $args->{$_} } 
   ('start-frac', 'end-frac', 'tick-interval', 'label-interval', 'label-type', 'label-units', 'label-precision', 'font-size', 'no-circle', 'fmin', 'fmax');
@@ -135,6 +135,34 @@ sub draw_coordinate_labels {
   }
 }
 
+sub draw_label_track {
+  my($self, $group, $seq, $contig_positions, $track, $all_tracks, $config) = @_;
+  my $seqlen = $self->seqlen();
+  my $args = $self->_draw_label_track_args($track);
+  
+  # track options
+  my($tnum, $packer, $reverse_pack_order, $feat_type, $glyph, $sf, $ef, $opacity, $zIndex, $scolor, $fcolor, $tcolor, $stroke_width,
+     # global overrides/defaults for label-specific properties
+     $g_style, $g_anchor, $g_draw_link, $g_link_color, $g_label_type,
+     $labels, $label_fn, $tier_gap_frac, $track_fhf, $track_ffam, $track_fs, $track_fw, $track_fwf) =
+	 map { $args->{$_} } 
+  ('tnum', 'packer', 'reverse-pack-order', 'feat-type', 'glyph', 'start-frac', 'end-frac', 'opacity', 
+   'z-index', 'stroke-color', 'fill-color', 'text-color', 'stroke-width',
+   # global overrides/defaults for label-specific properties
+   # TODO - change naming convention to make this more clear
+   'style', 'text-anchor', 'draw-link', 'link-color', 'label-type', 
+   # label track-specific options
+   'labels', 'label-function', 'tier-gap-frac', 'font-height-frac', 'font-family', 'font-style', 'font-weight', 'font-width-frac'
+  );
+  
+  my($ltrack, $lfeat_list) = (undef, undef);
+  my $labels = $self->_draw_label_track_get_labels($args);
+
+  # TODO
+
+
+}
+
 # $is_reversed - whether to draw arrow in counterclockwise direction
 sub draw_curved_line {
   my($self, $svg, $fmin, $fmax, $is_reversed, $sf, $ef, $pathAtts, $innerScale, $outerScale) = @_;
@@ -193,6 +221,20 @@ sub bp_to_xy {
   my $x = $seq_frac * $seq_width;
 
   return ($x + $self->xoffset(), $y + $self->yoffset());
+}
+
+sub get_tier_font_height_frac_and_char_width_bp {
+  my($self, $sf, $ef, $ntiers, $tier_gap_frac, $font_height_frac, $font_baseline_frac) = @_;
+  my $seqlen = $self->seqlen();
+  $font_baseline_frac = $self->font_baseline_frac() if (!defined($font_baseline_frac));
+  $font_height_frac = 1 if (!defined($font_height_frac));
+  my $height = $ef - $sf;
+  my $tier_height = $height / $ntiers;
+  my $fhf = ($tier_height * (1 - ($tier_gap_frac * 1.5))) * $font_height_frac;
+  # approximate average width of a single character at radius = $sf (assuming only 1 tier)
+  my $char_width_px = $fhf * $self->radius() * $font_baseline_frac;
+  my $char_width_bp = ($char_width_px/$self->seq_width()) * $seqlen;
+  return($fhf, $char_width_bp);
 }
 
 1;

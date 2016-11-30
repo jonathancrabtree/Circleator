@@ -4,6 +4,8 @@ package Circleator::Util::Tracks;
 # Static methods
 # ------------------------------------------------------------------
 
+# Resolve a symbolic reference to a track.
+# 
 sub resolve_track_reference {
   my($logger, $all_tracks, $config, $tnum, $feat_track_name) = @_;
   my $num_tracks = scalar(@$all_tracks);
