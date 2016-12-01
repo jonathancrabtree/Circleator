@@ -67,7 +67,6 @@ sub draw_rect {
   my $or = $self->radius() * $ef;
   
   # special case: feature fills the entire circle
-  # TODO - check whether a different approach is faster when there are many such features
   if ($is_circle) {
     # in this case 2 concentric circles are drawn and the region between them is filled
     my $circlePathAtts = {};
@@ -179,8 +178,7 @@ sub draw_ruler_track {
   my $radial_height = $ef - $sf;
   my ($sw1, $sw2, $sw3) = map { $self->get_scaled_stroke_width($radial_height, 1, $_) } (200,100,400);
 
-  # draw circle at $sf
-  # TODO - not clear whether it's better to draw the entire circle or just the arc, if fmin-fmax != 0-seqlen
+  # draw circle at $sf - note that the full circle is drawn, even if fmin and fmax are set to a subset of 0 - seqlen
   my $r = $sf * $self->radius();
   $group->circle( 'cx' => $self->xoffset(), 'cy' => $self->yoffset(), 'r' => $r, 'stroke' => 'black', 'stroke-width' => $sw1, 'fill' => 'none' ) unless ($noCircle);
 
@@ -277,7 +275,7 @@ sub draw_label_track {
    # global overrides/defaults for label-specific properties
    # TODO - change naming convention to make this more clear
    'style', 'text-anchor', 'draw-link', 'link-color', 'label-type', 
-   # label track-specific options
+   # label-track-specific options
    'labels', 'label-function', 'tier-gap-frac', 'font-height-frac', 'font-family', 'font-style', 'font-weight', 'font-width-frac'
   );
   
@@ -304,6 +302,8 @@ sub draw_label_track {
 	  my $diff = $approx_label_width_bp - $mod_width;
 	  my $mod_pack_fmin = $mod_fmin;
 	  my $mod_pack_fmax = $mod_fmax;
+
+	  # TODO - does this assume text-anchor=middle?
 	  if ($diff > 0) {
 	      $mod_pack_fmin -= $diff * 0.5;
 	      $mod_pack_fmax += $diff * 0.5;
@@ -350,12 +350,12 @@ sub draw_label_track {
   # the vertical font size; the bigger the font, the further apart
   # features have to be.  So in order to know how many vertical
   # tiers are required to pack a given number of features, we must
-  # first choosen a font size.  But the font size will depend on the
+  # first choose a font size.  But the font size will depend on the
   # number of tiers chosen, as described below.  This creates some
   # circularity and makes it nontrivial to determine the optimal
   # font size and tier count.  As noted, the font size limited by
   # the total number of "tiers" (i.e., the concentric segments into
-  # which the track has to to be broken in order to make everything
+  # which the track has to be broken in order to make everything
   # fit.)  For example, if there are 3 tiers (i.e., the track is
   # divided into 3 adjacent concentric circles with equal radial
   # height) then the font height cannot be greater than the total
