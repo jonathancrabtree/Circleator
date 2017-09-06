@@ -9,6 +9,7 @@
  -Modify circleator.t to round circle (cx, cy) coordinates when comparing SVG.
  -Undo bam_get_coverage.c regression from previous commit.
  -Fix SVG bug causing artifacts when rendering to PNG in some versions of Batik [Issue #33].
+ -Add util/add_snp_merged_table_columns.pl to convert between old and new SNP table formats.
 	
 1.0.0 (Jan 13 2016)
  -Add parser for clc_find_variations SNP/indel-finding tool.
