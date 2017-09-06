@@ -214,7 +214,7 @@
 	<g id="t33" />
 	<g id="t34">
 		<mask height="3200" id="9" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
-			<rect fill="white" height="3200" r="443.999999999999" width="3200" x="0" y="0" />
+			<rect fill="white" height="3200" width="3200" x="0" y="0" />
 			<circle cx="1600" cy="1600" fill="black" r="443.999999999999" stroke="black" stroke-width="2" />
 		</mask>
 		<circle cx="1600" cy="1600" fill="#d0d0d0" mask="url(#9)" r="527.999999999999" stroke="black" stroke-width="2" />

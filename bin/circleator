@@ -3303,7 +3303,7 @@ sub draw_curved_rect {
     my $mask_id = &new_svg_id();
     # in the mask white is used to allow pixels through, black is used to mask them out
     my $mask = $svg->mask('id' => $mask_id, 'maskUnits' => 'userSpaceOnUse', 'x' => 0, 'y' => 0, 'width' => $SVG_WIDTH, 'height' => $SVG_HEIGHT);
-    $mask->rect( 'x' => 0, 'y' => 0, 'width' => $SVG_WIDTH, 'height' => $SVG_HEIGHT, 'r' => $ir, 'fill' => 'white');
+    $mask->rect( 'x' => 0, 'y' => 0, 'width' => $SVG_WIDTH, 'height' => $SVG_HEIGHT, 'fill' => 'white');
     $mask->circle( 'cx' => $XOFFSET, 'cy' => $YOFFSET, 'r' => $ir, 'fill' => 'black', %$circlePathAtts);
     # outer circle with masked fill
     $pathAtts->{'mask'} = 'url(#' . $mask_id . ')';

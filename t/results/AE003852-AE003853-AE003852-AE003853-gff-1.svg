@@ -4129,7 +4129,7 @@
 	</g>
 	<g id="t20" opacity="0.4">
 		<mask height="3200" id="6" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
-			<rect fill="white" height="3200" r="660" width="3200" x="0" y="0" />
+			<rect fill="white" height="3200" width="3200" x="0" y="0" />
 			<circle cx="1600" cy="1600" fill="black" r="660" stroke="none" stroke-width="0.024" />
 		</mask>
 		<circle cx="1600" cy="1600" fill="#d0d0ff" mask="url(#6)" r="708" stroke="none" stroke-width="0.024" />
