@@ -35,7 +35,7 @@
 	<g id="t4" />
 	<g id="t5">
 		<mask height="3200" id="4" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
-			<rect fill="white" height="3200" r="1068" width="3200" x="0" y="0" />
+			<rect fill="white" height="3200" width="3200" x="0" y="0" />
 			<circle cx="1600" cy="1600" fill="black" r="1068" stroke="black" stroke-width="0.042" />
 		</mask>
 		<circle cx="1600" cy="1600" fill="#0000ff" mask="url(#4)" r="1152" stroke="black" stroke-width="0.042" />
@@ -58,7 +58,7 @@
 	<g id="t10" />
 	<g id="t11">
 		<mask height="3200" id="7" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
-			<rect fill="white" height="3200" r="852" width="3200" x="0" y="0" />
+			<rect fill="white" height="3200" width="3200" x="0" y="0" />
 			<circle cx="1600" cy="1600" fill="black" r="852" stroke="#000000" stroke-width="0.042" />
 		</mask>
 		<circle cx="1600" cy="1600" fill="#ff0000" mask="url(#7)" r="903.8" stroke="#000000" stroke-width="0.042" />
@@ -110,7 +110,7 @@
 	<g id="t19" />
 	<g id="t20">
 		<mask height="3200" id="14" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
-			<rect fill="white" height="3200" r="472.108108108108" width="3200" x="0" y="0" />
+			<rect fill="white" height="3200" width="3200" x="0" y="0" />
 			<circle cx="1600" cy="1600" fill="black" r="472.108108108108" stroke="#000000" stroke-width="0.042" />
 		</mask>
 		<circle cx="1600" cy="1600" fill="#00ff00" mask="url(#14)" r="473.999999999999" stroke="#000000" stroke-width="0.042" />

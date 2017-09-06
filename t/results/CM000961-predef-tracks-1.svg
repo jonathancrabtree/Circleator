@@ -74,7 +74,7 @@
 	<g id="t4" />
 	<g id="t5">
 		<mask height="3200" id="4" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
-			<rect fill="white" height="3200" r="1068" width="3200" x="0" y="0" />
+			<rect fill="white" height="3200" width="3200" x="0" y="0" />
 			<circle cx="1600" cy="1600" fill="black" r="1068" stroke="black" stroke-width="0.042" />
 		</mask>
 		<circle cx="1600" cy="1600" fill="#0000ff" mask="url(#4)" r="1152" stroke="black" stroke-width="0.042" />

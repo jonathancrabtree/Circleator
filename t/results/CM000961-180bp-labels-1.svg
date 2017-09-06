@@ -31,7 +31,7 @@
 	</g>
 	<g id="t4">
 		<mask height="3200" id="4" maskUnits="userSpaceOnUse" width="3200" x="0" y="0">
-			<rect fill="white" height="3200" r="1116" width="3200" x="0" y="0" />
+			<rect fill="white" height="3200" width="3200" x="0" y="0" />
 			<circle cx="1600" cy="1600" fill="black" r="1116" stroke="black" stroke-width="0.042" />
 		</mask>
 		<circle cx="1600" cy="1600" fill="#000000" mask="url(#4)" r="1200" stroke="black" stroke-width="0.042" />
