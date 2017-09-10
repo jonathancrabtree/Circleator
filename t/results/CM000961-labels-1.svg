@@ -43,14 +43,14 @@
 		<text fill="black" font-size="31.5" text-anchor="middle" x="6298.80246443841" y="0">
 			<textPath xlink:href="#cp5">5S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="31.5" text-anchor="middle" x="10965.9124055743" y="0">
-			<textPath xlink:href="#cp4">5S rRNA</textPath>
+		<text fill="black" font-size="31.5" text-anchor="middle" x="10617.7145095464" y="0">
+			<textPath xlink:href="#cp3">5S rRNA</textPath>
 		</text>
 		<text fill="black" font-size="31.5" text-anchor="middle" x="10275.7763441615" y="0">
 			<textPath xlink:href="#cp2">23S rRNA</textPath>
 		</text>
-		<text fill="black" font-size="31.5" text-anchor="middle" x="10634.7474653474" y="0">
-			<textPath xlink:href="#cp3">16S rRNA</textPath>
+		<text fill="black" font-size="31.5" text-anchor="middle" x="10983.5039410365" y="0">
+			<textPath xlink:href="#cp4">16S rRNA</textPath>
 		</text>
 	</g>
 	<g id="t3">
@@ -2617,8 +2617,8 @@
 		<text fill="black" font-size="33.6" text-anchor="middle" x="6937.56562125164" y="0">
 			<textPath xlink:href="#cp15">tRNA-Gln</textPath>
 		</text>
-		<text fill="black" font-size="33.6" text-anchor="middle" x="7205.8637193752" y="0">
-			<textPath xlink:href="#cp15">tRNA-Arg</textPath>
+		<text fill="black" font-size="33.6" text-anchor="middle" x="7572.38781496906" y="0">
+			<textPath xlink:href="#cp16">tRNA-Arg</textPath>
 		</text>
 	</g>
 	<g id="t11" />
@@ -2629,7 +2629,7 @@
 		</text>
 	</g>
 	<!-- 
-	Generated using the Perl SVG Module V2.59
+	Generated using the Perl SVG Module V2.64
 	by Ronan Oger
 	Info: http://www.roitsystems.com/
  -->

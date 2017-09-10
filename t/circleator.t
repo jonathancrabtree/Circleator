@@ -101,6 +101,7 @@ my $TESTS =
      {'data' => 'CM000961.gbk', 'conf' => 'labels-1.cfg', 'descr' => "Automatically-generated and packed labels for tRNA and rRNA features, plus manually-defined label(s)." },
      {'data' => 'CM000961-180bp.gbk', 'conf' => 'labels-1.cfg', 'descr' =>  "Automatically-generated and packed labels for tRNA and rRNA features, plus manually-defined label(s)." },
      {'data' => 'NC_011969.gbk', 'conf' => 'labels-1.cfg', 'descr' =>  "Automatically-generated and packed labels for tRNA and rRNA features, plus manually-defined label(s)." },
+     {'data' => 'NC_011969.gbk', 'conf' => 'labels-2.cfg', 'descr' =>  "Labels for user defined features that cross the origin. Issues 32, 34, and 35." },
 
      # circle glyph
      {'data' => 'CM000961.gbk', 'conf' => 'circles-1.cfg', 'descr' => "Circle track type." },
