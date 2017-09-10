@@ -58,7 +58,7 @@ sub pack {
     # sort by increasing start
     my @sorted_coords = sort { $a->{'coord'} <=> $b->{'coord'} } @$coords_ll;
     my $n_coords = scalar(@sorted_coords);
-        
+
     # perform forward traversal of the list to link each E to next S, each S to next S
     &_traverseList(\@sorted_coords, 'forward');
 	
@@ -90,22 +90,23 @@ sub pack {
 	
 	# add regions to the left of $feat
 	my $nfeat = $feat;
+	my $last_added = $feat;
+
 	while ($nfeat = &_getPreviousRegion($feat_coords, \@sorted_coords, $nfeat)) {
 	    # make sure that this feature doesn't wrap around and overlap with the initial feature
-	    if (defined($circular_seqlen) && (($nfeat->{'pack-fmin'} < $feat->{'pack-fmax'}))) {
+	    if (defined($circular_seqlen) && &_featsOverlap($nfeat, $feat, $circular_seqlen)) {
 		last;
 	    }
 	    push(@$line, $nfeat);
 	    &_removeRegion($feat_coords, \@sorted_coords, $nfeat);
 	    $feats_used->{$nfeat} = 1;
+	    $last_added = $nfeat;
 	}
-	
 	# add regions to the right of $feat
 	$nfeat = $feat;
 	while ($nfeat = &_getNextRegion($feat_coords, \@sorted_coords, $nfeat)) {
-
-	    # make sure that this feature doesn't wrap around and overlap with the initial feature
-	    if (defined($circular_seqlen) && (($nfeat->{'pack-fmax'} - $feat->{'pack-fmin'}) > $circular_seqlen)) {
+	    # make sure that this feature doesn't wrap around and overlap with the "most previous" or original feature
+	    if (defined($circular_seqlen) && (&_featsOverlap($nfeat, $feat, $circular_seqlen) || &_featsOverlap($nfeat, $last_added, $circular_seqlen))) {
 		last;
 	    }
 	    push(@$line, $nfeat);
@@ -123,6 +124,40 @@ sub pack {
 # ------------------------------------------------------------------
 # LinePacker
 # ------------------------------------------------------------------
+
+# If a feature crosses the origin split it into two features. If not,
+# return only the original feature.
+sub _splitFeat {
+    my($feat, $circular_seqlen) = @_;
+    my $feat_list = [];
+    my($fmin, $fmax) = map {$feat->{'pack-'. $_}} ('fmin', 'fmax');
+    if ($fmax < $fmin) {
+	push(@$feat_list, {'pack-fmin' => $fmin, 'pack-fmax' => $circular_seqlen});
+	push(@$feat_list, {'pack-fmin' => 0, 'pack-fmax' => $fmax});
+    } else {
+	push(@$feat_list, $feat);
+    }
+
+    # TODO - check that all coordinates are within range after transformation
+    return $feat_list;
+}
+
+# Determine whether two features overlap, taking circular coordinates into account.
+sub _featsOverlap {
+    my($feat1, $feat2, $circular_seqlen) = @_;
+    my($feats1, $feats2) = map { &_splitFeat($_, $circular_seqlen); } ($feat1, $feat2);
+
+    # do exhaustive check for overlaps between feats1 and feats2
+    # (this should entail at most 4 checks)
+    foreach my $f1 (@$feats1) {
+	foreach my $f2 (@$feats2) {
+	    if (($f1->{'pack-fmax'} > $f2->{'pack-fmin'}) && ($f1->{'pack-fmin'} < $f2->{'pack-fmax'})) {
+		return 1;
+	    }
+	}
+    }
+    return 0;
+}
 
 # Traverse doubly-linked list of coordinates in either the forward or reverse
 # direction; used to initialize the data structures used in packing.
@@ -240,7 +275,6 @@ sub _printLinkedListToStderr {
 	my $prevE = $sortedCoords->[$i]->{'previous_E'} ||  '';
 	my $nextS = $sortedCoords->[$i]->{'next_S'} || '';
 	my $linkers = $sortedCoords->[$i]->{'linkers'};
-	print STDERR " $i: type=$type region=$region coord=$coord prev_E=$prevE next_S=$nextS linkers=", join(',', @$linkers), "\n";
     }
 }
 

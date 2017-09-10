@@ -161,6 +161,7 @@ Padding (in pixels) to leave on each side of the figure.
 Optional. Path to a log file into which to write logging info.
 
 =item B<--conf_dir>
+
 Optional. Path to a directory that contains certain configuration 
 files required by Circleator, including predefined-tracks.cfg 
 and brewer.txt
@@ -1752,13 +1753,15 @@ sub get_track_features {
 
   my(# $features is an explicit inline list of features
      $features,
+     # the BioPerl features corresponding to $features, if they have already been generated
+     $bp_features,
      # $feat-file is the name of an additional file containing annotation
      $feat_file, $feat_file_type, $refseq_name, $clip_fmin, $clip_fmax,
      # feature filtering parameters:
      $feat_filters,
      $feat_type, $feat_type_regex, $feat_strand, $feat_min_length, $feat_max_length, $feat_tag, $feat_tag_value, $feat_tag_min_value, $feat_tag_max_value, $feat_tag_gt, $feat_tag_lt, $feat_tag_gte, $feat_tag_lte, $feat_tag_regex, $overlapping_feat_type, $overlapping_feat_track) =
     map { $feat_track->{$_} } 
-    ('features', 'feat-file', 'feat-file-type', 'refseq-name', 'clip-fmin', 'clip-fmax',
+    ('features', 'bp_features', 'feat-file', 'feat-file-type', 'refseq-name', 'clip-fmin', 'clip-fmax',
      # list of feature filters:
      'feat-filters',
      # individual track-level feature filters:
@@ -1857,8 +1860,13 @@ sub get_track_features {
   if (defined($feat_track_features)) {
     push(@$feat_list, @$feat_track_features);
   }
-  # option 2: explicitly-specified list of features
+  # option 2a: explicitly-specified list of features that have already been converted to BioPerl features
+  elsif (defined($bp_features)) {
+      push(@$feat_list, @$bp_features);
+  }
+  # option 2b: explicitly-specified list of features
   elsif (defined($features)) {
+      my $bp_features = $track->{'bp_features'} = [];
     foreach my $feat (@$features) {
       my($id, $seq, $start, $end, $fmin, $fmax, $strand, $type) = map {$feat->{$_}} ('id', 'seq', 'start', 'end', 'fmin', 'fmax', 'strand', 'type');
       my($bp_start, $bp_end, $bp_strand) = (undef, undef, undef);
@@ -1893,8 +1901,9 @@ sub get_track_features {
       if (!$bpseq->add_SeqFeature($bpf)) {
 	  $LOGGER->logdie("failed to add user-defined feature with id=$id");
       }
-      push(@$feat_list, $bpf);
+      push(@$bp_features, $bpf);
     }
+    push(@$feat_list, @$bp_features);
   }
   # option 3: explicitly specified data file of features
   elsif (defined($feat_file)) {
@@ -2530,15 +2539,38 @@ sub draw_label_track {
       my $label_len = length($label_text);
       my $approx_label_width_bp = $label_len * $cwbp;
 
-      my $mod_width = $mod_fmax - $mod_fmin;
+      my $mod_width = undef;
+      # feature spans coordinate origin
+      my $spans_origin = ($fmax < $fmin);
+      my $mod_seqlen = undef;
+      if ($spans_origin) {
+	  $mod_seqlen = $TRANSFORM->transform($seqlen);
+	  $mod_width = ($mod_seqlen - $fmin) + $fmax;
+      } else {
+	  $mod_width = $mod_fmax - $mod_fmin;
+      }
+
       my $diff = $approx_label_width_bp - $mod_width;
       my $mod_pack_fmin = $mod_fmin;
       my $mod_pack_fmax = $mod_fmax;
+
+#      print STDERR "label_text='$label_text' fmin=$fmin fmax=$fmax mod_fmin=$mod_fmin mod_fmax=$mod_fmax mod_width=$mod_width approx_label_width=$approx_label_width_bp\n";
+
+      # make adjustment if label is estimated to be larger than the feature
       if ($diff > 0) {
-        $mod_pack_fmin -= $diff * 0.5;
-        $mod_pack_fmax += $diff * 0.5;
+	  $mod_pack_fmin -= $diff * 0.5;
+	  $mod_pack_fmax += $diff * 0.5;
       }
-      my $mod_label_position = ($mod_pack_fmin + $mod_pack_fmax)/2;
+      my $mod_label_position = undef;
+
+      if ($spans_origin) {
+	  my $lbl_width = ($diff > 0) ? $approx_label_width_bp : $mod_width;
+	  $mod_label_position = ($mod_pack_fmin + ($lbl_width / 2)) % $mod_seqlen;
+      } else {
+	  $mod_label_position = ($mod_pack_fmin + $mod_pack_fmax)/2;
+      }
+
+#      print STDERR "mod_label_position=$mod_label_position mod_pack_fmin=$mod_pack_fmin mod_pack_fmax=$mod_pack_fmax seqlen=$seqlen\n";
 
       # now map back to original coordinates
       # special case for out-of-range mod fmax
@@ -2547,12 +2579,13 @@ sub draw_label_track {
 
       my $pack_fmin = $TRANSFORM->invert_transform($mod_pack_fmin);
       my $pack_fmax = $TRANSFORM->invert_transform($mod_pack_fmax);
-      $pack_fmax += $seqlen if ($mod_fmax_out_of_range);
+#      $pack_fmax += $seqlen if ($mod_fmax_out_of_range);
       my $label_position = $TRANSFORM->invert_transform($mod_label_position);
 #      print STDERR "label_text='$label_text' label_len=$label_len cwbp=$cwbp label_width_bp=$approx_label_width_bp inverted label_position=$label_position\n";
       $label->{'pack-fmin'} = $pack_fmin;
       $label->{'pack-fmax'} = $pack_fmax;
       $label->{'position'} = $label_position;
+#      print STDERR "pack-fmin=$pack_fmin pack-fmax=$pack_fmax\n";
 	}
 
 	# pack to determine vertical offsets and avoid overlaps (using pack-(fmin|fmax))
