@@ -1,5 +1,5 @@
 
-1.0.1 (Sep 06 2017)
+1.0.1 (Sep 11 2017)
  -Add feat-type-regex to 'load-gene-expression-table'. Allows reading expression data
   associated with RNA features rather than CDS features (the default.)
  -Add 'circle' track type and regression test.
@@ -8,8 +8,13 @@
  -Modify LinearScale.pm to allow negative coordinates.
  -Modify circleator.t to round circle (cx, cy) coordinates when comparing SVG.
  -Undo bam_get_coverage.c regression from previous commit.
- -Fix SVG bug causing artifacts when rendering to PNG in some versions of Batik [Issue #33].
  -Add util/add_snp_merged_table_columns.pl to convert between old and new SNP table formats.
+ -Remove incorrect radius attributes from rectangle elements used in SVG masks [Issue #33].
+ -Fix length_kb label function bug giving origin-spanning features negative lengths [Issue #32].
+ -Fix bug causing feat-track label references to create duplicate features [Issue #34].
+ -Fix bugs involving the packing of features that span the origin.
+  Some test results updated accordingly. [Issue #35.]
+ -Add file (in misc/convert_svg_to_png_with_chrome/) demonstrating PNG conversion with Chrome.
 	
 1.0.0 (Jan 13 2016)
  -Add parser for clc_find_variations SNP/indel-finding tool.
