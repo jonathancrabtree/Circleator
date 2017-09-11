@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<canvas width="3200" height="3200"></canvas>
+<script>
+
+var canvas = document.querySelector("canvas"),
+    context = canvas.getContext("2d");
+
+var image = new Image;
+image.src = "fig1.svg";
+image.onload = function() {
+  context.drawImage(image, 0, 0);
+
+  var a = document.createElement("a");
+  a.download = "fig1.png";
+  a.href = canvas.toDataURL("image/png");
+  a.click();
+};
+
+</script>

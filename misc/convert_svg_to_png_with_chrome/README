@@ -1,0 +1,13 @@
+
+Example of how to use Chrome to convert SVG to PNG, based on:
+
+https://gist.github.com/mbostock/6466603
+
+To use it:
+
+1. Place the SVG file to convert in the same directory as example.html
+2. Edit the canvas width and height to match the dimensions of the SVG file.
+3. Set image.src to the name of the SVG file to convert.
+4. Load example.html in Chrome using a file: URL (no need to run web server)
+5. You should see the rasterized SVG in the browser window.
+6. Right click and "Save image as..."
