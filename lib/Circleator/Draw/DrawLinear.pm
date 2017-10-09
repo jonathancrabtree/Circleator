@@ -461,41 +461,18 @@ sub draw_label_track {
       # draw the label text
       my($tx1, $ty1) = $self->bp_to_xy($pos, $sf, $seqlen);
       if ($lt =~ /^horizontal|curved/) {
-	  my $te = $group->text('x' => $tx1, 'y' => $ty1, %$textArgs);
-	  $te->cdata($txt);
+        my $te = $group->text('x' => $tx1, 'y' => $ty1, %$textArgs);
+        $te->cdata($txt);
       } elsif ($lt eq 'spoke') {
-	  my $quad = $self->coord_to_quadrant($pos);
-	  
-	  # TODO - figure out adjustment to $pos to increase (right side of circle) or decrease (left side of circle) offset by half font height
-	  my($fhf, $cwbp) = $self->get_tier_font_height_frac_and_char_width_bp($sf, $ef, $nt, $tier_gap_frac, $track_fhf, $track_fwf);
-	  my $mod_pos = $self->transform($pos);
-	  
-	  # TODO - this is not correct
-	  if ($quad =~ /r$/) {
-	      $mod_pos += $cwbp/2;
-	  } else {
-	      $mod_pos -= $cwbp/2;
-	  }
-	  $mod_pos = $mod_pos % $seqlen if ($mod_pos > $seqlen);
-	  
-	  my $pos = $self->invert_transform($mod_pos);
-	  my $mod_quad = $self->coord_to_quadrant($pos);
-	  my $deg = $self->coord_to_degrees($pos);
-	  my($tx1, $ty1) = $self->bp_to_xy($pos, $sf, $seqlen);
-	  
-	  # modify anchor based on quadrant if drawing spoke labels
-	  if ($ta eq 'start') {
-	      $textArgs->{'text-anchor'} = 'end' if ($mod_quad =~ /l$/);
-	  } elsif ($ta eq 'end') {
-	      $textArgs->{'text-anchor'} = 'start' if ($mod_quad =~ /l$/);
-	  }
-	  
-	  my $hfh = $fh/2.0;
-	  my $tg = $group->group( 'transform' => "translate($tx1, $ty1)");
-	  my $tr = $deg - 90;
-	  $tr += 180 if ($mod_quad =~ /l$/);
-	  my $te = $tg->text('x' => 0, 'y' => 0, 'transform' => "rotate($tr)", %$textArgs);
-	  $te->cdata($txt);
+        # TODO - figure out adjustment to $pos to increase (right side of circle) or decrease (left side of circle) offset by half font height
+        my($fhf, $cwbp) = $self->get_tier_font_height_frac_and_char_width_bp($sf, $ef, $nt, $tier_gap_frac, $track_fhf, $track_fwf);
+        my $mod_pos = $self->transform($pos);
+#        $mod_pos -= $cwbp/2;
+#        $mod_pos = $mod_pos % $seqlen if ($mod_pos > $seqlen);
+#        ($tx1, $ty1) = $self->bp_to_xy($mod_pos, $sf, $seqlen);
+        my $tg = $group->group( 'transform' => "translate($tx1, $ty1)");
+        my $te = $tg->text('x' => 0, 'y' => 0, 'transform' => "rotate(-90)", %$textArgs);
+	    $te->cdata($txt);
       }
   }
 }
@@ -544,8 +521,10 @@ sub svg_height {
 sub bp_to_xy {
   my($self, $bp, $frac) = @_;
   my $seqlen = $self->seqlen();
+  die "no transform defined" if (!defined($self->get_transform()));
+  my $mod_bp = $self->transform($bp);
   my $radius = $self->radius();
-  my $seq_frac = $bp / $seqlen;
+  my $seq_frac = $mod_bp / $seqlen;
   my $seq_width = $self->seq_width();
   my $svg_height = $self->svg_height();
   my $pad_bottom = $self->pad_bottom();
