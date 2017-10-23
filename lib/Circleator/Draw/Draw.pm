@@ -148,7 +148,7 @@ sub _format_coordinate {
     } elsif ($labelUnits =~ /^kb$/i) {
         $coordLabel = sprintf("%.${labelPrecision}f", $pos/1000.0) . "kb";
     } else {
-        $coordLabel = sprintf("%.${labelPrecision}f", $pos) . "bp";
+        $coordLabel = sprintf("%.${labelPrecision}f", $pos) . $labelUnits;
     }
     return $coordLabel;
 }
