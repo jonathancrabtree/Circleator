@@ -2577,9 +2577,9 @@ sub draw_graph_track {
 #
 sub draw_track {
   my($svg, $seq, $seqlen, $richseq, $track, $tracks, $config) = @_;
-  my($name, $tnum, $lnum, $feat_type, $feat_type_regex, $glyph, $sf, $ef, $opacity, $zIndex, $scolor, $stroke_dasharray, $fcolor, $gfunc, $features, $no_scaling, $skip_track, $track_fwf)= 
+  my($name, $tnum, $lnum, $feat_type, $feat_type_regex, $glyph, $sf, $ef, $opacity, $strokeOpacity, $fillOpacity, $zIndex, $scolor, $stroke_dasharray, $fcolor, $gfunc, $features, $no_scaling, $skip_track, $track_fwf)= 
     map { $track->{$_} } 
-      ('name', 'tnum', 'lnum', 'feat-type', 'feat-type-regex', 'glyph', 'start-frac', 'end-frac', 'opacity', 'z-index', 
+      ('name', 'tnum', 'lnum', 'feat-type', 'feat-type-regex', 'glyph', 'start-frac', 'end-frac', 'opacity', 'stroke-opacity', 'fill-opacity', 'z-index', 
        'stroke-color', 'stroke-dasharray', 'fill-color', 'graph-function', 'features', 'no-scaling', 'skip-track', 'font-width-frac');
   return if ($skip_track);
 
@@ -2602,6 +2602,8 @@ sub draw_track {
 
   my $args = { id => "t${tnum}" };
   $args->{'opacity'} = $opacity if (defined($opacity));
+  $args->{'stroke-opacity'} = $strokeOpacity if (defined($strokeOpacity));
+  $args->{'fill-opacity'} = $fillOpacity if (defined($fillOpacity));
   $args->{'z-index'} = $zIndex if (defined($zIndex));
   my $group = $svg->group( %$args );
   if (defined($debug_opts->{'tracks'})) {
