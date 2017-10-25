@@ -4,7 +4,6 @@ sub get_function {
   my($track, $tname) = @_;
   return sub {
     my $f = shift;
-    print STDERR "track text='" . $track->{'text'} . "'";
     return $track->{'text'};
   };
 }
