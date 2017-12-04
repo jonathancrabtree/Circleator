@@ -4,8 +4,14 @@ sub get_function {
   my($track, $tname) = @_;
   return sub {
     my $f = shift;
-    print STDERR "track text='" . $track->{'text'} . "'";
-    return $track->{'text'};
+    my $text = $track->{'text'};
+
+    # HACK - code duplicated from Circleator::Config::Standard
+    $text =~ s/\&nbsp\;/ /g;
+    $text =~ s/\&equals\;/=/g;
+    $text =~ s/\&comma\;/,/g;
+
+    return $text;
   };
 }
 
