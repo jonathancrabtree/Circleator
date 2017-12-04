@@ -101,6 +101,7 @@ my $TESTS =
      {'data' => 'CM000961.gbk', 'conf' => 'labels-1.cfg', 'descr' => "Automatically-generated and packed labels for tRNA and rRNA features, plus manually-defined label(s)." },
      {'data' => 'CM000961-180bp.gbk', 'conf' => 'labels-1.cfg', 'descr' =>  "Automatically-generated and packed labels for tRNA and rRNA features, plus manually-defined label(s)." },
      {'data' => 'NC_011969.gbk', 'conf' => 'labels-1.cfg', 'descr' =>  "Automatically-generated and packed labels for tRNA and rRNA features, plus manually-defined label(s)." },
+     {'data' => 'NC_011969.gbk', 'conf' => 'labels-2.cfg', 'descr' =>  "Labels for user defined features that cross the origin. Issues 32, 34, and 35." },
 
      # circle glyph
      {'data' => 'CM000961.gbk', 'conf' => 'circles-1.cfg', 'descr' => "Circle track type." },
@@ -230,14 +231,14 @@ foreach my $test (@$TESTS) {
     my $log_file = $file_base . ".log";
     my $new_svg_path = File::Spec->catfile($tempdir, $svg_file);
     my $log_path = File::Spec->catfile($tempdir, $log_file);
-    my $old_svg_path = File::Spec->catfile($RESULTS_DIR, $svg_file);
+    my $reference_svg_path = File::Spec->catfile($RESULTS_DIR, $svg_file);
     my $data_path = (defined($data) && ($data =~ /\S/)) ? File::Spec->catfile($DATA_DIR, $data) : undef;
     my $seq_path = (defined($seq) && ($seq =~ /\S/)) ? File::Spec->catfile($DATA_DIR, $seq) : undef;
     my $conf_path = File::Spec->catfile($conf_dir, $conf) if (defined($conf));
 
-    if (!-e $old_svg_path || !-r $old_svg_path) {
+    if (!-e $reference_svg_path || !-r $reference_svg_path) {
 	$ok = 0;
-	diag("missing file $old_svg_path");
+	diag("missing file $reference_svg_path");
     }
 
     # run Circleator
@@ -270,7 +271,7 @@ foreach my $test (@$TESTS) {
 	diag($err);
     }
     # check output matches stored SVG 
-    elsif (files_differ($old_svg_path, $new_svg_path)) {
+    elsif (files_differ($reference_svg_path, $new_svg_path)) {
 	$ok = 0;
     }
 
@@ -285,9 +286,9 @@ foreach my $test (@$TESTS) {
 	    my $date = `date`;
 	    chomp($date);
 	    my $new_svg = $svg_file;
-	    my $old_svg = "t/results/$svg_file";
+	    my $reference_svg = "t/results/$svg_file";
 	    my($new_png, $new_small_png) = map { my $copy = $new_svg; $copy =~ s/\.svg$/$_/; $copy; } ('-5000.png', '.png');
-	    my($old_png, $old_small_png) = map { my $copy = $old_svg; $copy =~ s/\.svg$/$_/; $copy; } ('-5000.png', '.png');
+	    my($reference_png, $reference_small_png) = map { my $copy = $reference_svg; $copy =~ s/\.svg$/$_/; $copy; } ('-5000.png', '.png');
 	    
 	    
 	    $hfh->print("<h3 class='test'>$tnum/$n_tests $descr</h3>\n");
@@ -308,7 +309,7 @@ foreach my $test (@$TESTS) {
 	    # test result
 	    $hfh->print("<td><img src='$new_small_png' class='test_result'></td>\n");
 	    # reference
-	    $hfh->print("<td><img src='$old_small_png' class='test_result'></td>");
+	    $hfh->print("<td><img src='$reference_small_png' class='test_result'></td>");
 	    $hfh->print("</tr><br clear='both'>\n");
 
 	    # links to full-size images
@@ -316,14 +317,14 @@ foreach my $test (@$TESTS) {
 	    # test result
 	    $hfh->print("<td class='test'><a href='$new_svg'>SVG</a>&nbsp;<a href='$new_png'>PNG</a>&nbsp;<a href='$conf'>config. file</a>&nbsp;<a href='$log_file'>log file</a></td>");
 	    # reference
-	    $hfh->print("<td class='test'><a href='$old_svg'>SVG</a>&nbsp;<a href='$old_png'>PNG</a></td>\n");
+	    $hfh->print("<td class='test'><a href='$reference_svg'>SVG</a>&nbsp;<a href='$reference_png'>PNG</a></td>\n");
 	    $hfh->print("</tr>\n");
 
 	    $hfh->print("</tbody>\n</table>\n");
 
 	    ++$num_passed if ($ok);
 	    # copy results file too
-	    system("cp $old_svg_path ${working_results_dir}");
+	    system("cp $reference_svg_path ${working_results_dir}");
 	}
     }
 
@@ -356,18 +357,18 @@ exit(0);
 ## subroutines
 ## ----------------------------------
 sub files_differ {
-    my($old_file, $new_file) = @_;
+    my($ref_file, $new_file) = @_;
 
-    my $old_fh = FileHandle->new();
+    my $ref_fh = FileHandle->new();
     my $new_fh = FileHandle->new();
-    if (!$old_fh->open($old_file)) {
-	diag("unable to open saved SVG file $old_file");
+    if (!$ref_fh->open($ref_file)) {
+	diag("unable to open saved SVG file $ref_file");
 	return 1;
     }
 
     if (!$new_fh->open($new_file)) {
 	diag("unable to open new SVG file $new_file");
-	$old_fh->close();
+	$ref_fh->close();
 	return 1;
     }
 
@@ -382,20 +383,49 @@ sub files_differ {
 	return $str;
     };
 
-    while (my $old_line = <$old_fh>) {
+    while (my $ref_line = <$ref_fh>) {
 	++$lnum;
 	my $new_line = <$new_fh>;
+    # ignore missing xmlns:svg link in older Perl SVG library
+	$ref_line =~ s/ xmlns:svg=\"[^\"]+\"//;
+	$new_line =~ s/ xmlns:svg=\"[^\"]+\"//;
 	# ignore differences in SVG version number
-	$old_line =~ s/(SVG Module V[\d\.]+)/SVG Module/;
+	$ref_line =~ s/(SVG Module V[\d\.]+)/SVG Module/;
 	$new_line =~ s/(SVG Module V[\d\.]+)/SVG Module/;
+    # and SVG module creator
+    $new_line =~ s/www\.roasp\.com/www.roitsystems.com/;
 	# round floating point coordinate values to 10 places
-	$old_line =~ s/([xy][12]|\<path d|c[xy])=\"([^\"]+)\"/$1 . '="' . &$format_coords($2) . '"'/ge;
+	$ref_line =~ s/([xy][12]|\<path d|c[xy])=\"([^\"]+)\"/$1 . '="' . &$format_coords($2) . '"'/ge;
 	$new_line =~ s/([xy][12]|\<path d|c[xy])=\"([^\"]+)\"/$1 . '="' . &$format_coords($2) . '"'/ge;
 	# stop if difference found
-	if (!defined($new_line) || ($old_line ne $new_line)) {
+	if (!defined($new_line) || ($ref_line ne $new_line)) {
+      # special case: some older versions of SVG library differ in newline placement
+      my $check_again = 0;
+      # go to next line in reference file
+      if ($ref_line =~ /^\s+(\<\/g\>|\<g .*\/\>)/) {
+        my $next_line = <$ref_fh>;
+        if (defined($next_line)) {
+          chomp($ref_line);
+          $next_line =~ s/^\s+//;
+          $ref_line .= $next_line;
+          $check_again = 1;
+        }
+      } 
+      # go to next line in new file
+      else {
+        my $next_line = <$new_fh>;
+        if (defined($next_line)) {
+          chomp($new_line);
+          $next_line =~ s/^\s+//;
+          $new_line .= $next_line;
+          $check_again = 1;
+        }
+      }
+      if ((!$check_again) || ($ref_line ne $new_line)) {
 	    $first_diff_lnum = $lnum;
-	    diag("old ($old_file) and new ($new_file) SVG files first differ at line $lnum");
+	    diag("reference ($ref_file) and new ($new_file) SVG files first differ at line $lnum");
 	    last;
+      }
 	}
     }
 
@@ -408,7 +438,7 @@ sub files_differ {
 	}
     }
 
-    $old_fh->close();
+    $ref_fh->close();
     $new_fh->close();
     return defined($first_diff_lnum) ? 1 : 0
 }
