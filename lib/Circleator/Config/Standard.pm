@@ -102,6 +102,8 @@ my $GLOBAL_OPTS =
    'color2-regexes', 'color2-colors', 'color2-default', 'color2-attribute', 'color2-min-lengths', 'color2-max-lengths',
    # other SVG options
    'stroke-width',
+   'stroke-opacity',
+   'fill-opacity',
    # track from which to obtain features
    'feat-track',
    # whether to skip drawing this track (e.g., it could be set to LOOP_EVEN in a loop)
