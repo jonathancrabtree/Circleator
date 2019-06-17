@@ -392,8 +392,15 @@ sub files_differ {
 	# ignore differences in SVG version number
 	$ref_line =~ s/(SVG Module V[\d\.]+)/SVG Module/;
 	$new_line =~ s/(SVG Module V[\d\.]+)/SVG Module/;
-    # and SVG module creator
-    $new_line =~ s/www\.roasp\.com/www.roitsystems.com/;
+	# and SVG module creator
+	$new_line =~ s/www\.roasp\.com/www.roitsystems.com/;
+        # additional whitespace differences found when comparing 2.59 and 2.84
+        $ref_line =~ s/(<defs\s*>)/<defs>/;
+        $new_line =~ s/(<defs\s*>)/<defs>/;
+        $ref_line =~ s/(\s*-->)/-->/;
+        $new_line =~ s/(\s*-->)/-->/;
+	$ref_line =~ s/(<!--\s*$)/<!--/;
+        $new_line =~ s/(<!--\s*$)/<!--/;
 	# round floating point coordinate values to 10 places
 	$ref_line =~ s/([xy][12]|\<path d|c[xy])=\"([^\"]+)\"/$1 . '="' . &$format_coords($2) . '"'/ge;
 	$new_line =~ s/([xy][12]|\<path d|c[xy])=\"([^\"]+)\"/$1 . '="' . &$format_coords($2) . '"'/ge;
