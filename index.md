@@ -31,7 +31,9 @@ Common uses of the tool include:
 
 As of release v1.0.2 Circleator is available as a Docker image on DockerHub:
 
-https://cloud.docker.com/u/umigs/repository/docker/umigs/circleator
+[https://cloud.docker.com/u/umigs/repository/docker/umigs/circleator][docker_image]
+
+[docker_image]: https://cloud.docker.com/u/umigs/repository/docker/umigs/circleator
 
 The image is somewhat large (~2GB) but includes the material from the tutorials/
 section of this website, making it easier for new users to get up and running with
@@ -75,7 +77,7 @@ the software. For example:
     Converting coverage-ex1.svg to coverage-ex1.png ... ... success
 
 To install Circleator from scratch, check out the [Installation Guide][install]. There's also a detailed [README][] on GitHub, 
-and the [Documentation][docs] for more information. There's also a [Google Group][group] for Circleator questions and discussion.
+[Documentation][docs] on this website and a [Google Group][group] for Circleator questions and discussion.
 
 [install]: {{site.baseurl}}/install.html
 [readme]: http://github.com/jonathancrabtree/Circleator/blob/master/README.md
