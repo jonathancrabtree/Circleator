@@ -62,7 +62,7 @@ int _bam_pileup_func(uint32_t tid, uint32_t pos, int n, const bam_pileup1_t *pl,
   
     for (i = 0;i < num_empty; ++i) {
       GString *line = g_string_new("");
-      g_string_append_printf(line, "%s\t%d\t%d\t%f\n", ch->bam_header->target_name[tid], ch->next_window_end_pos - ch->window_size, ch->next_window_end_pos, ((float)ch->coverage_sum)/ch->window_size);
+      g_string_append_printf(line, "%s\t%ld\t%ld\t%f\n", ch->bam_header->target_name[tid], ch->next_window_end_pos - ch->window_size, ch->next_window_end_pos, ((float)ch->coverage_sum)/ch->window_size);
       GIOStatus ws = g_io_channel_write_chars(ch->ofh, line->str, -1, &bytecount, NULL);
       g_string_free(line, TRUE);
       if (ws != G_IO_STATUS_NORMAL) {
@@ -74,7 +74,7 @@ int _bam_pileup_func(uint32_t tid, uint32_t pos, int n, const bam_pileup1_t *pl,
     }
 
     GString *line = g_string_new("");
-    g_string_append_printf(line, "%s\t%d\t%d\t%f\n", ch->bam_header->target_name[tid], ch->next_window_end_pos - ch->window_size, ch->next_window_end_pos, ((float)ch->coverage_sum)/ch->window_size);
+    g_string_append_printf(line, "%s\t%ld\t%ld\t%f\n", ch->bam_header->target_name[tid], ch->next_window_end_pos - ch->window_size, ch->next_window_end_pos, ((float)ch->coverage_sum)/ch->window_size);
     GIOStatus ws = g_io_channel_write_chars(ch->ofh, line->str, -1, &bytecount, NULL);
     g_string_free(line, TRUE);
     if (ws != G_IO_STATUS_NORMAL) {
@@ -321,7 +321,7 @@ int main(int argc, char *argv[])
         //        fprintf(stderr, "target len=%d next_window_end_pos=%d window_size=%d num_empty=%d\n", bam_header->target_len[i], ch->next_window_end_pos, ch->window_size, num_empty);
         for (j = 0;j < num_empty; ++j) {
           GString *line = g_string_new("");
-          g_string_append_printf(line, "%s\t%d\t%d\t%f\n", ch->bam_header->target_name[i], ch->next_window_end_pos - ch->window_size, ch->next_window_end_pos, ((float)ch->coverage_sum)/ch->window_size);
+          g_string_append_printf(line, "%s\t%ld\t%ld\t%f\n", ch->bam_header->target_name[i], ch->next_window_end_pos - ch->window_size, ch->next_window_end_pos, ((float)ch->coverage_sum)/ch->window_size);
           GIOStatus ws = g_io_channel_write_chars(ch->ofh, line->str, -1, &bytecount, NULL);
           g_string_free(line, TRUE);
           if (ws != G_IO_STATUS_NORMAL) {
@@ -335,17 +335,17 @@ int main(int argc, char *argv[])
 
       long last_window_end_pos = ch->next_window_end_pos - ch->window_size;
       if (last_window_end_pos < 0) {
-        fprintf(stderr, "FATAL - internal error, last_window_end_pos=%d\n", last_window_end_pos);
+        fprintf(stderr, "FATAL - internal error, last_window_end_pos=%ld\n", last_window_end_pos);
         return 1;
       }
       long actual_window_size = bam_header->target_len[i] - last_window_end_pos;
       GString *gstr = g_string_new("");
       if (actual_window_size > ch->window_size) {
-        fprintf(stderr, "error - length of last window is %d, which exceeds the preset window size of %d\n", actual_window_size, ch->window_size);
+        fprintf(stderr, "error - length of last window is %ld, which exceeds the preset window size of %ld\n", actual_window_size, ch->window_size);
         exit(1);
       }
       if (actual_window_size > 0) {
-        g_string_append_printf(gstr, "%s\t%d\t%d\t%f\n", ch->bam_header->target_name[i], last_window_end_pos, bam_header->target_len[i], ((float)ch->coverage_sum)/actual_window_size);
+        g_string_append_printf(gstr, "%s\t%ld\t%u\t%f\n", ch->bam_header->target_name[i], last_window_end_pos, bam_header->target_len[i], ((float)ch->coverage_sum)/actual_window_size);
         GIOStatus ws = g_io_channel_write_chars(ch->ofh, gstr->str, -1, &bytecount, NULL);
         g_string_free(gstr, TRUE);
         if (ws != G_IO_STATUS_NORMAL) {
@@ -359,7 +359,7 @@ int main(int argc, char *argv[])
 
       if (ch->n_alignments > 0) {
         ++n_targets_output;
-        fprintf(stderr, "INFO - printed coverage for %d alignment(s) from %d bp sequence\n", ch->n_alignments, bam_header->target_len[i]);
+        fprintf(stderr, "INFO - printed coverage for %ld alignment(s) from %u bp sequence\n", ch->n_alignments, bam_header->target_len[i]);
       }
     }
   }
