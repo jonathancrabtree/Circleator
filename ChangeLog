@@ -1,4 +1,10 @@
 
+1.0.2 (June ?? 2019)
+ -Add Ubuntu-based Docker image with Circleator preinstalled.
+ -Account for additional whitespace differences between SVG 2.59 and 2.84 in regression tests.
+ -Allow 'aa' or other values to be passed to label-units option.
+ -Make regression tests less sensitive to whitespace when comparing SVG files.
+	
 1.0.1 (Sep 11 2017)
  -Add feat-type-regex to 'load-gene-expression-table'. Allows reading expression data
   associated with RNA features rather than CDS features (the default.)
