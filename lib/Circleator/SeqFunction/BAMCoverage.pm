@@ -79,7 +79,7 @@ sub get_values {
         if (defined($offset)) {
           my $op = undef;
           if ($c_orientation == -1) {
-            $op = offset + ($c_length - $pos);
+            $op = $offset + ($c_length - $pos);
           } else {
             $op = $pos + $offset;
           }
