@@ -1,5 +1,7 @@
 
-1.0.2 (June ?? 2019)
+1.0.2 (June 18 2019)
+ -Update util/samtools for Ubuntu 16.04LTS and samtools-1.7
+ -Fix Perl syntax bug in Circleator::SeqFunction::BAMCoverage [Issue #38]
  -Add Ubuntu-based Docker image with Circleator preinstalled.
  -Account for additional whitespace differences between SVG 2.59 and 2.84 in regression tests.
  -Allow 'aa' or other values to be passed to label-units option.
